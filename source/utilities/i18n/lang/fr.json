@@ -1,5 +1,5 @@
 {
-  "title": "1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver",
+  "title": "1.1.1.1 — le résolveur DNS le plus rapide et le plus sécurisé d'Internet",
   "description": "✌️✌️ Naviguez sur un Internet plus rapide et plus privé",
 
   "hero.introducing": "Présentation",
@@ -7,7 +7,7 @@
   "hero.getStarted": "Commencer",
   "hero.info": "Info",
 
-  "explanation.dnsHeader": "DNS: Internet’s Directory",
+  "explanation.dnsHeader": "DNS: L'annuaire de l'Internet",
   "explanation.dnsExplanation": "Presque tout sur Internet commence par une requête DNS. DNS est l'annuaire d’Internet. Cliquez sur un lien, ouvrez une application, envoyez un e-mail et la première chose que votre appareil fait est de consulter l'annuaire: <strong class=\"subtle\">Où puis-je trouver cela?</strong>",
   "explanation.dnsSlowInsecure": "Malheureusement, par défaut, le DNS est généralement lent et non sécurisé. Votre fournisseur d’accès Internet, et toute autre personne écoutant sur Internet, peut voir tous les sites que vous visitez et toutes les applications que vous utilisez, même si leur contenu est chiffré. Certains fournisseurs de DNS vendent des données sur votre activité Internet ou l’utilisent pour vous cibler avec des publicités.",
   "explanation.dnsAlternative": "Si vous pensez que c'est contestable, il existe maintenant une alternative: <strong>1.1.1.1</strong>",
@@ -39,30 +39,30 @@
     },
     "windows": {
       "steps": [
-        {"tag": "li", "content": "Click on the Start menu, then click on <strong>Control Panel</strong>."},
-        {"tag": "li", "content": "Click on <strong>Network and Internet</strong>."},
-        {"tag": "li", "content": "Click on <strong>Change Adapter Settings</strong>."},
-        {"tag": "li", "content": "Right click on the Wi-Fi network you are connected to, then click <strong>Properties</strong>."},
-        {"tag": "li", "content": "Select <strong>Internet Protocol Version 4</strong> (or Version 6 if desired)."},
-        {"tag": "li", "content": "Click <strong>Properties</strong>."},
-        {"tag": "li", "content": "Write down any existing DNS server entries for future reference."},
-        {"tag": "li", "content": "Click <strong>Use The Following DNS Server Addresses</strong>."},
+        {"tag": "li", "content": "Cliquez sur le menu Démarrer, puis sur <strong>Panneau de configuration</strong>."},
+        {"tag": "li", "content": "Cliquez sur <strong>Réseau et Internet</strong>."},
+        {"tag": "li", "content": "Cliquez sur <strong>Modifiez les paramètres de la carte</strong>."},
+        {"tag": "li", "content": "Faites un clic droit sur le réseau Wi-Fi auquel vous êtes connecté, et cliquez sur <strong>Propriétés</strong>."},
+        {"tag": "li", "content": "Sélectionnez <strong>Version 4 du protocole Internet</strong> (ou Version 6 si vous le désirez)."},
+        {"tag": "li", "content": "Cliquez sur <strong>Propriétés</strong>."},
+        {"tag": "li", "content": "Notez les entrées de serveur DNS existantes à titre de sauvegarde."},
+        {"tag": "li", "content": "Cliquez sur <strong>Utiliser l'adresse de serveur DNS suivant</strong>."},
         {
           "tag": "li",
           "children": [
-            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {"tag": "span", "content": "Remplacez ces adresses par les adresses DNS 1.1.1.1:"},
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "For IPv4: <strong>1.1.1.1</strong> and <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "Pour IPv4: <strong>1.1.1.1</strong> et <strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "Pour IPv6: <strong>2606:4700:4700::1111</strong> et <strong>2606:4700:4700::1001</strong>"}
               ]
             }
           ]
         },
-        {"tag": "li", "content": "Click <strong>OK</strong>, then <strong>Close</strong>."},
-        {"tag": "li", "content": "Restart your browser."},
-        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
+        {"tag": "li", "content": "Cliquez sur <strong>OK</strong>, puis sur <strong>Fermer</strong>."},
+        {"tag": "li", "content": "Redémarrez votre navigateur."},
+        {"tag": "li", "content": "Tout est prêt! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
       ]
     },
     "linux": {
@@ -90,7 +90,7 @@
           },
           {
             "children": [
-              {"tag": "span", "content": "Provide the 1.1.1.1 DNS addresses in the DNS entries field:"},
+              {"tag": "span", "content": "Remplacez ces adresses par les adresses DNS 1.1.1.1:"},
               {
                 "tag": "ul",
                 "children": [
@@ -150,7 +150,7 @@
         {
           "tag": "li",
           "children": [
-            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {"tag": "span", "content": "Remplacez ces adresses par les adresses DNS 1.1.1.1:"},
             {
               "tag": "ul",
               "children": [
