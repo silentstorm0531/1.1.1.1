@@ -1,0 +1,110 @@
+mixin render(input)
+  if input.children
+    #{input.tag}
+      each child in input.children
+        +render(child)
+  else if input.content
+    #{input.tag}!=input.content
+
+section#setup-instructions(data-section="setup" data-ref="setup")
+  h1.collapsed-top-margin(
+    data-ref="deviceLabel"
+    data-label=htmlWebpackPlugin.options.t('instructions').header)
+
+  p!=htmlWebpackPlugin.options.t('instructions').explanation
+
+  .instruction-picker.desktop-only(data-ref="instructionPicker")
+    button.button.choice(type="button" data-platform="iphone")
+      i.fas.fa-mobile
+      span.label iPhone
+    button.button.choice(type="button" data-platform="android")
+      i.fab.fa-android
+      span.label Android
+    button.button.choice(type="button" data-platform="mac-os")
+      i.fab.fa-apple
+      span.label MacOS
+    button.button.choice(type="button" data-platform="windows")
+      i.fab.fa-windows
+      span.label Windows
+    button.button.choice(type="button" data-platform="linux")
+      i.fab.fa-linux
+      span.label Linux
+    button.button.choice(type="button" data-platform="router")
+      i.fas.fa-sitemap
+      span.label Router
+
+  .instructions(data-platform="mac-os")
+    ol
+      each instruction in htmlWebpackPlugin.options.t('instructions')['mac-os'].steps
+        +render(instruction)
+
+    stream(
+      style="font-size: 16px; width: 616px; max-width: 100%;"
+      id="b95943849d53350130ba22d039fa6faf"
+      site="cloudflare.com")
+    script(
+      data-cfasync="false"
+      defer
+      src="https://embed.cloudflarestream.com/embed/we4g.fla9.latest.js?video=b95943849d53350130ba22d039fa6faf")
+
+  .instructions(data-platform="iphone")
+    ol
+      each instruction in htmlWebpackPlugin.options.t('instructions').iphone.steps
+        +render(instruction)
+
+    stream(
+      style="font-size: 16px; width: 616px; max-width: 100%;"
+      id="ddf07732bc76fc854d4b1879eea2c517"
+      site="cloudflare.com")
+    script(
+      data-cfasync="false"
+      defer
+      src="https://embed.cloudflarestream.com/embed/we4g.fla9.latest.js?video=ddf07732bc76fc854d4b1879eea2c517")
+
+  .instructions(data-platform="linux")
+    p!=htmlWebpackPlugin.options.t('instructions').linux.notice
+
+    ol
+      each instruction in htmlWebpackPlugin.options.t('instructions').linux.steps
+        +render(instruction)
+
+  .instructions(data-platform="windows")
+    ol
+      each instruction in htmlWebpackPlugin.options.t('instructions').windows.steps
+        +render(instruction)
+
+    stream(
+      style="font-size: 16px; width: 616px; max-width: 100%;"
+      id="92b27227d737a866adc8b0572cf0db89"
+      site="cloudflare.com")
+    script(
+      data-cfasync="false"
+      defer
+      src="https://embed.cloudflarestream.com/embed/we4g.fla9.latest.js?video=92b27227d737a866adc8b0572cf0db89")
+
+
+  .instructions(data-platform="android")
+    .message
+      p.collapsed-margins.message-content!=htmlWebpackPlugin.options.t('instructions').android.message
+    ol
+      each instruction in htmlWebpackPlugin.options.t('instructions').router.steps
+        +render(instruction)
+
+    stream(
+      style="font-size: 16px; width: 616px; max-width: 100%;"
+      id="62dceb0d5905f0c98a895d21409d6247"
+      site="cloudflare.com")
+    script(
+      data-cfasync="false"
+      defer
+      src="https://embed.cloudflarestream.com/embed/we4g.fla9.latest.js?video=62dceb0d5905f0c98a895d21409d6247")
+
+  .instructions(data-platform="router")
+    .message.center
+      p.collapsed-margins.message-content!=htmlWebpackPlugin.options.t('instructions').router.message
+
+    ol
+      each instruction in htmlWebpackPlugin.options.t('instructions').router.steps
+        +render(instruction)
+
+  p.questions-link!=htmlWebpackPlugin.options.t('instructions').questions
