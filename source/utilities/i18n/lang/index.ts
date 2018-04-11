@@ -8,5 +8,6 @@ locales['nl'] = require('./nl.json')
 locales['zh-Hans'] = require('./zh-Hans.json')
 locales['zh-Hant'] = require('./zh-Hant.json')
 locales['ja-jp'] = require('./ja-jp.json')
+locales['ko-KR'] = require('./ko-KR.json')
 
 export default locales
