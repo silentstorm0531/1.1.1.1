@@ -1,0 +1,180 @@
+{
+  "title": "1.1.1.1 — 인터넷의 가장 빠르며 프라이버시를 우선하는 DNS 리졸버",
+  "description": "✌️✌️ 더 빠르고 더 안전하게 인터넷을 검색 하세요.",
+  "hero.introducing": "소개합니다",
+  "hero.description": "2분이면 더 빠르고 더 안전하게 인터넷을 검색할 수 있습니다.",
+  "hero.getStarted": "설치",
+  "hero.info": "정보",
+
+  "explanation.dnsHeader": "DNS: 인터넷의 주소록",
+  "explanation.dnsExplanation": "인터넷의 거의 모든것은 DNS 요청으로 시작 합니다. DNS는 인터넷의 주소록입니다. 링크를 클릭하거나, 앱을 열거나, 전자우편을 보낼 때 여러분의 컴퓨터가 하는 가장 첫번째 일은 DNS 주소록에게 물어 보는 것입니다: <strong class=\"subtle\">서버는 어디에 있나요?</strong>",
+  "explanation.dnsSlowInsecure": "하지만 DNS는 기본적으로 느리고 안전하지 못합니다. DNS 요청을 받는 여러분의 ISP나 인터넷상의 서버는 그 내용이 암호화되어 있어도 여러분이 방문하는 사이트나 사용하는 앱 이름을 볼 수 있습니다. 또한 일부 DNS 제공 업체는 여러분의 인터넷 활동에 관한 데이터를 판매 하거나 광고 타겟팅용으로 사용하고 있습니다.",
+  "explanation.dnsAlternative": "우리는 이것이 옳지 않다고 생각합니다. 여러분도 그렇게 생각한다면, 이제 다른 것을 사용합시다: <strong>1.1.1.1</strong>",
+
+  "explanation.privacyHeader": "프라이버시 우선: 보장합니다.",
+  "explanation.privacyExplanation": "우리는 1983년에 만들어진 DNS 프로토콜을 다시 생각해 보고 있습니다. <strong>1.1.1.1</strong>은 암호화된 DNS와 HTTPS상의 DNS 전송 모두를 지원합니다.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">우리는 여러분의 데이터를 판매하거나 광고 타겟팅용으로 사용하지 않습니다.</span>",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">우리는 (다른 회사들이 개인 정보를 남기는 방법인) 여러분의 IP 주소를 기록하지 않습니다</span>. 단지 선언하는 것 뿐 아니라, 우리의 약속을 지키는 것을 보여드리기 위해 매년 KPMG가 시스템 감사를 할 것입니다.",
+  "explanation.privacyConclusion": "솔직히 말하면 우리는 여러분이 인터넷에서 무엇을 하고 있는지 알고 싶지 않으며 - 그건 우리의 관심사가 아닙니다 - 그렇게 할 수 없도록 기술적인 조치를 위하고 있습니다.",
+
+  "explanation.performanceHeader": "누구보다도 빠릅니다",
+  "explanation.performanceSubheader": "실제 28% 빠릅니다.",
+  "explanation.fastestDNS": "우리는 1.1.1.1을 인터넷에서 가장 빠른 DNS 주소록으로 만들었습니다. 우리의 주장이 아닙니다. 독립적인 DNS 모니터 <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>는 1.1.1.1 을 전세계에서 제일 빠른 DNS 서비스로 선정했습니다.",
+  "explanation.speedContinued": "인터넷의 거의 모든것은 DNS 요청으로 시작하므로, 여러분의 컴퓨터에 가장 빠른 DNS 주소록을 선택하는 것은 온라인으로 하는 거의 모든 것을 더 빠르게 만들어 줄 것입니다.",
+
+  "instructions": {
+    "header": "{{device}} 설정 방법",
+    "explanation": "<strong>1.1.1.1</strong> 설정은 약 2분 정도 걸리고 특별한 기술이나 별도의 소프트웨어를 필요로 하지 않습니다. 컴퓨터 초보라고 해도 아래에서 사용하는 OS를 골라 쉽게 따라할 수 있는 설정 가이드를 찾아 보세요.",
+    "questions": "질문이 있나요? <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">커뮤니티 포럼</a>에 방문해 보세요",
+    "mac-os": {
+      "steps": [
+        {"tag": "li", "content": "시스템 환경설정을 엽니다."},
+        {"tag": "li", "content": "검색창에서 <strong>DNS 서버</strong>를 찾아 선택 합니다."},
+        {"tag": "li", "content": "DNS 서버를 추가하기 위해 <strong>+</strong> 단추를 눌러 <strong>1.1.1.1</strong>을 입력합니다"},
+        {"tag": "li", "content": "<strong>+</strong>를 다시 누르고 <strong>1.0.0.1</strong>을 입력합니다(이것은 여분의 설정을 위해서입니다)."},
+        {"tag": "li", "content": "<strong>Ok</strong>와 <strong>승인</strong>을 누릅니다."},
+        {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다 ✌️✌️"}
+      ]
+    },
+    "windows": {
+      "steps": [
+        {"tag": "li", "content": "시작 메뉴를 불러 <strong>제어판</strong>을 클릭합니다."},
+        {"tag": "li", "content": "<strong>네트워크 및 공유 센터</strong>를 클릭합니다."},
+        {"tag": "li", "content": "<strong>어댑터 설정 변경</strong>을 클릭합니다."},
+        {"tag": "li", "content": "연결된 무선 네트워크에서 오른쪽 클릭을 눌러 <strong>속성</strong>을 클릭합니다."},
+        {"tag": "li", "content": "<strong>Internet Protocol Version 4</strong>를 선택합니다(필요하면 Version 6을 선택합니다)."},
+        {"tag": "li", "content": "<strong>속성</strong>을 클릭합니다."},
+        {"tag": "li", "content": "보관용으로 기존의 DNS 서버 목록을 적어 둡니다."},
+        {"tag": "li", "content": "<strong>다음 DNS 서버 주소 사용</strong>을 클릭합니다."},
+        {
+          "tag": "li",
+          "children": [
+            {"tag": "span", "content": "DNS 서버 주소에 1.1.1.1 DNS 주소를 입력 합니다:"},
+            {
+              "tag": "ul",
+              "children": [
+                {"tag": "li", "content": "IPv4: <strong>1.1.1.1</strong>과 <strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "IPv6: <strong>2606:4700:4700::1111</strong>과 <strong>2606:4700:4700::1001</strong>"}
+              ]
+            }
+          ]
+        },
+        {"tag": "li", "content": "<strong>확인</strong>을 클릭하고 <strong>닫기</strong>를 클릭합니다."},
+        {"tag": "li", "content": "브라우저를 다시 시작합니다."},
+        {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"}
+      ]
+    },
+    "linux": {
+      "notice": "Ubuntu 기준으로 설명 합니다만, 대부분의 리눅스 배포본은 Network Manager를 통해 DNS를 설정합니다. 또 다른 방법으로 <code class=\"inline\">/etc/resolv.conf</code>을 설정할 수 있습니다",
+      "steps": [
+          {
+            "content": "왼쪽 메뉴 바의 Applications <i class=\"fas fa-th\"></i>아이콘을 클릭하세요.",
+            "tag": "li"
+          },
+          {
+            "content": "<strong>Settings</strong>을 클릭하고 <strong>Network</strong>을 클릭합니다.",
+            "tag": "li"
+          },
+          {
+            "content": "오른쪽에서 현재의 인터넷 연결을 찾아서 설정 아이콘 <i class=\"fas fa-cog\"></i> 을 클릭하세요.",
+            "tag": "li"
+          },
+          {
+            "content": "DNS 설정을 보기 위해 <strong>IPv4</strong> 또는 <strong>IPv6</strong> 탭을 클릭하세요.",
+            "tag": "li"
+          },
+          {
+            "content": "DNS 목록의 “Automatic” 토글을 <strong>꺼짐</strong>으로 합니다.",
+            "tag": "li"
+          },
+          {
+            "children": [
+              {"tag": "span", "content": "DNS 목록 필드에 1.1.1.1 DNS 주소를 입력 합니다:"},
+              {
+                "tag": "ul",
+                "children": [
+                  {"tag": "li", "content": "IPv4: <strong>1.1.1.1</strong>과 <strong>1.0.0.1</strong>"},
+                  {"tag": "li", "content": "IPv6: <strong>2606:4700:4700::1111</strong>과 <strong>2606:4700:4700::1001</strong>"}
+                ]
+              }
+            ]
+          },
+          {
+            "content": "<strong>Apply</strong>를 클릭하고 브라우저를 다시 시작합니다.",
+            "tag": "li"
+          },
+          {
+            "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다 ✌️✌️",
+            "tag": "li"
+          }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {"tag": "li", "content": "아이폰 홈 화면에서 <strong>설정</strong> 앱을 누르세요."},
+        {"tag": "li", "content": "<strong>Wi-Fi</strong>을 누르고 목록에서 사용하는 네트워크 이름을 누릅니다."},
+        {"tag": "li", "content": "<strong>DNS 구성</strong>을 누르고 <strong>수동</strong>을 누릅니다."},
+        {"tag": "li", "content": "기존 목록이 있다면 <strong>-</strong> 단추를 누르고 오른쪽의 <strong>삭제</strong>를 눌러 지웁니다."},
+        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 누르고 <strong>1.1.1.1</strong>을 입력합니다"},
+        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 다시 누르고 <strong>1.0.0.1</strong>. 이것은 여분의 설정을 위한 것입니다."},
+        {"tag": "li", "content": "우측 상단의 <strong>저장</strong> 단추를 누릅니다."},
+        {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"}
+      ]
+    },
+    "android": {
+      "message": "안드로이드는 수동으로 DNS를 변경하려면 고정 IP가 필요합니다. 이렇게 하면 인터넷 공유기에 추가 설정을 해야 하고 네트워크에 신규 장치를 추가할 때의 설정에 영향을 미칩니다. 대신 우리는 <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">공유기의 DNS 설정</button>을 변경하는 것을 권장 합니다. 이렇게 하면 여러분이 사용중인 네트워크의 모든 장치에 1.1.1.1 DNS의 속도와 안정성을 제공하게 됩니다.",
+      "steps": [
+        {"tag": "li", "content": "안드로이드 앱 목록에서 <strong>설정</strong> 앱을 누릅니다."},
+        {"tag": "li", "content": "<strong>무선 및 네트워크</strong> 섹션에서 <strong>Wi-Fi</strong>를 누릅니다."},
+        {"tag": "li", "content": "사용중인 네트워크 이름을 목록에서 골라 길게 눌러 메뉴를 불러 냅니다."},
+        {"tag": "li", "content": "<strong>네트워크 설정 변경</strong>을 누르고, <strong>고급 옵션</strong>을 누릅니다."},
+        {"tag": "li", "content": "<strong>IP 설정</strong>을 누릅니다."},
+        {"tag": "li", "content": "<strong>DHCP</strong>를 <strong>고정</strong>으로 변경합니다."},
+        {"tag": "li", "content": "공유기 설정 정보를 이용하여 이 장치의 IP주소와 게이트웨이를 입력합니다."},
+        {"tag": "li", "content": "<strong>DNS</strong>필드의 기존 값을 지웁니다."},
+        {"tag": "li", "content": "<strong>DNS 1</strong>필드를 누르고 <strong>1.1.1.1</strong>을 입력합니다."},
+        {"tag": "li", "content": "<strong>DNS 2</strong>필드를 누르고 <strong>1.0.0.1</strong>을 입력합니다(이것은 여분의 설정을 위한 것입니다)."},
+        {"tag": "li", "content": "<strong>저장</strong>을 누릅니다."},
+        {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"}
+      ]
+    },
+    "router": {
+      "message": "여러분의 인터넷 공유기 설정 방법에 대해서는 해당 공유기 설명서를 참조해 주세요.",
+      "steps": [
+        {"tag": "li", "content": "사용 중인 무선 네트워크에 연결합니다."},
+        {"tag": "li", "content": "브라우저에 공유기 주소를 입력합니다."},
+        {"tag": "li", "content": "로그인 창이 나오면 사용자 이름과 암호를 입력합니다. 공유기 설명서를 참조해 주세요."},
+        {"tag": "li", "content": "공유기 설정 페이지에서 <strong>DNS 서버</strong> 설정을 찾습니다."},
+        {"tag": "li", "content": "보관용으로 기존의 DNS 서버 목록을 적어 둡니다."},
+        {
+          "tag": "li",
+          "children": [
+            {"tag": "span", "content": "DNS 서버 주소를 1.1.1.1 DNS로 바꿉니다:"},
+            {
+              "tag": "ul",
+              "children": [
+                {"tag": "li", "content": "IPv4: <strong>1.1.1.1</strong>과 <strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "IPv6: <strong>2606:4700:4700::1111</strong>과 <strong>2606:4700:4700::1001</strong>"}
+              ]
+            }
+          ]
+        },
+        {"tag": "li", "content": "설정을 저장하고 브라우저를 다시 시작합니다."},
+        {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"}
+      ]
+    }
+  },
+
+  "share.header": "✌️✌️ 더 빠르고 더 안전한 인터넷을 여러분의 친구와 공유하세요.",
+  "share.emailSubject": "✌️✌️ 더 빠르고 더 안전하게 인터넷을 검색 하세요 — 1.1.1.1 DNS 리졸버",
+  "share.emailBody": "“1.1.1.1” 은 인터넷 검색을 빠르고 더 안전하게 합니다. https://1.1.1.1 사이트에 방문하여 더 많은 정보와 2분 내로 설정할 수 있는 방법을 알아 보세요!",
+  "share.tweetBody": "✌️✌️ 빠르고, 안전한 인터넷이 여기 있습니다. 2분이면 1.1.1.1 DNS 리졸버를 설정할 수 있습니다.",
+
+  "faq.whosBehindThis": "누가 만들었나요?",
+  "faq.partnership": "<strong>1.1.1.1</strong>은 Cloudflare와 APNIC의 제휴로 만들어졌습니다.",
+  "faq.network": "Cloudflare는 전 세계에서 가장 크고 빠른 네트워크 중 하나를 운영하고 있습니다. APNIC은 아시아 태평양과 오세아니아 지역의 IP 주소 할당을 관리하는 비영리 조직입니다.",
+  "faq.networkContinued": "Cloudflare에게는 네트워크가 있었고 APNIC에게는 IP 주소(1.1.1.1)가 있었습니다. 두 조직은 더 나은 인터넷을 만드는 것을 돕고자 하는 미션에 이끌렸습니다. 각자의 동기에 대해서는 각각의 글에서 더 자세히 알아볼 수 있습니다: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 블로그</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 블로그</a>.",
+  "faq.canIintegrate": "1.1.1.1을 내 시스템에 통합할 수 있나요?",
+  "faq.integrationInfo": "여러분이 브라우저, 운영체제, 앱, 인터넷 공유기 또는 VPN 제조사이고, 프라이버시 우선의 빠르고 현대적인 DNS 서비스에 참여하고 싶다면 답은 <strong class=\"subtle\">예!</strong> 입니다.",
+  "faq.integrationDocs": "HTTPS 상의 DNS (DNS over HTTPS, DoH)를 사용하여 장치의 속도를 향상시키면서 고객에게 추가적인 보안을 제공할 수 있습니다. 더 좋은 점은 라이센싱이나 고객 프라이버시의 측면에서 비용 없이 가능하다는 것입니다. 1.1.1.1과 HTTPS상의 DNS 지원에 대해서는 <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">개발자 문서</a>를 참조 하세요."
+}

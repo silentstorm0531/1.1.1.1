@@ -219,6 +219,7 @@ const pugLoaders = locales.map((locale) => {
   }
 })
 
+
 $.plugins.push(...locales.map((locale) => {
   return new HtmlWebpackPlugin({
     favicon: 'source/media/favicon.png',
