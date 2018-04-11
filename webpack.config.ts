@@ -173,6 +173,11 @@ const locales = [
     path: 'ja-jp/',
     code: 'ja-jp',
     label: '日本語'
+  },
+  {
+    path: 'ko-KR/',
+    code: 'ko-KR',
+    label: '한국어'
   }
 ]
 
@@ -213,7 +218,6 @@ const pugLoaders = locales.map((locale) => {
     ]
   }
 })
-
 
 $.plugins.push(...locales.map((locale) => {
   return new HtmlWebpackPlugin({
