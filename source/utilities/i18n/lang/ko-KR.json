@@ -15,7 +15,7 @@
   "explanation.privacyExplanation": "우리는 1983년에 만들어진 DNS 프로토콜을 다시 생각해 보고 있습니다. <strong>1.1.1.1</strong>은 암호화된 DNS와 HTTPS상의 DNS 전송 모두를 지원합니다.",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">우리는 여러분의 데이터를 판매하거나 광고 타겟팅용으로 사용하지 않습니다.</span>",
   "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">우리는 (다른 회사들이 개인 정보를 남기는 방법인) 여러분의 IP 주소를 기록하지 않습니다</span>. 단지 선언하는 것 뿐 아니라, 우리의 약속을 지키는 것을 보여드리기 위해 매년 KPMG가 시스템 감사를 할 것입니다.",
-  "explanation.privacyConclusion": "솔직히 말하면 우리는 여러분이 인터넷에서 무엇을 하고 있는지 알고 싶지 않으며 - 그건 우리의 관심사가 아닙니다 - 그렇게 할 수 없도록 기술적인 조치를 위하고 있습니다.",
+  "explanation.privacyConclusion": "솔직히 말하면 우리는 여러분이 인터넷에서 무엇을 하고 있는지 알고 싶지 않으며 - 그건 우리의 관심사가 아닙니다 - 그렇게 할 수 없도록 기술적인 조치를 취하고 있습니다.",
 
   "explanation.performanceHeader": "누구보다도 빠릅니다",
   "explanation.performanceSubheader": "실제 28% 빠릅니다.",
@@ -122,7 +122,7 @@
       ]
     },
     "android": {
-      "message": "안드로이드는 수동으로 DNS를 변경하려면 고정 IP가 필요합니다. 이렇게 하면 인터넷 공유기에 추가 설정을 해야 하고 네트워크에 신규 장치를 추가할 때의 설정에 영향을 미칩니다. 대신 우리는 <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">공유기의 DNS 설정</button>을 변경하는 것을 권장 합니다. 이렇게 하면 여러분이 사용중인 네트워크의 모든 장치에 1.1.1.1 DNS의 속도와 안정성을 제공하게 됩니다.",
+      "message": "안드로이드는 수동으로 DNS를 변경하려면 고정 IP가 필요합니다. 이렇게 하면 인터넷 공유기에 추가 설정을 해야 하고 네트워크에 신규 장치를 추가할 때의 설정에 영향을 미칩니다. 대신 <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">공유기의 DNS 설정</button>을 변경하는 것을 권장 합니다. 이렇게 하면 사용중인 네트워크의 모든 장치에 1.1.1.1 DNS의 속도와 안정성을 제공하게 됩니다.",
       "steps": [
         {"tag": "li", "content": "안드로이드 앱 목록에서 <strong>설정</strong> 앱을 누릅니다."},
         {"tag": "li", "content": "<strong>무선 및 네트워크</strong> 섹션에서 <strong>Wi-Fi</strong>를 누릅니다."},
@@ -139,7 +139,7 @@
       ]
     },
     "router": {
-      "message": "여러분의 인터넷 공유기 설정 방법에 대해서는 해당 공유기 설명서를 참조해 주세요.",
+      "message": "사용중인 인터넷 공유기 설정 방법에 대해서는 해당 공유기 설명서를 참조해 주세요.",
       "steps": [
         {"tag": "li", "content": "사용 중인 무선 네트워크에 연결합니다."},
         {"tag": "li", "content": "브라우저에 공유기 주소를 입력합니다."},
