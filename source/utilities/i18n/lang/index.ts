@@ -1,13 +1,13 @@
 const locales: {[index: string]: any} = {}
 
 locales['en-US'] = require('./en-US.json')
-locales['es'] = require('./es.json')
-locales['fr'] = require('./fr.json')
-locales['de'] = require('./de.json')
-locales['nl'] = require('./nl.json')
+locales['es-ES'] = require('./es-ES.json')
+locales['fr-FR'] = require('./fr-FR.json')
+locales['de-DE'] = require('./de-DE.json')
+locales['nl-NL'] = require('./nl-NL.json')
 locales['zh-Hans'] = require('./zh-Hans.json')
 locales['zh-Hant'] = require('./zh-Hant.json')
-locales['ja-jp'] = require('./ja-jp.json')
+locales['ja-JP'] = require('./ja-JP.json')
 locales['ko-KR'] = require('./ko-KR.json')
 
 export default locales

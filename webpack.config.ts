@@ -140,23 +140,23 @@ const locales = [
     label: 'English'
   },
   {
-    path: 'es/',
-    code: 'es',
+    path: 'es-ES/',
+    code: 'es-ES',
     label: 'Español'
   },
   {
-    path: 'fr/',
-    code: 'fr',
+    path: 'fr-FR/',
+    code: 'fr-FR',
     label: 'Français'
   },
   {
-    path: 'de/',
-    code: 'de',
+    path: 'de-DE/',
+    code: 'de-DE',
     label: 'Deutsch'
   },
   {
-    path: 'nl/',
-    code: 'nl',
+    path: 'nl-NL/',
+    code: 'nl-NL',
     label: 'Nederlands'
   },
   {
@@ -170,8 +170,8 @@ const locales = [
     label: '繁體中文'
   },
   {
-    path: 'ja-jp/',
-    code: 'ja-jp',
+    path: 'ja-JP/',
+    code: 'ja-JP',
     label: '日本語'
   },
   {
