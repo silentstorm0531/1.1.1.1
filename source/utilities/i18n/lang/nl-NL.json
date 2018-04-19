@@ -119,7 +119,7 @@
         {
             "children": [
               {"tag": "span", "content": "Vul de 1.1.1.1 DNS addressen in in het DNS veld:"},
-              {"tag": "li", "content": "<strong>1.1.1.1,1.0.0.1</strong>"}
+              {"tag": "li", "content": "<strong>1.1.1.1,1.0.0.1</strong>"},
               {"tag": "li", "content": "<strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"}
             ]
         },
