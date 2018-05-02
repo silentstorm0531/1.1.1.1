@@ -194,7 +194,7 @@ const pugLoaders = locales.map((locale) => {
   return {
     test: /\.pug$/,
     exclude,
-    include: new RegExp(`${locale.code}\\.pug`),
+    include: new RegExp(`${locale.code}.*\/index\.pug$`),
     use: [
       {
         loader: 'html-loader',
@@ -228,8 +228,16 @@ const pugLoaders = locales.map((locale) => {
 $.plugins.push(...locales.map((locale) => {
   return new HtmlWebpackPlugin({
     favicon: 'source/media/favicon.png',
-    template: joinP(`source/pages/${locale.code}.pug`),
+    template: joinP(`source/pages/${locale.code}/index.pug`),
     filename: `${locale.path}index.html`
+  })
+}))
+
+$.plugins.push(...locales.map((locale) => {
+  return new HtmlWebpackPlugin({
+    favicon: 'source/media/favicon.png',
+    template: joinP(`source/pages/${locale.code}/help/index.pug`),
+    filename: `${locale.path}help/index.html`
   })
 }))
 
