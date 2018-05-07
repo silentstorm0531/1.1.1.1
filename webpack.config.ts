@@ -121,7 +121,7 @@ if (environment === 'production') {
   )
 }
 
-let htmlMinify: boolean | any = false
+let htmlMinify: boolean | { [index: string]: boolean } = false
 
 if (environment !== 'development') {
   htmlMinify = {
