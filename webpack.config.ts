@@ -101,10 +101,10 @@ if (environment === 'production') {
 
   $.plugins.push(
     new SourceMapDevToolPlugin({
-      filename: '[hash].map'
+      filename: '[name]-[hash].map'
     }),
     new MiniCssExtractPlugin({
-      filename: '[hash].css',
+      filename: '[name]-[hash].css',
       chunkFilename: '[id].css',
     }),
     new UglifyJsPlugin({
