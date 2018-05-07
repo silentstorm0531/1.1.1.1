@@ -37,7 +37,8 @@ interface CustomConfiguration extends webpack.Configuration {
 const $: CustomConfiguration = {
   mode: environment,
   entry: {
-    site: ['./source/pages/index.ts']
+    site: ['./source/pages/index.ts'],
+    help: ['./source/pages/help.ts']
   },
   plugins: []
 }
@@ -51,8 +52,8 @@ $.output = {
   publicPath: '/',
   // publicPath: '',
   path: joinP('build'),
-  filename: '[hash].js',
-  library: '[hash]',
+  filename: '[name]-[hash].js',
+  library: '[name]-[hash]',
   libraryTarget: 'umd'
 }
 
@@ -229,7 +230,8 @@ $.plugins.push(...locales.map((locale) => {
   return new HtmlWebpackPlugin({
     favicon: 'source/media/favicon.png',
     template: joinP(`source/pages/${locale.code}/index.pug`),
-    filename: `${locale.path}index.html`
+    filename: `${locale.path}index.html`,
+    chunks: ['site']
   })
 }))
 
@@ -237,7 +239,8 @@ $.plugins.push(...locales.map((locale) => {
   return new HtmlWebpackPlugin({
     favicon: 'source/media/favicon.png',
     template: joinP(`source/pages/${locale.code}/help/index.pug`),
-    filename: `${locale.path}help/index.html`
+    filename: `${locale.path}help/index.html`,
+    chunks: ['help']
   })
 }))
 

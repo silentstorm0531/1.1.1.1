@@ -1,0 +1,41 @@
+@import "mixins/media-query-variables"
+
+body.help-page
+  background-color hsl(47, 34%, 98%)
+
+  section[data-section="setup"]
+    border-top 2px solid hsla(0, 0%, 20%, .3)
+    background-color transparent
+
+    .additional-content.debug-link
+      display none
+
+section[data-section="help"]
+  display flex
+  justify-content center
+  align-items center
+  flex-flow column
+  font-family var(--sans-serif-fonts)
+  font-weight 300
+  -webkit-font-smoothing antialiased
+  min-height calc(90vh)
+  padding var(--section-vertical-padding) 1em 1em
+  text-align left
+  z-index 1
+  translate transform3d(0, 0, 0)
+
+  .hero-copy > svg
+    height 10rem
+    fill hsla(0, 0%, 20%, 1)
+
+  h2
+    font-weight 600
+
+  h3 > a
+    color currentColor
+
+  h3
+    margin-bottom 0
+  .response
+    margin-top 0
+    font-weight 600

@@ -82,7 +82,6 @@ section#setup-instructions(data-section="setup" data-ref="setup")
       defer
       src="https://embed.cloudflarestream.com/embed/we4g.fla9.latest.js?video=92b27227d737a866adc8b0572cf0db89")
 
-
   .instructions(data-platform="android")
     .message
       p.collapsed-margins.message-content!=htmlWebpackPlugin.options.t('instructions').android.message
@@ -107,4 +106,5 @@ section#setup-instructions(data-section="setup" data-ref="setup")
       each instruction in htmlWebpackPlugin.options.t('instructions').router.steps
         +render(instruction)
 
-  p.questions-link!=htmlWebpackPlugin.options.t('instructions').questions
+  p.additional-content.debug-link!=htmlWebpackPlugin.options.t('instructions').debug
+  p.additional-content.questions-link!=htmlWebpackPlugin.options.t('instructions').questions

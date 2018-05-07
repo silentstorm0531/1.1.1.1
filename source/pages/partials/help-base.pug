@@ -53,8 +53,8 @@ html(lang=htmlWebpackPlugin.options.locale.code prefix="og: http://ogp.me/ns#")
       gtag('js', new Date())
       gtag('config', 'UA-10218544-23')
 
-  body
+  body.help-page
     main
-      h1 1.1.1.1 Help 🤔
+      include ./help.pug
       include ./setup.pug
       include ./footer.pug
