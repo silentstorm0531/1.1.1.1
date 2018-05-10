@@ -59,6 +59,10 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-1.2.0.tgz#81a6731ce4df43619e5c8c945383b3e62a89ea86"
 
+"@types/googlemaps@^3.30.8":
+  version "3.30.8"
+  resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.30.8.tgz#cc6ab90f79f3a8b799860ea1d70252a221af702e"
+
 "@types/html-minifier@*":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@types/html-minifier/-/html-minifier-3.5.1.tgz#b476b9e89ad4d3953fb2d278df994066144f6629"

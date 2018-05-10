@@ -1,17 +1,14 @@
 section(data-section="help")
-  h1.hero-copy(alt="1.1.1.1 DNS resolver")
-    include ../../media/logo.svg
+  header
+    h1.hero-copy(alt="1.1.1.1 DNS resolver")
+      include ../../media/logo.svg
+
+    h2.description Connection Information
 
   .connection-info
-    h2 My Internet Connection
-
     .entry
       h3 What's my IP address?
-      h4.response(data-ref="myIPAddress") 🚚 Fetching...
-
-    .entry
-      h3 Does my ISP support IPv6?
-      h4.response(data-ref="supportsIPv6") 🚚 Fetching...
+      h4.response.code(data-ref="myIPAddress") 🚚 Fetching...
 
     .entry
       h3
@@ -21,15 +18,20 @@ section(data-section="help")
 
       h4.response(data-ref="datacenterLocation") 🚚 Fetching...
 
+  .map#datacenter-map
+
+  .connection-info
     .entry
       h3 How fast is my connection to the Cloudflare datacenter?
       h4.response(data-ref="datacenterConnectionSpeed") 🚚 Fetching...
 
-    h2 My DNS Configuration
+    .entry
+      h3 Does my ISP support IPv6?
+      h4.response(data-ref="supportsIPv6") 🚚 Fetching...
 
     .entry
       h3 What's the IP address of my DNS resolver?
-      h4.response(data-ref="dnsResolverIP") 🚚 Fetching...
+      h4.response.code(data-ref="dnsResolverIP") 🚚 Fetching...
 
     .entry
       h3

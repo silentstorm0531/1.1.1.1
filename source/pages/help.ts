@@ -2,11 +2,11 @@ import '../styles/base.styl'
 
 import { logoBanner } from './console'
 import initInstructionPicker from './instruction-picker'
+const mapTheme = require('./google-map-theme.json')
 
 import uuidv4 from 'uuid/v4'
 const ipV6Pattern = /^((?:[0-9A-Fa-f]{1,4}))((?::[0-9A-Fa-f]{1,4}))*::((?:[0-9A-Fa-f]{1,4}))((?::[0-9A-Fa-f]{1,4}))*|((?:[0-9A-Fa-f]{1,4}))((?::[0-9A-Fa-f]{1,4})){7}$/
 
-console.log(logoBanner)
 console.log(window.btoa('Join us and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
 
 interface TraceInfo {
@@ -45,6 +45,8 @@ function setRef (ref: string, value: any) {
       break
     default:
       element.textContent = value.toString()
+
+  element.classList.add('resolved')
   }
 }
 
@@ -72,9 +74,9 @@ async function init () {
   }
 
   setRef('myIPAddress', traceInfo.ip)
-  setRef('datacenterLocation', traceInfo.colo)
   setRef('datacenterConnectionSpeed', `${traceEnd}ms`)
   setRef('supportsIPv6', ipV6Pattern.test(traceInfo.ip))
+  setRef('datacenterLocation', `Approximate location: ${traceInfo.colo} Airport`)
 
   let resolverInfo = {} as ResolverInfo
 
@@ -87,6 +89,56 @@ async function init () {
 
   setRef('dnsResolverIP', resolverInfo.ip)
   setRef('supportsDNSSEC', resolverInfo.dnssec)
+
+  interface GeocoderResultLiteral extends google.maps.GeocoderResult {
+    location: google.maps.LatLngBoundsLiteral;
+  }
+
+  let geocoderInfo: {
+    results: GeocoderResultLiteral[]
+    status: google.maps.GeocoderStatus
+  }
+
+  try {
+    const geocoderResponse = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=IATA+${traceInfo.colo}&key=AIzaSyCuebBICxH3FZeML7_xQVszyKm_sswAcac`)
+
+    geocoderInfo = await geocoderResponse.json()
+  } catch (error) {
+    console.log('Maps error:', error)
+  }
+
+
+  if (geocoderInfo!.status === google.maps.GeocoderStatus.OK) {
+    const [result] = geocoderInfo!.results
+
+    const [city, stateAndZip = ''] = result.formatted_address.split(', ')
+    const [state] = stateAndZip.split(' ')
+    const name = state ? `${city}, ${state}` : city
+    setRef('datacenterLocation', name)
+
+    const mapEl = document.getElementById('datacenter-map')!
+    mapEl.classList.add('resolved')
+
+    const googleMap = new google.maps.Map(mapEl, {
+        center: result.geometry.location,
+        styles: mapTheme.minimal,
+        disableDefaultUI: true,
+        disableDoubleClickZoom: true,
+        draggable: true,
+        mapTypeControl: false,
+        panControl: false,
+        scaleControl: false,
+        scrollwheel: false,
+        zoomControl: false,
+        zoom: 9
+    })
+
+    const marker = new google.maps.Marker({
+      map: googleMap,
+      position: result.geometry.location,
+      draggable: false
+    })
+  }
 
   console.debug({traceInfo, resolverInfo})
 }
