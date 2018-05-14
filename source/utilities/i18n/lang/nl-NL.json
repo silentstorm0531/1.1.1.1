@@ -24,7 +24,7 @@
 
   "instructions": {
     "header": "Instellingen voor {{device}}",
-    "explanation": "<strong class=\"code\">1.1.1.1</strong> instellen neemt slechts twee minuutjes, en vereist geen technische kennis, of speciale software. Zelfs als je een computer leek bent, kies je toestel uit de lijst, en volg de eenvoudig te volgen instructies.",
+    "explanation": "<strong>1.1.1.1</strong> instellen neemt slechts twee minuutjes, en vereist geen technische kennis, of speciale software. Zelfs als je een computer leek bent, kies je toestel uit de lijst, en volg de eenvoudig te volgen instructies.",
     "questions": "Vragen? Bezoek ons <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
     "mac-os": {
       "steps": [

@@ -24,7 +24,7 @@
 
   "instructions": {
     "header": "{{device}} 설정 방법",
-    "explanation": "<strong class=\"code\">1.1.1.1</strong> 설정은 약 2분 정도 걸리고 특별한 기술이나 별도의 소프트웨어를 필요로 하지 않습니다. 컴퓨터 초보라고 해도 아래에서 사용하는 OS를 골라 쉽게 따라할 수 있는 설정 가이드를 찾아 보세요.",
+    "explanation": "<strong>1.1.1.1</strong> 설정은 약 2분 정도 걸리고 특별한 기술이나 별도의 소프트웨어를 필요로 하지 않습니다. 컴퓨터 초보라고 해도 아래에서 사용하는 OS를 골라 쉽게 따라할 수 있는 설정 가이드를 찾아 보세요.",
     "questions": "질문이 있나요? <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">커뮤니티 포럼</a>에 방문해 보세요",
     "mac-os": {
       "steps": [

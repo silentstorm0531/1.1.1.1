@@ -24,7 +24,7 @@
 
     "instructions": {
       "header": "Configure no {{device}}",
-      "explanation": "Configurar o <strong class=\"code\">1.1.1.1</strong> leva dois minutos e não precisa de habilidades técnicas ou software específico. Mesmo que você seja um iniciante em computadores, escolha um dispositivo abaixo para um passo-a-passo fácil de seguir.",
+      "explanation": "Configurar o <strong>1.1.1.1</strong> leva dois minutos e não precisa de habilidades técnicas ou software específico. Mesmo que você seja um iniciante em computadores, escolha um dispositivo abaixo para um passo-a-passo fácil de seguir.",
       "questions": "Dúvidas? Visite nosso <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Fórum da Comunidade</a>",
       "mac-os": {
         "steps": [

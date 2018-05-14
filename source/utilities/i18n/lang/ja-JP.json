@@ -24,7 +24,7 @@
 
   "instructions": {
     "header": "{{device}}でのセットアップ",
-    "explanation": "2分で<strong class=\"code\">1.1.1.1</strong>をセットアップします。 下記のデバイスを選択してください。",
+    "explanation": "2分で<strong>1.1.1.1</strong>をセットアップします。 下記のデバイスを選択してください。",
     "questions": "質問ですか<a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">コミュニティフォーラム</a>をご覧ください",
     "mac-os": {
       "steps": [

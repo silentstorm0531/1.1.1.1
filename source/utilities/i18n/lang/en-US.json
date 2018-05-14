@@ -24,7 +24,7 @@
 
   "instructions": {
     "header": "Setup on {{device}}",
-    "explanation": "Setting up <strong class=\"code\">1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
+    "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
     "debug": "Looking for more info about your internet connection? Check out our <a target=\"_blank\" href=\"./help\">debug page</a>.",
     "questions": "Still have questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
     "mac-os": {
