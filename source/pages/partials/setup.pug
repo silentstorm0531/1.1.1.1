@@ -6,7 +6,7 @@ mixin render(input)
   else if input.content
     #{input.tag}!=input.content
 
-section#setup-instructions(data-section="setup" data-ref="setup")
+section#setup-instructions.help-initial-hidden(data-section="setup" data-ref="setup")
   h1.collapsed-top-margin(
     data-ref="deviceLabel"
     data-label=htmlWebpackPlugin.options.t('instructions').header)

@@ -24,13 +24,17 @@ interface TraceInfo {
 }
 
 interface ResolverInfo {
-  "ip": string
-  "ip_version": number
-  "protocol": string
-  "dnssec": boolean
-  "edns": number
-  "client_subnet": number
-  "qname_minimization": boolean
+  ip: string
+  ip_version: number
+  protocol: string
+  dnssec: boolean
+  edns: number
+  client_subnet: number
+  qname_minimization: boolean
+  isp: {
+    asn: number
+    name: string
+  }
 }
 
 function setRef (ref: string, value: any) {
@@ -89,6 +93,12 @@ async function init () {
 
   setRef('dnsResolverIP', resolverInfo.ip)
   setRef('supportsDNSSEC', resolverInfo.dnssec)
+
+  const setupSection = <HTMLElement>document.getElementById('setup-instructions')!
+
+  if (resolverInfo.isp.name.toLowerCase() !== 'cloudflare') {
+    setupSection.classList.remove('help-initial-hidden')
+  }
 
   // interface GeocoderResultLiteral extends google.maps.GeocoderResult {
   //   location: google.maps.LatLngBoundsLiteral;
