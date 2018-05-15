@@ -5,7 +5,6 @@ import initInstructionPicker from './instruction-picker'
 const mapTheme = require('./google-map-theme.json')
 
 import uuidv4 from 'uuid/v4'
-const ipV6Pattern = /^((?:[0-9A-Fa-f]{1,4}))((?::[0-9A-Fa-f]{1,4}))*::((?:[0-9A-Fa-f]{1,4}))((?::[0-9A-Fa-f]{1,4}))*|((?:[0-9A-Fa-f]{1,4}))((?::[0-9A-Fa-f]{1,4})){7}$/
 
 console.log(window.btoa('Join us and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
 
@@ -56,7 +55,6 @@ function setRef (ref: string, value: any) {
 
 async function init () {
   initInstructionPicker()
-  // https://[2606:4700:4700::1111]/resolvertest
 
   const traceInfo = {} as TraceInfo
   let traceEnd: number
@@ -79,7 +77,6 @@ async function init () {
 
   setRef('myIPAddress', traceInfo.ip)
   setRef('datacenterConnectionSpeed', `${traceEnd}ms`)
-  setRef('supportsIPv6', ipV6Pattern.test(traceInfo.ip))
   setRef('datacenterLocation', `Approximate location: ${traceInfo.colo} Airport`)
 
   let resolverInfo = {} as ResolverInfo
@@ -95,6 +92,14 @@ async function init () {
   setRef('supportsDNSSEC', resolverInfo.dnssec)
 
   const setupSection = <HTMLElement>document.getElementById('setup-instructions')!
+
+  try {
+    const ipV6Response = await fetch('https://[2606:4700:4700::1111]/resolvertest')
+    setRef('supportsIPv6', ipV6Response.ok)
+  } catch (error) {
+    setRef('supportsIPv6', false)
+    console.log('IPv6 Error', error)
+  }
 
   if (resolverInfo.isp.name.toLowerCase() !== 'cloudflare') {
     setupSection.classList.remove('help-initial-hidden')
