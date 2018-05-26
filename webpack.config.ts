@@ -166,6 +166,11 @@ const locales = [
     label: 'Nederlands'
   },
   {
+    path: 'tr-TR/',
+    code: 'tr-TR',
+    label: 'Türkçe'
+  },
+  {
     path: 'zh-Hans/',
     code: 'zh-Hans',
     label: '简体中文'
