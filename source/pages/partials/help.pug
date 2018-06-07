@@ -6,9 +6,27 @@ section(data-section="help")
     h2.description Connection Information
 
   .connection-info
+    h2 Debug Information
+
     .entry
-      h3 What's my IP address?
-      h4.response.code(data-ref="myIPAddress") 🚚 Fetching...
+      h3 Connected to Resolver?
+      h4.response.code(data-ref="isCf") 🚚 Fetching...
+
+    .entry
+      h3 Using DoT?
+      h4.response.code(data-ref="isDot") 🚚 Fetching...
+
+    .entry
+      h3 Using DoH?
+      h4.response.code(data-ref="isDoh") 🚚 Fetching...
+
+    .entry
+      h3 AS Name
+      h4.response.code(data-ref="ispName") 🚚 Fetching...
+
+    .entry
+      h3 AS Number
+      h4.response.code(data-ref="ispAsn") 🚚 Fetching...
 
     .entry
       h3
@@ -18,22 +36,20 @@ section(data-section="help")
 
       h4.response(data-ref="datacenterLocation") 🚚 Fetching...
 
-    //- .map#datacenter-map
+    h2 Connectivity to Resolver IP Addresses
 
     .entry
-      h3 How fast is my connection to the Cloudflare datacenter?
-      h4.response(data-ref="datacenterConnectionSpeed") 🚚 Fetching...
+      h3 1.1.1.1
+      h4.response.code(data-ref="resolverIp-1.1.1.1") 🚚 Fetching...
 
     .entry
-      h3 What's the IP address of my DNS resolver?
-      h4.response.code(data-ref="dnsResolverIP") 🚚 Fetching...
+      h3 1.0.0.1
+      h4.response.code(data-ref="resolverIp-1.0.0.1") 🚚 Fetching...
 
     .entry
-      h3 Does my ISP support IPv6?
-      h4.response(data-ref="supportsIPv6") 🚚 Fetching...
+      h3 2606:4700:4700::1111
+      h4.response.code(data-ref="resolverIp-2606:4700:4700::1111") 🚚 Fetching...
 
     .entry
-      h3
-        | Does my DNS resolver support
-        | <a href="https://www.cloudflare.com/dns/dnssec/" target="_blank">DNSSEC</a>?
-      h4.response(data-ref="supportsDNSSEC") 🚚 Fetching...
+      h3 2606:4700:4700::1001
+      h4.response.code(data-ref="resolverIp-2606:4700:4700::1001") 🚚 Fetching...
