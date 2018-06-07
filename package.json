@@ -49,6 +49,7 @@
     "ts-node": "^5.0.1",
     "tslint": "^5.9.1",
     "tslint-config-standard": "^7.0.0",
+    "tslint-react": "^3.6.0",
     "tspath": "^1.2.10",
     "typescript": "^2.7.2",
     "uglifyjs-webpack-plugin": "^1.2.4",
