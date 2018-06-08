@@ -67,13 +67,13 @@ resolverIps.forEach(ip => {
 async function init () {
   initInstructionPicker()
 
-  for (let key in resolverTests) {
-    const host = resolverTests[key];
+  for (let ref in resolverTests) {
+    const host = resolverTests[ref];
     try {
       const res = await fetch(`https://${host}/resolvertest`)
-      setRef(key, res.ok)
+      setRef(ref, res.ok)
     } catch (error) {
-      setRef(key, false)
+      setRef(ref, false)
     }
   }
 
