@@ -34,7 +34,6 @@ interface ResolverInfo {
   }
 }
 
-
 function setRef (ref: string, value: any) {
   const element = <HTMLElement>document.querySelector(`[data-ref="${ref}"]`)!
 
