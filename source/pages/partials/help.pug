@@ -6,50 +6,40 @@ section(data-section="help")
     h2.description Connection Information
 
   .connection-info
-    h2 Debug Information
+    h3 Debug Information
 
-    .entry
-      h3 Connected to Resolver?
-      h4.response.code(data-ref="isCf") 🚚 Fetching...
+    table.debug-table
+      tr
+        td Connected to Resolver
+        td(data-ref="isCf") 🚚 Fetching...
+      tr
+        td Using DNS over HTTPS (DoH)
+        td(data-ref="isDot") 🚚 Fetching...
+      tr
+        td Using DNS over TLS (DoT)
+        td(data-ref="isDoh") 🚚 Fetching...
+      tr
+        td AS Name
+        td(data-ref="ispName") 🚚 Fetching...
+      tr
+        td AS Number
+        td(data-ref="ispAsn") 🚚 Fetching...
+      tr
+        td <a href="https://support.cloudflare.com/hc/en-us/articles/200169986-Which-Cloudflare-data-center-do-I-reach-" target="_blank">Cloudflare Data Center</a>
+        td(data-ref="datacenterLocation") 🚚 Fetching...
 
-    .entry
-      h3 Using DoT?
-      h4.response.code(data-ref="isDot") 🚚 Fetching...
+    h3 Connectivity to Resolver IP Addresses
 
-    .entry
-      h3 Using DoH?
-      h4.response.code(data-ref="isDoh") 🚚 Fetching...
-
-    .entry
-      h3 AS Name
-      h4.response.code(data-ref="ispName") 🚚 Fetching...
-
-    .entry
-      h3 AS Number
-      h4.response.code(data-ref="ispAsn") 🚚 Fetching...
-
-    .entry
-      h3
-        | Which
-        | <a href="https://support.cloudflare.com/hc/en-us/articles/200169986-Which-Cloudflare-data-center-do-I-reach-" target="_blank">Cloudflare datacenter</a>
-        | am I connecting to?
-
-      h4.response(data-ref="datacenterLocation") 🚚 Fetching...
-
-    h2 Connectivity to Resolver IP Addresses
-
-    .entry
-      h3 1.1.1.1
-      h4.response.code(data-ref="resolverIp-1.1.1.1") 🚚 Fetching...
-
-    .entry
-      h3 1.0.0.1
-      h4.response.code(data-ref="resolverIp-1.0.0.1") 🚚 Fetching...
-
-    .entry
-      h3 2606:4700:4700::1111
-      h4.response.code(data-ref="resolverIp-2606:4700:4700::1111") 🚚 Fetching...
-
-    .entry
-      h3 2606:4700:4700::1001
-      h4.response.code(data-ref="resolverIp-2606:4700:4700::1001") 🚚 Fetching...
+    table.debug-table
+      tr
+        td.ip-address 1.1.1.1
+        td(data-ref="resolverIp-1.1.1.1") 🚚 Fetching...
+      tr
+        td.ip-address 1.0.0.1
+        td(data-ref="resolverIp-1.0.0.1") 🚚 Fetching...
+      tr
+        td.ip-address 2606:4700:4700::1111
+        td(data-ref="resolverIp-2606:4700:4700::1111") 🚚 Fetching...
+      tr
+        td.ip-address 2606:4700:4700::1001
+        td(data-ref="resolverIp-2606:4700:4700::1001") 🚚 Fetching...

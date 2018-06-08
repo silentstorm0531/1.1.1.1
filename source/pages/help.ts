@@ -96,7 +96,7 @@ async function init () {
     console.log('Trace error:', error)
   }
 
-  setRef('datacenterLocation', `Approximate location: ${traceInfo.colo} Airport`)
+  setRef('datacenterLocation', traceInfo.colo)
 
   let resolverInfo = {} as ResolverInfo
 
