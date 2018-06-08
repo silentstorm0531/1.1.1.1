@@ -65,35 +65,18 @@ section[data-section="help"]
       &:hover
         box-shadow inset 0px -3px var(--bg-background-color), inset 0px -5px rgba(0,0,0,0.25)
 
-  .entry
-    padding-bottom .3em
-    padding-left 1em
-    padding-right 1em
-
-    & + .entry
-      margin-top .7em
-      border-top 3px solid hsla(0, 0%, 0%, 0.01)
-
-  .response
-    margin .4em 0
-    font-weight 500
-    font-size 1.8rem
-    line-height 1.6
-
-    &[data-ref="datacenterLocation"]
-      margin .4em 0
-      font-style italic
-
-    &.resolved.code
-      font-family var(--monospace-fonts)
-
-  .map.resolved
-    display block
-    height 70vh
-    max-height 400px
-    margin-bottom 1.3em
+  table.debug-table
     width 100%
+    margin .7em
+    border 1px solid darkgrey
+    padding .5em
 
-    border-top 2px solid hsla(0, 0%, 0%, 0.08)
-    border-bottom 2px solid hsla(0, 0%, 0%, 0.08)
+    td:first-child
+      font-weight 600
 
+    td:last-child
+      text-align center
+
+  .ip-address
+    font-size .8em
+    font-family var(--monospace-fonts)

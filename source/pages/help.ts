@@ -1,8 +1,6 @@
 import '../styles/base.styl'
 
-import { logoBanner } from './console'
 import initInstructionPicker from './instruction-picker'
-const mapTheme = require('./google-map-theme.json')
 
 import uuidv4 from 'uuid/v4'
 
@@ -53,8 +51,31 @@ function setRef (ref: string, value: any) {
   }
 }
 
+const resolverIps: string[] = ['1.1.1.1', '1.0.0.1', '2606:4700:4700::1111', '2606:4700:4700::1001']
+
+const resolverTests: object = {
+  isCf: 'is-cf.cloudflareresolve.com',
+  isDot: 'is-dot.cloudflareresolve.com',
+  isDoh: 'is-doh.cloudflareresolve.com'
+}
+
+resolverIps.forEach(ip => {
+  const v6 = ip.includes(':')
+  resolverTests[`resolverIp-${ip}`] = `${v6?'[':''}${ip}${v6?']':''}`
+})
+
 async function init () {
   initInstructionPicker()
+
+  for (let ref in resolverTests) {
+    const host = resolverTests[ref];
+    try {
+      const res = await fetch(`https://${host}/resolvertest`)
+      setRef(ref, res.ok)
+    } catch (error) {
+      setRef(ref, false)
+    }
+  }
 
   const traceInfo = {} as TraceInfo
   let traceEnd: number
@@ -75,9 +96,7 @@ async function init () {
     console.log('Trace error:', error)
   }
 
-  setRef('myIPAddress', traceInfo.ip)
-  setRef('datacenterConnectionSpeed', `${traceEnd}ms`)
-  setRef('datacenterLocation', `Approximate location: ${traceInfo.colo} Airport`)
+  setRef('datacenterLocation', traceInfo.colo)
 
   let resolverInfo = {} as ResolverInfo
 
@@ -88,74 +107,14 @@ async function init () {
     console.log('Resolver error:', error)
   }
 
-  setRef('dnsResolverIP', resolverInfo.ip)
-  setRef('supportsDNSSEC', resolverInfo.dnssec)
+  setRef('ispName', resolverInfo.isp.name)
+  setRef('ispAsn', resolverInfo.isp.asn)
 
   const setupSection = <HTMLElement>document.getElementById('setup-instructions')!
-
-  try {
-    const ipV6Response = await fetch('https://[2606:4700:4700::1111]/resolvertest')
-    setRef('supportsIPv6', ipV6Response.ok)
-  } catch (error) {
-    setRef('supportsIPv6', false)
-    console.log('IPv6 Error', error)
-  }
 
   if (resolverInfo.isp.name.toLowerCase() !== 'cloudflare') {
     setupSection.classList.remove('help-initial-hidden')
   }
-
-  // interface GeocoderResultLiteral extends google.maps.GeocoderResult {
-  //   location: google.maps.LatLngBoundsLiteral;
-  // }
-
-  // let geocoderInfo: {
-  //   results: GeocoderResultLiteral[]
-  //   status: google.maps.GeocoderStatus
-  // }
-
-  // try {
-  //   const geocoderResponse = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=IATA+${traceInfo.colo}&key=AIzaSyCuebBICxH3FZeML7_xQVszyKm_sswAcac`)
-
-  //   geocoderInfo = await geocoderResponse.json()
-  // } catch (error) {
-  //   console.log('Maps error:', error)
-  // }
-
-
-  // if (geocoderInfo!.status === google.maps.GeocoderStatus.OK) {
-  //   const [result] = geocoderInfo!.results
-
-  //   const [city, stateAndZip = ''] = result.formatted_address.split(', ')
-  //   const [state] = stateAndZip.split(' ')
-  //   const name = state ? `${city}, ${state}` : city
-  //   setRef('datacenterLocation', name)
-
-  //   const mapEl = document.getElementById('datacenter-map')!
-  //   mapEl.classList.add('resolved')
-
-  //   const googleMap = new google.maps.Map(mapEl, {
-  //       center: result.geometry.location,
-  //       styles: mapTheme.minimal,
-  //       disableDefaultUI: true,
-  //       disableDoubleClickZoom: true,
-  //       draggable: true,
-  //       mapTypeControl: false,
-  //       panControl: false,
-  //       scaleControl: false,
-  //       scrollwheel: false,
-  //       zoomControl: false,
-  //       zoom: 9
-  //   })
-
-  //   const marker = new google.maps.Marker({
-  //     map: googleMap,
-  //     position: result.geometry.location,
-  //     draggable: false
-  //   })
-  // }
-
-  console.debug({traceInfo, resolverInfo})
 }
 
 if (document.readyState === 'loading') {
