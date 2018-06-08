@@ -39,7 +39,7 @@ function setRef (ref: string, value: any) {
 
   switch (typeof value) {
     case 'undefined':
-      element.textContent = '❌ Error. See developer console.'
+      element.textContent = '❌ Unable to check...'
       break
     case 'boolean':
       element.textContent = value ? '✌️' : '👎'
