@@ -42,8 +42,7 @@ function setRef (ref: string, value: any) {
       element.textContent = '❌ Unable to check...'
       break
     case 'boolean':
-      element.textContent = value ? '✌️' : '👎'
-      element.classList.add('emoji')
+      element.textContent = value ? 'Yes' : 'No'
       break
     default:
       element.textContent = value.toString()
