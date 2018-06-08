@@ -53,22 +53,22 @@ function setRef (ref: string, value: any) {
 
 const resolverIps: string[] = ['1.1.1.1', '1.0.0.1', '2606:4700:4700::1111', '2606:4700:4700::1001']
 
-const resolverTests: object = {
+const resolverTests = {
   isCf: 'is-cf.cloudflareresolve.com',
   isDot: 'is-dot.cloudflareresolve.com',
   isDoh: 'is-doh.cloudflareresolve.com'
-}
+} as { [key: string]: string }
 
 resolverIps.forEach(ip => {
   const v6 = ip.includes(':')
-  resolverTests[`resolverIp-${ip}`] = `${v6?'[':''}${ip}${v6?']':''}`
+  resolverTests[`resolverIp-${ip}`] = `${v6 ? '[' : ''}${ip}${v6 ? ']' : ''}`
 })
 
 async function init () {
   initInstructionPicker()
 
   for (let ref in resolverTests) {
-    const host = resolverTests[ref];
+    const host = resolverTests[ref]
     try {
       const res = await fetch(`https://${host}/resolvertest`)
       setRef(ref, res.ok)
