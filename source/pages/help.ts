@@ -35,20 +35,19 @@ interface ResolverInfo {
 }
 
 function setRef (ref: string, value: any) {
-  const element = <HTMLElement>document.querySelector(`[data-ref="${ref}"]`)!
+  const element = <HTMLElement> document.querySelector(`[data-ref="${ref}"]`)!
 
   switch (typeof value) {
     case 'undefined':
-      element.textContent = '❌ Error. See developer console.'
+      element.textContent = '❌ Unable to check...'
       break
-      case 'boolean':
+    case 'boolean':
       element.textContent = value ? 'Yes' : 'No'
       break
     default:
       element.textContent = value.toString()
-
-  element.classList.add('resolved')
   }
+  element.classList.add('resolved')
 }
 
 const resolverIps: string[] = ['1.1.1.1', '1.0.0.1', '2606:4700:4700::1111', '2606:4700:4700::1001']
