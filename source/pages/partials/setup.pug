@@ -86,7 +86,7 @@ section#setup-instructions.help-initial-hidden(data-section="setup" data-ref="se
     .message
       p.collapsed-margins.message-content!=htmlWebpackPlugin.options.t('instructions').android.message
     ol
-      each instruction in htmlWebpackPlugin.options.t('instructions').router.steps
+      each instruction in htmlWebpackPlugin.options.t('instructions').android.steps
         +render(instruction)
 
     stream(
