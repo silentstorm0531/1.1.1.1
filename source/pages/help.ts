@@ -113,6 +113,7 @@ async function init () {
     } catch (error) {
       setRef(ref, false)
     }
+  }
 
   const traceInfo = {} as TraceInfo
   let traceEnd: number
