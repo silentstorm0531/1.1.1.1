@@ -6,6 +6,18 @@ import uuidv4 from 'uuid/v4'
 
 console.log(window.btoa('Join us and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
 
+interface ShareData {
+  [key: string]: string
+  myIPAddress: string
+  datacenterConnectionSpeed: string
+  datacenterLocation: string
+  dnsResolverIP: string
+  supportsDNSSEC: string
+  supportsIPv6: string
+}
+
+const shareData = {} as ShareData
+
 interface TraceInfo {
   [index: string]: string
   fl: string
@@ -48,6 +60,28 @@ function setRef (ref: string, value: any) {
       element.textContent = value.toString()
   }
   element.classList.add('resolved')
+  writeToShareData(ref, value)
+}
+
+function writeToShareData(ref: string, value: any) {
+  switch (typeof value) {
+      case 'boolean':
+      shareData[ref] = value ? 'Yes' : 'No'
+      break
+    default:
+      shareData[ref] = value.toString()
+  }
+  window.location.hash = '#' + btoa(JSON.stringify(shareData))
+}
+
+function readFromShareData() {
+  
+  const json = atob(window.location.hash.replace('#', ''))
+  const obj = JSON.parse(json)
+
+  for (let key in obj) {
+    setRef(key, obj[key])
+  }
 }
 
 const resolverIps: string[] = ['1.1.1.1', '1.0.0.1', '2606:4700:4700::1111', '2606:4700:4700::1001']
@@ -66,6 +100,11 @@ resolverIps.forEach(ip => {
 async function init () {
   initInstructionPicker()
 
+  if (window.location.hash.length > 1) {
+    readFromShareData()
+    return;
+  }
+  
   for (let ref in resolverTests) {
     const host = resolverTests[ref]
     try {
