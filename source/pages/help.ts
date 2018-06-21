@@ -71,7 +71,8 @@ function writeToShareData(ref: string, value: any) {
     default:
       shareData[ref] = value.toString()
   }
-  window.location.hash = '#' + btoa(JSON.stringify(shareData))
+  const element = <HTMLElement> document.querySelector('textarea[data-ref="shareUrl"]')!
+  element.textContent = window.location.href + '#' + btoa(JSON.stringify(shareData))
 }
 
 function readFromShareData() {
