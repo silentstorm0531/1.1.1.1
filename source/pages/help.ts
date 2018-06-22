@@ -46,8 +46,12 @@ interface ResolverInfo {
   }
 }
 
+function getRefElement (ref: string) {
+  return <HTMLElement> document.querySelector(`[data-ref="${ref}"]`)!
+}
+
 function setRef (ref: string, value: any) {
-  const element = <HTMLElement> document.querySelector(`[data-ref="${ref}"]`)!
+  const element = getRefElement(ref)
 
   switch (typeof value) {
     case 'undefined':
@@ -65,17 +69,17 @@ function setRef (ref: string, value: any) {
 
 function writeToShareData(ref: string, value: any) {
   switch (typeof value) {
-      case 'boolean':
+    case 'boolean':
       shareData[ref] = value ? 'Yes' : 'No'
       break
     default:
       shareData[ref] = value.toString()
   }
-  window.location.hash = '#' + btoa(JSON.stringify(shareData))
+  const element = getRefElement('shareUrl')
+  element.textContent = window.location.href + '#' + btoa(JSON.stringify(shareData))
 }
 
 function readFromShareData() {
-  
   const json = atob(window.location.hash.replace('#', ''))
   const obj = JSON.parse(json)
 
@@ -100,11 +104,20 @@ resolverIps.forEach(ip => {
 async function init () {
   initInstructionPicker()
 
+  // click to copy url
+  getRefElement('shareUrl').onclick = function () {
+    (this as HTMLInputElement).select()
+    document.execCommand('copy')
+    setTimeout(() => window.getSelection().removeAllRanges(), 100) // Flash selection
+
+    getRefElement('shareUrlMessage').textContent = 'Copied URL to clipboard'
+  }
+
   if (window.location.hash.length > 1) {
     readFromShareData()
-    return;
+    return
   }
-  
+
   for (let ref in resolverTests) {
     const host = resolverTests[ref]
     try {
