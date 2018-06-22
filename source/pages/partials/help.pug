@@ -6,8 +6,10 @@ section(data-section="help")
     h2.description Connection Information
 
   .connection-info
-    div Please copy this URL when you create a post in the community forum.
-    textarea(data-ref="shareUrl")
+    div.debug-url-section
+      h5.header Please include this URL when you create a post in the community forum.
+      textarea.copy-url-area(readonly,data-ref="shareUrl")
+      div.footer(data-ref="shareUrlMessage") Click to copy
 
     h3 Debug Information
 
