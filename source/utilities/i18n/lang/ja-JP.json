@@ -40,18 +40,18 @@
     },
     "windows": {
       "steps": [
-        {"tag": "li", "content": "Click on the Start menu, then click on <strong>Control Panel</strong>."},
-        {"tag": "li", "content": "Click on <strong>Network and Internet</strong>."},
-        {"tag": "li", "content": "Click on <strong>Change Adapter Settings</strong>."},
-        {"tag": "li", "content": "Right click on the Wi-Fi network you are connected to, then click <strong>Properties</strong>."},
-        {"tag": "li", "content": "Select <strong>Internet Protocol Version 4</strong> (or Version 6 if desired)."},
-        {"tag": "li", "content": "Click <strong>Properties</strong>."},
-        {"tag": "li", "content": "Write down any existing DNS server entries for future reference."},
-        {"tag": "li", "content": "Click <strong>Use The Following DNS Server Addresses</strong>."},
+        {"tag": "li", "content": "スタートメニューをクリックし、<strong>「コントロールパネル」</strong>をクリックします。"},
+        {"tag": "li", "content": "<strong>「ネットワークとインターネット」</strong>をクリックします。"},
+        {"tag": "li", "content": "<strong>「アダプターの設定の変更」</strong>をクリックします。"},
+        {"tag": "li", "content": "接続しているWi-Fiネットワークを右クリックし、<strong>「プロパティ」</strong>をクリックします。"},
+        {"tag": "li", "content": "<strong>「インターネットプロトコルバージョン4」</strong>（または必要に応じて「バージョン6」）を選択します。"},
+        {"tag": "li", "content": "<strong>「プロパティ」</strong>をクリックします。"},
+        {"tag": "li", "content": "今後の参考のために、既存のDNSサーバのエントリーをメモしておきます。"},
+        {"tag": "li", "content": "<strong>「次のDNSサーバーのアドレスを使う」</strong>をクリックします。"},
         {
           "tag": "li",
           "children": [
-            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {"tag": "span", "content": "次のアドレスを1.1.1.1 DNSアドレスで置き換えます。"},
             {
               "tag": "ul",
               "children": [
@@ -153,7 +153,7 @@
         {
           "tag": "li",
           "children": [
-            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {"tag": "span", "content": "次のアドレスを1.1.1.1 DNSアドレスで置き換えます。"},
             {
               "tag": "ul",
               "children": [
@@ -169,16 +169,16 @@
     }
   },
 
-  "share.header": "Share a faster, privacy-first Internet with your friends.",
+  "share.header": "より速く、よりプライバシー優先のインターネットを友人と共有しましょう。",
   "share.emailSubject": "✌️✌️ DNSリゾルバー1.1.1.1でより速く、よりプライベートなインターネットの閲覧を",
   "share.emailBody": "1.1.1.1は、インターネットの閲覧を、より速く、よりプライベートにします。 詳しい内容と、お使いのデバイスを簡単にセットアップする方法は、https://1.1.1.1でご確認ください！",
   "share.tweetBody": "✌️✌️ 高速、安全、そしてプライベートなインターネットはここにあります。CloudflareのDNSリゾルバーは設定に2分もかかりません",
 
-  "faq.whosBehindThis": "Who’s behind this?",
+  "faq.whosBehindThis": "背景には誰が？",
   "faq.partnership": "<strong class=\"code\">1.1.1.1</strong>は、CloudflareとAPNICのパートナーシップにより誕生しました。",
   "faq.network": "Cloudflareは、世界最大、かつ最速なネットワークのひとつを運営しています。 APNICは、アジア太平洋・オセアニア地域におけるIPアドレスの割り当てを管理する非営利団体です。",
   "faq.networkContinued": "Cloudflareはネットワークを、 APNICは、IPアドレス（1.1.1.1）を所有していました。 どちらも、より良いインターネットを構築する使命を果たすという意欲を持っていました。詳しくは<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflareブログ</a>／<a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNICブログ</a>をご覧ください。",
-  "faq.canIintegrate": "Can I integrate with 1.1.1.1?",
-  "faq.integrationInfo": "If you are a browser, operating system, app, router, or VPN manufacturer who wants to build in a privacy-first, fast, modern DNS service, <strong class=\"subtle\">yes!</strong>",
-  "faq.integrationDocs": "By using DNS over HTTPS (DoH) you can transparently offer enhanced security to your customers while improving the speed of your devices. Even better, you can do it at no cost, both in terms of licensing and customer’s privacy. Learn more about 1.1.1.1 and our DNS over HTTPS (DoH) support in our <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>."
+  "faq.canIintegrate": "1.1.1.1との統合は可能？",
+  "faq.integrationInfo": "あなたはプライバシー優先で高速かつ最新のDNSサービスを求めているブラウザ、オペレーティングシステム、アプリケーション、ルーター、VPNのメーカーですか。その場合、答えはもちろん、<strong class=\"subtle\">はい！</strong>",
+  "faq.integrationDocs": "DNS over HTTPS（DoH）を使用すれば、一層強化されたセキュリティを顧客に透過的に提供できるほか、デバイスの速度も向上できます。さらに素晴らしいのは、ライセンスや顧客の<a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">プライバシー</a>の観点で、これを無料で実現できることです。1.1.1.1とHTTPS経由のDNSサポートの詳細については、 <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">開発者ドキュメント</a>をご覧ください。"
 }
