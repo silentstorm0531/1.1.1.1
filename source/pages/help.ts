@@ -168,7 +168,10 @@ async function init () {
   }
 
   // Show share URL
-  document.querySelector('.debug-url-section').classList.remove('hidden')
+  const debugURLSection = <HTMLElement>document.querySelector('.debug-url-section')!
+  if (debugURLSection) {
+    debugURLSection.classList.remove('hidden')
+  }
 }
 
 if (document.readyState === 'loading') {
