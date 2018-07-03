@@ -166,6 +166,12 @@ async function init () {
   if (resolverInfo.isp.name.toLowerCase() !== 'cloudflare') {
     setupSection.classList.remove('help-initial-hidden')
   }
+
+  // Show share URL
+  const debugURLSection = <HTMLElement>document.querySelector('.debug-url-section')!
+  if (debugURLSection) {
+    debugURLSection.classList.remove('hidden')
+  }
 }
 
 if (document.readyState === 'loading') {
