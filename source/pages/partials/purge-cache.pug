@@ -1,36 +1,47 @@
 section(data-section="purge-cache")
   header
-    h1.logo(alt="1.1.1.1 DNS resolver")
+    .logo(alt="1.1.1.1 DNS resolver")
       include ../../media/logo.svg
 
-    h2.title Purge Cache
+    h1.title Purge Cache
 
-  .description 1.1.1.1's Purge Cache tool allows you to refresh 1.1.1.1's DNS cache for domain names. To refresh the cache for a domain name, enter the name for the domain below, pick the DNS record type and then hit the 'Purge Cache'.
+  p.description
+    b 1.1.1.1
+    span 's Purge Cache tool allows you to refresh&nbsp;
+    b 1.1.1.1
+    span 's DNS cache for domain names. To refresh the cache for a domain name, enter the name for the&nbsp;
+    i domain&nbsp;
+    span below, pick the&nbsp;
+    i DNS record type&nbsp;
+    span and then hit the&nbsp;
+    i Purge Cache
+    span .
 
-  h3 Purge cache for domain
+  .form-container
+    h3.title Purge cache for domain
 
-  form#purge-cache-form
-    .label.required Domain Name
-    input.input-field(name="domain" type="text" placeholder="example.com" required)
-    .label Record Type
-    select.input-field(name="type")
-      option(value="A") A
-      option(value="AAAA") AAAA
-      option(value="CNAME") CNAME
-      option(value="DNSKEY") DNSKEY
-      option(value="DS") DS
-      option(value="MX") MX
-      option(value="NAPTR") NAPTR
-      option(value="NS") NS
-      option(value="PTR") PTR
-      option(value="SOA") SOA
-      option(value="SPF") SPF
-      option(value="SRV") SRV
-      option(value="SSHFP") SSHFP
-      option(value="TLSA") TLSA
-      option(value="TXT") TXT
-      option(value="ANY") ANY
-    br
-    input#submit-button(type="submit" value="Purge Cache")
+    form#purge-cache-form
+      .label.required Domain Name
+      input.input-field(name="domain" type="text" placeholder="example.com" required)
+      .label Record Type
+      select.input-field(name="type")
+        option(value="A") A
+        option(value="AAAA") AAAA
+        option(value="CNAME") CNAME
+        option(value="DNSKEY") DNSKEY
+        option(value="DS") DS
+        option(value="MX") MX
+        option(value="NAPTR") NAPTR
+        option(value="NS") NS
+        option(value="PTR") PTR
+        option(value="SOA") SOA
+        option(value="SPF") SPF
+        option(value="SRV") SRV
+        option(value="SSHFP") SSHFP
+        option(value="TLSA") TLSA
+        option(value="TXT") TXT
+        option(value="ANY") ANY
+      br
+      input#submit-button(type="submit" value="Purge Cache")
 
-  #info-message
+    #info-message
