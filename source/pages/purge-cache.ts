@@ -18,7 +18,7 @@ async function init () {
       method: 'POST'
     })
       .then(res => {
-        setMessage(res.ok ? SUCCESS_MSG : `(${res.status}: ${res.statusText}) ${res.body}`, !res.ok)
+        setMessage(res.ok ? SUCCESS_MSG : `(${res.status}: ${res.statusText}) ${res.text()}`, !res.ok)
       })
       .catch(err => setMessage(err, true))
       .then(() => setLoading(false))
