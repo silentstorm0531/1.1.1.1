@@ -1,0 +1,83 @@
+@import "mixins/media-query-variables"
+
+:root
+  --bg-background-color hsl(47, 34%, 98%)
+  --bg-content-color #FCFCFC
+  --border-color darkgrey
+
+body.purge-cache-page
+  background-color var(--bg-background-color)
+
+  section[data-section="purge-cache"]
+    display flex
+    justify-content center
+    align-items center
+    flex-flow column
+    font-family var(--sans-serif-fonts)
+    font-weight 300
+    min-height calc(90vh)
+    padding var(--section-vertical-padding) 1em 1em
+
+    header
+      margin 0 auto
+      text-align center
+
+      .logo > svg
+        height 10rem
+        fill hsla(0, 0%, 20%, 1)
+
+      .title
+        border-top 10px solid hsla(0, 0%, 20%, 1)
+        color hsla(0, 0%, 20%, 1)
+        display inline-block
+        font-size 3.5rem
+
+        @media desktopMinWidthQuery
+          padding 16px 3.5em
+
+        @media mobileMaxWidthQuery
+          padding 11px .7em
+
+    .description
+      font-size 15px
+      max-width 720px
+
+    form
+      width 100%
+      max-width 300px
+
+      .label
+        font-size 14px
+        font-weight 600
+
+        &.required::after
+          content: "*"
+          color darkred
+          font-size .7em
+          position relative
+          left 3px
+          bottom 3px
+
+      .input-field
+        width 100%
+        margin-bottom 10px
+        font-size 14px
+
+      #submit-button
+        font-size 16px
+        cursor pointer
+
+    #info-message
+      border-radius var(--border-radius)
+      font-size .7em
+      margin-top 6px
+      padding 4px
+      width 100%
+      max-width 400px
+      text-align center
+
+      &.success
+        background-color var(--brand-accent-green)
+
+      &.error
+        background-color var(--brand-accent-red)

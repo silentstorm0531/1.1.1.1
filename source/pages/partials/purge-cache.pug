@@ -1,0 +1,36 @@
+section(data-section="purge-cache")
+  header
+    h1.logo(alt="1.1.1.1 DNS resolver")
+      include ../../media/logo.svg
+
+    h2.title Purge Cache
+
+  .description 1.1.1.1's Purge Cache tool allows you to refresh 1.1.1.1's DNS cache for domain names. To refresh the cache for a domain name, enter the name for the domain below, pick the DNS record type and then hit the 'Purge Cache'.
+
+  h3 Purge cache for domain
+
+  form#purge-cache-form
+    .label.required Domain Name
+    input.input-field(name="domain" type="text" placeholder="example.com" required)
+    .label Record Type
+    select.input-field(name="type")
+      option(value="A") A
+      option(value="AAAA") AAAA
+      option(value="CNAME") CNAME
+      option(value="DNSKEY") DNSKEY
+      option(value="DS") DS
+      option(value="MX") MX
+      option(value="NAPTR") NAPTR
+      option(value="NS") NS
+      option(value="PTR") PTR
+      option(value="SOA") SOA
+      option(value="SPF") SPF
+      option(value="SRV") SRV
+      option(value="SSHFP") SSHFP
+      option(value="TLSA") TLSA
+      option(value="TXT") TXT
+      option(value="ANY") ANY
+    br
+    input#submit-button(type="submit" value="Purge Cache")
+
+  #info-message
