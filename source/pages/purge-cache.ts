@@ -1,7 +1,5 @@
 import '../styles/base.styl'
 
-const SUCCESS_MSG = 'Purge request queued. Please wait a few minutes and verify the request was successful.'
-
 async function init () {
   const form = <HTMLFormElement>document.getElementById('purge-cache-form')!
   const submitButton = <HTMLElement>document.getElementById('submit-button')!
@@ -11,14 +9,19 @@ async function init () {
     evt.preventDefault()
 
     const params = new FormData(form)
-    const qs = ['domain', 'type'].map(p => `${p}=${params.get(p)}`).join('&')
+    const qs = ['domain', 'type']
+      .map(p => [p, params.get(p)])
+      .filter(([, v]) => v)
+      .map(([k, v]) => `${k}=${v}`)
+      .join('&')
 
     setLoading(true)
     fetch(`https://resolver-cache-purger.cfdata.org?${qs}`, {
       method: 'POST'
     })
-      .then(res => {
-        setMessage(res.ok ? SUCCESS_MSG : `(${res.status}: ${res.statusText}) ${res.text()}`, !res.ok)
+      .then(async res => {
+        const body = await res.text()
+        setMessage(body.slice(0, 500) || `(${res.status}) ${res.statusText}`, !res.ok)
       })
       .catch(err => setMessage(err, true))
       .then(() => setLoading(false))
