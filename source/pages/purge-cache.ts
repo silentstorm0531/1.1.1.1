@@ -16,7 +16,7 @@ async function init () {
       .join('&')
 
     setLoading(true)
-    fetch(`/v1/api/purge/?${qs}`, {
+    fetch(`/v1/api/purge?${qs}`, {
       method: 'POST'
     })
       .then(async res => {
