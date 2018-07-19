@@ -16,7 +16,7 @@ async function init () {
       .join('&')
 
     setLoading(true)
-    fetch(`https://resolver-cache-purger.cfdata.org?${qs}`, {
+    fetch(`/v1/api/purge/?${qs}`, {
       method: 'POST'
     })
       .then(async res => {
