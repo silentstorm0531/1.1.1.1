@@ -38,7 +38,8 @@ const $: CustomConfiguration = {
   mode: environment,
   entry: {
     site: ['./source/pages/index.ts'],
-    help: ['./source/pages/help.ts']
+    help: ['./source/pages/help.ts'],
+    'purgeCache': ['./source/pages/purge-cache.ts']
   },
   plugins: []
 }
@@ -230,7 +231,6 @@ const pugLoaders = locales.map((locale) => {
   }
 })
 
-
 $.plugins.push(...locales.map((locale) => {
   return new HtmlWebpackPlugin({
     favicon: 'source/media/favicon.png',
@@ -246,6 +246,15 @@ $.plugins.push(...locales.map((locale) => {
     template: joinP(`source/pages/${locale.code}/help/index.pug`),
     filename: `${locale.path}help/index.html`,
     chunks: ['help']
+  })
+}))
+
+$.plugins.push(...locales.map((locale) => {
+  return new HtmlWebpackPlugin({
+    favicon: 'source/media/favicon.png',
+    template: joinP(`source/pages/${locale.code}/purge-cache/index.pug`),
+    filename: `${locale.path}purge-cache/index.html`,
+    chunks: ['purgeCache']
   })
 }))
 
