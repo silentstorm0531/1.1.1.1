@@ -13,15 +13,16 @@ async function init () {
       .map(p => [p, params.get(p)])
       .filter(([, v]) => v)
       .map(([k, v]) => `${k}=${v}`)
+      .map(encodeURIComponent)
       .join('&')
 
     setLoading(true)
-    fetch(`/v1/api/purge?${qs}`, {
+    fetch(`/api/v1/purge?${qs}`, {
       method: 'POST'
     })
       .then(async res => {
-        const body = await res.text()
-        setMessage(body.slice(0, 500) || `(${res.status}) ${res.statusText}`, !res.ok)
+        const body = await res.json()
+        setMessage(body.msg || `(${res.status}) ${res.statusText}`, !res.ok)
       })
       .catch(err => setMessage(err, true))
       .then(() => setLoading(false))
