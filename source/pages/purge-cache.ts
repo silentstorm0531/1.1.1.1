@@ -16,12 +16,16 @@ async function init () {
       .join('&')
 
     setLoading(true)
-    fetch(`/v1/api/purge?${qs}`, {
+    fetch(encodeURI(`/api/v1/purge?${qs}`), {
       method: 'POST'
     })
       .then(async res => {
-        const body = await res.text()
-        setMessage(body.slice(0, 500) || `(${res.status}) ${res.statusText}`, !res.ok)
+        let msg = `(${res.status}) ${res.statusText}`
+        try {
+          const body = await res.json()
+          msg = body.msg
+        } catch (e) { /* no msg found, continue */ }
+        setMessage(msg, !res.ok)
       })
       .catch(err => setMessage(err, true))
       .then(() => setLoading(false))
