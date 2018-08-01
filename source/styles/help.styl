@@ -1,7 +1,7 @@
 @import "mixins/media-query-variables"
 
 :root
-  --bg-background-color hsl(47, 34%, 98%)
+  --bg-background-color hsl(32, 100%, 100%)
   --bg-content-color #FCFCFC
   --border-color darkgrey
 
@@ -48,6 +48,18 @@ section[data-section="help"]
 
       @media mobileMaxWidthQuery
         padding 11px .7em
+
+    .title
+        margin-top 10px
+        border-top 10px solid var(--header-color)
+        display inline-block
+        color var(--header-color)
+
+        @media desktopMinWidthQuery
+          padding 16px 2em 0
+
+        @media mobileMaxWidthQuery
+          padding 11px .7em 0
 
   .hero-copy > svg
     height 10rem

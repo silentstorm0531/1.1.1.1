@@ -1,12 +1,20 @@
 @import "mixins/media-query-variables"
 
 :root
-  --bg-background-color hsl(47, 34%, 98%)
+  --bg-background-color hsl(32, 100%, 100%)
   --bg-content-color #FCFCFC
   --header-color hsl(0, 0%, 20%)
   --border-color darkgrey
   --button-color #2c7cb0
   --button-hover-color #276d9b
+
+  --brand-accent-dark-red rgb(113, 20, 35)
+  --brand-accent-mid-red rgb(243, 186, 195)
+  --brand-accent-light-red #fcf0f2
+
+  --brand-accent-dark-green rgb(28, 66, 43)
+  --brand-accent-mid-green rgb(176, 221, 194)
+  --brand-accent-light-green #eff8f3
 
 body.purge-cache-page
   background-color var(--bg-background-color)
@@ -28,6 +36,7 @@ body.purge-cache-page
       .logo > svg
         height 10rem
         fill var(--header-color)
+        margin-bottom 10px
 
       .title
         margin-top 10px
@@ -39,11 +48,20 @@ body.purge-cache-page
           padding 16px 3.5em 0
 
         @media mobileMaxWidthQuery
-          padding 11px .7em 0
+          padding 11px 3.5em 0
 
     .description
       font-size .9em
-      max-width 720px
+      max-width 600px
+
+    title-container
+      width 100%
+      max-width 600px
+      margin-top 10px
+
+    h3.title
+      font-weight 600
+      margin 0px 0 10px
 
     .form-container
       display flex
@@ -57,12 +75,9 @@ body.purge-cache-page
       background-color var(--bg-content-color)
       border-radius var(--border-radius)
 
-      .title
-        margin 0px 0 20px
-
       form
         width 100%
-        max-width 300px
+        max-width 550px
 
         .label
           font-size 14px
@@ -94,7 +109,7 @@ body.purge-cache-page
           cursor pointer
           font-size 15px
           margin-top .4em
-          padding .4em .6em
+          padding 8px 16px
           border-radius var(--border-radius)
           color white
           background var(--button-color)
@@ -104,14 +119,19 @@ body.purge-cache-page
 
       #info-message
         border-radius var(--border-radius)
-        font-size .7em
-        margin-top 10px
-        padding 4px
+        font-size 0.8em
+        margin-top 20px
+        padding 10px 10px
         width 100%
-        text-align center
+        max-width 550px
 
         &.success
-          background-color var(--brand-accent-green)
+          background-color var(--brand-accent-light-green)
+          color var(--brand-accent-dark-green)
+          border 1px solid var(--brand-accent-mid-green)
+          color white
 
         &.error
-          background-color var(--brand-accent-red)
+          background-color var(--brand-accent-light-red)
+          color var(--brand-accent-dark-red)
+          border 1px solid var(--brand-accent-mid-red)
