@@ -4,6 +4,8 @@ import initInstructionPicker from './instruction-picker'
 
 import uuidv4 from 'uuid/v4'
 
+const uuid = uuidv4();
+
 console.log(window.btoa('Join us and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
 
 interface ShareData {
@@ -91,9 +93,9 @@ function readFromShareData() {
 const resolverIps: string[] = ['1.1.1.1', '1.0.0.1', '2606:4700:4700::1111', '2606:4700:4700::1001']
 
 const resolverTests = {
-  isCf: 'is-cf.cloudflareresolve.com',
-  isDot: 'is-dot.cloudflareresolve.com',
-  isDoh: 'is-doh.cloudflareresolve.com'
+  isCf: `${uuid}.is-cf.cloudflareresolve.com`,
+  isDot: `${uuid}.is-dot.cloudflareresolve.com`,
+  isDoh: `${uuid}.is-doh.cloudflareresolve.com`
 } as { [key: string]: string }
 
 resolverIps.forEach(ip => {
@@ -152,7 +154,7 @@ async function init () {
   let resolverInfo = {} as ResolverInfo
 
   try {
-    const resolverResponse = await fetch(`https://${uuidv4()}.map.cloudflareresolve.com`)
+    const resolverResponse = await fetch(`https://${uuid}.map.cloudflareresolve.com`)
     resolverInfo = await resolverResponse.json()
   } catch (error) {
     console.log('Resolver error:', error)
