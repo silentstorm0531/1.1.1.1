@@ -90,18 +90,15 @@ function readFromShareData() {
   }
 }
 
-const resolverIps: string[] = ['1.1.1.1', '1.0.0.1', '2606:4700:4700::1111', '2606:4700:4700::1001']
-
-const resolverTests = {
+const resolverTests: { [key: string]: string } = {
   isCf: `${uuid}.is-cf.cloudflareresolve.com`,
   isDot: `${uuid}.is-dot.cloudflareresolve.com`,
-  isDoh: `${uuid}.is-doh.cloudflareresolve.com`
-} as { [key: string]: string }
-
-resolverIps.forEach(ip => {
-  const v6 = ip.includes(':')
-  resolverTests[`resolverIp-${ip}`] = `${v6 ? '[' : ''}${ip}${v6 ? ']' : ''}`
-})
+  isDoh: `${uuid}.is-doh.cloudflareresolve.com`,
+  'resolverIp-1.1.1.1': '1.1.1.1',
+  'resolverIp-1.0.0.1': '1.0.0.1',
+  'resolverIp-2606:4700:4700::1111': 'ipv6b.cloudflare-dns.com',
+  'resolverIp-2606:4700:4700::1001': 'ipv6a.cloudflare-dns.com'
+}
 
 async function init () {
   initInstructionPicker()
