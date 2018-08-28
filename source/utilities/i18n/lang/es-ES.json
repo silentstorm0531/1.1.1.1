@@ -4,25 +4,25 @@
   "hero.introducing" : "Introduciendo",
   "hero.description" : "Estás a dos minutos de navegar por un Internet más rápido y privado.",
   "hero.getStarted" : "Instalar",
-  "hero.info" : "información",
-  "explanation.dnsHeader" : "DNS: Directorio de internet",
-  "explanation.dnsExplanation" : "Casi todo en Internet comienza con una petición DNS. DNS es el directorio de Internet. Haz clic en un enlace, abre una aplicación, envía un correo electrónico y lo primero que hace tu dispositivo es preguntar al directorio: <strong class=\"subtle\">¿Dónde puedo encontrarlo? </strong>",
-  "explanation.dnsSlowInsecure" : "Desafortunadamente, DNS suele ser lento e inseguro por defecto. Tu proveedor de servicio de Internet, y cualquier otra persona que esté en Internet, puede ver cada sitio que visitas y cada aplicación que utilices —incluso si tu contenido está encriptado. Es espeluznante que algunos proveedores de DNS vendan datos sobre tu actividad en Internet o los usen con el objetivo de mostrarte anuncios.",
-  "explanation.dnsAlternative" : "Creemos que eso es intolerable. Si tú también lo crees, ahora tienes <strong class=\"code\"> una alternativa: 1.1.1.1</strong>",
+  "hero.info" : "Información",
+  "explanation.dnsHeader" : "DNS: Directorio de Internet",
+  "explanation.dnsExplanation" : "Casi todo en Internet comienza con una petición de DNS. DNS es el directorio de Internet. Haz clic en un enlace, abre una aplicación, envía un correo electrónico y lo primero que hace tu dispositivo es preguntar al directorio: <strong class=\"subtle\">¿Dónde puedo encontrarlo? </strong>",
+  "explanation.dnsSlowInsecure" : "Desafortunadamente, DNS suele ser lento y poco seguro por defecto. Tu proveedor de servicio de Internet, y cualquier otra persona que esté en Internet, puede ver cada sitio que visitas y cada aplicación que utilices, incluso si tu contenido está encriptado. Es espeluznante que algunos proveedores de DNS vendan datos sobre tu actividad en Internet o los usen con el objetivo de mostrarte anuncios.",
+  "explanation.dnsAlternative" : "Creemos que eso es intolerable. Si tú también lo crees, ahora tienes una alternativa: <strong class=\"code\">1.1.1.1</strong>",
   "explanation.privacyHeader" : "La privacidad es lo primero: garantizado.",
-  "explanation.privacyExplanation" : "Estamos repensando el protocolo DNS de <strong class=\"code\"> la </strong> era de 1983-era es compatible con el encriptado DNS así como DNS a través de HTTPS.",
+  "explanation.privacyExplanation" : "Estamos reconsiderando el protocolo DNS de la era de 1983. <strong class=\"code\">1.1.1.1</strong> es compatible con el encriptado DNS, así como con DNS a través de HTTPS.",
   "explanation.privacyGuaranteeData" : "<span class=\"mobile-emphasis\"> Nunca venderemos tus datos ni los utilizaremos para mostrarte anuncios.</span> Punto.",
-  "explanation.privacyGuaranteeLogs" : "<span class=\"mobile-emphasis\"> Nunca vamos a registrador tu dirección IP </span> (así es como otras empresas te identifican). Y no lo decimos por decir. Hemos contratado a KPMG para que audite nuestros sistemas una vez al año y así asegurarnos de que estamos haciendo lo que decimos.",
+  "explanation.privacyGuaranteeLogs" : "<span class=\"mobile-emphasis\">Nunca vamos a registrar tu dirección IP</span> (así es como otras empresas te identifican). Y no lo decimos por decir. Hemos contratado a KPMG para que audite nuestros sistemas una vez al año y así asegurarnos de que estamos haciendo lo que decimos.",
   "explanation.privacyConclusion" : "Francamente, no queremos saber lo que haces en Internet —no es asunto nuestro— y hemos tomado las medidas técnicas necesarias para asegurarnos de que no podamos.",
-  "explanation.performanceHeader" : "Más rápido que cualquiera.",
+  "explanation.performanceHeader" : "Más rápido que cualquier otro directorio.",
   "explanation.performanceSubheader" : "De hecho, un 28 % más rápido.",
   "explanation.fastestDNS" : "Hemos diseñado 1.1.1.1 para que sea el directorio de DNS más rápido de Internet. No solo lo decimos nosotros. El monitor de DNS independiente <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'> DNSPerf </a> ha calificado a 1.1.1.1 como el servicio de DNS más rápido del mundo.",
-  "explanation.speedContinued" : "Dado que casi todo lo que haces en Internet comienza con una petición DNS, elegir el directorio de DNS más rápido para todos tus dispositivos acelerará casi todo lo que haces en línea.",
+  "explanation.speedContinued" : "Dado que casi todo lo que haces en Internet comienza con una petición de DNS, elegir el directorio de DNS más rápido para todos tus dispositivos acelerará casi todo lo que haces en línea.",
   "instructions" : {
     "header" : "Configuración en {{device}}",
-    "explanation" : "Se tarda menos de dos minutos en configurar <strong> 1.1.1.1 </strong> y no requiere ninguna habilidad técnica ni software especial. Incluso si eres un principiante, elije tu dispositivo más abajo para obtener una guía de configuración fácil de seguir.",
-    "debug" : "¿Buscas más información sobre tu conexión a internet? Consulte nuestra página de depuración <a target=\"_blank\" href=\"./help\"></a>.",
-    "questions" : "¿Preguntas? Visita nuestro foro de <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\"> la comunidad </a>",
+    "explanation" : "Se tarda menos de dos minutos en configurar <strong>1.1.1.1</strong> y no requiere ninguna habilidad técnica ni software especial. Incluso si eres principiante, elige tu dispositivo más abajo para obtener una guía de configuración fácil de seguir.",
+    "debug" : "¿Buscas más información sobre tu conexión a internet? Consulta nuestra <a target=\"_blank\" href=\"./help\">página de depuración</a>.",
+    "questions" : "¿Preguntas? Visita nuestro <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Foro de la Comunidad</a>",
     "mac-os" : {
       "steps" : [ {
         "tag" : "li",
@@ -32,37 +32,37 @@
         "content" : "Busca <strong>“Servidores DNS”</strong> y selecciónalo en el menú desplegable."
       }, {
         "tag" : "li",
-        "content" : "Haz clic en <strong>+</strong> para añadir un servidor DNS y escribe <strong class=\"code\">1.1.1.1</strong>"
+        "content" : "Haz clic en el botón <strong>+</strong> para añadir un Servidor DNS y escribe <strong class=\"code\">1.1.1.1</strong>"
       }, {
         "tag" : "li",
-        "content" : "Haz clic en <strong>+</strong> de <strong class=\"code\"> nuevo </strong> y escribe1.0.0.1 (esto es por redundancia)."
+        "content" : "Haz clic en <strong>+</strong> de nuevo y escribe <strong class=\"code\">1.0.0.1 </strong>(esto es por redundancia)."
       }, {
         "tag" : "li",
-        "content" : "Haz clic en <strong>+</strong> de <strong class=\"code\"> nuevo y escribe2606:4700:4700::1111</strong> (esto es por redundancia)."
+        "content" : "Haz clic en <strong>+</strong> de nuevo y escribe <strong class=\"code\">2606:4700:4700::1111</strong> (esto es por redundancia)."
       }, {
         "tag" : "li",
-        "content" : "Haz clic en <strong>+</strong> de <strong class=\"code\"> nuevo y escribe2606:4700:4700::1001</strong> (esto es por redundancia)."
+        "content" : "Haz clic en <strong>+</strong> de nuevo y escribe <strong class=\"code\">2606:4700:4700::1001</strong> (esto es por redundancia)."
       }, {
         "tag" : "li",
-        "content" : "Haz clic en <strong>“Ok”</strong> y a continuación haz clic en <strong>“Aplicar”</strong>."
+        "content" : "Haz clic en <strong>Ok</strong> y, a continuación, haz clic en <strong>Aplicar</strong>."
       }, {
         "tag" : "li",
-        "content" : "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ??"
+        "content" : "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"
       } ]
     },
     "windows" : {
       "steps" : [ {
         "tag" : "li",
-        "content" : "Haz clic en el menú Inicio, y luego en <strong>Panel de control </strong>."
+        "content" : "Haz clic en el menú Inicio y, a continuación, en <strong>Panel de control </strong>."
       }, {
         "tag" : "li",
         "content" : "Haz clic en <strong>Red e Internet</strong>."
       }, {
         "tag" : "li",
-        "content" : "Haz clic en <strong>Cambiar Configuración del Adaptador</strong>"
+        "content" : "Haz clic en <strong>Cambiar configuración del adaptador</strong>."
       }, {
         "tag" : "li",
-        "content" : "Haz clic con el botón derecho en la red Wi-Fi a la que estás conectado, y luego haz clic en <strong> Propiedades</strong>."
+        "content" : "Haz clic con el botón derecho en la red Wi-Fi a la que estás conectado y, a continuación, haz clic en<strong> Propiedades</strong>."
       }, {
         "tag" : "li",
         "content" : "Selecciona <strong>Protocolo de Internet Versión 4 </strong> (o Versión 6 si lo deseas)."
@@ -74,7 +74,7 @@
         "content" : "Anota cualquier entrada que haya de servidores DNS existentes para futura referencia."
       }, {
         "tag" : "li",
-        "content" : "Haz clic en <strong>Usar las siguientes direcciones de servidor DNS</strong>."
+        "content" : "Haz clic en <strong>Usar las siguientes direcciones de Servidor DNS</strong>."
       }, {
         "tag" : "li",
         "children" : [ {
@@ -92,25 +92,25 @@
         } ]
       }, {
         "tag" : "li",
-        "content" : "Haz clic en <strong>OK</strong> y a continuación en <strong>Cerrar</strong>."
+        "content" : "Haz clic en <strong>OK</strong> y, a continuación, en <strong>Cerrar</strong>."
       }, {
         "tag" : "li",
         "content" : "Reinicia tu navegador."
       }, {
         "tag" : "li",
-        "content" : "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ??"
+        "content" : "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"
       } ]
     },
     "linux" : {
       "notice" : "Si bien estos pasos son para Ubuntu, la mayoría de las distribuciones de Linux configuran los ajustes de DNS a través del Administrador de Red. Por otra parte, los ajustes de DNS se pueden especificar en <code class=\"inline\">/etc/resolv.conf</code>",
       "steps" : [ {
-        "content" : "Haz clic en el icono de Aplicaciones </i> <i class=\"fas fa-th\"> en la barra de menú de la izquierda.",
+        "content" : "Haz clic en el icono de Aplicaciones <i class=\"fas fa-th\"></i> en la barra de menú de la izquierda.",
         "tag" : "li"
       }, {
-        "content" : "Haz clic en <strong>Ajustes</strong> y a continuación en <strong>Red</strong>.",
+        "content" : "Haz clic en <strong>Ajustes</strong> y, a continuación, en <strong>Red</strong>.",
         "tag" : "li"
       }, {
-        "content" : "Encuentra tu conexión a Internet en el panel derecho y a continuación haz clic en el icono de engranaje <i class=\"fas fa-cog\"></i>.",
+        "content" : "Encuentra tu conexión a Internet en el panel derecho y, a continuación, haz clic en el icono de engranaje <i class=\"fas fa-cog\"></i>.",
         "tag" : "li"
       }, {
         "content" : "Haz clic en las pestañas </strong>IPv4<strong> o </strong>IPv6<strong> para ver los ajustes de DNS.",
@@ -133,84 +133,102 @@
           } ]
         } ]
       }, {
-        "content" : "Haz clic en <strong>Aplicar</strong> y a continuación reinicia tu navegador.",
+        "content" : "Haz clic en <strong>Aplicar</strong> y, a continuación, reinicia tu navegador.",
         "tag" : "li"
       }, {
-        "content" : "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ??",
+        "content" : "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️",
         "tag" : "li"
       } ]
     },
     "iphone" : {
       "steps" : [ {
         "tag" : "li",
-        "content" : "Desde la pantalla de tu iPhone, abre la aplicación de </strong>Configuración<strong>."
+        "content" : "Desde la pantalla de tu iPhone, abre la aplicación de <strong>Configuración </strong>."
       }, {
         "tag" : "li",
-        "content" : "Toca <strong>“Wi-Fi”</strong> y a continuación elije tu red preferida de la lista."
+        "content" : "Toca <strong>Wi-Fi</strong> y, a continuación, elije tu red preferida de la lista."
       }, {
         "tag" : "li",
-        "content" : "Toca <strong>“Configuración DNS”</strong> y a continuación toca <strong>“Manual”</strong>."
+        "content" : "Toca <strong>Configuración de DNS</strong> y, a continuación, toca <strong>Manual</strong>."
       }, {
         "tag" : "li",
-        "content" : "Si ya existen entradas, toca </strong>-<strong> y en </strong>Borrar<strong> al lado de cada una."
+        "content" : "Si ya existen entradas, toca el botón <strong>-</strong> y <strong> Borrar </strong>  al lado de cada una."
       }, {
         "tag" : "li",
-        "content" : "Toca <strong>+ Añadir Servidor</strong> y a continuación escribe <strong class=\"code\">1.1.1.1</strong>"
+        "content" : "Toca el botón <strong>+ Añadir Servidor</strong> y, a continuación, escribe <strong class=\"code\">1.1.1.1</strong>"
       }, {
         "tag" : "li",
-        "content" : "Toca <strong>+ Añadir Servidor</strong> de nuevo y a continuación <strong class=\"code\"> escribe </strong> 1.0.0.1. (esto es por redundancia)."
+        "content" : "Toca el botón <strong>+ Añadir Servidor</strong> de nuevo y, a continuación,  escribe <strong class=\"code\"> 1.0.0.1. </strong>(esto es por redundancia)."
       }, {
         "tag" : "li",
-        "content" : "Toca <strong>+ Añadir Servidor</strong> de nuevo y a continuación <strong class=\"code\"> escribe </strong>2606:4700:4700::1111 (esto es por redundancia)."
+        "content" : "Toca el botón <strong>+ Añadir Servidor</strong> de nuevo y, a continuación,  escribe <strong class=\"code\"> 2606:4700:4700::1111 </strong>(esto es por redundancia)."
       }, {
         "tag" : "li",
-        "content" : "Toca <strong>+ Añadir Servidor</strong> de nuevo y a continuación <strong class=\"code\"> escribe </strong>2606:4700:4700::1001 (esto es por redundancia)."
+        "content" : "Toca el botón <strong>+ Añadir Servidor</strong> de nuevo y, a continuación,  escribe <strong class=\"code\"> 2606:4700:4700::1001 </strong>(esto es por redundancia)."
       }, {
         "tag" : "li",
-        "content" : "Toca “Guardar” <strong> en </strong> la parte superior derecha."
+        "content" : "Toca el botón <strong>Guardar</strong> en la parte superior derecha."
       }, {
         "tag" : "li",
-        "content" : "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ??"
+        "content" : "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"
       } ]
     },
     "android" : {
-      "message" : "Ten en cuenta que Android requiere una dirección IP estática para utilizar servidores DNS personalizados. Esta configuración requiere ajustes adicionales en el router, lo que afecta a la estrategia de la red para añadir nuevos dispositivos a la red. Recomendamos configurar el DNS <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\"> de tu router </button>. Esto le proporcionará a todos los dispositivos de tu red la velocidad y privacidad completas de DNS 1.1.1.1.",
+      "version" : "Versión anterior",
+      "message" : "Ten en cuenta que Android requiere una dirección IP estática para utilizar servidores DNS personalizados. Esta configuración requiere ajustes adicionales en tu router, lo que afecta a la estrategia de la red para añadir nuevos dispositivos a la red. Recomendamos configurar el DNS <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\"> de tu router </button>. Esto les proporcionará a todos los dispositivos de tu red la velocidad y privacidad completas de DNS 1.1.1.1.",
       "steps" : [ {
         "tag" : "li",
-        "content" : "A partir de la lista de aplicaciones de Android, abra la aplicación </strong>Ajustes<strong>."
+        "content" : "En la lista de aplicaciones de Android, abre la aplicación <strong>Ajustes</strong>."
       }, {
         "tag" : "li",
-        "content" : "Bajo la sección <strong>“Conexiones inalámbricas y redes”</strong>, presiona <strong>“Wi-Fi”</strong>,"
+        "content" : "En la sección <strong>Conexiones inalámbricas y redes</strong>, presiona <strong>Wi-Fi</strong>."
       }, {
         "tag" : "li",
-        "content" : "Manten presionado tu red preferida de la lista hasta que aparezca un menú contextual."
+        "content" : "Manten presionada tu red preferida de la lista hasta que aparezca un menú contextual."
       }, {
         "tag" : "li",
-        "content" : "Toca <strong>“Modificar la red”</strong> y a continuación en<strong>“Opciones avanzadas”</strong>."
+        "content" : "Toca <strong>Modificar la red</strong> y, a continuación, <strong>Opciones avanzadas</strong>."
       }, {
         "tag" : "li",
-        "content" : "Toca <strong>“Opciones avanzadas”</strong> y a continuación en <strong>“Configuración IP”</strong>."
+        "content" : "Toca <strong>Opciones avanzadas</strong> y, a continuación, <strong>Configuración IP</strong>."
       }, {
         "tag" : "li",
-        "content" : "Cambia <strong>“dinámico”</strong> a <strong>“estático”</strong>."
+        "content" : "Cambia <strong>dinámico</strong> a <strong>estático</strong>."
       }, {
         "tag" : "li",
-        "content" : "Use la configuración de tu router para introducir la dirección IP del dispositivo y la puerta de enlace."
+        "content" : "Usa la configuración de tu router para introducir la dirección IP del dispositivo y la puerta de enlace."
       }, {
         "tag" : "li",
-        "content" : "Toca el <strong> campo </strong> “DNS” y a continuación borra el número del campo."
+        "content" : "Toca el campo <strong>DNS</strong> y, a continuación, borra el número del campo."
       }, {
         "tag" : "li",
-        "content" : "En el <strong> campo “DNS </strong> 1”, escribe <strong class=\"code\">1.1.1.1</strong>"
+        "content" : "En el campo <strong> DNS 1</strong>, escribe <strong class=\"code\">1.1.1.1</strong>"
       }, {
         "tag" : "li",
-        "content" : "En el <strong> campo “DNS </strong> 2”, escribe <strong class=\"code\"> 1.0.0.1 </strong> (esto es por redundancia)."
+        "content" : "En el campo <strong>DNS 2</strong>, escribe <strong class=\"code\"> 1.0.0.1 </strong> (esto es por redundancia)."
       }, {
         "tag" : "li",
-        "content" : "Toca <strong>“Guardar”</strong>."
+        "content" : "Toca <strong>Guardar</strong>."
       }, {
         "tag" : "li",
-        "content" : "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ??"
+        "content" : "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"
+      } ]
+    },
+    "android9" : {
+      "version" : "Android 9 Pie",
+      "message" : "Nulo",
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "Ve a <strong>Configuración → Red e Internet → Avanzado → DNS privado</strong>."
+      }, {
+        "tag" : "li",
+        "content" : "Selecciona la opción <strong>Nombre de host del proveedor de DNS privado</strong>."
+      }, {
+        "tag" : "li",
+        "content" : "Introduce <strong class=\"code\">1dot1dot1dot1.cloudflare-dns.com</strong> y presiona <strong>Guardar</strong>."
+      }, {
+        "tag" : "li",
+        "content" : "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"
       } ]
     },
     "router" : {
@@ -226,7 +244,7 @@
         "content" : "Si se te solicita, escribe tu nombre de usuario y contraseña. Puede que esta información esté escrita en una etiqueta en el router."
       }, {
         "tag" : "li",
-        "content" : "En la página de configuración de tu router, localiza los ajustes del </strong>servidor DNS<strong>."
+        "content" : "En la página de configuración de tu router, localiza los ajustes del <strong>servidor DNS </strong>."
       }, {
         "tag" : "li",
         "content" : "Anota cualquier entrada que haya de servidores DNS existentes para futura referencia."
@@ -247,22 +265,22 @@
         } ]
       }, {
         "tag" : "li",
-        "content" : "Guarda la configuración y a continuación reinicia el navegador."
+        "content" : "Guarda la configuración y, a continuación, reinicia tu navegador."
       }, {
         "tag" : "li",
-        "content" : "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ??"
+        "content" : "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"
       } ]
     }
   },
   "share.header" : "✌️✌️Comparte un Internet más rápido, centrado en la privacidad, con tus amigos.",
   "share.emailSubject" : "✌️✌️ Navega por un Internet más rápido y privado — DNS Resolver 1.1.1.1",
-  "share.emailBody" : "«1.1.1.1» hace que la navegación por Internet sea más rápida y privada. Hecha un vistazo al https://1.1.1.1 para obtener más información y averiguar ¡cómo configurar tu dispositivo en menos de 2 minutos!",
-  "share.tweetBody" : "✌️✌️ El Internet rápido, seguro y privado ha llegado. Configura el DNS REsolver 1.1.1.1 en menos de dos minutos.",
+  "share.emailBody" : "«1.1.1.1» hace que la navegación por Internet sea más rápida y privada. Echa un vistazo al https://1.1.1.1 para obtener más información y averiguar cómo configurar tu dispositivo en menos de 2 minutos.",
+  "share.tweetBody" : "✌️✌️ El Internet rápido, seguro y privado ha llegado. Configura el DNS Resolver 1.1.1.1 en menos de dos minutos.",
   "faq.whosBehindThis" : "¿Quién está detrás de esto?",
-  "faq.partnership" : "<strong class=\"code\"> 1.1.1.1</strong> es una colaboración entre Cloudflare y APNIC.",
-  "faq.network" : "Cloudflare administra una de las redes más rápidas y grandes del mundo. APNIC es una organización sin fines de lucro encargada de gestionar la asignación de direcciones IP en las regiones de Asia Pacífico y Oceanía.",
+  "faq.partnership" : "<strong class=\"code\">1.1.1.1</strong> es una colaboración entre Cloudflare y APNIC.",
+  "faq.network" : "Cloudflare administra una de las redes más rápidas y grandes del mundo. APNIC es una organización sin fines de lucro encargada de gestionar la asignación de direcciones IP en las regiones de Asia-Pacífico y Oceanía.",
   "faq.networkContinued" : "Cloudflare tenía la red. APNIC tenía la dirección IP (1.1.1.1). A ambos nos motivaba la misión de ayudar a construir un mejor Internet. Puedes leer más acerca de las motivaciones de cada organización en nuestras respectivas publicaciones:<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\"> Blog de Cloudflare</a> /<a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\"> Blog de APNIC</a>.",
   "faq.canIintegrate" : "¿Puedo integrar con 1.1.1.1?",
-  "faq.integrationInfo" : "Si eres productor o fabricante de un navegador, sistema operativo, aplicación, router, o VPN y quieres construir un servicio de DNS centrado en la privacidad, rápido y moderno, <strong class=\"subtle\">¡sí!</strong>",
-  "faq.integrationDocs" : "Mediante el uso de DNS a través de HTTPS (DOH) puedes ofrecer una seguridad mejorada de forma transparente a tus clientes al tiempo que mejoras la velocidad de tus dispositivos. Aún mejor, puedes hacerlo sin coste, tanto en términos de concesión de licencias como de privacidad del <a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\"> cliente</a>. Más información sobre 1.1.1.1 y nuestros DNS con el apoyo de HTTPS (DOH) en nuestros <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">documentos del desarrollador</a>."
+  "faq.integrationInfo" : "Si eres fabricante de un navegador, sistema operativo, aplicación, router o VPN, y quieres construir un servicio de DNS centrado en la privacidad, rápido y moderno, <strong class=\"subtle\">¡sí!</strong>",
+  "faq.integrationDocs" : "Mediante el uso de DNS a través de HTTPS (DoH) puedes ofrecer una seguridad mejorada de forma transparente a tus clientes y mejorar la velocidad de tus dispositivos. Aún mejor, puedes hacerlo sin costo, tanto en términos de concesión de licencias como de <a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\"> privacidad</a> del cliente. Más información sobre 1.1.1.1 y nuestros DNS con el apoyo de HTTPS (DoH) en nuestros <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">documentos del desarrollador</a>."
 }
