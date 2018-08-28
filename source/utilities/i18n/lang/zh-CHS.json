@@ -1,0 +1,286 @@
+{
+  "title" : "1.1.1.1 - Internet 上速度最快、隐私优先的 DNS 解析器",
+  "description" : "✌️✌️ 浏览更快、更私密的 Internet。",
+  "hero.introducing" : "简介",
+  "hero.description" : "只需两分钟即可浏览更快、更私密的 Internet。",
+  "hero.getStarted" : "安装",
+  "hero.info" : "信息",
+  "explanation.dnsHeader" : "DNS：Internet 目录",
+  "explanation.dnsExplanation" : "Internet 上几乎所有内容都始于 DNS 请求。DNS 是 Internet 目录。单击一个链接、打开一个应用程序、发送一封电子邮件以及您的设备所做的第一件事都是询问目录：<strong class=\"subtle\">可以在哪里找到它？</strong>",
+  "explanation.dnsSlowInsecure" : "遗憾的是，DNS 在默认情况下通常既缓慢又不安全。您的 ISP 以及在 Internet 上进行监听的其他任何人都可以查看您访问过的每一个网站和您使用过的每一个应用程序 - 即使它们的内容都已加密也无法避免。令人恐怖的是，一些 DNS 提供商会销售您的 Internet 活动的相关数据或者将它用于向您发送针对性广告。",
+  "explanation.dnsAlternative" : "我们认为上述行为相当恶劣。如果您也这么认为，那么现在有了另一种选择：<strong class=\"code\">1.1.1.1</strong>",
+  "explanation.privacyHeader" : "隐私优先：保证。",
+  "explanation.privacyExplanation" : "我们正在重新思考 1983 年代制定的 DNS 协议。<strong class=\"code\">1.1.1.1</strong>支持加密的 DNS 以及基于 HTTPS 的 DNS。",
+  "explanation.privacyGuaranteeData" : "<span class=\"mobile-emphasis\">我们绝不会出售您的数据或将它用于发送针对性广告。</span>与此同时，",
+  "explanation.privacyGuaranteeLogs" : "<span class=\"mobile-emphasis\">我们绝不会记录您的 IP 地址</span>（其他公司就是采用该方式识别您的身份）。我们不只是说说而已。我们已雇请 KPMG 每年对我们的系统进行审核，以确保我们言行合一。",
+  "explanation.privacyConclusion" : "坦率地说，我们并不想知道您在 Internet 上的活动（与我们无关），我们已采取技术措施来确保我们无法获知您的活动。",
+  "explanation.performanceHeader" : "比任何其他公司的速度都更快。",
+  "explanation.performanceSubheader" : "实际上，速度快了 28%。",
+  "explanation.fastestDNS" : "我们构建的 1.1.1.1 已成为 Internet 上速度最快的 DNS 目录。并非我们自夸，而是独立 DNS 监控器 <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> 将 1.1.1.1 排名为全球速度最快的 DNS 服务。",
+  "explanation.speedContinued" : "由于您在 Internet 上的几乎所有活动都始于 DNS 请求，因此在您的所有设备中选择速度最快的 DNS 目录可加快大部分在线活动。",
+  "instructions" : {
+    "header" : "在 {{device}} 上进行设置",
+    "explanation" : "设置 <strong>1.1.1.1</strong> 需要两分钟时间，无需任何技术技能或特殊软件。即使您是一位计算机新手，只需在下方选取您使用的设备即可获取易于使用的设置指南。",
+    "debug" : "寻找有关您的互联网连接的更多信息？ 查看我们的<a target=\"_blank\" href=\"./help\">调试页面</a>。",
+    "questions" : "如有疑问，请访问我们的<a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">社区论坛</a>",
+    "mac-os" : {
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "打开系统首选项。"
+      }, {
+        "tag" : "li",
+        "content" : "搜索 <strong>DNS 服务器</strong>， 并从下拉列表中选择它。"
+      }, {
+        "tag" : "li",
+        "content" : "单击 <strong>+</strong> 按钮以添加一个 DNS 服务器，然后输入 <strong class=\"code\">1.1.1.1</strong>"
+      }, {
+        "tag" : "li",
+        "content" : "再次单击 <strong>+</strong>，并输入 <strong class=\"code\">1.0.0.1</strong>（这是为了实现冗余。）"
+      }, {
+        "tag" : "li",
+        "content" : "再次单击 <strong>+</strong>，并输入 <strong class=\"code\">2606:4700:4700::1111</strong>（这是为了实现冗余。）"
+      }, {
+        "tag" : "li",
+        "content" : "再次单击 <strong>+</strong>，并输入 <strong class=\"code\">2606:4700:4700::1001</strong>（这是为了实现冗余。）"
+      }, {
+        "tag" : "li",
+        "content" : "单击<strong>确定</strong>，然后单击<strong>应用</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "您已完成所有设置！您的设备现在即拥有更快、更私密的 DNS 服务器 ✌️✌️"
+      } ]
+    },
+    "windows" : {
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "单击“开始”菜单，然后单击<strong>控制面板</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "单击<strong>网络和 Internet</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "单击<strong>更改适配器设置</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "右键单击要连接的 Wi-Fi 网络，然后单击strong>属性</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "选择 <strong>Internet 协议版本 4</strong>（或者版本 6，如需要）。"
+      }, {
+        "tag" : "li",
+        "content" : "单击<strong>属性</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "记下来任何现有 DNS 服务器条目，以供将来参考。"
+      }, {
+        "tag" : "li",
+        "content" : "单击<strong>使用以下 DNS 服务器地址</strong>。"
+      }, {
+        "tag" : "li",
+        "children" : [ {
+          "tag" : "span",
+          "content" : "将这些地址替换为 1.1.1.1 DNS 地址："
+        }, {
+          "tag" : "ul",
+          "children" : [ {
+            "tag" : "li",
+            "content" : "对于 IPv4：<strong class=\"code\">1.1.1.1</strong> 和 <strong class=\"code\">1.0.0.1</strong>"
+          }, {
+            "tag" : "li",
+            "content" : "对于IPv6：<strong class=\"code\">2606:4700:4700::1111</strong>和<strong class=\"code\">2606:4700:4700::1001</strong>"
+          } ]
+        } ]
+      }, {
+        "tag" : "li",
+        "content" : "单击<strong>确定</strong>，然后单击<strong>关闭</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "重新启动浏览器。"
+      }, {
+        "tag" : "li",
+        "content" : "您已完成所有设置！您的设备现在即拥有更快、更私密的 DNS 服务器 ✌️✌️"
+      } ]
+    },
+    "linux" : {
+      "notice" : "虽然这些步骤适用于 Ubuntu，但大多数 Linux 发行版通过“网络管理器”配置 DNS 设置。还可以在 <code class=\"inline\">/etc/resolv.conf</code> 中指定您的 DNS 设置",
+      "steps" : [ {
+        "content" : "单击左侧菜单栏上的应用程序 <i class=\"fas fa-th\"></i> 图标。",
+        "tag" : "li"
+      }, {
+        "content" : "单击<strong>设置</strong>，然后单击<strong>网络</strong>。",
+        "tag" : "li"
+      }, {
+        "content" : "在右窗格中找到您的 Internet 连接，然后单击齿轮 <i class=\"fas fa-cog\"></i> 图标。",
+        "tag" : "li"
+      }, {
+        "content" : "单击 <strong>IPv4</strong> 或 <strong>IPv6</strong> 选项卡以查看您的 DNS 设置。",
+        "tag" : "li"
+      }, {
+        "content" : "将 DNS 条目上的“自动”开关设置为<strong>关闭</strong>。",
+        "tag" : "li"
+      }, {
+        "children" : [ {
+          "tag" : "span",
+          "content" : "在 DNS 条目字段中提供 1.1.1.1 DNS 地址："
+        }, {
+          "tag" : "ul",
+          "children" : [ {
+            "tag" : "li",
+            "content" : "<strong class=\"code\">1.0.0.1</strong>"
+          }, {
+            "tag" : "li",
+            "content" : "对于 IPv6：<strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
+          } ]
+        } ]
+      }, {
+        "content" : "单击<strong>应用</strong>，然后重新启动浏览器。",
+        "tag" : "li"
+      }, {
+        "content" : "您已完成所有设置！您的设备现在即拥有更快、更私密的 DNS 服务器 ✌️✌️",
+        "tag" : "li"
+      } ]
+    },
+    "iphone" : {
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "在您的 iPhone 主屏幕中，打开<strong>设置</strong>应用。"
+      }, {
+        "tag" : "li",
+        "content" : "点击 <strong>Wi-Fi</strong>，然后在列表中点击您的首选网络。"
+      }, {
+        "tag" : "li",
+        "content" : "点击<strong>配置 DNS</strong>，然后点击<strong>手动</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "如果存在任何现有条目，则点击 <strong>-</strong> 按钮，然后点击每一个条目旁边的<strong>删除</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "点击 <strong>+ 添加服务器</strong>按钮，然后键入 <strong class=\"code\">1.1.1.1</strong>"
+      }, {
+        "tag" : "li",
+        "content" : "再次点击<strong>+ 添加服务器</strong>按钮，然后键入 <strong class=\"code\">1.0.0.1</strong>。这是为了实现冗余。"
+      }, {
+        "tag" : "li",
+        "content" : "再次点击 <strong>+ 添加服务器</strong>按钮，然后键入 <strong class=\"code\">2606:4700:4700::1111</strong>。这是为了实现冗余。"
+      }, {
+        "tag" : "li",
+        "content" : "再次点击 <strong>+ 添加服务器</strong>按钮，然后键入 <strong class=\"code\">2606:4700:4700::1001</strong>。这是为了实现冗余。"
+      }, {
+        "tag" : "li",
+        "content" : "点击右上角的<strong>保存</strong>按钮。"
+      }, {
+        "tag" : "li",
+        "content" : "您已完成所有设置！您的设备现在即拥有更快、更私密的 DNS 服务器 ✌️✌️"
+      } ]
+    },
+    "android" : {
+      "version" : "先前的版本",
+      "message" : "请注意，Android 需要一个静态 IP 才能使用自定义 DNS 服务器。此设置需要在您的路由器上进行其他设置，这会影响您网络用于将新设备添加到该网络的策略。建议改为配置您的<button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">路由器 DNS</button>。这会赋予您网络上所有设备 1.1.1.1 DNS 的全速和私密性好处。",
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "从您的 Android 应用列表，打开<strong>设置</strong>应用。"
+      }, {
+        "tag" : "li",
+        "content" : "在<strong>无线和网络</strong>部分中，点击 <strong>Wi-Fi</strong>，"
+      }, {
+        "tag" : "li",
+        "content" : "在列表中长按您首选的网络，直到出现上下文菜单为止。"
+      }, {
+        "tag" : "li",
+        "content" : "点击<strong>修改网络</strong>，然后点击<strong>高级选项</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "点击<strong>高级选项</strong>，然后点击 <strong>IP 设置</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "将<strong>动态</strong>更改为<strong>静态</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "使用您路由器的配置，输入设备的 IP 地址和网关。"
+      }, {
+        "tag" : "li",
+        "content" : "点击 <strong>DNS</strong> 字段，然后删除该字段中的数字。"
+      }, {
+        "tag" : "li",
+        "content" : "在<strong>DNS 1</strong>字段中，输入<strong class=\"code\">1.1.1.1</strong>"
+      }, {
+        "tag" : "li",
+        "content" : "在<strong>“DNS 2”</strong>字段中，输入 <strong class=\"code\">1.0.0.1</strong>。这是为了实现冗余。"
+      }, {
+        "tag" : "li",
+        "content" : "点击<strong>保存</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "您已完成所有设置！您的设备现在即拥有更快、更私密的 DNS 服务器 ✌️✌️"
+      } ]
+    },
+    "android9" : {
+      "version" : "Android 9 的馅饼",
+      "message" : "空值",
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "转到 <strong>设置→网络和 Internet→高级→专用 DNS</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "选择<strong>专用DNS提供商的主机名</strong>选项。"
+      }, {
+        "tag" : "li",
+        "content" : "输入<strong class=\"code\">1dot1dot1dot1.cloudflare-dns.com</strong> 并点击 <strong>保存</strong>。"
+      }, {
+        "tag" : "li",
+        "content" : "您已完成所有设置！您的设备现在即拥有更快、更私密的 DNS 服务器 ✌️✌️"
+      } ]
+    },
+    "router" : {
+      "message" : "您路由器的配置可能会有所不同。有关详细信息，请参阅您的手册。",
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "连接到您的首选无线网络。"
+      }, {
+        "tag" : "li",
+        "content" : "在浏览器中输入您路由器的网关 IP 地址。"
+      }, {
+        "tag" : "li",
+        "content" : "如果出现系统提示，请填写用户名和密码。该信息可能标注在路由器上。"
+      }, {
+        "tag" : "li",
+        "content" : "在路由器配置页面中，找到 <strong>DNS 服务器</strong>设置。"
+      }, {
+        "tag" : "li",
+        "content" : "记下来任何现有 DNS 服务器条目，以供将来参考。"
+      }, {
+        "tag" : "li",
+        "children" : [ {
+          "tag" : "span",
+          "content" : "将这些地址替换为 1.1.1.1 DNS 地址："
+        }, {
+          "tag" : "ul",
+          "children" : [ {
+            "tag" : "li",
+            "content" : "对于 IPv4：<strong class=\"code\">1.1.1.1</strong> 和 <strong class=\"code\">1.0.0.1</strong>"
+          }, {
+            "tag" : "li",
+            "content" : "对于IPv6：<strong class=\"code\">2606:4700:4700::1111</strong>和<strong class=\"code\">2606:4700:4700::1001</strong>"
+          } ]
+        } ]
+      }, {
+        "tag" : "li",
+        "content" : "保存设置，然后重新启动浏览器。"
+      }, {
+        "tag" : "li",
+        "content" : "您已完成所有设置！您的设备现在即拥有更快、更私密的 DNS 服务器 ✌️✌️"
+      } ]
+    }
+  },
+  "share.header" : "✌️✌️ 与好友分享更快、隐私优先的 Internet。",
+  "share.emailSubject" : "✌️✌️ 浏览更快、更私密的 Internet - 1.1.1.1 DNS 解析器",
+  "share.emailBody" : "“1.1.1.1”可实现更快、更私密的 Internet 浏览。有关详细信息以及如何在两分钟不到的时间内完成设置您的设备，请访问 https://1.1.1.1！",
+  "share.tweetBody" : "✌️✌️ 随时提供快速、安全和私密的 Internet。只需不到两分钟时间即可完成设置 1.1.1.1 DNS 解析器。",
+  "faq.whosBehindThis" : "谁在提供技术支持？",
+  "faq.partnership" : "<strong class=\"code\"> 1.1.1.1</strong> 由 Cloudflare 与 APNIC 合作出品。",
+  "faq.network" : "Cloudflare 运营着全球最大、最快的网络之一。APNIC 是一家非营利性组织，负责管理亚太和大洋洲地区 IP 地址的分配。",
+  "faq.networkContinued" : "Cloudflare 拥有该网络。APNIC 拥有该 IP 地址 (1.1.1.1)。激励我们双方合作的使命是帮助构建一个更好的 Internet。可以通过我们各自的帖子来详细了解各组织的动机：<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 博客</a>/<a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 博客</a>。",
+  "faq.canIintegrate" : "是否可以与 1.1.1.1 集成？",
+  "faq.integrationInfo" : "如果您是一位要内建隐私优先、快速、现代 DNS 服务的浏览器、操作系统、应用程序、路由器或 VPN 制造商，<strong class=\"subtle\">当然可以！</strong>",
+  "faq.integrationDocs" : "通过使用基于 HTTPS 的 DNS (DoH)，您显然可以在提高自己设备速度的同时向客户提供增强的安全性。您甚至于在许可和客户<a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">隐私</a>两方面不用花一分钱即可做到。有关 1.1.1.1 和我们提供的基于 HTTPS 的 DNS (DoH) 支持，请参阅我们的<a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">开发者文档</a>。"
+}
