@@ -1,184 +1,286 @@
 {
-  "title": "1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver",
-  "description": "✌️✌️ DNSリゾルバー1.1.1.1でより速く、よりプライベートなインターネットの閲覧を",
-  "hero.introducing": "新登場",
-  "hero.description": "たったの2分で、より速く、よりプライベートなインターネットの閲覧が可能となります。",
-  "hero.getStarted": "始める",
-  "hero.info": "情報",
-
-  "explanation.dnsHeader": "DNS：インターネットのディレクトリ",
-  "explanation.dnsExplanation": "インターネット上のほとんどすべてがDNSリクエストから始まります。 DNSはインターネットのディレクトリです。 リンクをクリックしたり、アプリを開いたり、電子メールを送信するとき、デバイスは、まずディレクトリに次のことを尋ねます。<strong class=\"subtle\">どこで見つけることができますか？</strong>",
-  "explanation.dnsSlowInsecure": "残念ながら通常、DNSは遅い上に安全とは言えません。 お客様のインターネットサービスプロバイダー、そしてインターネットを盗聴している誰もが、たとえ内容が暗号化されていても、あなたが訪問するすべてのサイトとすべてのアプリを見ることができます。気味が悪いことに、一部のDNSプロバイダーは、お客様のインターネット閲覧状況に関するデータを販売したり、そのデータを基に広告を送りつけてきたりします。",
-  "explanation.dnsAlternative": "当社はこれらを厄介なことだと考えます。そこで、同様に思われるお客様に新たな方法をご紹介します：<strong class=\"code\">1.1.1.1</strong>",
-
-  "explanation.privacyHeader": "プライバシー優先：保証されています。",
-  "explanation.privacyExplanation": "当社は、1983年頃のDNSプロトコルを見直しています。 <strong class=\"code\">1.1.1.1</strong> は暗号化されたDNSだけでなく、HTTPS経由のDNSもサポートしています。",
-  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">当社はお客様のデータを販売することや、データを使って広告のターゲットにすることはありません。</span>",
-  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">当社はあなたのIPアドレスを記録することはありません。</span> (他社がお客様を識別する方法）これを証明するために、当社は KPMG によるシステム監査を毎年行っています。",
-  "explanation.privacyConclusion": "率直に申し上げますと、当社はお客様がインターネットで何をしているかを知りたくありません。そこで、技術的な措置を講じてお客様のインターネット上の行動を見ることができないよう制限しました。",
-
-  "explanation.performanceHeader": "他の何よりも速い。",
-  "explanation.performanceSubheader": "実際には28％速だよ。",
-  "explanation.fastestDNS": "当社は、インターネット最速のDNSディレクトリである1.1.1.1を構築しました。 実際に、独立したDNSモニターである<a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>は、1.1.1.1を世界最速のDNSサービスにランク付けしました。ぜひお確かめください。",
-  "explanation.speedContinued": "インターネット上のほとんどのアクティビティはDNSリクエストで始まります。お使いのあらゆるデバイスにおいて最速のDNSディレクトリを選択することにより、オンライン上のほぼ全てのアクティビティを加速することができます。",
-
-  "instructions": {
-    "header": "{{device}}でのセットアップ",
-    "explanation": "2分で<strong>1.1.1.1</strong>をセットアップします。 下記のデバイスを選択してください。",
-    "questions": "質問ですか<a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">コミュニティフォーラム</a>をご覧ください",
-    "mac-os": {
-      "steps": [
-        {"tag": "li", "content": "システム環境設定を開いてください。"},
-        {"tag": "li", "content": "<strong>「DNSサーバ」</strong>を検索し、次にドロップダウンから選択してください。"},
-        {"tag": "li", "content": "DNSサーバーを追加する<strong> + </strong>ボタンをクリックし、<strong>1.1.1.1 </strong>を入力してください。"},
-        {"tag": "li", "content": "再び<strong> + </strong>をクリックして、<strong class=\"code\">1.0.0.1</strong>を入力します（これは、冗長性を確保するためです。）"},
-        {"tag": "li", "content": "再び<strong> + </strong>をクリックして、<strong class=\"code\">2606:4700:4700::1111</strong>を入力します（これは、冗長性を確保するためです。）"},
-        {"tag": "li", "content": "再び<strong> + </strong>をクリックして、<strong class=\"code\">2606:4700:4700::1001</strong>を入力します（これは、冗長性を確保するためです。）"},
-        {"tag": "li", "content": "<strong>「OK」</strong>をクリックし、<strong>「適用」</strong>をクリックしてください。"},
-        {"tag": "li", "content": "これで完了です！ お使いのデバイスは、より速く、よりプライベートなDNSサーバーに設定されました✌️✌️"}
-      ]
+  "title" : "1.1.1.1 — インターネットで最速のプライバシー優先のDNSリゾルバー",
+  "description" : "✌️✌️ インターネット閲覧をより速く、よりプライベートに。",
+  "hero.introducing" : "新登場",
+  "hero.description" : "たった2分で、インターネット閲覧をより速く、よりプライベートに。",
+  "hero.getStarted" : "インストール",
+  "hero.info" : "情報",
+  "explanation.dnsHeader" : "DNS：インターネットのディレクトリ",
+  "explanation.dnsExplanation" : "インターネット上のほとんどすべてがDNSリクエストから始まります。DNSはインターネットのディレクトリです。リンクをクリックしたり、アプリを開いたり、電子メールを送信するとき、デバイスは、まずディレクトリに次のことを尋ねます。<strong class=\"subtle\">これはどこにありますか？ </strong>",
+  "explanation.dnsSlowInsecure" : "残念ながら、通常DNSは遅い上に安全とは言えません。インターネットサービスプロバイダー、そしてインターネットを盗聴している誰もが、たとえ内容が暗号化されていても、ユーザーが訪問するすべてのサイトと使用するすべてのアプリを見ることができます。気味が悪いことに、一部のDNSプロバイダーは、顧客のインターネット閲覧状況に関するデータを販売したり、そのデータを基に広告を送りつけてきたりします。",
+  "explanation.dnsAlternative" : "当社はこれらを不快に感じます。そこで、同様に感じるお客様に新たな方法として<strong class=\"code\">1.1.1.1</strong>をご紹介します。",
+  "explanation.privacyHeader" : "プライバシー優先：保証します。",
+  "explanation.privacyExplanation" : "当社は、1983年頃のDNSプロトコルを見直しました。<strong class=\"code\">1.1.1.1</strong>は暗号化されたDNSだけでなく、DNS over HTTPSもサポートしています。",
+  "explanation.privacyGuaranteeData" : "<span class=\"mobile-emphasis\">当社は決してお客様のデータを販売したり、広告のターゲットとして利用するためにデータを使ったりしません。</span>",
+  "explanation.privacyGuaranteeLogs" : "<span class=\"mobile-emphasis\">当社はお客様のIPアドレス</span>（他社がお客様を識別する方法）を記録することはありません。これを証明するため、KPMGによるシステム監査を毎年行っています。",
+  "explanation.privacyConclusion" : "当社はお客様がインターネットで何をしているかについて関与いたしません。そこで、技術的な措置を講じてお客様のインターネット上の行動を見ることができないよう制限しました。",
+  "explanation.performanceHeader" : "他社よりも高速。",
+  "explanation.performanceSubheader" : "事実、28％高速。",
+  "explanation.fastestDNS" : "当社はインターネットで最速のDNSディレクトリである1.1.1.1を構築しました。実際に、独立したDNSモニターである<a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'> DNSPerf</a>によって、1.1.1.1は世界最速のDNSサービスにランク付けされています。",
+  "explanation.speedContinued" : "インターネット上のほとんどのアクティビティはDNSリクエストで始まります。お使いのあらゆるデバイスにおいて最速のDNSディレクトリを選択することにより、オンライン上のほぼ全てのアクティビティを加速することができます。",
+  "instructions" : {
+    "header" : "{{device}}でのセットアップ",
+    "explanation" : "<strong>1.1.1.1</strong>のセットアップは2分で完了します。技術的スキルや特別なソフトウェアは一切不要です。コンピューターの初心者でも問題ありません。次の中からお使いのデバイスを選択し、わかりやすい設定ガイドに従ってください。",
+    "debug" : "お使いのインターネット接続についての詳細は、<a target=\"_blank\" href=\"./help\">デバッグページ</a>をご確認ください。",
+    "questions" : "不明な点については、<a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">コミュニティフォーラム</a>をご覧ください",
+    "mac-os" : {
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "システム環境設定を開いてください。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「DNSサーバー」</strong>を検索し、ドロップダウンから選択します。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「+」</strong>ボタンをクリックしてDNSサーバーを追加し、<strong class=\"code\">「1.1.1.1」</strong>と入力します。"
+      }, {
+        "tag" : "li",
+        "content" : "もう一度<strong>「+」 </strong>をクリックし、<strong class=\"code\">「1.0.0.1」</strong>と入力します（冗長性を確保するため）。"
+      }, {
+        "tag" : "li",
+        "content" : "もう一度<strong>「+」</strong>をクリックし、<strong class=\"code\">「2606:4700:4700::1111」</strong>と入力します（冗長性を確保するため）。"
+      }, {
+        "tag" : "li",
+        "content" : "もう一度<strong>「+」</strong>をクリックし、<strong class=\"code\">「2606:4700:4700::1001」</strong>と入力します（冗長性を確保するため）。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「OK」</strong>をクリックし、<strong>「適用」</strong>をクリックします。"
+      }, {
+        "tag" : "li",
+        "content" : "これで完了です。お使いのデバイスはより高速でよりプライベートなDNSサーバーに接続されました ✌️✌️"
+      } ]
     },
-    "windows": {
-      "steps": [
-        {"tag": "li", "content": "スタートメニューをクリックし、<strong>「コントロールパネル」</strong>をクリックします。"},
-        {"tag": "li", "content": "<strong>「ネットワークとインターネット」</strong>をクリックします。"},
-        {"tag": "li", "content": "<strong>「アダプターの設定の変更」</strong>をクリックします。"},
-        {"tag": "li", "content": "接続しているWi-Fiネットワークを右クリックし、<strong>「プロパティ」</strong>をクリックします。"},
-        {"tag": "li", "content": "<strong>「インターネットプロトコルバージョン4」</strong>（または必要に応じて「バージョン6」）を選択します。"},
-        {"tag": "li", "content": "<strong>「プロパティ」</strong>をクリックします。"},
-        {"tag": "li", "content": "今後の参考のために、既存のDNSサーバのエントリーをメモしておきます。"},
-        {"tag": "li", "content": "<strong>「次のDNSサーバーのアドレスを使う」</strong>をクリックします。"},
-        {
-          "tag": "li",
-          "children": [
-            {"tag": "span", "content": "次のアドレスを1.1.1.1 DNSアドレスで置き換えます。"},
-            {
-              "tag": "ul",
-              "children": [
-                {"tag": "li", "content": "For IPv4: <strong class=\"code\">1.1.1.1</strong> and <strong class=\"code\">1.0.0.1</strong>"},
-                {"tag": "li", "content": "For IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"}
-              ]
-            }
-          ]
-        },
-        {"tag": "li", "content": "Click <strong>OK</strong>, then <strong>Close</strong>."},
-        {"tag": "li", "content": "Restart your browser."},
-        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
-      ]
+    "windows" : {
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "スタートメニューをクリックし、<strong>「コントロールパネル」</strong>をクリックします。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「ネットワークとインターネット」</strong>をクリックします。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「アダプターの設定の変更」</strong>をクリックします。"
+      }, {
+        "tag" : "li",
+        "content" : "接続しているWi-Fiネットワークを右クリックし、<strong>「プロパティ」</strong>をクリックします。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「インターネットプロトコルバージョン4」</strong>（または必要に応じて「バージョン6」）を選択します。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「プロパティ」</strong>をクリックします。"
+      }, {
+        "tag" : "li",
+        "content" : "今後の参考のために、既存のDNSサーバーのエントリーをメモしておきます。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「次のDNSサーバーのアドレスを使う」</strong>をクリックします。"
+      }, {
+        "tag" : "li",
+        "children" : [ {
+          "tag" : "span",
+          "content" : "次のアドレスを1.1.1.1 DNSアドレスで置き換えます。"
+        }, {
+          "tag" : "ul",
+          "children" : [ {
+            "tag" : "li",
+            "content" : "IPv4の場合：<strong class=\"code\">「1.1.1.1」</strong>および<strong class=\"code\">「1.0.0.1」</strong>"
+          }, {
+            "tag" : "li",
+            "content" : "IPv6の場合：<strong class=\"code\">「2606:4700:4700::1111」</strong>および<strong class=\"code\">「2606:4700:4700::1001」</strong>"
+          } ]
+        } ]
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「OK」</strong>をクリックし、<strong>「閉じる」</strong>をクリックします。"
+      }, {
+        "tag" : "li",
+        "content" : "ブラウザを再起動します。"
+      }, {
+        "tag" : "li",
+        "content" : "これで完了です。お使いのデバイスはより高速でよりプライベートなDNSサーバーに接続されました ✌️✌️"
+      } ]
     },
-    "linux": {
-      "notice": "以上の手順はUbuntu向けですが、ほとんどのLinuxディストリビューションは、Network Managerを使用してDNSの設定を行います。 また、DNS設定は<code class=\"inline\">/etc/resolv.conf</code>で指定することができます。",
-      "steps": [
-          {
-            "content": "左のメニューバー上のアプリケーション<i class=\"fas fa-th\"></i>アイコンをクリックします。",
-            "tag": "li"
-          },
-          {
-            "content": "<strong>「設定」</strong>をクリックし、次に<strong>「ネットワーク」 </strong>をクリックします。",
-            "tag": "li"
-          },
-          {
-            "content": "右側のペインでインターネット接続を確認し、次にギア<i class=\"fas fa-cog\"></i>アイコンをクリックしてください。",
-            "tag": "li"
-          },
-          {
-            "content": "<strong>IPv4 </strong>または<strong>IPv6 </strong>タブをクリックし、DNS設定を確認します。",
-            "tag": "li"
-          },
-          {
-            "content": "DNSエントリの「自動」トグルを<strong>オフ</strong>に設定します。",
-            "tag": "li"
-          },
-          {
-            "children": [
-              {"tag": "span", "content": "Provide the 1.1.1.1 DNS addresses in the DNS entries field:"},
-              {
-                "tag": "ul",
-                "children": [
-                  {"tag": "li", "content": "IPv4の場合：<strong>1.1.1.1, 1.0.0.1 </strong>"},
-                  {"tag": "li", "content": "IPv6の場合：<strong>2606:4700:4700::1111, 2606:4700:4700::1001</strong>"}
-                ]
-              }
-            ]
-          },
-          {
-            "content": "<strong>適用 </strong>をクリックし、ブラウザを再起動してください。",
-            "tag": "li"
-          },
-          {
-            "content": "これで完了です！ お使いのデバイスは、より速く、よりプライベートなDNSサーバーに設定されました✌️✌️",
-            "tag": "li"
-          }
-      ]
+    "linux" : {
+      "notice" : "これはUbuntu用の手順ですが、ほとんどのLinuxディストリビューションで、DNS設定はネットワークマネージャーにより構成されています。この代わりに、<code class=\"inline\">/etc/resolv.conf</code>でDNS設定を指定することができます。",
+      "steps" : [ {
+        "content" : "左のメニューバーにあるアプリケーション<i class=\"fas fa-th\"></i>アイコンをクリックします。",
+        "tag" : "li"
+      }, {
+        "content" : "<strong>「設定」</strong>をクリックし、次に<strong>「ネットワーク」 </strong>をクリックします。",
+        "tag" : "li"
+      }, {
+        "content" : "右側のペインでインターネット接続を確認し、次に歯車<i class=\"fas fa-cog\"></i>アイコンをクリックます。",
+        "tag" : "li"
+      }, {
+        "content" : "<strong>「IPv4 」</strong>または<strong>「IPv6」</strong>タブをクリックし、DNS設定を確認します。",
+        "tag" : "li"
+      }, {
+        "content" : "DNSエントリーの「自動」トグルを<strong>「オフ」</strong>に設定します。",
+        "tag" : "li"
+      }, {
+        "children" : [ {
+          "tag" : "span",
+          "content" : "1.1.1.1 DNSアドレスをDNSエントリーフィールドに入力します。"
+        }, {
+          "tag" : "ul",
+          "children" : [ {
+            "tag" : "li",
+            "content" : "<strong class=\"code\">「1.0.0.1」</strong>"
+          }, {
+            "tag" : "li",
+            "content" : "IPv6の場合：<strong>「2606:4700:4700::1111,2606:4700:4700::1001」</strong>"
+          } ]
+        } ]
+      }, {
+        "content" : "<strong>「適用」</strong>をクリックし、ブラウザを再起動します。",
+        "tag" : "li"
+      }, {
+        "content" : "これで完了です。お使いのデバイスはより高速でよりプライベートなDNSサーバーに接続されました ✌️✌️",
+        "tag" : "li"
+      } ]
     },
-    "iphone": {
-      "steps": [
-        {"tag": "li", "content": "iPhoneのホーム画面から、<strong>「設定」</strong>アプリを開きます。"},
-        {"tag": "li", "content": "<strong>「Wi-Fi」</strong>をタップし、リストからお好みのネットワークをタップします。"},
-        {"tag": "li", "content": "<strong>「DNSを構成」</strong>をタップして、次に<strong>「手動」</strong>をタップします。"},
-        {"tag": "li", "content": "既存のエントリーがある場合、<strong>- </strong>ボタンをタップし、各エントリーの横にある<strong>「削除」 </strong>をタップします。"},
-        {"tag": "li", "content": "<strong>+サーバを追加</strong>ボタンをタップし、次に、<strong>1.1.1.1 </strong>を入力します。"},
-        {"tag": "li", "content": "<strong>+サーバを追加</strong>ボタンを再度タップし、次に、<strong>1.0.0.1 </strong>を入力します。これは、冗長性を確保するためです。"},
-        {"tag": "li", "content": "<strong>+サーバを追加</strong>ボタンを再度タップし、次に、<strong>2606:4700:4700::1111 </strong>を入力します。これは、冗長性を確保するためです。"},
-        {"tag": "li", "content": "<strong>+サーバを追加</strong>ボタンを再度タップし、次に、<strong>2606:4700:4700::1001 </strong>を入力します。これは、冗長性を確保するためです。"},
-        {"tag": "li", "content": "右上の<strong>「保存」</strong>ボタンをタップします。"},
-        {"tag": "li", "content": "これで完了です！ お使いのデバイスは、より速く、よりプライベートなDNSサーバーに設定されました✌️✌️"}
-      ]
+    "iphone" : {
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "iPhoneのホーム画面から、<strong>設定</strong>アプリを開きます。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「Wi-Fi」</strong>をタップし、リストからお好みのネットワークをタップします。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「DNSを構成」</strong>をタップして、次に<strong>「手動」</strong>をタップします。"
+      }, {
+        "tag" : "li",
+        "content" : "既存のエントリーがある場合、<strong>「-」</strong>ボタンをタップし、各エントリーの横にある<strong>「削除」</strong>をタップします。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「+サーバーを追加」</strong>ボタンをタップし、<strong class=\"code\">「1.1.1.1」</strong>と入力します。"
+      }, {
+        "tag" : "li",
+        "content" : "もう一度<strong>「+サーバーを追加」</strong>ボタンをタップし、<strong class=\"code\">「1.0.0.1」</strong>と入力します（冗長性を確保するため）。"
+      }, {
+        "tag" : "li",
+        "content" : "もう一度<strong>「+サーバーを追加」</strong>ボタンをタップし、<strong class=\"code\">「2606:4700:4700::1111」</strong>と入力します（冗長性を確保するため）。"
+      }, {
+        "tag" : "li",
+        "content" : "もう一度<strong>「+サーバーを追加」</strong>ボタンをタップし、 <strong class=\"code\">「2606:4700:4700::1001」</strong>と入力します（冗長性を確保するため）。"
+      }, {
+        "tag" : "li",
+        "content" : "右上の<strong>「保存」</strong>ボタンをタップします。"
+      }, {
+        "tag" : "li",
+        "content" : "これで完了です。お使いのデバイスはより高速でよりプライベートなDNSサーバーに接続されました ✌️✌️"
+      } ]
     },
-    "android": {
-      "message": "Androidでは、カスタムDNSサーバーを使用するためには静的IPが必要です。このセットアップを行うにはルーターの追加設定が必要です。これにより、ルーターが新しいデバイスを追加するためのネットワークの戦略に影響を与える場合があります。 代わりに、<button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">ルーターのDNS </button>の設定をお勧めします。 これにより、お客様のネットワーク上のすべてのデバイスで、Cloudflare DNSが提供する高速でプライバシー性の高いネット環境が実現します。",
-      "steps": [
-        {"tag": "li", "content": "Androidのアプリのリストから、<strong>設定 </strong>アプリを開きます。"},
-        {"tag": "li", "content": "<strong>「無線とネットワーク」</strong>セクションの中の<strong>「Wi-Fi」</strong>をタップします。"},
-        {"tag": "li", "content": "コンテキストメニューが表示されるまで、リスト内のお好みのネットワークを長押しします。"},
-        {"tag": "li", "content": "strong>「詳細オプション」</strong>をタップし、次に</strong>「ネットワークの変更」<strong>をタップします。"},
-        {"tag": "li", "content": "<strong>「詳細オプション」</strong>をタップし、次に<strong>「IP設定」</strong>をタップします。"},
-        {"tag": "li", "content": "<strong>「動的」</strong>を<strong>「静的」</strong>に変更します。"},
-        {"tag": "li", "content": "ルーターの構成を使用して、お使いのデバイスのIPアドレスとゲートウェイを入力します。"},
-        {"tag": "li", "content": "<strong>「DNS」</strong>フィールドをタップして、フィールドの数値を消去します。"},
-        {"tag": "li", "content": "<strong>「DNS 1」</strong>フィールドで、<strong>1.1.1.1 </strong>を入力します。"},
-        {"tag": "li", "content": "<strong>「DNS 2」</strong>フィールドで、<strong class=\"code\">1.0.0.1</strong>を入力してください。（これは、冗長性を確保するためです。）"},
-        {"tag": "li", "content": "<strong>「保存」</strong>をタップします。"},
-        {"tag": "li", "content": "これで完了です！お使いのデバイスはこれで、より速く、よりプライベートなDNSサーバーに設定されました✌️✌️"}
-      ]
+    "android" : {
+      "version" : "以前のバージョン",
+      "message" : "AndroidではカスタムDNSサーバーを使用するのに静的IPが必要な点に留意してください。これにはルーター上の追加のセットアップが必要になるため、ネットワークへの新規デバイスの追加に関するネットワーク方針に影響します。代わりに、<button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">ルーターのDNS </button>を構成することをお勧めします。これにより、ネットワーク上のすべてのデバイスが1.1.1.1 DNSの最高速度とプライバシーのメリットを得ることができます。",
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "Androidのアプリのリストから、<strong>設定 </strong>アプリを開きます。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「無線とネットワーク」</strong>セクションの中の<strong>「Wi-Fi」</strong>をタップします。"
+      }, {
+        "tag" : "li",
+        "content" : "コンテキストメニューが表示されるまで、リスト内のお好みのネットワークを長押しします。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「ネットワークの変更」</strong>をタップし、次に <strong>「詳細オプション」</strong>をタップします。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「詳細オプション」</strong>をタップし、次に<strong>「IP設定」</strong>をタップします。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「動的」</strong>を<strong>「静的」</strong>に変更します。"
+      }, {
+        "tag" : "li",
+        "content" : "ルーターの構成を使用して、お使いのデバイスのIPアドレスとゲートウェイを入力します。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「DNS」</strong>フィールドをタップして、フィールドの数値を消去します。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「DNS 1」</strong>フィールドに<strong class=\"code\">「1.1.1.1」</strong>と入力します。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「DNS 2」</strong>フィールドに<strong class=\"code\">「1.0.0.1」</strong>と入力します（冗長性を確保するため）。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「保存」</strong>をタップします。"
+      }, {
+        "tag" : "li",
+        "content" : "これで完了です。お使いのデバイスはより高速でよりプライベートなDNSサーバーに接続されました ✌️✌️"
+      } ]
     },
-    "router": {
-      "message": "お使いのルーターにより、設定が異なる場合があります。 詳細については、マニュアルを参照してください。",
-      "steps": [
-        {"tag": "li", "content": "お好みのワイヤレスネットワークに接続します。"},
-        {"tag": "li", "content": "お使いのブラウザでルータのゲートウェイIPアドレスを入力します。"},
-        {"tag": "li", "content": "入力を求められた場合は、ユーザー名とパスワードを入力します。 この情報は、ルーターに表示されていることがあります。"},
-        {"tag": "li", "content": "ルーターの設定ページで、<strong>DNSサーバー</strong>設定を探します。"},
-        {"tag": "li", "content": "今後の参考のために、既存のDNSサーバのエントリーをメモしておきます。"},
-        {
-          "tag": "li",
-          "children": [
-            {"tag": "span", "content": "次のアドレスを1.1.1.1 DNSアドレスで置き換えます。"},
-            {
-              "tag": "ul",
-              "children": [
-                {"tag": "li", "content": "IPv4の場合：<strong class=\"code\">1.1.1.1</strong>および<strong class=\"code\">1.0.0.1</strong>"},
-                {"tag": "li", "content": "IPv6の場合：<strong class=\"code\">2606:4700:4700::1111</strong>および<strong class=\"code\">2606:4700:4700::1001</strong>"}
-              ]
-            }
-          ]
-        },
-        {"tag": "li", "content": "設定を保存し、ブラウザを再起動します。"},
-        {"tag": "li", "content": "これで完了です！お使いのデバイスは、より速く、よりプライベートなDNSサーバーに設定されました ✌️✌️"}
-      ]
+    "android9" : {
+      "version" : "Android 9 Pie",
+      "message" : "Null",
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "<strong>「設定」→「ネットワーク＆インターネット」→「上級」→「プライベートDNS」</strong>に移動します。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong>「プライベートDNSプロバイダーのホスト名」</strong>オプションを選択します。"
+      }, {
+        "tag" : "li",
+        "content" : "<strong class=\"code\">「1dot1dot1dot1.cloudflare-dns.com」</strong>と入力して<strong>「保存」</strong>を押します。"
+      }, {
+        "tag" : "li",
+        "content" : "これで完了です。お使いのデバイスはより高速でよりプライベートなDNSサーバーに接続されました ✌️✌️"
+      } ]
+    },
+    "router" : {
+      "message" : "お使いのルーターにより、設定が異なる場合があります。詳細については、マニュアルを参照してください。",
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "お好みのワイヤレスネットワークに接続します。"
+      }, {
+        "tag" : "li",
+        "content" : "お使いのブラウザでルーターのゲートウェイIPアドレスを入力します。"
+      }, {
+        "tag" : "li",
+        "content" : "入力を求められた場合は、ユーザー名とパスワードを入力します。この情報はルーターに表示されている場合があります。"
+      }, {
+        "tag" : "li",
+        "content" : "ルーターの設定ページで、<strong>DNSサーバー</strong>設定を探します。"
+      }, {
+        "tag" : "li",
+        "content" : "今後の参考のために、既存のDNSサーバーのエントリーをメモしておきます。"
+      }, {
+        "tag" : "li",
+        "children" : [ {
+          "tag" : "span",
+          "content" : "次のアドレスを1.1.1.1 DNSアドレスで置き換えます。"
+        }, {
+          "tag" : "ul",
+          "children" : [ {
+            "tag" : "li",
+            "content" : "IPv4の場合：<strong class=\"code\">「1.1.1.1」</strong>および<strong class=\"code\">「1.0.0.1」</strong>"
+          }, {
+            "tag" : "li",
+            "content" : "IPv6の場合：<strong class=\"code\">「2606:4700:4700::1111」</strong>および<strong class=\"code\">「2606:4700:4700::1001」</strong>"
+          } ]
+        } ]
+      }, {
+        "tag" : "li",
+        "content" : "設定を保存し、ブラウザを再起動します。"
+      }, {
+        "tag" : "li",
+        "content" : "これで完了です。お使いのデバイスはより高速でよりプライベートなDNSサーバーに接続されました ✌️✌️"
+      } ]
     }
   },
-
-  "share.header": "より速く、よりプライバシー優先のインターネットを友人と共有しましょう。",
-  "share.emailSubject": "✌️✌️ DNSリゾルバー1.1.1.1でより速く、よりプライベートなインターネットの閲覧を",
-  "share.emailBody": "1.1.1.1は、インターネットの閲覧を、より速く、よりプライベートにします。 詳しい内容と、お使いのデバイスを簡単にセットアップする方法は、https://1.1.1.1でご確認ください！",
-  "share.tweetBody": "✌️✌️ 高速、安全、そしてプライベートなインターネットはここにあります。CloudflareのDNSリゾルバーは設定に2分もかかりません",
-
-  "faq.whosBehindThis": "背景には誰が？",
-  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong>は、CloudflareとAPNICのパートナーシップにより誕生しました。",
-  "faq.network": "Cloudflareは、世界最大、かつ最速なネットワークのひとつを運営しています。 APNICは、アジア太平洋・オセアニア地域におけるIPアドレスの割り当てを管理する非営利団体です。",
-  "faq.networkContinued": "Cloudflareはネットワークを、 APNICは、IPアドレス（1.1.1.1）を所有していました。 どちらも、より良いインターネットを構築する使命を果たすという意欲を持っていました。詳しくは<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflareブログ</a>／<a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNICブログ</a>をご覧ください。",
-  "faq.canIintegrate": "1.1.1.1との統合は可能？",
-  "faq.integrationInfo": "あなたはプライバシー優先で高速かつ最新のDNSサービスを求めているブラウザ、オペレーティングシステム、アプリケーション、ルーター、VPNのメーカーですか。その場合、答えはもちろん、<strong class=\"subtle\">はい！</strong>",
-  "faq.integrationDocs": "DNS over HTTPS（DoH）を使用すれば、一層強化されたセキュリティを顧客に透過的に提供できるほか、デバイスの速度も向上できます。さらに素晴らしいのは、ライセンスや顧客の<a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">プライバシー</a>の観点で、これを無料で実現できることです。1.1.1.1とHTTPS経由のDNSサポートの詳細については、 <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">開発者ドキュメント</a>をご覧ください。"
+  "share.header" : "✌️✌️ より高速でプライバシー優先のインターネットを友人と共有しましょう。",
+  "share.emailSubject" : "✌️✌️ 1.1.1.1 DNSリゾルバーでインターネット閲覧をより高速でよりプライベートに",
+  "share.emailBody" : "「1.1.1.1」は、より高速でよりプライベートなインターネット閲覧を実現します。詳しい内容と、お使いのデバイスを簡単にセットアップする方法は、https://1.1.1.1でご確認ください。",
+  "share.tweetBody" : "✌️✌️高速、安全、そしてプライベートなインターネットはここにあります。1.1.1.1 DNSリゾルバーは設定に2分もかかりません。",
+  "faq.whosBehindThis" : "この技術を支えている会社",
+  "faq.partnership" : "<strong class=\"code\">1.1.1.1 </strong>はCloudflareとAPNICのパートナーシップにより誕生しました。",
+  "faq.network" : "Cloudflareは、世界最大級の高速ネットワークのひとつを運営しています。APNICは、アジア太平洋・オセアニア地域におけるIPアドレスの割り当てを管理する非営利団体です。",
+  "faq.networkContinued" : "Cloudflareはネットワークを、APNICは、IPアドレス（1.1.1.1）を所有していました。どちらも、より良いインターネットを構築するという使命感を持っていました。詳しくは <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\"> Cloudflareブログ</a> /<a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNICブログ</a>をご覧ください。",
+  "faq.canIintegrate" : "自社のサービスを1.1.1.1と統合できますか？",
+  "faq.integrationInfo" : "お客様がプライバシー優先で高速かつ最新のDNSサービスを求めている、ブラウザ、オペレーティングシステム、アプリケーション、ルーター、VPNのメーカーである場合は、統合が<strong class=\"subtle\">可能</strong>です。",
+  "faq.integrationDocs" : "DNS over HTTPS（DoH）を使用すると、一層強化されたセキュリティを顧客に透過的に提供しながら、デバイスの速度も向上できます。さらに素晴らしいのは、ライセンス費用もかからず、顧客の<a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">プライバシー</a>を損なうこともなく、これを実現できることです。1.1.1.1とDNS over HTTPS（DoH）のサポートの詳細については、<a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">開発者ドキュメント</a>をご覧ください。"
 }
