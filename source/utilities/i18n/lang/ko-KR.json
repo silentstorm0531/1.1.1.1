@@ -28,143 +28,293 @@
     "questions": "질문이 있나요? <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">커뮤니티 포럼</a>에 방문해 보세요",
     "mac-os": {
       "steps": [
-        {"tag": "li", "content": "시스템 환경설정을 엽니다."},
-        {"tag": "li", "content": "검색창에서 <strong>DNS 서버</strong>를 찾아 선택 합니다."},
-        {"tag": "li", "content": "DNS 서버를 추가하기 위해 <strong>+</strong> 단추를 눌러 <strong class=\"code\">1.1.1.1</strong>을 입력합니다"},
-        {"tag": "li", "content": "<strong>+</strong>를 다시 누르고 <strong class=\"code\">1.0.0.1</strong>을 입력합니다(이것은 여분의 설정을 위해서입니다)."},
-        {"tag": "li", "content": "<strong>+</strong>를 다시 누르고 <strong class=\"code\">2606:4700:4700::1111</strong>을 입력합니다(이것은 여분의 설정을 위해서입니다)."},
-        {"tag": "li", "content": "<strong>+</strong>를 다시 누르고 <strong class=\"code\">2606:4700:4700::1001</strong>을 입력합니다(이것은 여분의 설정을 위해서입니다)."},
-        {"tag": "li", "content": "<strong>Ok</strong>와 <strong>승인</strong>을 누릅니다."},
-        {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다 ✌️✌️"}
+        { "tag": "li", "content": "시스템 환경설정을 엽니다." },
+        {
+          "tag": "li",
+          "content": "검색창에서 <strong>DNS 서버</strong>를 찾아 선택 합니다."
+        },
+        {
+          "tag": "li",
+          "content": "DNS 서버를 추가하기 위해 <strong>+</strong> 단추를 눌러 <strong class=\"code\">1.1.1.1</strong>을 입력합니다"
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+</strong>를 다시 누르고 <strong class=\"code\">1.0.0.1</strong>을 입력합니다(이것은 여분의 설정을 위해서입니다)."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+</strong>를 다시 누르고 <strong class=\"code\">2606:4700:4700::1111</strong>을 입력합니다(이것은 여분의 설정을 위해서입니다)."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+</strong>를 다시 누르고 <strong class=\"code\">2606:4700:4700::1001</strong>을 입력합니다(이것은 여분의 설정을 위해서입니다)."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>Ok</strong>와 <strong>승인</strong>을 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다 ✌️✌️"
+        }
       ]
     },
     "windows": {
       "steps": [
-        {"tag": "li", "content": "시작 메뉴를 불러 <strong>제어판</strong>을 클릭합니다."},
-        {"tag": "li", "content": "<strong>네트워크 및 공유 센터</strong>를 클릭합니다."},
-        {"tag": "li", "content": "<strong>어댑터 설정 변경</strong>을 클릭합니다."},
-        {"tag": "li", "content": "연결된 무선 네트워크에서 오른쪽 클릭을 눌러 <strong>속성</strong>을 클릭합니다."},
-        {"tag": "li", "content": "<strong>Internet Protocol Version 4</strong>를 선택합니다(필요하면 Version 6을 선택합니다)."},
-        {"tag": "li", "content": "<strong>속성</strong>을 클릭합니다."},
-        {"tag": "li", "content": "보관용으로 기존의 DNS 서버 목록을 적어 둡니다."},
-        {"tag": "li", "content": "<strong>다음 DNS 서버 주소 사용</strong>을 클릭합니다."},
+        {
+          "tag": "li",
+          "content": "시작 메뉴를 불러 <strong>제어판</strong>을 클릭합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>네트워크 및 공유 센터</strong>를 클릭합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>어댑터 설정 변경</strong>을 클릭합니다."
+        },
+        {
+          "tag": "li",
+          "content": "연결된 무선 네트워크에서 오른쪽 클릭을 눌러 <strong>속성</strong>을 클릭합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>Internet Protocol Version 4</strong>를 선택합니다(필요하면 Version 6을 선택합니다)."
+        },
+        { "tag": "li", "content": "<strong>속성</strong>을 클릭합니다." },
+        {
+          "tag": "li",
+          "content": "보관용으로 기존의 DNS 서버 목록을 적어 둡니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>다음 DNS 서버 주소 사용</strong>을 클릭합니다."
+        },
         {
           "tag": "li",
           "children": [
-            {"tag": "span", "content": "DNS 서버 주소에 1.1.1.1 DNS 주소를 입력 합니다:"},
+            {
+              "tag": "span",
+              "content": "DNS 서버 주소에 1.1.1.1 DNS 주소를 입력 합니다:"
+            },
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "IPv4: <strong class=\"code\">1.1.1.1</strong>과 <strong class=\"code\">1.0.0.1</strong>"},
-                {"tag": "li", "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong>과 <strong class=\"code\">2606:4700:4700::1001</strong>"}
+                {
+                  "tag": "li",
+                  "content": "IPv4: <strong class=\"code\">1.1.1.1</strong>과 <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong>과 <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
               ]
             }
           ]
         },
-        {"tag": "li", "content": "<strong>확인</strong>을 클릭하고 <strong>닫기</strong>를 클릭합니다."},
-        {"tag": "li", "content": "브라우저를 다시 시작합니다."},
-        {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"}
+        {
+          "tag": "li",
+          "content": "<strong>확인</strong>을 클릭하고 <strong>닫기</strong>를 클릭합니다."
+        },
+        { "tag": "li", "content": "브라우저를 다시 시작합니다." },
+        {
+          "tag": "li",
+          "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"
+        }
       ]
     },
     "linux": {
       "notice": "Ubuntu 기준으로 설명 합니다만, 대부분의 리눅스 배포본은 Network Manager를 통해 DNS를 설정합니다. 또 다른 방법으로 <code class=\"inline\">/etc/resolv.conf</code>을 설정할 수 있습니다",
       "steps": [
-          {
-            "content": "왼쪽 메뉴 바의 Applications <i class=\"fas fa-th\"></i>아이콘을 클릭하세요.",
-            "tag": "li"
-          },
-          {
-            "content": "<strong>Settings</strong>을 클릭하고 <strong>Network</strong>을 클릭합니다.",
-            "tag": "li"
-          },
-          {
-            "content": "오른쪽에서 현재의 인터넷 연결을 찾아서 설정 아이콘 <i class=\"fas fa-cog\"></i> 을 클릭하세요.",
-            "tag": "li"
-          },
-          {
-            "content": "DNS 설정을 보기 위해 <strong>IPv4</strong> 또는 <strong>IPv6</strong> 탭을 클릭하세요.",
-            "tag": "li"
-          },
-          {
-            "content": "DNS 목록의 “Automatic” 토글을 <strong>꺼짐</strong>으로 합니다.",
-            "tag": "li"
-          },
-          {
-            "children": [
-              {"tag": "span", "content": "DNS 목록 필드에 1.1.1.1 DNS 주소를 입력 합니다:"},
-              {
-                "tag": "ul",
-                "children": [
-                  {"tag": "li", "content": "IPv4: <strong class=\"code\">1.1.1.1</strong>과 <strong class=\"code\">1.0.0.1</strong>"},
-                  {"tag": "li", "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong>과 <strong class=\"code\">2606:4700:4700::1001</strong>"}
-                ]
-              }
-            ]
-          },
-          {
-            "content": "<strong>Apply</strong>를 클릭하고 브라우저를 다시 시작합니다.",
-            "tag": "li"
-          },
-          {
-            "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다 ✌️✌️",
-            "tag": "li"
-          }
+        {
+          "content": "왼쪽 메뉴 바의 Applications <i class=\"fas fa-th\"></i>아이콘을 클릭하세요.",
+          "tag": "li"
+        },
+        {
+          "content": "<strong>Settings</strong>을 클릭하고 <strong>Network</strong>을 클릭합니다.",
+          "tag": "li"
+        },
+        {
+          "content": "오른쪽에서 현재의 인터넷 연결을 찾아서 설정 아이콘 <i class=\"fas fa-cog\"></i> 을 클릭하세요.",
+          "tag": "li"
+        },
+        {
+          "content": "DNS 설정을 보기 위해 <strong>IPv4</strong> 또는 <strong>IPv6</strong> 탭을 클릭하세요.",
+          "tag": "li"
+        },
+        {
+          "content": "DNS 목록의 “Automatic” 토글을 <strong>꺼짐</strong>으로 합니다.",
+          "tag": "li"
+        },
+        {
+          "children": [
+            {
+              "tag": "span",
+              "content": "DNS 목록 필드에 1.1.1.1 DNS 주소를 입력 합니다:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "IPv4: <strong class=\"code\">1.1.1.1</strong>과 <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong>과 <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "<strong>Apply</strong>를 클릭하고 브라우저를 다시 시작합니다.",
+          "tag": "li"
+        },
+        {
+          "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다 ✌️✌️",
+          "tag": "li"
+        }
       ]
     },
     "iphone": {
       "steps": [
-        {"tag": "li", "content": "아이폰 홈 화면에서 <strong>설정</strong> 앱을 누르세요."},
-        {"tag": "li", "content": "<strong>Wi-Fi</strong>을 누르고 목록에서 사용하는 네트워크 이름을 누릅니다."},
-        {"tag": "li", "content": "<strong>DNS 구성</strong>을 누르고 <strong>수동</strong>을 누릅니다."},
-        {"tag": "li", "content": "기존 목록이 있다면 <strong>-</strong> 단추를 누르고 오른쪽의 <strong>삭제</strong>를 눌러 지웁니다."},
-        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 누르고 <strong class=\"code\">1.1.1.1</strong>을 입력합니다"},
-        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 다시 누르고 <strong class=\"code\">1.0.0.1</strong>. 이것은 여분의 설정을 위한 것입니다."},
-        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 다시 누르고 <strong class=\"code\">2606:4700:4700::1111</strong>. 이것은 여분의 설정을 위한 것입니다."},
-        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 다시 누르고 <strong class=\"code\">2606:4700:4700::1001</strong>. 이것은 여분의 설정을 위한 것입니다."},
-        {"tag": "li", "content": "우측 상단의 <strong>저장</strong> 단추를 누릅니다."},
-        {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"}
+        {
+          "tag": "li",
+          "content": "아이폰 홈 화면에서 <strong>설정</strong> 앱을 누르세요."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>Wi-Fi</strong>을 누르고 목록에서 사용하는 네트워크 이름을 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>DNS 구성</strong>을 누르고 <strong>수동</strong>을 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "기존 목록이 있다면 <strong>-</strong> 단추를 누르고 오른쪽의 <strong>삭제</strong>를 눌러 지웁니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+ 서버 추가</strong> 단추를 누르고 <strong class=\"code\">1.1.1.1</strong>을 입력합니다"
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+ 서버 추가</strong> 단추를 다시 누르고 <strong class=\"code\">1.0.0.1</strong>. 이것은 여분의 설정을 위한 것입니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+ 서버 추가</strong> 단추를 다시 누르고 <strong class=\"code\">2606:4700:4700::1111</strong>. 이것은 여분의 설정을 위한 것입니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+ 서버 추가</strong> 단추를 다시 누르고 <strong class=\"code\">2606:4700:4700::1001</strong>. 이것은 여분의 설정을 위한 것입니다."
+        },
+        {
+          "tag": "li",
+          "content": "우측 상단의 <strong>저장</strong> 단추를 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"
+        }
       ]
     },
     "android": {
       "message": "안드로이드는 수동으로 DNS를 변경하려면 고정 IP가 필요합니다. 이렇게 하면 인터넷 공유기에 추가 설정을 해야 하고 네트워크에 신규 장치를 추가할 때의 설정에 영향을 미칩니다. 대신 <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">공유기의 DNS 설정</button>을 변경하는 것을 권장 합니다. 이렇게 하면 사용중인 네트워크의 모든 장치에 1.1.1.1 DNS의 속도와 안정성을 제공하게 됩니다.",
       "steps": [
-        {"tag": "li", "content": "안드로이드 앱 목록에서 <strong>설정</strong> 앱을 누릅니다."},
-        {"tag": "li", "content": "<strong>무선 및 네트워크</strong> 섹션에서 <strong>Wi-Fi</strong>를 누릅니다."},
-        {"tag": "li", "content": "사용중인 네트워크 이름을 목록에서 골라 길게 눌러 메뉴를 불러 냅니다."},
-        {"tag": "li", "content": "<strong>네트워크 설정 변경</strong>을 누르고, <strong>고급 옵션</strong>을 누릅니다."},
-        {"tag": "li", "content": "<strong>IP 설정</strong>을 누릅니다."},
-        {"tag": "li", "content": "<strong>DHCP</strong>를 <strong>고정</strong>으로 변경합니다."},
-        {"tag": "li", "content": "공유기 설정 정보를 이용하여 이 장치의 IP주소와 게이트웨이를 입력합니다."},
-        {"tag": "li", "content": "<strong>DNS</strong>필드의 기존 값을 지웁니다."},
-        {"tag": "li", "content": "<strong>DNS 1</strong>필드를 누르고 <strong class=\"code\">1.1.1.1</strong>을 입력합니다."},
-        {"tag": "li", "content": "<strong>DNS 2</strong>필드를 누르고 <strong class=\"code\">1.0.0.1</strong>을 입력합니다(이것은 여분의 설정을 위한 것입니다)."},
-        {"tag": "li", "content": "<strong>저장</strong>을 누릅니다."},
-        {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"}
+        {
+          "tag": "li",
+          "content": "안드로이드 앱 목록에서 <strong>설정</strong> 앱을 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>무선 및 네트워크</strong> 섹션에서 <strong>Wi-Fi</strong>를 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "사용중인 네트워크 이름을 목록에서 골라 길게 눌러 메뉴를 불러 냅니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>네트워크 설정 변경</strong>을 누르고, <strong>고급 옵션</strong>을 누릅니다."
+        },
+        { "tag": "li", "content": "<strong>IP 설정</strong>을 누릅니다." },
+        {
+          "tag": "li",
+          "content": "<strong>DHCP</strong>를 <strong>고정</strong>으로 변경합니다."
+        },
+        {
+          "tag": "li",
+          "content": "공유기 설정 정보를 이용하여 이 장치의 IP주소와 게이트웨이를 입력합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>DNS</strong>필드의 기존 값을 지웁니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>DNS 1</strong>필드를 누르고 <strong class=\"code\">1.1.1.1</strong>을 입력합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>DNS 2</strong>필드를 누르고 <strong class=\"code\">1.0.0.1</strong>을 입력합니다(이것은 여분의 설정을 위한 것입니다)."
+        },
+        { "tag": "li", "content": "<strong>저장</strong>을 누릅니다." },
+        {
+          "tag": "li",
+          "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"
+        }
       ]
     },
     "router": {
       "message": "사용중인 인터넷 공유기 설정 방법에 대해서는 해당 공유기 설명서를 참조해 주세요.",
       "steps": [
-        {"tag": "li", "content": "사용 중인 무선 네트워크에 연결합니다."},
-        {"tag": "li", "content": "브라우저에 공유기 주소를 입력합니다."},
-        {"tag": "li", "content": "로그인 창이 나오면 사용자 이름과 암호를 입력합니다. 공유기 설명서를 참조해 주세요."},
-        {"tag": "li", "content": "공유기 설정 페이지에서 <strong>DNS 서버</strong> 설정을 찾습니다."},
-        {"tag": "li", "content": "보관용으로 기존의 DNS 서버 목록을 적어 둡니다."},
+        { "tag": "li", "content": "사용 중인 무선 네트워크에 연결합니다." },
+        { "tag": "li", "content": "브라우저에 공유기 주소를 입력합니다." },
+        {
+          "tag": "li",
+          "content": "로그인 창이 나오면 사용자 이름과 암호를 입력합니다. 공유기 설명서를 참조해 주세요."
+        },
+        {
+          "tag": "li",
+          "content": "공유기 설정 페이지에서 <strong>DNS 서버</strong> 설정을 찾습니다."
+        },
+        {
+          "tag": "li",
+          "content": "보관용으로 기존의 DNS 서버 목록을 적어 둡니다."
+        },
         {
           "tag": "li",
           "children": [
-            {"tag": "span", "content": "DNS 서버 주소를 1.1.1.1 DNS로 바꿉니다:"},
+            {
+              "tag": "span",
+              "content": "DNS 서버 주소를 1.1.1.1 DNS로 바꿉니다:"
+            },
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "IPv4: <strong class=\"code\">1.1.1.1</strong>과 <strong class=\"code\">1.0.0.1</strong>"},
-                {"tag": "li", "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong>과 <strong class=\"code\">2606:4700:4700::1001</strong>"}
+                {
+                  "tag": "li",
+                  "content": "IPv4: <strong class=\"code\">1.1.1.1</strong>과 <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong>과 <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
               ]
             }
           ]
         },
-        {"tag": "li", "content": "설정을 저장하고 브라우저를 다시 시작합니다."},
-        {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"}
+        {
+          "tag": "li",
+          "content": "설정을 저장하고 브라우저를 다시 시작합니다."
+        },
+        {
+          "tag": "li",
+          "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"
+        }
       ]
     }
   },
@@ -180,5 +330,90 @@
   "faq.networkContinued": "Cloudflare에게는 네트워크가 있었고 APNIC에게는 IP 주소(1.1.1.1)가 있었습니다. 두 조직은 더 나은 인터넷을 만드는 것을 돕고자 하는 미션에 이끌렸습니다. 각자의 동기에 대해서는 각각의 글에서 더 자세히 알아볼 수 있습니다: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 블로그</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 블로그</a>.",
   "faq.canIintegrate": "1.1.1.1을 내 시스템에 통합할 수 있나요?",
   "faq.integrationInfo": "여러분이 브라우저, 운영체제, 앱, 인터넷 공유기 또는 VPN 제조사이고, 프라이버시 우선의 빠르고 현대적인 DNS 서비스에 참여하고 싶다면 답은 <strong class=\"subtle\">예!</strong> 입니다.",
-  "faq.integrationDocs": "HTTPS 상의 DNS (DNS over HTTPS, DoH)를 사용하여 장치의 속도를 향상시키면서 고객에게 추가적인 보안을 제공할 수 있습니다. 더 좋은 점은 라이센싱이나 고객 프라이버시의 측면에서 비용 없이 가능하다는 것입니다. 1.1.1.1과 HTTPS상의 DNS 지원에 대해서는 <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">개발자 문서</a>를 참조 하세요."
+  "faq.integrationDocs": "HTTPS 상의 DNS (DNS over HTTPS, DoH)를 사용하여 장치의 속도를 향상시키면서 고객에게 추가적인 보안을 제공할 수 있습니다. 더 좋은 점은 라이센싱이나 고객 프라이버시의 측면에서 비용 없이 가능하다는 것입니다. 1.1.1.1과 HTTPS상의 DNS 지원에 대해서는 <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">개발자 문서</a>를 참조 하세요.",
+
+  "faqpage.header": "Frequently Asked Questions",
+  "faqpage.general": "General",
+  "faqpage.whatIsQ": "What is 1.1.1.1?",
+  "faqpage.whatIsA1": "When you request to visit an application like cloudflare.com, your computer needs to know which server to connect you to so that it can load the application. Computers don’t know how to do this name to address translation, so they ask a specialized server to do it for them.",
+  "faqpage.whatIsA2": "This specialized server is called a DNS recursive resolver. The resolver’s job is to find the address for a given name, like 2400:cb00:2048:1::c629:d7a2 for cloudflare.com, and return it to the computer that asked for it.",
+  "faqpage.whatIsA3": "Computers are configured to talk to specific DNS resolvers, identified by IP address. Usually, the configuration is managed by your ISP (like Comcast or AT&T) if you’re on your home or wireless internet, and by your network administrator if you’re connected to the office internet. You can also change the configured DNS resolver your computer talks to yourself.",
+  "faqpage.whatDoDNSQ": "What do DNS resolvers do?",
+  "faqpage.whatDoDNSA1": "How do resolvers know how to find the address of a domain name? They work backwards from the top.",
+  "faqpage.whatDoDNSA2": "Every resolver knows how to find the invisible ‘.’ at the end of domain names (e.g. cloudflare.com.). There are <a href='http://www.root-servers.org/' target='_blank'>hundreds of servers</a> all over the world that host the ‘.’ file. Cloudflare itself hosts <a href='http://www.internic.net/domain/root.zone' target='_blank'>that file</a> on all of its servers around the world through a <a href='https://blog.cloudflare.com/f-root/' target='_blank'>partnership with ISC</a>. Resolvers are <a href='https://www.internic.net/domain/named.root' target='_blank'>hard coded to know the IP addresses of those servers</a>.",
+  "faqpage.whatDoDNSA3": "The resolver asks one of the root servers where to find the next link in the chain, the TLD or domain ending. An example of a TLD is .com or .org. Luckily the root servers store the locations of all the TLD servers, so they can return which IP address the DNS resolver should go ask next.",
+  "faqpage.whatDoDNSA4": "The resolver then asks the TLD’s servers where it can find the domain it is looking for, for example, a resolver might ask .com where to find cloudflare.com. TLD’s host a file containing the location of every domain using the TLD. Once the resolver has the final IP address, it returns the answer to the computer that asked.",
+  "faqpage.whatDoDNSA5": "This whole system - with the servers that host the information (they are called authoritative DNS) and the servers that seek the information (the DNS resolvers) is called the Domain Name System (DNS). DNS is like Google Maps for the internet. It translates the name of places to addresses so that you can figure out how to get there.",
+  "faqpage.ipv6Q": "Does 1.1.1.1 have IPv6 support?",
+  "faqpage.ipv6A": "Yes, 1.1.1.1 has full IPv6 support.",
+  "faqpage.clearCacheQ": "How can I clear 1.1.1.1’s DNS cache?",
+  "faqpage.clearCacheA": "You can refresh 1.1.1.1’s DNS cache for domain names by using the <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>purge cache tool</a>. You have to enter the domain name, pick the DNS record type (or types) and hit the ‘Purge Cache’ button.",
+  "faqpage.insideChinaQ": "Does 1.1.1.1 work inside China?",
+  "faqpage.insideChinaA": "Not really. You can configure your DNS to point towards 1.1.1.1 but it will not reach one of our data centers inside China. Instead, the request will route to one of our data centers outside of Mainland China.",
+  "faqpage.countriesBlockedQ": "In what countries 1.1.1.1 is blocked?",
+  "faqpage.countriesBlockedA": [
+    {
+      "tag": "li",
+      "content": "Bahrain"
+    },
+    {
+      "tag": "li",
+      "content": "Libya"
+    },
+    {
+      "tag": "li",
+      "content": "Mongolia"
+    },
+    {
+      "tag": "li",
+      "content": "Turkey"
+    }
+  ],
+  "faqpage.devDocsQ": "Where can I find 1.1.1.1’s developer docs?",
+  "faqpage.devDocsA": "Here",
+  "faqpage.mobileApp": "Mobile App",
+  "faqpage.mobileAppWorkQ": "How does the mobile app work?",
+  "faqpage.mobileAppWorkA": "The app runs a local resolver inside your mobile phone that asks all the other apps to send their DNS requests to the address of this resolver. Once these DNS requests reach the local resolver, it encrypts them and sends them to 1.1.1.1.",
+  "faqpage.vpnQ": "Is the 1.1.1.1 app a VPN?",
+  "faqpage.vpnA": "No. A VPN app typically proxies all of your network traffic. The 1.1.1.1 app only overrides and secures your mobile phone’s DNS traffic.",
+  "faqpage.dnsLogsQ": "What are DNS logs?",
+  "faqpage.dnsLogsA": "The DNS logs on iOS contain all the DNS queries that your phone makes. Your apps and mobile browser usually generate these DNS queries.",
+  "faqpage.logsForQ": "What are the console logs for?",
+  "faqpage.logsForA": "The console logs are there to help Cloudflare debug your connection.",
+  "faqpage.suggestQ": "How can I suggest an improvement?",
+  "faqpage.suggestA": "We read all of your suggestions. You can shake the phone while in the app and send your suggestions for improvements. Alternatively, you can go to the app menu and tap on ‘Help’ to send your feedback.",
+  "faqpage.diffDnsTlsQ": "What is the difference between using DNS over TLS and DNS over HTTPS?",
+  "faqpage.diffDnsTlsA1": "Both DNS over TLS and DNS over HTTPS encrypt plain DNS queries from the phone.",
+  "faqpage.diffDnsTlsA2": "DNS over HTTPS uses port 443 and DNS over TLS uses port 853. In some networks, one of these ports might be blocked. If port 443 is blocked you should use DNS over HTTPS. If port 853 is blocked, you should use DNS over HTTPS. In some cases, DNS over TLS may be faster than DNS over HTTPS or the other way around.",
+  "faqpage.bugQ": "How can I send a bug report?",
+  "faqpage.bugA": "You can shake the app and send a bug report. When you do that, the app attaches a screenshot and the console logs along with the bug report. The console log helps us debug your connection and improve your overall app experience.",
+  "faqpage.internetStoppedQ": "My internet stopped working when I was using the 1.1.1.1 app. What should I do?",
+  "faqpage.internetStoppedA": "If this happens, try turning the app off and on again by using the toggle from the app home page. If the issue persists, please disable the app and send us a bug report.",
+  "faqpage.appStuckQ": "The 1.1.1.1 app is stuck in ‘CONNECTING’ or ‘REASSERTING’. What should I do?",
+  "faqpage.appStuckA1": "This may happen if your network connection is temporarily disrupted or if your data connection is blocking 1.1.1.1 connections:",
+  "faqpage.appStuckList": [
+    {
+      "tag": "li",
+      "content": "Disable the app using the toggle on the app home page."
+    },
+    {
+      "tag": "li",
+      "content": "Open the iOS Settings app and navigate to Settings > General > Reset."
+    },
+    {
+      "tag": "li",
+      "content": "Tap on Reset Network Settings."
+    },
+    {
+      "tag": "li",
+      "content": "Reboot your device; make sure your Wifi is connected."
+    },
+    {
+      "tag": "li",
+      "content": "Try connecting the app again."
+    }
+  ],
+  "faqpage.appStuckA2": "If this does not allow the connection, disable the 1.1.1.1 app and send us a bug report.",
+  "faqpage.cannotClickQ": "I cannot click OK on the VPN installation dialog. What should I do?",
+  "faqpage.cannotClickA": "If you cannot click on the OK button, there might be another application on top of the dialog. Some known apps that can cause this problem are Lux Brightness, Night Mode, Twilight, FileManager etc. To avoid this problem, close or uninstall all apps that might cause this problem."
 }

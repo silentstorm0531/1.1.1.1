@@ -28,143 +28,290 @@
     "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
     "mac-os": {
       "steps": [
-        {"tag": "li", "content": "O打開 [系統偏好設置]。"},
-        {"tag": "li", "content": "搜尋 <strong>[DNS服務器]</strong>，並從下拉列表中選擇它。"},
-        {"tag": "li", "content": "點擊 <strong>+</strong> 按鈕，添加一個DNS服務器，並進入<strong class=\"code\">1.1.1.1</strong>"},
-        {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong class=\"code\">1.0.0.1</strong>（這是為了實現冗餘）"},
-        {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong class=\"code\">2606:4700:4700::1111</strong>（這是為了實現冗餘）"},
-        {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong class=\"code\">2606:4700:4700::1001</strong>（這是為了實現冗餘）"},
-        {"tag": "li", "content": "點擊 <strong>[確定]</strong>，然後點擊 <strong>[套用]</strong>。"},
-        {"tag": "li", "content": "一切就緒！您的設備現在擁有更快、更私密的DNS服務器 ✌️✌️"}
+        { "tag": "li", "content": "O打開 [系統偏好設置]。" },
+        {
+          "tag": "li",
+          "content": "搜尋 <strong>[DNS服務器]</strong>，並從下拉列表中選擇它。"
+        },
+        {
+          "tag": "li",
+          "content": "點擊 <strong>+</strong> 按鈕，添加一個DNS服務器，並進入<strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "再次點擊<strong>+</strong>並輸入<strong class=\"code\">1.0.0.1</strong>（這是為了實現冗餘）"
+        },
+        {
+          "tag": "li",
+          "content": "再次點擊<strong>+</strong>並輸入<strong class=\"code\">2606:4700:4700::1111</strong>（這是為了實現冗餘）"
+        },
+        {
+          "tag": "li",
+          "content": "再次點擊<strong>+</strong>並輸入<strong class=\"code\">2606:4700:4700::1001</strong>（這是為了實現冗餘）"
+        },
+        {
+          "tag": "li",
+          "content": "點擊 <strong>[確定]</strong>，然後點擊 <strong>[套用]</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "一切就緒！您的設備現在擁有更快、更私密的DNS服務器 ✌️✌️"
+        }
       ]
     },
     "windows": {
       "steps": [
-        {"tag": "li", "content": "Click on the Start menu, then click on <strong>Control Panel</strong>."},
-        {"tag": "li", "content": "Click on <strong>Network and Internet</strong>."},
-        {"tag": "li", "content": "Click on <strong>Change Adapter Settings</strong>."},
-        {"tag": "li", "content": "Right click on the Wi-Fi network you are connected to, then click <strong>Properties</strong>."},
-        {"tag": "li", "content": "Select <strong>Internet Protocol Version 4</strong> (or Version 6 if desired)."},
-        {"tag": "li", "content": "Click <strong>Properties</strong>."},
-        {"tag": "li", "content": "Write down any existing DNS server entries for future reference."},
-        {"tag": "li", "content": "Click <strong>Use The Following DNS Server Addresses</strong>."},
+        {
+          "tag": "li",
+          "content": "Click on the Start menu, then click on <strong>Control Panel</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Click on <strong>Network and Internet</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Click on <strong>Change Adapter Settings</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Right click on the Wi-Fi network you are connected to, then click <strong>Properties</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Select <strong>Internet Protocol Version 4</strong> (or Version 6 if desired)."
+        },
+        { "tag": "li", "content": "Click <strong>Properties</strong>." },
+        {
+          "tag": "li",
+          "content": "Write down any existing DNS server entries for future reference."
+        },
+        {
+          "tag": "li",
+          "content": "Click <strong>Use The Following DNS Server Addresses</strong>."
+        },
         {
           "tag": "li",
           "children": [
-            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {
+              "tag": "span",
+              "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"
+            },
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "For IPv4: <strong class=\"code\">1.1.1.1</strong> and <strong class=\"code\">1.0.0.1</strong>"},
-                {"tag": "li", "content": "For IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"}
+                {
+                  "tag": "li",
+                  "content": "For IPv4: <strong class=\"code\">1.1.1.1</strong> and <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "For IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
               ]
             }
           ]
         },
-        {"tag": "li", "content": "Click <strong>OK</strong>, then <strong>Close</strong>."},
-        {"tag": "li", "content": "Restart your browser."},
-        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
+        {
+          "tag": "li",
+          "content": "Click <strong>OK</strong>, then <strong>Close</strong>."
+        },
+        { "tag": "li", "content": "Restart your browser." },
+        {
+          "tag": "li",
+          "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"
+        }
       ]
     },
     "linux": {
       "notice": "雖然這些步驟是針對 Ubuntu 的，但大多數 Linux 的發行版是通過 [網絡管理器] 完成 DNS 的設置。 或者，您的DNS設置可以在<code class=\"inline\">的/ etc / resolv.conf的</code>指定",
       "steps": [
-          {
-            "content": "點擊左側主選單上的 [應用程式] <i class=\"fas fa-th\"> </i>圖標。",
-            "tag": "li"
-          },
-          {
-            "content": "點擊<strong> [設置] </strong>，然後<strong> [網路] </strong>。",
-            "tag": "li"
-          },
-          {
-            "content": "在右窗格中找到您的網際網路連接，然後點擊齒輪狀<i class=\"fas fa-cog\"> </i>圖標。",
-            "tag": "li"
-          },
-          {
-            "content": "點擊<strong> [IPv4] </strong>或<strong> [IPv6] </strong>標籤以查看您的 DNS 設置。",
-            "tag": "li"
-          },
-          {
-            "content": "將 DNS 項目上的 [自動] 切換按鈕設置為<strong> [Off]  </strong>。",
-            "tag": "li"
-          },
-          {
-            "children": [
-              {"tag": "span", "content": "Provide the 1.1.1.1 DNS addresses in the DNS entries field:"},
-              {
-                "tag": "ul",
-                "children": [
-                  {"tag": "li", "content": "如果是IPv4，輸入：<strong>1.1.1.1, 1.0.0.1 </strong>"},
-                  {"tag": "li", "content": "如果是IPv6，輸入：<strong>2606:4700:4700::1111, 2606:4700:4700::1001</strong>"}
-                ]
-              }
-            ]
-          },
-          {
-            "content": "點擊<strong> [Apply] </strong>，然後重新啟動瀏覽器。",
-            "tag": "li"
-          },
-          {
-            "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️",
-            "tag": "li"
-          }
+        {
+          "content": "點擊左側主選單上的 [應用程式] <i class=\"fas fa-th\"> </i>圖標。",
+          "tag": "li"
+        },
+        {
+          "content": "點擊<strong> [設置] </strong>，然後<strong> [網路] </strong>。",
+          "tag": "li"
+        },
+        {
+          "content": "在右窗格中找到您的網際網路連接，然後點擊齒輪狀<i class=\"fas fa-cog\"> </i>圖標。",
+          "tag": "li"
+        },
+        {
+          "content": "點擊<strong> [IPv4] </strong>或<strong> [IPv6] </strong>標籤以查看您的 DNS 設置。",
+          "tag": "li"
+        },
+        {
+          "content": "將 DNS 項目上的 [自動] 切換按鈕設置為<strong> [Off]  </strong>。",
+          "tag": "li"
+        },
+        {
+          "children": [
+            {
+              "tag": "span",
+              "content": "Provide the 1.1.1.1 DNS addresses in the DNS entries field:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "如果是IPv4，輸入：<strong>1.1.1.1, 1.0.0.1 </strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "如果是IPv6，輸入：<strong>2606:4700:4700::1111, 2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "點擊<strong> [Apply] </strong>，然後重新啟動瀏覽器。",
+          "tag": "li"
+        },
+        {
+          "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️",
+          "tag": "li"
+        }
       ]
     },
     "iphone": {
       "steps": [
-        {"tag": "li", "content": "從您的 iPhone 主屏幕，打開<strong> [設置] </strong>應用程式。"},
-        {"tag": "li", "content": "點擊<strong> [Wi-Fi] </strong>，然後點擊列表中您最喜歡的網路"},
-        {"tag": "li", "content": "點擊<strong> [配置DNS] </strong>，然後輕按<strong> [手動] </strong>。"},
-        {"tag": "li", "content": "如果有任何現有條目，點擊每個條目旁邊的<strong>- </strong>按鈕，並點擊<strong> [刪除] </strong>。"},
-        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">1.1.1.1</strong>"},
-        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">1.0.0.1</strong>。這是為了實現冗餘。"},
-        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">2606:4700:4700::1111</strong>。這是為了實現冗餘。"},
-        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">2606:4700:4700::1001</strong>。這是為了實現冗餘。"},
-        {"tag": "li", "content": "點擊右上角的<strong>“保存”</strong>按鈕。"},
-        {"tag": "li", "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"}
+        {
+          "tag": "li",
+          "content": "從您的 iPhone 主屏幕，打開<strong> [設置] </strong>應用程式。"
+        },
+        {
+          "tag": "li",
+          "content": "點擊<strong> [Wi-Fi] </strong>，然後點擊列表中您最喜歡的網路"
+        },
+        {
+          "tag": "li",
+          "content": "點擊<strong> [配置DNS] </strong>，然後輕按<strong> [手動] </strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "如果有任何現有條目，點擊每個條目旁邊的<strong>- </strong>按鈕，並點擊<strong> [刪除] </strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">1.0.0.1</strong>。這是為了實現冗餘。"
+        },
+        {
+          "tag": "li",
+          "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">2606:4700:4700::1111</strong>。這是為了實現冗餘。"
+        },
+        {
+          "tag": "li",
+          "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">2606:4700:4700::1001</strong>。這是為了實現冗餘。"
+        },
+        { "tag": "li", "content": "點擊右上角的<strong>“保存”</strong>按鈕。" },
+        {
+          "tag": "li",
+          "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"
+        }
       ]
     },
     "android": {
       "message": "請注意，Android 需要一個靜態 IP 以使用自定義的 DNS 服務器。 此設置需要在路由器上進行額外設置，會影響到您增加新設備到網絡的策略。 我們建議配置您<button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">router 的 DNS </button>。 這會給您網絡上所有設備的 Cloudflare DNS 全速且具私密性的好處。",
       "steps": [
-        {"tag": "li", "content": "這會給您網絡上所有設備的 Cloudflare DNS 全速且具私密性的好處。"},
-        {"tag": "li", "content": "在<strong> [無線和網絡] </strong> 區域中，點擊<strong> [無線網絡連接] </strong>。"},
-        {"tag": "li", "content": "長按您較喜歡的網路，直到出現一個上下文相關的選單。"},
-        {"tag": "li", "content": "點擊<strong> [修改網絡] </strong>，然後輕按<strong> [進階選項] </strong>。"},
-        {"tag": "li", "content": "點擊<strong>“高級選項”</strong>，然後輕按<strong>“IP設置”</strong>。"},
-        {"tag": "li", "content": "更改<strong> [動態] </strong>為<strong> [靜態]</strong>。"},
-        {"tag": "li", "content": "使用您的路由器配置，輸入設備的 IP 地址和閘道。"},
-        {"tag": "li", "content": "點擊<strong> [DNS] </strong> 領域，然後刪除該領域的數量。"},
-        {"tag": "li", "content": "在<strong> [DNS 1] </strong> 領域中，輸入<strong class=\"code\">1.1.1.1</strong>"},
-        {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong class=\"code\">1.0.0.1</strong>（這是為了實現冗餘。）"},
-        {"tag": "li", "content": "點擊<strong> [保存] </strong>。"},
-        {"tag": "li", "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"}
+        {
+          "tag": "li",
+          "content": "這會給您網絡上所有設備的 Cloudflare DNS 全速且具私密性的好處。"
+        },
+        {
+          "tag": "li",
+          "content": "在<strong> [無線和網絡] </strong> 區域中，點擊<strong> [無線網絡連接] </strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "長按您較喜歡的網路，直到出現一個上下文相關的選單。"
+        },
+        {
+          "tag": "li",
+          "content": "點擊<strong> [修改網絡] </strong>，然後輕按<strong> [進階選項] </strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "點擊<strong>“高級選項”</strong>，然後輕按<strong>“IP設置”</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "更改<strong> [動態] </strong>為<strong> [靜態]</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "使用您的路由器配置，輸入設備的 IP 地址和閘道。"
+        },
+        {
+          "tag": "li",
+          "content": "點擊<strong> [DNS] </strong> 領域，然後刪除該領域的數量。"
+        },
+        {
+          "tag": "li",
+          "content": "在<strong> [DNS 1] </strong> 領域中，輸入<strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong class=\"code\">1.0.0.1</strong>（這是為了實現冗餘。）"
+        },
+        { "tag": "li", "content": "點擊<strong> [保存] </strong>。" },
+        {
+          "tag": "li",
+          "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"
+        }
       ]
     },
     "router": {
       "message": "您的路由器配置可能會有所不同。請參閱手冊以獲得更多資訊。",
       "steps": [
-        {"tag": "li", "content": "請連接到您較喜歡的無線網絡。"},
-        {"tag": "li", "content": "請在瀏覽器中輸入您路由器的 IP 位址。"},
-        {"tag": "li", "content": "如果出現系統提示，請填入使用者名稱和密碼。這些資訊可能會被標註在路由器上。"},
-        {"tag": "li", "content": "請在路由器配置頁面中，找到<strong> DNS 服務器</strong> 的設置位置。"},
-        {"tag": "li", "content": "記下任何現有的DNS服務器項目，以供未來參考。"},
+        { "tag": "li", "content": "請連接到您較喜歡的無線網絡。" },
+        { "tag": "li", "content": "請在瀏覽器中輸入您路由器的 IP 位址。" },
+        {
+          "tag": "li",
+          "content": "如果出現系統提示，請填入使用者名稱和密碼。這些資訊可能會被標註在路由器上。"
+        },
+        {
+          "tag": "li",
+          "content": "請在路由器配置頁面中，找到<strong> DNS 服務器</strong> 的設置位置。"
+        },
+        {
+          "tag": "li",
+          "content": "記下任何現有的DNS服務器項目，以供未來參考。"
+        },
         {
           "tag": "li",
           "children": [
-            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {
+              "tag": "span",
+              "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"
+            },
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "對於IPv4：<strong>1.1.1.1 </strong>和/或<strong>1.0.0.1 </strong>"},
-                {"tag": "li", "content": "對於IPv6：<strong class=\"code\">2606:4700:4700::1111</strong>和/或<strong class=\"code\">2606:4700:4700::1001</strong>"}
+                {
+                  "tag": "li",
+                  "content": "對於IPv4：<strong>1.1.1.1 </strong>和/或<strong>1.0.0.1 </strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "對於IPv6：<strong class=\"code\">2606:4700:4700::1111</strong>和/或<strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
               ]
             }
           ]
         },
-        {"tag": "li", "content": "保存設置，然後重新啟動瀏覽器。"},
-        {"tag": "li", "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"}
+        { "tag": "li", "content": "保存設置，然後重新啟動瀏覽器。" },
+        {
+          "tag": "li",
+          "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"
+        }
       ]
     }
   },
@@ -180,5 +327,90 @@
   "faq.networkContinued": "Cloudflare 具備優質的網路。APNIC 有 IP 地址（1.1.1.1）。一個共同的使命激發了我們，那就是建立一個更好的網際網路。 如欲詳細了解我們的宗旨，請訪問我們各自的部落格：<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 部落格</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 部落格</a>。",
   "faq.canIintegrate": "我可以跟 1.1.1.1 整合嗎？",
   "faq.integrationInfo": "如果您是瀏覽器、作業系統、應用程式、路由器、 VPN 的製造商，並且想要建立一個更安全、快速及私密的現代化 DNS, Yes!",
-  "faq.integrationDocs": "藉由使用 DNS over HTTPS (DoH)，您可以提供更透明、進階的安全連結，並且提高您的設備連接速度。更好的是，您不用負擔額外成本 - 不需要使用費，也不需要您的客戶資料。前往<url>開發人員文件<a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">開發人員文件</a>了解更多有關 1.1.1.1 以及我們的 DNS over HTTPS (DoH) 支援。"
+  "faq.integrationDocs": "藉由使用 DNS over HTTPS (DoH)，您可以提供更透明、進階的安全連結，並且提高您的設備連接速度。更好的是，您不用負擔額外成本 - 不需要使用費，也不需要您的客戶資料。前往<url>開發人員文件<a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">開發人員文件</a>了解更多有關 1.1.1.1 以及我們的 DNS over HTTPS (DoH) 支援。",
+
+  "faqpage.header": "Frequently Asked Questions",
+  "faqpage.general": "General",
+  "faqpage.whatIsQ": "What is 1.1.1.1?",
+  "faqpage.whatIsA1": "When you request to visit an application like cloudflare.com, your computer needs to know which server to connect you to so that it can load the application. Computers don’t know how to do this name to address translation, so they ask a specialized server to do it for them.",
+  "faqpage.whatIsA2": "This specialized server is called a DNS recursive resolver. The resolver’s job is to find the address for a given name, like 2400:cb00:2048:1::c629:d7a2 for cloudflare.com, and return it to the computer that asked for it.",
+  "faqpage.whatIsA3": "Computers are configured to talk to specific DNS resolvers, identified by IP address. Usually, the configuration is managed by your ISP (like Comcast or AT&T) if you’re on your home or wireless internet, and by your network administrator if you’re connected to the office internet. You can also change the configured DNS resolver your computer talks to yourself.",
+  "faqpage.whatDoDNSQ": "What do DNS resolvers do?",
+  "faqpage.whatDoDNSA1": "How do resolvers know how to find the address of a domain name? They work backwards from the top.",
+  "faqpage.whatDoDNSA2": "Every resolver knows how to find the invisible ‘.’ at the end of domain names (e.g. cloudflare.com.). There are <a href='http://www.root-servers.org/' target='_blank'>hundreds of servers</a> all over the world that host the ‘.’ file. Cloudflare itself hosts <a href='http://www.internic.net/domain/root.zone' target='_blank'>that file</a> on all of its servers around the world through a <a href='https://blog.cloudflare.com/f-root/' target='_blank'>partnership with ISC</a>. Resolvers are <a href='https://www.internic.net/domain/named.root' target='_blank'>hard coded to know the IP addresses of those servers</a>.",
+  "faqpage.whatDoDNSA3": "The resolver asks one of the root servers where to find the next link in the chain, the TLD or domain ending. An example of a TLD is .com or .org. Luckily the root servers store the locations of all the TLD servers, so they can return which IP address the DNS resolver should go ask next.",
+  "faqpage.whatDoDNSA4": "The resolver then asks the TLD’s servers where it can find the domain it is looking for, for example, a resolver might ask .com where to find cloudflare.com. TLD’s host a file containing the location of every domain using the TLD. Once the resolver has the final IP address, it returns the answer to the computer that asked.",
+  "faqpage.whatDoDNSA5": "This whole system - with the servers that host the information (they are called authoritative DNS) and the servers that seek the information (the DNS resolvers) is called the Domain Name System (DNS). DNS is like Google Maps for the internet. It translates the name of places to addresses so that you can figure out how to get there.",
+  "faqpage.ipv6Q": "Does 1.1.1.1 have IPv6 support?",
+  "faqpage.ipv6A": "Yes, 1.1.1.1 has full IPv6 support.",
+  "faqpage.clearCacheQ": "How can I clear 1.1.1.1’s DNS cache?",
+  "faqpage.clearCacheA": "You can refresh 1.1.1.1’s DNS cache for domain names by using the <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>purge cache tool</a>. You have to enter the domain name, pick the DNS record type (or types) and hit the ‘Purge Cache’ button.",
+  "faqpage.insideChinaQ": "Does 1.1.1.1 work inside China?",
+  "faqpage.insideChinaA": "Not really. You can configure your DNS to point towards 1.1.1.1 but it will not reach one of our data centers inside China. Instead, the request will route to one of our data centers outside of Mainland China.",
+  "faqpage.countriesBlockedQ": "In what countries 1.1.1.1 is blocked?",
+  "faqpage.countriesBlockedA": [
+    {
+      "tag": "li",
+      "content": "Bahrain"
+    },
+    {
+      "tag": "li",
+      "content": "Libya"
+    },
+    {
+      "tag": "li",
+      "content": "Mongolia"
+    },
+    {
+      "tag": "li",
+      "content": "Turkey"
+    }
+  ],
+  "faqpage.devDocsQ": "Where can I find 1.1.1.1’s developer docs?",
+  "faqpage.devDocsA": "Here",
+  "faqpage.mobileApp": "Mobile App",
+  "faqpage.mobileAppWorkQ": "How does the mobile app work?",
+  "faqpage.mobileAppWorkA": "The app runs a local resolver inside your mobile phone that asks all the other apps to send their DNS requests to the address of this resolver. Once these DNS requests reach the local resolver, it encrypts them and sends them to 1.1.1.1.",
+  "faqpage.vpnQ": "Is the 1.1.1.1 app a VPN?",
+  "faqpage.vpnA": "No. A VPN app typically proxies all of your network traffic. The 1.1.1.1 app only overrides and secures your mobile phone’s DNS traffic.",
+  "faqpage.dnsLogsQ": "What are DNS logs?",
+  "faqpage.dnsLogsA": "The DNS logs on iOS contain all the DNS queries that your phone makes. Your apps and mobile browser usually generate these DNS queries.",
+  "faqpage.logsForQ": "What are the console logs for?",
+  "faqpage.logsForA": "The console logs are there to help Cloudflare debug your connection.",
+  "faqpage.suggestQ": "How can I suggest an improvement?",
+  "faqpage.suggestA": "We read all of your suggestions. You can shake the phone while in the app and send your suggestions for improvements. Alternatively, you can go to the app menu and tap on ‘Help’ to send your feedback.",
+  "faqpage.diffDnsTlsQ": "What is the difference between using DNS over TLS and DNS over HTTPS?",
+  "faqpage.diffDnsTlsA1": "Both DNS over TLS and DNS over HTTPS encrypt plain DNS queries from the phone.",
+  "faqpage.diffDnsTlsA2": "DNS over HTTPS uses port 443 and DNS over TLS uses port 853. In some networks, one of these ports might be blocked. If port 443 is blocked you should use DNS over HTTPS. If port 853 is blocked, you should use DNS over HTTPS. In some cases, DNS over TLS may be faster than DNS over HTTPS or the other way around.",
+  "faqpage.bugQ": "How can I send a bug report?",
+  "faqpage.bugA": "You can shake the app and send a bug report. When you do that, the app attaches a screenshot and the console logs along with the bug report. The console log helps us debug your connection and improve your overall app experience.",
+  "faqpage.internetStoppedQ": "My internet stopped working when I was using the 1.1.1.1 app. What should I do?",
+  "faqpage.internetStoppedA": "If this happens, try turning the app off and on again by using the toggle from the app home page. If the issue persists, please disable the app and send us a bug report.",
+  "faqpage.appStuckQ": "The 1.1.1.1 app is stuck in ‘CONNECTING’ or ‘REASSERTING’. What should I do?",
+  "faqpage.appStuckA1": "This may happen if your network connection is temporarily disrupted or if your data connection is blocking 1.1.1.1 connections:",
+  "faqpage.appStuckList": [
+    {
+      "tag": "li",
+      "content": "Disable the app using the toggle on the app home page."
+    },
+    {
+      "tag": "li",
+      "content": "Open the iOS Settings app and navigate to Settings > General > Reset."
+    },
+    {
+      "tag": "li",
+      "content": "Tap on Reset Network Settings."
+    },
+    {
+      "tag": "li",
+      "content": "Reboot your device; make sure your Wifi is connected."
+    },
+    {
+      "tag": "li",
+      "content": "Try connecting the app again."
+    }
+  ],
+  "faqpage.appStuckA2": "If this does not allow the connection, disable the 1.1.1.1 app and send us a bug report.",
+  "faqpage.cannotClickQ": "I cannot click OK on the VPN installation dialog. What should I do?",
+  "faqpage.cannotClickA": "If you cannot click on the OK button, there might be another application on top of the dialog. Some known apps that can cause this problem are Lux Brightness, Night Mode, Twilight, FileManager etc. To avoid this problem, close or uninstall all apps that might cause this problem."
 }

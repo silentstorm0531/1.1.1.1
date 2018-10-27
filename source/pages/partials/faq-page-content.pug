@@ -1,0 +1,108 @@
+mixin render(input)
+  if input.children
+    #{input.tag}
+      each child in input.children
+        +render(child)
+  else if input.content
+    #{input.tag}!=input.content
+
+.hero
+    a(href='/')
+      include ../../media/logo.svg
+    h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.header')
+section
+  .content
+    h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.general')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.whatIsQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.whatIsA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatIsA2')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatIsA3')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA2')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA3')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA4')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA5')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.ipv6Q')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.ipv6A')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.clearCacheQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.clearCacheA')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.insideChinaQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.insideChinaA')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.countriesBlockedQ')
+
+    ol
+      each country in htmlWebpackPlugin.options.t('faqpage.countriesBlockedA')
+        +render(country)
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.devDocsQ')
+
+    p
+      a(href='https://developers.cloudflare.com/1.1.1.1/')
+        span!=htmlWebpackPlugin.options.t('faqpage.devDocsA')
+      span
+      | .
+
+    h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.mobileApp')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.mobileAppQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.mobileAppA')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.mobileAppWorkQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.mobileAppWorkA')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.vpnQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.vpnA')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.dnsLogsQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.dnsLogsA')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.logsForQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.logsForA')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.suggestQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.suggestA')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.diffDnsTlsQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.diffDnsTlsA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.diffDnsTlsA2')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.bugQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.bugA')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.internetStoppedQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.internetStoppedA')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.appStuckQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.appStuckA1')
+
+    ul
+      each country in htmlWebpackPlugin.options.t('faqpage.appStuckList')
+        +render(country)
+
+    p!=htmlWebpackPlugin.options.t('faqpage.appStuckA2')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.cannotClickQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.cannotClickA')
