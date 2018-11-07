@@ -7,9 +7,26 @@ mixin render(input)
     #{input.tag}!=input.content
 
 .hero
-    a(href='/')
-      include ../../media/logo.svg
-    h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.header')
+  .language-selector(
+  tabindex="3"
+  role="button"
+  data-ref="languageSelector")
+    .selector-label
+      include ../../media/globe.svg
+      span.chosen-language!=htmlWebpackPlugin.options.locale.label
+      include ../../media/caret.svg
+
+    .dropdown
+      each locale in htmlWebpackPlugin.options.locales.filter(locale => locale.code !== htmlWebpackPlugin.options.locale.code)
+        a.language(
+          href="/" + locale.path + "faq/"
+          class={selected: htmlWebpackPlugin.options.locale.code === locale.code})
+          | #{locale.label}
+
+  a(href='/')
+    include ../../media/logo.svg
+  h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.header')
+
 section
   .content
     h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.general')
@@ -106,3 +123,16 @@ section
     h3!=htmlWebpackPlugin.options.t('faqpage.cannotClickQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.cannotClickA')
+
+    h3!=htmlWebpackPlugin.options.t('faqpage.appenabledQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.appenabledA1')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.appenabledA2')
+
+    ul
+      each country in htmlWebpackPlugin.options.t('faqpage.appenabledList')
+        +render(country)
+
+
+

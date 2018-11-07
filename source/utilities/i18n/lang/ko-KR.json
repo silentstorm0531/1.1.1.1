@@ -384,7 +384,7 @@
   "faqpage.suggestA": "We read all of your suggestions. You can shake the phone while in the app and send your suggestions for improvements. Alternatively, you can go to the app menu and tap on ‘Help’ to send your feedback.",
   "faqpage.diffDnsTlsQ": "What is the difference between using DNS over TLS and DNS over HTTPS?",
   "faqpage.diffDnsTlsA1": "Both DNS over TLS and DNS over HTTPS encrypt plain DNS queries from the phone.",
-  "faqpage.diffDnsTlsA2": "DNS over HTTPS uses port 443 and DNS over TLS uses port 853. In some networks, one of these ports might be blocked. If port 443 is blocked you should use DNS over HTTPS. If port 853 is blocked, you should use DNS over HTTPS. In some cases, DNS over TLS may be faster than DNS over HTTPS or the other way around.",
+  "faqpage.diffDnsTlsA2": "DNS over HTTPS uses port 443 and DNS over TLS uses port 853. In some networks, one of these ports might be blocked. If port 443 is blocked you should use DNS over TLS. If port 853 is blocked, you should use DNS over HTTPS. In some cases, DNS over TLS may be faster than DNS over HTTPS or the other way around.",
   "faqpage.bugQ": "How can I send a bug report?",
   "faqpage.bugA": "You can shake the app and send a bug report. When you do that, the app attaches a screenshot and the console logs along with the bug report. The console log helps us debug your connection and improve your overall app experience.",
   "faqpage.internetStoppedQ": "My internet stopped working when I was using the 1.1.1.1 app. What should I do?",
@@ -415,5 +415,30 @@
   ],
   "faqpage.appStuckA2": "If this does not allow the connection, disable the 1.1.1.1 app and send us a bug report.",
   "faqpage.cannotClickQ": "I cannot click OK on the VPN installation dialog. What should I do?",
-  "faqpage.cannotClickA": "If you cannot click on the OK button, there might be another application on top of the dialog. Some known apps that can cause this problem are Lux Brightness, Night Mode, Twilight, FileManager etc. To avoid this problem, close or uninstall all apps that might cause this problem."
+  "faqpage.cannotClickA": "If you cannot click on the OK button, there might be another application on top of the dialog. Some known apps that can cause this problem are Lux Brightness, Night Mode, Twilight, FileManager etc. To avoid this problem, close or uninstall all apps that might cause this problem.",
+  "faqpage.appenabledQ": "I kept the app enabled but I noticed it turned off after a while. What happened?",
+  "faqpage.appenabledA1": "Your phone is trying to manage the battery by disabling the app. For example, most Huawei devices are known for their aggressive memory and power management.",
+  "faqpage.appenabledA2": "You can fix this by following the steps below:",
+  "faqpage.appenabledList": [
+    {
+      "tag": "li",
+      "content": "Go to the ‘Settings’ on your phone."
+    },
+    {
+      "tag": "li",
+      "content": "Select ‘Advanced’"
+    },
+    {
+      "tag": "li",
+      "content": "Visit ‘Battery Manager’"
+    },
+    {
+      "tag": "li",
+      "content": "Open ‘Protected Apps’"
+    },
+    {
+      "tag": "li",
+      "content": "You can select “Allow apps to keep running after the screen is turned off” for the 1.1.1.1 app."
+    }
+  ]
 }
