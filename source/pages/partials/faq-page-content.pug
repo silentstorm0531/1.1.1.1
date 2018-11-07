@@ -29,15 +29,15 @@ mixin render(input)
 
 section
   .content
-    h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.general')
+    h1#general.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.general')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.whatIsQ')
+    h3#what-is-1111!=htmlWebpackPlugin.options.t('faqpage.whatIsQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.whatIsA1')
     p!=htmlWebpackPlugin.options.t('faqpage.whatIsA2')
     p!=htmlWebpackPlugin.options.t('faqpage.whatIsA3')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSQ')
+    h3#what-do-dns-resolvers-do!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA1')
     p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA2')
@@ -45,25 +45,25 @@ section
     p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA4')
     p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA5')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.ipv6Q')
+    h3#have-ipv6-support!=htmlWebpackPlugin.options.t('faqpage.ipv6Q')
 
     p!=htmlWebpackPlugin.options.t('faqpage.ipv6A')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.clearCacheQ')
+    h3#how-can-i-clear-dns-cache!=htmlWebpackPlugin.options.t('faqpage.clearCacheQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.clearCacheA')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.insideChinaQ')
+    h3#work-inside-china!=htmlWebpackPlugin.options.t('faqpage.insideChinaQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.insideChinaA')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.countriesBlockedQ')
+    h3#countries-blocked!=htmlWebpackPlugin.options.t('faqpage.countriesBlockedQ')
 
     ol
       each country in htmlWebpackPlugin.options.t('faqpage.countriesBlockedA')
         +render(country)
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.devDocsQ')
+    h3#developer-docs!=htmlWebpackPlugin.options.t('faqpage.devDocsQ')
 
     p
       a(href='https://developers.cloudflare.com/1.1.1.1/')
@@ -71,46 +71,42 @@ section
       span
       | .
 
-    h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.mobileApp')
+    h1#mobile-app.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.mobileApp')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.mobileAppQ')
-
-    p!=htmlWebpackPlugin.options.t('faqpage.mobileAppA')
-
-    h3!=htmlWebpackPlugin.options.t('faqpage.mobileAppWorkQ')
+    h3#how-does-the-mobile-app-work!=htmlWebpackPlugin.options.t('faqpage.mobileAppWorkQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.mobileAppWorkA')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.vpnQ')
+    h3#is-1111-a-vpn!=htmlWebpackPlugin.options.t('faqpage.vpnQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.vpnA')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.dnsLogsQ')
+    h3#what-are-dns-logs!=htmlWebpackPlugin.options.t('faqpage.dnsLogsQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.dnsLogsA')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.logsForQ')
+    h3#what-are-console-logs-for!=htmlWebpackPlugin.options.t('faqpage.logsForQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.logsForA')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.suggestQ')
+    h3#how-can-i-suggest-improvement!=htmlWebpackPlugin.options.t('faqpage.suggestQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.suggestA')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.diffDnsTlsQ')
+    h3#difference-between-tls-and-dns!=htmlWebpackPlugin.options.t('faqpage.diffDnsTlsQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.diffDnsTlsA1')
     p!=htmlWebpackPlugin.options.t('faqpage.diffDnsTlsA2')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.bugQ')
+    h3#send-bug-report!=htmlWebpackPlugin.options.t('faqpage.bugQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.bugA')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.internetStoppedQ')
+    h3#internet-stopped-working!=htmlWebpackPlugin.options.t('faqpage.internetStoppedQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.internetStoppedA')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.appStuckQ')
+    h3#stuck-connecting-reasserting!=htmlWebpackPlugin.options.t('faqpage.appStuckQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.appStuckA1')
 
@@ -120,11 +116,11 @@ section
 
     p!=htmlWebpackPlugin.options.t('faqpage.appStuckA2')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.cannotClickQ')
+    h3#cannot-click-ok!=htmlWebpackPlugin.options.t('faqpage.cannotClickQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.cannotClickA')
 
-    h3!=htmlWebpackPlugin.options.t('faqpage.appenabledQ')
+    h3#kept-app-enabled!=htmlWebpackPlugin.options.t('faqpage.appenabledQ')
 
     p!=htmlWebpackPlugin.options.t('faqpage.appenabledA1')
 
