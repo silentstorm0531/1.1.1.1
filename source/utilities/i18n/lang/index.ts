@@ -11,5 +11,6 @@ locales["ja-JP"] = require("./ja-JP.json");
 locales["ko-KR"] = require("./ko-KR.json");
 locales["pt-BR"] = require("./pt-BR.json");
 locales["tr-TR"] = require("./tr-TR.json");
+locales["id-ID"] = require("./id-ID.json");
 
 export default locales;
