@@ -199,7 +199,7 @@ const locales = [
   }
 ];
 
-// HACK: For many many reasons, Pug. html-loader, and html-webpack-plugin are incompatible.
+// HACK: For many many reasons, Pug, html-loader, and html-webpack-plugin are incompatible.
 
 const pugLoaders = locales.map(locale => {
   const mergedDefinitions = defaultsDeep(
