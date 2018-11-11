@@ -32,17 +32,17 @@ section(data-section="hero")
 
   h2!=htmlWebpackPlugin.options.t('hero.description')
 
+  .app-store-badges
+    a(href="https://itunes.apple.com/")
+      include ../../media/ios-store-badge.svg
+    a(href="https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone")
+      include ../../media/google-play-badge.svg
+
   .actions
-    a.button.secondary.inverted(
-      tabindex="1"
+    a(
+      tabindex=""
       role="button"
       data-scroll
-      href="#setup-instructions")
-      .button-content!=htmlWebpackPlugin.options.t('hero.getStarted')
-    .spacer.mobile-only
-    a.button.secondary.inverted(
-      tabindex="2"
-      role="button"
-      data-scroll
-      href="#explanation")
+      href="#explanation"
+      class="hero-link")
       .button-content!=htmlWebpackPlugin.options.t('hero.info')
