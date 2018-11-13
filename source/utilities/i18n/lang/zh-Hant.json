@@ -360,25 +360,6 @@
   "faqpage.clearCacheA": "您可以透過使用<a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>清除快取工具</a>來針對網域名稱重新整理 1.1.1.1 的 DNS 快取。您必須輸入網域名稱、選取 DNS 記錄類型並點擊「清除快取」按鈕。",
   "faqpage.insideChinaQ": "1.1.1.1 是否在中國運作？",
   "faqpage.insideChinaA": "沒有完全運作。您可以設定您的 DNS 以指向 1.1.1.1，但它無法觸達我們其中一個中國內部的資料中心。相反，此要求會路由傳送至我們其中一個中國大陸外的資料中心。",
-  "faqpage.countriesBlockedQ": "哪些國家封鎖了 1.1.1.1？",
-  "faqpage.countriesBlockedA": [
-    {
-      "tag": "li",
-      "content": "巴林"
-    },
-    {
-      "tag": "li",
-      "content": "利比亞"
-    },
-    {
-      "tag": "li",
-      "content": "蒙古"
-    },
-    {
-      "tag": "li",
-      "content": "土耳其"
-    }
-  ],
   "faqpage.devDocsQ": "哪裡可以找到 1.1.1.1 的開發人員文件？",
   "faqpage.devDocsA": "此處",
   "faqpage.mobileApp": "行動裝置 App",

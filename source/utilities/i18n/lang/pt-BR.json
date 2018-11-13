@@ -360,25 +360,6 @@
   "faqpage.clearCacheA": "Você pode atualizar o cache de DNS do 1.1.1.1 para nomes de domínio usando a <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>ferramenta de limpeza de cache</a>. Você precisa digitar o nome de domínio, escolher o(s) tipo(s) de registro DNS e clicar no botão ‘Limpar cache’.",
   "faqpage.insideChinaQ": "O 1.1.1.1 funciona na China?",
   "faqpage.insideChinaA": "Na verdade, não. Você pode configurar seu DNS para apontar para o 1.1.1.1, mas ele não alcançará nenhum de nossos data centers dentro da China. Em vez disso, a solicitação será encaminhada para um dos nossos data centers fora da China continental.",
-  "faqpage.countriesBlockedQ": "Em que países o 1.1.1.1 está bloqueado?",
-  "faqpage.countriesBlockedA": [
-    {
-      "tag": "li",
-      "content": "Bahrein"
-    },
-    {
-      "tag": "li",
-      "content": "Líbia"
-    },
-    {
-      "tag": "li",
-      "content": "Mongólia"
-    },
-    {
-      "tag": "li",
-      "content": "Turquia"
-    }
-  ],
   "faqpage.devDocsQ": "Onde posso encontrar os documentos de desenvolvedor do 1.1.1.1?",
   "faqpage.devDocsA": "Aqui",
   "faqpage.mobileApp": "Aplicativo móvel",

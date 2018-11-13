@@ -360,25 +360,6 @@
   "faqpage.clearCacheA": "您可以通过使用 <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>Purge Cache 工具</a>，刷新用于域名的 1.1.1.1 DNS 高速缓存。您必须输入此域名，选择 DNS 记录类型（或多个类型），然后点击 ‘Purge Cache’ 按钮。",
   "faqpage.insideChinaQ": "1.1.1.1 在中国是否工作？",
   "faqpage.insideChinaA": "实际上不工作。您可以配置您的 DNS，使其指向 1.1.1.1，但它不会到达我们位于中国的数据中心之一。该请求将路由到我们在中国大陆之外的一个数据中心。",
-  "faqpage.countriesBlockedQ": "哪些国家阻止 1.1.1.1？",
-  "faqpage.countriesBlockedA": [
-    {
-      "tag": "li",
-      "content": "巴林"
-    },
-    {
-      "tag": "li",
-      "content": "利比亚"
-    },
-    {
-      "tag": "li",
-      "content": "蒙古"
-    },
-    {
-      "tag": "li",
-      "content": "土耳其"
-    }
-  ],
   "faqpage.devDocsQ": "我能够在哪里找到 1.1.1.1 的开发人员文档？",
   "faqpage.devDocsA": "这里",
   "faqpage.mobileApp": "移动应用",

@@ -363,25 +363,6 @@
   "faqpage.clearCacheA": "ドメイン名に関する1.1.1.1の DNSキャッシュをクリアするには、 <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>Purge Cacheツール</a>を使用します。ドメイン名を入力して、DNSレコードタイプ（複数可）を選択して、［キャッシュをパージ]］ボタンを押します。",
   "faqpage.insideChinaQ": "1.1.1.1は中国でも使用できますか？",
   "faqpage.insideChinaA": "難しいですね。ご利用のDNを1.1.1.1に向けることはできますが、これが中国国内の当社データセンターの1つに到達することはありません。代わりに、そのリクエストは中国本土以外にある、当社データセンターの1つにルーティングされます。",
-  "faqpage.countriesBlockedQ": "1.1.1.1は、どの国でブロックされていますか？",
-  "faqpage.countriesBlockedA": [
-    {
-      "tag": "li",
-      "content": "バーレーン"
-    },
-    {
-      "tag": "li",
-      "content": "リビア"
-    },
-    {
-      "tag": "li",
-      "content": "モンゴル国"
-    },
-    {
-      "tag": "li",
-      "content": "トルコ"
-    }
-  ],
   "faqpage.devDocsQ": "1.1.1.1のデベロッパードキュメンテーションは、どこにありますか？",
   "faqpage.devDocsA": "こちら",
   "faqpage.mobileApp": "モバイルアプリ",
