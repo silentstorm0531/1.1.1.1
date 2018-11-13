@@ -62,13 +62,6 @@ section
 
     p!=htmlWebpackPlugin.options.t('faqpage.insideChinaA')
 
-    a(href='#countries-blocked' class='h3-link')
-      h3#countries-blocked!=htmlWebpackPlugin.options.t('faqpage.countriesBlockedQ')
-
-    ol
-      each country in htmlWebpackPlugin.options.t('faqpage.countriesBlockedA')
-        +render(country)
-
     a(href='#developer-docs' class='h3-link')
       h3#developer-docs!=htmlWebpackPlugin.options.t('faqpage.devDocsQ')
 

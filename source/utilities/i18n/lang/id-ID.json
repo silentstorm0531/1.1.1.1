@@ -363,25 +363,6 @@
   "faqpage.clearCacheA": "Anda dapat menyegarkan cache DNS 1.1.1.1 untuk nama domain dengan menggunakan <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>bersihkan alat cache</a>. Anda harus memasukkan nama domain, pilih tipe (atau tipe-tipe) rekaman DNS dan tekan tombol ‘Bersihkan Cache’.",
   "faqpage.insideChinaQ": "Apakah 1.1.1.1 berfungsi di dalam China?",
   "faqpage.insideChinaA": "Tidak juga. Anda dapat mengonfigurasi DNS Anda untuk mengarah ke 1.1.1.1 tetapi tidak akan mencapai salah satu pusat data kami di dalam China. Sebaliknya, permintaan akan mengarahkan ke salah satu pusat data kami di luar Daratan China.",
-  "faqpage.countriesBlockedQ": "Di negara mana 1.1.1.1 diblokir?",
-  "faqpage.countriesBlockedA": [
-    {
-      "tag": "li",
-      "content": "Bahrain"
-    },
-    {
-      "tag": "li",
-      "content": "Libya"
-    },
-    {
-      "tag": "li",
-      "content": "Mongolia"
-    },
-    {
-      "tag": "li",
-      "content": "Turki"
-    }
-  ],
   "faqpage.devDocsQ": "Di mana saya dapat menemukan dok pengembang 1.1.1.1?",
   "faqpage.devDocsA": "Di sini",
   "faqpage.mobileApp": "Aplikasi Seluler",

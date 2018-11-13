@@ -360,25 +360,6 @@
   "faqpage.clearCacheA": "U kunt 1.1.1.1’s DNS cache voor domeinnamen verversen door het <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>purge cache tool</a> te gebruiken. U moet de domeinnaam invoeren, het DNS recordtype (of types kiezen en de ‚Purge Cache‘ knop drukken.",
   "faqpage.insideChinaQ": "Werkt 1.1.1.1 in China?",
   "faqpage.insideChinaA": "Niet echt. U kunt uw DNS configureren om te wijzen naar 1.1.1.1 maar het zal niet onze datacenters in China bereiken. Het verzoek zal naar een van onze datacenters buiten China worden gestuurd.",
-  "faqpage.countriesBlockedQ": "In welke landen is 1.1.1.1 geblokkeerd?",
-  "faqpage.countriesBlockedA": [
-    {
-      "tag": "li",
-      "content": "Bahrein"
-    },
-    {
-      "tag": "li",
-      "content": "Libië"
-    },
-    {
-      "tag": "li",
-      "content": "Mongolië"
-    },
-    {
-      "tag": "li",
-      "content": "Turkije"
-    }
-  ],
   "faqpage.devDocsQ": "Waar kan ik de ontwikkelaarsdocumentatie van 1.1.1.1 vinden?",
   "faqpage.devDocsA": "Hier",
   "faqpage.mobileApp": "Mobiele app",
