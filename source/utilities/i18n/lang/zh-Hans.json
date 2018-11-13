@@ -350,7 +350,7 @@
   "faqpage.whatIsA3": "计算机被配置为与 IP 地址标识的特定 DNS 解析器通信。通常，如果您在家庭或无线 Internet 上，该配置由您的 ISP（例如 Comcast 或 AT&amp;T）管理，如果您连接到了办公室 Internet，则由网络管理员管理。您还可以更改计算机告诉您自己的已配置 DNS 解析器。",
   "faqpage.whatDoDNSQ": "DNS 解析器有什么作用？",
   "faqpage.whatDoDNSA1": "解析器如何知道怎样找到域名的地址？它们从顶部向后工作。",
-  "faqpage.whatDoDNSA2": "每个解析器都知道如何找到域名末尾看不见的 ‘.’（例如 cloudflare.com.）。全球有<a href='http://www.root-servers.org/' target='_blank'>数百个服务器</a>托管 ‘.’ 文件。通过<a href='https://blog.cloudflare.com/f-root/' target='_blank'>与 ISC</a> 合作，Cloudflare 本身在其全球的所有服务器上均托管<a href='http://www.internic.net/domain/root.zone' target='_blank'>该文件</a>。解析器<a href='https://www.internic.net/domain/named.root' target='_blank'>进行了硬编码，知道这些服务器的 IP 地址</a>。",
+  "faqpage.whatDoDNSA2": "每个解析器都知道如何找到域名末尾看不见的 ‘.’（例如 cloudflare.com.）。全球有<a href='http://www.root-servers.org/' target='_blank'>数百个服务器</a>托管 ‘.’ 文件。通过<a href='https://blog.cloudflare.com/f-root/' target='_blank'>与 ISC</a> 合作，Cloudflare 本身在其全球的所有服务器上均托管<a href='https://www.internic.net/domain/root.zone' target='_blank'>该文件</a>。解析器<a href='https://www.internic.net/domain/named.root' target='_blank'>进行了硬编码，知道这些服务器的 IP 地址</a>。",
   "faqpage.whatDoDNSA3": "解析器会询问其中一个根服务器在哪里找到该链中的下一个链接，TLD 或域结尾。TLD 的示例为 .com 或 .org。幸运的是，这些根服务器存储了所有 TLD 服务器的位置，因此它们可返回 DNS 解析器接下来应询问的 IP 地址。",
   "faqpage.whatDoDNSA4": "然后，解析器询问 TLD 的服务器，它能够在哪里找到它正在寻找的域，例如，解析器可能会询问 .com 在哪里能够找到 cloudflare.com。TLD 托管包含使用此 TLD 的每个域的位置的文件。解析器获得最终 IP 地址后，它会将此答案返回给询问的计算机。",
   "faqpage.whatDoDNSA5": "具有托管这些信息的服务器（称为授权 DNS）和寻求这些信息的服务器（DNS 解析器）的整个系统称为域名系统 (DNS)。DNS 就像用于 Internet 的 Google Maps。它将地点的名称转换为地址，以便您能够弄清楚如何到达那里。",
