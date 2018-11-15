@@ -350,7 +350,7 @@
   "faqpage.whatIsA3": "電腦經設定可與由 IP 位址識別的特定 DNS 解析服務進行對話。通常，如果您在家或連線無線網路，此設定將受您的 ISP (如 Comcast 或 AT&amp;T) 的管理；如果您連線至辦公網際網路，此設定將受您的網路系統管理員的管理。您還可變更您電腦告知您的已設定的 DNS 解析服務。",
   "faqpage.whatDoDNSQ": "DNS 解析服務能做些什麼？",
   "faqpage.whatDoDNSA1": "解析服務如何尋找網域名稱的位址？它們從頂部向後運作。",
-  "faqpage.whatDoDNSA2": "每個解析服務都知道如何尋找網域名稱結尾隱藏的「.」(如 cloudflare.com.)。全球各地又<a href='http://www.root-servers.org/' target='_blank'>數百個伺服器</a>代管「.」檔案。透過<a href='https://blog.cloudflare.com/f-root/' target='_blank'>與 ISC 的合作</a>，Cloudflare 自身在其全球所有伺服器中代管<a href='http://www.internic.net/domain/root.zone' target='_blank'>該檔案</a>。解析服務<a href='https://www.internic.net/domain/named.root' target='_blank'>是硬式編碼，可瞭解這些伺服器的 IP 位址</a>。",
+  "faqpage.whatDoDNSA2": "每個解析服務都知道如何尋找網域名稱結尾隱藏的「.」(如 cloudflare.com.)。全球各地又<a href='http://www.root-servers.org/' target='_blank'>數百個伺服器</a>代管「.」檔案。透過<a href='https://blog.cloudflare.com/f-root/' target='_blank'>與 ISC 的合作</a>，Cloudflare 自身在其全球所有伺服器中代管<a href='https://www.internic.net/domain/root.zone' target='_blank'>該檔案</a>。解析服務<a href='https://www.internic.net/domain/named.root' target='_blank'>是硬式編碼，可瞭解這些伺服器的 IP 位址</a>。",
   "faqpage.whatDoDNSA3": "析服務會向其中一個根伺服器詢問在哪些位置可尋找到鏈結、TLD 或網域後綴中的下一個連結。.com 或 .org 就是 TLD 的一個範例。幸運地是，根伺服器可存放所有 TLD 伺服器的位置，因此它們可以傳回 DNS 解析服務下一步要詢問的 IP 位址。",
   "faqpage.whatDoDNSA4": "隨後，解析服務會向 TLD 的伺服器詢問它可以在哪些位置尋找其搜尋的網域，例如，解析服務會向 .com 詢問在哪些位置可以尋找到 cloudflare.com。TLD 已使用 TLD 代管包含每個網域位置的檔案。解析服務具備最終 IP 位置後，會將答案傳回詢問的電腦。",
   "faqpage.whatDoDNSA5": "代管此資訊 (稱為權威 DNS) 及搜尋此資訊 (DNS 解析服務) 的這整個系統被稱為網域名稱系統 (DNS)。DNS 類似於網際網路的 Google Maps。它可將各個地點名稱轉譯至位址，以便您能想出到達此處的方式。",
