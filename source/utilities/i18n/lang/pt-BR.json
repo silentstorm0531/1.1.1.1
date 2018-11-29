@@ -158,7 +158,7 @@
               "children": [
                 {
                   "tag": "li",
-                  "content": "<strong class=\"code\">1.0.0.1</strong>"
+                  "content": "Para IPv4: <strong class=\"code\">1.1.1.1</strong> e <strong class=\"code\">1.0.0.1</strong>"
                 },
                 {
                   "tag": "li",
