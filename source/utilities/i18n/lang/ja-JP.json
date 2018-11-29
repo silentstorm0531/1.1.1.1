@@ -161,7 +161,7 @@
               "children": [
                 {
                   "tag": "li",
-                  "content": "<strong class=\"code\">1.0.0.1</strong>"
+                  "content": "IPv4の場合：<strong class=\"code\">1.1.1.1</strong> と <strong class=\"code\">1.0.0.1</strong>"
                 },
                 {
                   "tag": "li",
