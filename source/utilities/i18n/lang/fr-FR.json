@@ -326,7 +326,9 @@
           "content": "Tout est prêt ! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"
         }
       ]
-    }
+    },
+
+    "downloadmobile": "Download the mobile app"
   },
 
   "share.header": "✌️✌️ Partagez avec vos amis un Internet plus rapide qui respecte votre vie privée.",

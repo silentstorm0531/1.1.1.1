@@ -326,7 +326,9 @@
           "content": "您已完成所有设置！您的设备现在即拥有更快、更私密的 DNS 服务器 ✌️✌️"
         }
       ]
-    }
+    },
+
+    "downloadmobile": "Download the mobile app"
   },
 
   "share.header": "✌️✌️ 与好友分享更快、隐私优先的 Internet。",

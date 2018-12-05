@@ -11,7 +11,7 @@ section#setup-instructions.help-initial-hidden(data-section="setup" data-ref="se
     data-ref="deviceLabel"
     data-label=htmlWebpackPlugin.options.t('instructions').header)
 
-  p!=htmlWebpackPlugin.options.t('instructions').explanation
+  p.desktop-only!=htmlWebpackPlugin.options.t('instructions').explanation
 
   .instruction-picker.desktop-only(data-ref="instructionPicker")
     button.button.choice(type="button" data-platform="iphone")
@@ -45,15 +45,10 @@ section#setup-instructions.help-initial-hidden(data-section="setup" data-ref="se
     )
 
   .instructions(data-platform="iphone")
-    ol
-      each instruction in htmlWebpackPlugin.options.t('instructions').iphone.steps
-        +render(instruction)
-
-    stream(
-      style="width: 616px; max-width: 100%;"
-      src="ddf07732bc76fc854d4b1879eea2c517"
-      controls
-    )
+    strong!=htmlWebpackPlugin.options.t('instructions').downloadmobile
+    .app-download-options
+      a(href="https://itunes.apple.com/us/app/1-1-1-1-faster-internet/id1423538627?mt=8")
+        include ../../media/ios-store-badge.svg
 
   .instructions(data-platform="linux")
     p!=htmlWebpackPlugin.options.t('instructions').linux.notice
@@ -74,17 +69,10 @@ section#setup-instructions.help-initial-hidden(data-section="setup" data-ref="se
     )
 
   .instructions(data-platform="android")
-    .message
-      p.collapsed-margins.message-content!=htmlWebpackPlugin.options.t('instructions').android.message
-    ol
-      each instruction in htmlWebpackPlugin.options.t('instructions').android.steps
-        +render(instruction)
-
-    stream(
-      style="width: 616px; max-width: 100%;"
-      src="62dceb0d5905f0c98a895d21409d6247"
-      controls
-    )
+    strong!=htmlWebpackPlugin.options.t('instructions').downloadmobile
+    .app-download-options
+      a(href="https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone")
+        include ../../media/google-play-badge.svg
 
   .instructions(data-platform="router")
     .message.center
