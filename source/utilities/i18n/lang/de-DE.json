@@ -332,7 +332,9 @@
           "content": "Sie sind fertig! Ihr Gerät hat jetzt schnellere DNS-Server, die eine bessere Privatsphäre bieten ✌️✌️"
         }
       ]
-    }
+    },
+
+    "downloadmobile": "Download the mobile app"
   },
 
   "share.header": "✌️✌️ Teilen Sie schnelles, auf Privatsphäre fokussiertes Internet mit Ihren Freunden.",

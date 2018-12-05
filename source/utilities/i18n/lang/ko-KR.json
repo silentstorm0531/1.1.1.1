@@ -326,7 +326,9 @@
           "content": "모든 설정이 완료되었습니다. 이제 기기가 개인정보보호 기능이 강화된 더 빠른 DNS 서버를 사용합니다. ✌️✌"
         }
       ]
-    }
+    },
+
+    "downloadmobile": "Download the mobile app"
   },
 
   "share.header": "✌️✌️ 개인정보보호를 최우선으로 하는 더 빠른 인터넷을 친구와 공유하십시오.",
