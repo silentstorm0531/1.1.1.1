@@ -432,5 +432,45 @@
       "tag": "li",
       "content": "You can select “Allow apps to keep running after the screen is turned off” for the 1.1.1.1 app."
     }
+  ],
+  "faqpage.persistentnotificationQ": "Why is there a persistent notification for the 1.1.1.1 app?",
+  "faqpage.persistentnotificationA1": "If you are using Android 8 or above, you will see a persistent notification from the 1.1.1.1 app saying “Your DNS queries are private and faster”.",
+  "faqpage.persistentnotificationA2": "This is required by the Android OS (8.0+) for all apps with background activity.",
+  "faqpage.persistentnotificationA3": "We set the priority of the notification to be “Low” so that it does not interfere with other important notifications on your phone.",
+  "faqpage.persistentnotificationA4": "Here is one thing you can do to hide the notification. Note that this will stop you from receiving other notifications from the 1.1.1.1 app. But here you go:",
+  "faqpage.persistentnotificationList": [
+    {
+      "tag": "li",
+      "content": "Go to your Settings."
+    },
+    {
+      "tag": "li",
+      "content": "Apps & Notifications."
+    },
+    {
+      "tag": "li",
+      "content": "Open the 1.1.1.1 app setting from the list of apps."
+    },
+    {
+      "tag": "li",
+      "content": "Tap on “Notifications” and disable it."
+    }
+  ],
+  "faqpage.disablednotificationQ": "I disabled notification for the 1.1.1.1 app but now I am seeing another notification saying “1.1.1.1 is using battery”. Should I be worried? How can I remove it?",
+  "faqpage.disablednotificationA1": "You should not be worried. Because you disabled notification for the app the Android OS now sends another notification warning you about battery usage not because it is consuming a lot of battery but because it is running in the background (in this case, securing all of your DNS queries!).",
+  "faqpage.disablednotificationA2": "Here is how you can remove it:",
+  "faqpage.disablednotificationList": [
+    {
+      "tag": "li",
+      "content": "Long press on the notification until it changes and shows a toggle."
+    },
+    {
+      "tag": "li",
+      "content": "Tap on the toggle, making sure its greyed out."
+    },
+    {
+      "tag": "li",
+      "content": "Select “Done” to disable the notification."
+    }
   ]
 }
