@@ -141,5 +141,24 @@ section
       each country in htmlWebpackPlugin.options.t('faqpage.appenabledList')
         +render(country)
 
+    a(href='#persistent-notification' class='h3-link')
+      h3#kept-app-enabled!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationQ')
 
+    p!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationA2')
+    p!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationA3')
+    p!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationA4')
 
+    ol
+      each country in htmlWebpackPlugin.options.t('faqpage.persistentnotificationList')
+        +render(country)
+
+    a(href='#disabled-notification' class='h3-link')
+      h3#kept-app-enabled!=htmlWebpackPlugin.options.t('faqpage.disablednotificationQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.disablednotificationA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.disablednotificationA2')
+
+    ol
+      each country in htmlWebpackPlugin.options.t('faqpage.disablednotificationList')
+        +render(country)
