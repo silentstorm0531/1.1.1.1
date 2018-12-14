@@ -9,7 +9,7 @@
   "explanation.dnsHeader": " ",
   "explanation.dnsExplanation": "   ",
   "explanation.dnsSlowInsecure": "  ",
-  "explanation.dnsAlternative": "  <strong class=\"code\">1.1.1.1</strong>",
+  "explanation.dnsAlternative": "  ",
 
   "explanation.privacyHeader": " ",
   "explanation.privacyExplanation": " ",
@@ -29,33 +29,33 @@
     "questions": " ",
     "mac-os": {
       "steps": [
-        { "tag": "li", "content": "" },
+        { "tag": "", "content": "" },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": " "
         }
       ]
@@ -63,50 +63,50 @@
     "windows": {
       "steps": [
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
-        { "tag": "li", "content": "" },
+        { "tag": "", "content": "" },
         {
-          "tag": "li",
-          "content": ""
-        },
-        {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
+          "content": ""
+        },
+        {
+          "tag": "",
           "children": [
             {
               "tag": "",
               "content": ""
             },
             {
-              "tag": "ul",
+              "tag": "",
               "children": [
                 {
-                  "tag": "li",
+                  "tag": "",
                   "content": " "
                 },
                 {
-                  "tag": "li",
+                  "tag": "",
                   "content": " "
                 }
               ]
@@ -114,12 +114,12 @@
           ]
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
-        { "tag": "li", "content": "" },
+        { "tag": "", "content": "" },
         {
-          "tag": "li",
+          "tag": "",
           "content": " "
         }
       ]
@@ -129,23 +129,23 @@
       "steps": [
         {
           "content": "",
-          "tag": "li"
+          "tag": ""
         },
         {
           "content": "",
-          "tag": "li"
+          "tag": ""
         },
         {
           "content": "",
-          "tag": "li"
+          "tag": ""
         },
         {
           "content": "",
-          "tag": "li"
+          "tag": ""
         },
         {
           "content": "",
-          "tag": "li"
+          "tag": ""
         },
         {
           "children": [
@@ -154,15 +154,15 @@
               "content": ""
             },
             {
-              "tag": "ul",
+              "tag": "",
               "children": [
                 {
-                  "tag": "li",
+                  "tag": "",
                   "content": " "
                 },
                 {
-                  "tag": "li",
-                  "content": " <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
+                  "tag": "",
+                  "content": " "
                 }
               ]
             }
@@ -170,54 +170,54 @@
         },
         {
           "content": "",
-          "tag": "li"
+          "tag": ""
         },
         {
           "content": " ",
-          "tag": "li"
+          "tag": ""
         }
       ]
     },
     "iphone": {
       "steps": [
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": " "
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": " "
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": " "
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": " "
         }
       ]
@@ -226,48 +226,48 @@
       "message": "   ",
       "steps": [
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
-        { "tag": "li", "content": "" },
+        { "tag": "", "content": "" },
         {
-          "tag": "li",
+          "tag": "",
           "content": " "
         }
       ]
@@ -276,41 +276,41 @@
       "message": " ",
       "steps": [
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": " "
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "children": [
             {
               "tag": "",
               "content": ""
             },
             {
-              "tag": "ul",
+              "tag": "",
               "children": [
                 {
-                  "tag": "li",
+                  "tag": "",
                   "content": " "
                 },
                 {
-                  "tag": "li",
+                  "tag": "",
                   "content": " "
                 }
               ]
@@ -318,11 +318,11 @@
           ]
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": ""
         },
         {
-          "tag": "li",
+          "tag": "",
           "content": " "
         }
       ]
@@ -344,7 +344,7 @@
   "faq.integrationDocs": "  ",
 
   "faqpage.header": "",
-  "faqpage.general": "General",
+  "faqpage.general": "",
   "faqpage.whatIsQ": "",
   "faqpage.whatIsA1": " ",
   "faqpage.whatIsA2": " ",
@@ -385,23 +385,23 @@
   "faqpage.appStuckA1": "",
   "faqpage.appStuckList": [
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     }
   ],
@@ -413,23 +413,23 @@
   "faqpage.appenabledA2": "",
   "faqpage.appenabledList": [
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     }
   ],
@@ -440,19 +440,19 @@
   "faqpage.persistentnotificationA4": "  ",
   "faqpage.persistentnotificationList": [
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     }
   ],
@@ -461,15 +461,15 @@
   "faqpage.disablednotificationA2": "",
   "faqpage.disablednotificationList": [
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     },
     {
-      "tag": "li",
+      "tag": "",
       "content": ""
     }
   ]
