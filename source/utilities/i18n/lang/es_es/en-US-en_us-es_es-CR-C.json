@@ -1,0 +1,476 @@
+{
+  "title": "",
+  "description": "",
+  "hero.introducing": "",
+  "hero.description": "",
+  "hero.getStarted": "",
+  "hero.info": "",
+
+  "explanation.dnsHeader": " ",
+  "explanation.dnsExplanation": "   ",
+  "explanation.dnsSlowInsecure": "  ",
+  "explanation.dnsAlternative": "  <strong class=\"code\">1.1.1.1</strong>",
+
+  "explanation.privacyHeader": " ",
+  "explanation.privacyExplanation": " ",
+  "explanation.privacyGuaranteeData": " ",
+  "explanation.privacyGuaranteeLogs": "  ",
+  "explanation.privacyConclusion": "",
+
+  "explanation.performanceHeader": "",
+  "explanation.performanceSubheader": "",
+  "explanation.fastestDNS": "  ",
+  "explanation.speedContinued": "",
+
+  "instructions": {
+    "header": "",
+    "explanation": " ",
+    "debug": " ",
+    "questions": " ",
+    "mac-os": {
+      "steps": [
+        { "tag": "li", "content": "" },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": " "
+        }
+      ]
+    },
+    "windows": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        { "tag": "li", "content": "" },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "",
+              "content": ""
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": " "
+                },
+                {
+                  "tag": "li",
+                  "content": " "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        { "tag": "li", "content": "" },
+        {
+          "tag": "li",
+          "content": " "
+        }
+      ]
+    },
+    "linux": {
+      "notice": " ",
+      "steps": [
+        {
+          "content": "",
+          "tag": "li"
+        },
+        {
+          "content": "",
+          "tag": "li"
+        },
+        {
+          "content": "",
+          "tag": "li"
+        },
+        {
+          "content": "",
+          "tag": "li"
+        },
+        {
+          "content": "",
+          "tag": "li"
+        },
+        {
+          "children": [
+            {
+              "tag": "",
+              "content": ""
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": " "
+                },
+                {
+                  "tag": "li",
+                  "content": " <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "",
+          "tag": "li"
+        },
+        {
+          "content": " ",
+          "tag": "li"
+        }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": " "
+        },
+        {
+          "tag": "li",
+          "content": " "
+        },
+        {
+          "tag": "li",
+          "content": " "
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": " "
+        }
+      ]
+    },
+    "android": {
+      "message": "   ",
+      "steps": [
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        { "tag": "li", "content": "" },
+        {
+          "tag": "li",
+          "content": " "
+        }
+      ]
+    },
+    "router": {
+      "message": " ",
+      "steps": [
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": " "
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "",
+              "content": ""
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": " "
+                },
+                {
+                  "tag": "li",
+                  "content": " "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": ""
+        },
+        {
+          "tag": "li",
+          "content": " "
+        }
+      ]
+    },
+    "downloadmobile": ""
+  },
+
+  "share.header": "",
+  "share.emailSubject": "",
+  "share.emailBody": " ",
+  "share.tweetBody": " ",
+
+  "faq.whosBehindThis": "",
+  "faq.partnership": "",
+  "faq.network": " ",
+  "faq.networkContinued": "    ",
+  "faq.canIintegrate": "",
+  "faq.integrationInfo": "",
+  "faq.integrationDocs": "  ",
+
+  "faqpage.header": "",
+  "faqpage.general": "General",
+  "faqpage.whatIsQ": "",
+  "faqpage.whatIsA1": " ",
+  "faqpage.whatIsA2": " ",
+  "faqpage.whatIsA3": "  ",
+  "faqpage.whatDoDNSQ": "",
+  "faqpage.whatDoDNSA1": " ",
+  "faqpage.whatDoDNSA2": "   ",
+  "faqpage.whatDoDNSA3": "  ",
+  "faqpage.whatDoDNSA4": "  ",
+  "faqpage.whatDoDNSA5": "  ",
+  "faqpage.ipv6Q": "",
+  "faqpage.ipv6A": "",
+  "faqpage.clearCacheQ": "",
+  "faqpage.clearCacheA": " ",
+  "faqpage.insideChinaQ": "",
+  "faqpage.insideChinaA": "  ",
+  "faqpage.devDocsQ": "",
+  "faqpage.devDocsA": "",
+  "faqpage.mobileApp": "",
+  "faqpage.mobileAppWorkQ": "",
+  "faqpage.mobileAppWorkA": " ",
+  "faqpage.vpnQ": "",
+  "faqpage.vpnA": " ",
+  "faqpage.dnsLogsQ": "",
+  "faqpage.dnsLogsA": " ",
+  "faqpage.logsForQ": "",
+  "faqpage.logsForA": "",
+  "faqpage.suggestQ": "",
+  "faqpage.suggestA": "  ",
+  "faqpage.diffDnsTlsQ": "",
+  "faqpage.diffDnsTlsA1": "",
+  "faqpage.diffDnsTlsA2": "    ",
+  "faqpage.bugQ": "",
+  "faqpage.bugA": "  ",
+  "faqpage.internetStoppedQ": " ",
+  "faqpage.internetStoppedA": " ",
+  "faqpage.appStuckQ": " ",
+  "faqpage.appStuckA1": "",
+  "faqpage.appStuckList": [
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    }
+  ],
+  "faqpage.appStuckA2": "",
+  "faqpage.cannotClickQ": " ",
+  "faqpage.cannotClickA": "  ",
+  "faqpage.appenabledQ": " ",
+  "faqpage.appenabledA1": " ",
+  "faqpage.appenabledA2": "",
+  "faqpage.appenabledList": [
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    }
+  ],
+  "faqpage.persistentnotificationQ": "",
+  "faqpage.persistentnotificationA1": "",
+  "faqpage.persistentnotificationA2": "",
+  "faqpage.persistentnotificationA3": "",
+  "faqpage.persistentnotificationA4": "  ",
+  "faqpage.persistentnotificationList": [
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    }
+  ],
+  "faqpage.disablednotificationQ": "  ",
+  "faqpage.disablednotificationA1": " ",
+  "faqpage.disablednotificationA2": "",
+  "faqpage.disablednotificationList": [
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    },
+    {
+      "tag": "li",
+      "content": ""
+    }
+  ]
+}
