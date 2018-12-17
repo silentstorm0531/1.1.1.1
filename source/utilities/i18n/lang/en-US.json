@@ -472,5 +472,34 @@
       "tag": "li",
       "content": "Select “Done” to disable the notification."
     }
+  ],
+  "faqpage.vpnprofileQ": "I cannot add the VPN profile. How can I fix it?",
+  "faqpage.vpnprofileA1": "You are probably using another VPN that has the “Always On” settings enabled. Please disable that and enable 1.1.1.1.",
+  "faqpage.vpnprofileA2": "You can go to that page by using the following steps:",
+  "faqpage.vpnprofileList": [
+    {
+      "tag": "li",
+      "content": "Settings"
+    },
+    {
+      "tag": "li",
+      "content": "Network and Internet"
+    },
+    {
+      "tag": "li",
+      "content": "Advanced"
+    },
+    {
+      "tag": "li",
+      "content": "VPN"
+    },
+    {
+      "tag": "li",
+      "content": "Gear button for 1.1.1.1"
+    },
+    {
+      "tag": "li",
+      "content": "Enable “Always On” for 1.1.1.1"
+    }
   ]
 }

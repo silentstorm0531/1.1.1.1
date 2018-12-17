@@ -120,8 +120,8 @@ section
     p!=htmlWebpackPlugin.options.t('faqpage.appStuckA1')
 
     ul
-      each country in htmlWebpackPlugin.options.t('faqpage.appStuckList')
-        +render(country)
+      each item in htmlWebpackPlugin.options.t('faqpage.appStuckList')
+        +render(item)
 
     p!=htmlWebpackPlugin.options.t('faqpage.appStuckA2')
 
@@ -138,8 +138,8 @@ section
     p!=htmlWebpackPlugin.options.t('faqpage.appenabledA2')
 
     ul
-      each country in htmlWebpackPlugin.options.t('faqpage.appenabledList')
-        +render(country)
+      each item in htmlWebpackPlugin.options.t('faqpage.appenabledList')
+        +render(item)
 
     a(href='#persistent-notification' class='h3-link')
       h3#kept-app-enabled!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationQ')
@@ -150,8 +150,8 @@ section
     p!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationA4')
 
     ol
-      each country in htmlWebpackPlugin.options.t('faqpage.persistentnotificationList')
-        +render(country)
+      each item in htmlWebpackPlugin.options.t('faqpage.persistentnotificationList')
+        +render(item)
 
     a(href='#disabled-notification' class='h3-link')
       h3#kept-app-enabled!=htmlWebpackPlugin.options.t('faqpage.disablednotificationQ')
@@ -160,5 +160,15 @@ section
     p!=htmlWebpackPlugin.options.t('faqpage.disablednotificationA2')
 
     ol
-      each country in htmlWebpackPlugin.options.t('faqpage.disablednotificationList')
-        +render(country)
+      each item in htmlWebpackPlugin.options.t('faqpage.disablednotificationList')
+        +render(item)
+
+    a(href='#add-vpn-profile' class='h3-link')
+      h3#kept-app-enabled!=htmlWebpackPlugin.options.t('faqpage.vpnprofileQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.vpnprofileA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.vpnprofileA2')
+
+    ol
+      each item in htmlWebpackPlugin.options.t('faqpage.vpnprofileList')
+        +render(item)
