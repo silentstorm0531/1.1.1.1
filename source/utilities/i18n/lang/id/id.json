@@ -8,12 +8,12 @@
 
   "explanation.dnsHeader": "DNS: Direktori Internet",
   "explanation.dnsExplanation": "Hampir segala hal di Internet dimulai dengan permintaan DNS. DNS adalah direktori Internet. Klik pada tautan, buka aplikasi, kirim email, dan hal pertama yang diminta perangkat Anda adalah direktori: <strong class=\"subtle\">Di mana saya bisa menemukannya?</strong>",
-  "explanation.dnsSlowInsecure": "Sayangnya, secara default, DNS biasanya lambat dan tidak aman. ISP Anda, dan orang lain yang sedang mendengarkan di Internet, dapat melihat setiap situs yang Anda kunjungi dan setiap aplikasi yang Anda gunakan — meskipun kontennya dienkripsi. Mengerikannya, beberapa penyedia DNS menjual data tentang aktivitas Internet Anda atau menggunakannya untuk menjadikan Anda target iklan.",
+  "explanation.dnsSlowInsecure": "Sayangnya, secara default, DNS biasanya lambat dan tidak aman. ISP Anda, dan orang lain yang sedang mengawasi di Internet, dapat melihat setiap situs yang Anda kunjungi dan setiap aplikasi yang Anda gunakan — meskipun kontennya dienkripsi. Mengerikannya, beberapa penyedia DNS menjual data tentang aktivitas Internet Anda atau menggunakannya untuk menjadikan Anda target iklan.",
   "explanation.dnsAlternative": "Kami pikir hal itu sangat buruk. Jika Anda juga berpikir demikian, kini ada alternatif lain: <strong class=\"code\">1.1.1.1</strong>",
 
   "explanation.privacyHeader": "Mengutamakan Privasi: Dijamin.",
   "explanation.privacyExplanation": "Kami memikirkan kembali protokol DNS era 1983. <strong class=\"code\">1.1.1.1</strong> mendukung DNS terenkripsi serta DNS melalui HTTPS.",
-  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Kami tidak akan pernah menjual data Anda atau menggunakannya untuk mentarget iklan.</span> Titik.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Kami tidak akan pernah menjual data Anda atau menggunakannya untuk menargetkan iklan.</span> Titik.",
   "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">Kami tidak akan pernah mencatat alamat IP Anda</span> (seperti cara perusahaan lain mengidentifikasi Anda). Dan kami tak hanya bicara. Kami mempertahankan KPMG untuk mengaudit sistem kami setiap tahun guna memastikan bahwa kami melakukan apa yang kami katakan.",
   "explanation.privacyConclusion": "Terus terang, kami tidak ingin tahu apa yang Anda lakukan di Internet—itu bukan urusan kami—dan kami telah mengambil langkah-langkah teknis untuk memastikan kami tidak bisa melakukannya.",
 
@@ -52,7 +52,7 @@
         },
         {
           "tag": "li",
-          "content": "Klik <strong>Ok</strong>, lalu klik <strong>Apply</strong> (Terapkan)."
+          "content": "Klik <strong>Oke</strong>, lalu klik <strong>Apply</strong> (Terapkan)."
         },
         {
           "tag": "li",
@@ -115,7 +115,7 @@
         },
         {
           "tag": "li",
-          "content": "Klik <strong>Ok</strong>, lalu <strong>Close</strong> (Tutup)."
+          "content": "Klik <strong>Oke</strong>, lalu <strong>Close</strong> (Tutup)."
         },
         { "tag": "li", "content": "Mulai ulang browser Anda." },
         {
@@ -206,7 +206,7 @@
         },
         {
           "tag": "li",
-          "content": "Ketuk tombol <strong>+ Add Server</strong> (Tambah Server) lagi, lalu ketik<strong class=\"code\">2606:4700:4700</strong>. Ini untuk redundansi."
+          "content": "Ketuk tombol <strong>+ Add Server</strong> (Tambah Server) lagi, lalu ketik<strong class=\"code\">2606:4700:4700::1111</strong>. Ini untuk redundansi."
         },
         {
           "tag": "li",
@@ -331,17 +331,17 @@
   },
 
   "share.header": "✌️✌️ Bagikan Internet yang lebih cepat dan mengutamakan privasi kepada teman-teman Anda.",
-  "share.emailSubject": "✌️✌️ Jelajahi Internet lebih cepat, lebih privat— Resolver DNS 1.1.1.1",
+  "share.emailSubject": "✌️✌️ Jelajahi Internet lebih cepat, lebih privat — Resolver DNS 1.1.1.1",
   "share.emailBody": "“1.1.1.1” menjadikan penjelajahan Internet lebih cepat dan lebih privat. Lihat https://1.1.1.1 untuk info lebih lanjut dan cara menyetel perangkat Anda dalam waktu kurang dari dua menit!",
   "share.tweetBody": "✌️✌️ Internet cepat, aman, dan privat hadir di sini. Setel Resolver DNS 1.1.1.1 dalam waktu kurang dari dua menit.",
 
   "faq.whosBehindThis": "Siapa di balik ini?",
   "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> adalah hasil kemitraan antara Cloudflare dan APNIC.",
   "faq.network": "Cloudflare menjalankan salah satu jaringan terbesar dan tercepat di dunia. APNIC adalah organisasi nirlaba yang mengelola alokasi alamat IP untuk wilayah Asia Pasifik dan Oseania.",
-  "faq.networkContinued": "Cloudflare memiliki jaringannya. APNIC memiliki alamat IP-nya (1.1.1.1). Kami berdua termotivasi oleh misi untuk membantu membangun Internet yang lebih baik. Anda dapat membaca lebih lanjut tentang setiap motivasi organisasi pada postingan kami masing-masing: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Blog Cloudflare</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">Blog APNIC</a>.",
-  "faq.canIintegrate": "Dapatkan saya terintegrasi dengan 1.1.1.1?",
+  "faq.networkContinued": "Cloudflare memiliki jaringannya. APNIC memiliki alamat IP-nya (1.1.1.1). Kami berdua termotivasi oleh misi untuk membantu membangun Internet yang lebih baik. Anda dapat membaca lebih lanjut tentang setiap motivasi organisasi pada postingan kami masing-masing: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Blog Cloudflare</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">Blog APNIC</a>. Untuk informasi selengkapnya, lihat: <a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">Apa itu 1.1.1.1?</a>",
+  "faq.canIintegrate": "Dapatkah saya terintegrasi dengan 1.1.1.1?",
   "faq.integrationInfo": "Jika Anda adalah produsen browser, sistem operasi, aplikasi, router, atau VPN yang ingin membangun layanan DNS modern, cepat, dan modern, jawabannya <strong class=\"subtle\">ya!</strong>",
-  "faq.integrationDocs": "Dengan menggunakan DNS pada HTTPS (DoH), Anda dapat secara transparan menawarkan keamanan yang ditingkatkan kepada pelanggan Anda sekaligus meningkatkan kecepatan perangkat Anda. Lebih baik lagi, Anda dapat melakukannya tanpa biaya, baik dalam hal perizinan dan <a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">privasi</a> pelanggan. Pelajari lebih lanjut tentang 1.1.1.1 dan dukungan DNS kami pada HTTPS (DOH) di <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Dok Pengembang</a> kami.",
+  "faq.integrationDocs": "Dengan menggunakan DNS pada HTTPS (DoH), Anda dapat secara transparan menawarkan keamanan yang ditingkatkan kepada pelanggan Anda sekaligus meningkatkan kecepatan perangkat Anda. Yang lebih baik lagi, Anda dapat melakukannya tanpa biaya, baik dalam hal perizinan dan <a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">privasi</a> pelanggan. Pelajari lebih lanjut tentang 1.1.1.1 dan dukungan DNS kami pada HTTPS (DOH) di <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Dok Pengembang</a> kami.",
 
   "faqpage.header": "Pertanyaan yang Sering Diajukan",
   "faqpage.general": "Umum",
@@ -374,14 +374,14 @@
   "faqpage.logsForA": "Log konsol ada untuk membantu Cloudfire melakukan debug pada sambungan Anda.",
   "faqpage.suggestQ": "Bagaimana cara saya menyarankan peningkatan?",
   "faqpage.suggestA": "Kami membaca semua saran Anda. Anda dapat menggoyangkan ponsel saat dalam aplikasi dan mengirim saran peningkatan Anda. Atau, Anda dapat masuk ke menu aplikasi dan ketuk ‘Bantuan’ untuk mengirimkan masukan.",
-  "faqpage.diffDnsTlsQ": "Apa perbedaan antara menggunakan DNS melalui TLS dan DNS dibandingkan HTTPS?",
+  "faqpage.diffDnsTlsQ": "Apa perbedaan antara menggunakan DNS melalui TLS dan DNS melalui HTTPS?",
   "faqpage.diffDnsTlsA1": "Baik DNS melalui TLS dan DNS melalui HTTPS mengenkripsi kueri DNS biasa dari ponsel.",
   "faqpage.diffDnsTlsA2": "DNS melalui HTTPS menggunakan port 443 dan DNS melalui TLS menggunakan port 853. Di beberapa jaringan, salah satu port ini mungkin diblokir. Jika port 443 diblokir, Anda harus menggunakan DNS melalui TLS. Jika port 853 diblokir, Anda harus menggunakan DNS melalui HTTPS. Dalam beberapa kasus, DNS melalui TLS mungkin lebih cepat dibandingkan DNS melalui HTTPS atau sebaliknya.",
   "faqpage.bugQ": "Bagaimana saya dapat mengirimkan laporan bug?",
   "faqpage.bugA": "Anda dapat menggoyangkan aplikasi dan mengirimkan laporan bug. Saat Anda melakukannya, aplikasi melampirkan tangkapan layar dan log konsol bersama dengan laporan bug. Log konsol membantu kami melakukan debug pada sambungan Anda dan meningkatkan keseluruhan pengalaman aplikasi Anda.",
   "faqpage.internetStoppedQ": "Internet saya berhenti bekerja saat saya sedang menggunakan aplikasi 1.1.1.1. Apa yang harus saya lakukan?",
   "faqpage.internetStoppedA": "Jika ini terjadi, coba matikan aplikasi dan nyalakan kembali dengan menggunakan toggle dari halaman beranda aplikasi. Jika masalah tetap ada, nonaktifkan aplikasi dan kirimkan laporan bug kepada kami.",
-  "faqpage.appStuckQ": "Aplikasi 1.1.1.1 tersangkut di ‘MENYAMBUNGKAN’ atau ‘MENEKANKAN KEMBALI’. Apa yang harus saya lakukan?",
+  "faqpage.appStuckQ": "Aplikasi 1.1.1.1 tersangkut di ‘CONNECTING (MENYAMBUNGKAN) atau ‘REASSERTING’ (MENEKANKAN KEMBALI). Apa yang harus saya lakukan?",
   "faqpage.appStuckA1": "Ini dapat terjadi jika sambungan jaringan Anda terganggu sementara atau jika koneksi data Anda memblokir sambungan 1.1.1.1:",
   "faqpage.appStuckList": [
     {
@@ -405,7 +405,7 @@
       "content": "Coba sambungkan aplikasi lagi."
     }
   ],
-  "faqpage.appStuckA2": "Jika upaya ini tidak mengizinkan sambungan, nonaktifkan aplikasi 1.1.1.1 dan kirim laporan bug kepada kami.",
+  "faqpage.appStuckA2": "Jika upaya ini tidak membuat sambungan berhasil, nonaktifkan aplikasi 1.1.1.1 dan kirim laporan bug kepada kami.",
   "faqpage.cannotClickQ": "Saya tidak dapat mengeklik Oke pada dialog instalasi VPN. Apa yang harus saya lakukan?",
   "faqpage.cannotClickA": "Jika Anda tidak dapat mengeklik tombol Oke, mungkin ada aplikasi lain di atas dialog. Beberapa aplikasi yang biasanya menyebabkan hal ini adalah Lux Brightness, Night Mode, Twilight, FileManager, dll. Untuk menghindari masalah ini, tutup atau hapus instalasi semua aplikasi yang mungkin menyebabkan hal ini.",
   "faqpage.appenabledQ": "Aplikasi tetap saya aktifkan tetapi saya melihatnya mati setelah beberapa saat. Apa yang terjadi?",
@@ -437,7 +437,7 @@
   "faqpage.persistentnotificationA1": "Jika menggunakan Android 8 atau versi di atasnya, Anda akan melihat notifikasi membandel dari aplikasi 1.1.1.1 yang berbunyi “Kueri DNS Anda privat dan lebih cepat”.",
   "faqpage.persistentnotificationA2": "Ini disyaratkan oleh Android OS (8.0+) untuk semua aplikasi dengan aktivitas latar belakang.",
   "faqpage.persistentnotificationA3": "Kami mengatur prioritas notifikasi menjadi “Rendah” agar tidak mengganggu notifikasi penting lainnya di ponsel Anda.",
-  "faqpage.persistentnotificationA4": "Berikut ini satu hal yang dapat Anda lakukan untuk menyembunyikan notifikasi. Harap perhatikan bahwa ini akan membuat Anda tidak lagi menerima notifikasi lainnya dari aplikasi 1.1.1.1. Tetapi ini dia:",
+  "faqpage.persistentnotificationA4": "Berikut ini satu hal yang dapat Anda lakukan untuk menyembunyikan notifikasi. Harap perhatikan bahwa ini akan membuat Anda tidak lagi menerima notifikasi lainnya dari aplikasi 1.1.1.1. Meskipun begitu, ini dia:",
   "faqpage.persistentnotificationList": [
     {
       "tag": "li",
