@@ -7,7 +7,7 @@
   "hero.info": "자세한 정보",
 
   "explanation.dnsHeader": "DNS: 인터넷의 디렉터리",
-  "explanation.dnsExplanation": "인터넷의 거의 모든 작업은 DNS 요청으로 시작됩니다. DNS는 인터넷의 디렉터리입니다. 링크를 클릭하고, 앱을 열고, 이메일을 보낼 때 기기가 가장 먼저 수행하는 작업은 디렉터리에 다음을 묻는 것입니다. <strong class=\"subtle\">어디서 찾을 수 있습니까?</strong>",
+  "explanation.dnsExplanation": "인터넷의 거의 모든 작업은 DNS 요청으로 시작됩니다. DNS는 인터넷의 디렉터리입니다. 링크를 클릭하고, 앱을 열고, 이메일을 보낼 때 기기가 가장 먼저 수행하는 작업은 디렉터리에 다음을 묻는 것입니다. <strong class=\"subtle\">어디에서 찾을 수 있습니까?</strong>",
   "explanation.dnsSlowInsecure": "아쉽게도 DNS는 기본적으로 느리며 안전하지 않습니다. ISP와 인터넷을 수신하는 모든 사람은 콘텐츠가 암호화되어 있더라도 사용자가 방문하는 모든 사이트와 사용자가 사용하는 모든 앱을 볼 수 있습니다. 소름 끼치게도 일부 DNS 공급자는 사용자의 인터넷 활동에 대한 데이터를 팔거나 광고 목적으로 사용합니다.",
   "explanation.dnsAlternative": "이는 아주 기분 나쁜 일입니다. 이 기분 나쁜 상황을 방지할 수 있는 대안이 있습니다. <strong class=\"code\">1.1.1.1</strong>",
 
@@ -23,16 +23,16 @@
   "explanation.speedContinued": "인터넷에서 수행하는 거의 모든 작업은 DNS 요청에서 시작되므로 모든 기기에서 가장 빠른 DNS 디렉터리를 선택하면 온라인으로 수행하는 거의 모든 활동이 가속화됩니다.",
 
   "instructions": {
-    "header": "{{device}} 설정",
-    "explanation": "<strong>1.1.1.1</strong>은 2분 안에 설정되며 기술적 스킬이나 특수한 소프트웨어가 필요하지 않습니다. 컴퓨터 초보자도 아래에서 기기를 선택하고 간단한 설정 가이드를 따르기만 하면 됩니다.",
-    "debug": "인터넷 연결에 대한 추가 정보가 필요하십니까? Cloudflare의 <a target=\"_blank\" href=\"./help\">디버그 페이지</a>를 확인하십시오.",
-    "questions": "여전히 질문이 해결되지 않았습니까? <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">커뮤니티 포럼</a>을 방문하십시오.",
+    "header": "{{device}}에서 설정",
+    "explanation": "<strong>1.1.1.1</strong> 설정은 2분 정도 걸리며 기술적 스킬이나 특수한 소프트웨어가 필요하지 않습니다. 컴퓨터 초보자라도 아래에서 기기를 선택하고 간단한 설정 가이드를 따르기만 하면 됩니다.",
+    "debug": "인터넷 연결에 대한 추가 정보가 필요합니까? Cloudflare의 <a target=\"_blank\" href=\"./help\">디버그 페이지</a>를 확인하십시오.",
+    "questions": "추가 질문이 있으신가요? <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">커뮤니티 포럼</a>을 방문하십시오.",
     "mac-os": {
       "steps": [
         { "tag": "li", "content": "시스템 기본 설정을 엽니다." },
         {
           "tag": "li",
-          "content": "<strong>DNS 서버</strong>를 검색하고 드롭다운에서 선택합니다."
+          "content": "<strong>DNS 서버</strong>를 검색하고 드롭다운 목록에서 선택합니다."
         },
         {
           "tag": "li",
@@ -107,7 +107,7 @@
                 },
                 {
                   "tag": "li",
-                  "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> 및 <strong class=\"code\">2606:4700:4700::1001</strong>"
+                  "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"
                 }
               ]
             }
@@ -125,7 +125,7 @@
       ]
     },
     "linux": {
-      "notice": "다음 단계는 Ubuntu를 위한 것이며, 대부분의 Linux 배포에서는 네트워크 관리자를 통해 DNS 설정을 구성합니다. 또는 <code class=\"inline\">/etc/resolv.conf</code>에서 DNS 설정을 지정할 수 있습니다.",
+      "notice": "다음 단계는 Ubuntu용이며, 대부분의 Linux 배포에서는 네트워크 관리자를 통해 DNS 설정을 구성합니다. 또는 <code class=\"inline\">/etc/resolv.conf</code>에서 DNS 설정을 지정할 수 있습니다.",
       "steps": [
         {
           "content": "왼쪽 메뉴 표시줄에서 애플리케이션 <i class=\"fas fa-th\"></i> 아이콘을 클릭합니다.",
@@ -140,7 +140,7 @@
           "tag": "li"
         },
         {
-          "content": "<strong>IPv4</strong> 또는 <strong>IPv6</strong> 탭을 클릭하여 DNS 설정을 봅니다.",
+          "content": "<strong>IPv4</strong> 또는 <strong>IPv6</strong> 탭을 클릭하여 DNS 설정을 확인합니다.",
           "tag": "li"
         },
         {
@@ -151,7 +151,7 @@
           "children": [
             {
               "tag": "span",
-              "content": "DNS 항목 필드에 1.1.1.1 DNS 주소를 제공합니다."
+              "content": "DNS 항목 필드에 1.1.1.1 DNS 주소를 기입합니다."
             },
             {
               "tag": "ul",
@@ -223,7 +223,7 @@
       ]
     },
     "android": {
-      "message": "Android에서 사용자 지정 DNS 서버를 사용하려면 정적 IP를 사용해야 합니다. 이 설정에는 라우터에 대한 추가 설정이 필요하며 네트워크에 새 기기를 추가해야 하므로 네트워크 전략에 영향이 발생합니다. 대신, <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">라우터의 DNS</button>를 구성하는 것이 좋습니다. 그렇게 하면 네트워크의 모든 기기에서 1.1.1.1 DNS가 제공하는 최고 속도와 개인정보보보호 이점을 누릴 수 있습니다.",
+      "message": "Android에서 사용자 지정 DNS 서버를 사용하려면 정적 IP를 사용해야 합니다. 이 설정에는 라우터에 대한 추가 설정이 필요하며 네트워크에 새 기기를 추가해야 하므로 네트워크 전략에 영향을 미칩니다. 따라서 이 설정 대신 <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">라우터의 DNS</button>를 구성할 것을 권장합니다. 그렇게 하면 네트워크의 모든 기기에서 1.1.1.1 DNS가 제공하는 최고 속도와 개인정보보보호의 이점을 누릴 수 있습니다.",
       "steps": [
         {
           "tag": "li",
@@ -277,7 +277,7 @@
       "steps": [
         {
           "tag": "li",
-          "content": "기본 설정 무선 네트워크에 연결합니다."
+          "content": "선호하는 무선 네트워크에 연결합니다."
         },
         {
           "tag": "li",
@@ -311,7 +311,7 @@
                 },
                 {
                   "tag": "li",
-                  "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> 및 <strong class=\"code\">2606:4700:4700::1001</strong>"
+                  "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"
                 }
               ]
             }
@@ -333,13 +333,13 @@
   "share.header": "✌️✌️ 개인정보보호를 최우선으로 하는 더 빠른 인터넷을 친구와 공유하십시오.",
   "share.emailSubject": "✌️✌️ 개인정보보호 기능이 강화된 더 빠른 인터넷 검색 - 1.1.1.1 DNS 확인자",
   "share.emailBody": "“1.1.1.1”은 인터넷 검색 속도를 개선하고 개인정보보호를 강화합니다. https://1.1.1.1에서 자세한 내용을 확인하고 2분 안에 기기를 설정하는 방법을 알아보십시오.",
-  "share.tweetBody": "✌️✌️ 빠르고 안전하며 개인정보보호를 개선하는 인터넷이 여기 있습니다. 단 2분이면 1.1.1.1 DNS 확인자를 설정할 수 있습니다.",
+  "share.tweetBody": "✌️✌️ 빠르고 안전하며 개인정보보호를 우선하는 인터넷이 여기 있습니다. 단 2분이면 1.1.1.1 DNS 확인자를 설정할 수 있습니다.",
 
-  "faq.whosBehindThis": "1.1.1.1은 무엇을 기반으로 합니까?",
-  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong>은 Cloudflare와 APNIC의 파트너십을 기반으로 합니다.",
-  "faq.network": "Cloudflare는 세계 최대 규모의 가장 빠른 네트워크 중 하나에서 실행됩니다. APNIC는 아시아 태평양 및 오세아니아 지역의 IP 주소 할당을 관리하는 비영리 조직입니다.",
-  "faq.networkContinued": "네트워크를 가진 Cloudflare와 IP 주소(1.1.1.1)를 가진 APNIC는 더 좋은 인터넷 환경의 구축을 돕고자 하는 사명에서 동기를 부여받았습니다. 각 조직의 참여 동기에 대한 자세한 내용을 해당하는 게시물에서 읽어볼 수 있습니다. <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 블로그</a>/<a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 블로그</a>.",
-  "faq.canIintegrate": "1.1.1.1과 통합할 수 있습니까?",
+  "faq.whosBehindThis": "이것은 무엇을 기반으로 합니까?",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong>은 Cloudflare와 APNIC 간 파트너십을 기반으로 합니다.",
+  "faq.network": "Cloudflare는 세계 최대 규모의 가장 빠른 네트워크 중 하나를 실를합니다. APNIC는 아시아 태평양 및 오세아니아 지역의 IP 주소 할당을 관리하는 비영리 조직입니다.",
+  "faq.networkContinued": "네트워크를 가진 Cloudflare와 IP 주소(1.1.1.1)를 가진 APNIC는 더 좋은 인터넷 환경 구축을 지원하고자 하는 사명에서 동기를 부여받았습니다. 각 조직의 참여 동기에 대한 자세한 내용을 해당 게시물에서 읽어볼 수 있습니다. <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 블로그</a>/<a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 블로그</a>. 자세한 내용은 다음을 참조하십시오. <a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">1.1.1.1은 무엇입니까?</a>",
+  "faq.canIintegrate": "저의 회사도 1.1.1.1과 통합할 수 있습니까?",
   "faq.integrationInfo": "개인정보보호를 최우선으로 하는 빠르고 현대적인 DNS 서비스에서 브라우저, 운영 체제, 앱, 라우터 또는 VPN을 구축하고자 하는 제조업체라면 답은 <strong class=\"subtle\">예</strong>입니다.",
   "faq.integrationDocs": "DoH(DNS over HTTPS)를 사용하여 고객에게 향상된 보안을 투명하게 제공하는 동시에 기기의 속도를 개선할 수 있습니다. 심지어 라이선스 및 고객의 <a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">개인정보보호</a> 관점에서 어떠한 비용도 들지 않습니다. <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">개발자 설명서</a>에서 1.1.1.1 및 DoH(DNS over HTTPS) 지원에 대한 자세한 내용을 확인하십시오.",
 
@@ -372,7 +372,7 @@
   "faqpage.dnsLogsA": "iOS의 DNS 로그에는 휴대폰에서 생성된 모든 DNS 쿼리가 포함됩니다. 일반적으로 이러한 DNS 쿼리는 앱 및 모바일 브라우저에서 생성됩니다.",
   "faqpage.logsForQ": "콘솔 로그의 용도는 무엇입니까?",
   "faqpage.logsForA": "콘솔 로그는 Cloudflare에서 사용자 연결을 디버그하는 데 사용됩니다.",
-  "faqpage.suggestQ": "개선 사항을 제출하려면 어떻게 해야 합니까?",
+  "faqpage.suggestQ": "개선 사항을 제안하려면 어떻게 해야 합니까?",
   "faqpage.suggestA": "당사는 사용자의 제안을 모두 읽습니다. 앱 안에 있을 때 휴대폰을 흔들어 개선 제안을 보낼 수 있습니다. 또는 앱 메뉴로 이동하고 ‘도움말’을 눌러 피드백을 보낼 수 있습니다.",
   "faqpage.diffDnsTlsQ": "DNS over TLS와 DNS over HTTPS를 사용할 때의 차이점은 무엇입니까?",
   "faqpage.diffDnsTlsA1": "DNS over TLS와 DNS over HTTPS 모두 휴대폰의 일반 DNS 쿼리를 암호화합니다.",
@@ -407,8 +407,8 @@
   ],
   "faqpage.appStuckA2": "연결이 허용되지 않으면 1.1.1.1 앱을 비활성화하고 당사로 버그 보고서를 보내 주십시오.",
   "faqpage.cannotClickQ": "VPN 설치 대화 상자에서 확인을 클릭할 수 없습니다. 어떻게 해야 합니까?",
-  "faqpage.cannotClickA": "확인 버튼을 클릭할 수 없다면 대화 상자 위에 다른 애플리케이션이 있을 수 있습니다. Lux Brightness, Night Mode, Twilight, FileManager 같은 일부 앱이 이러한 문제를 일으키는 것으로 알려져 있습니다. 이 문제를 방지하려면 이 문제를 야기할 수 있는 모든 앱을 닫거나 제거하십시오.",
-  "faqpage.appenabledQ": "앱을 활성화한 상태로 유지했는데 잠시 후 꺼진 것을 알았습니다. 어떻게 된 것입니까?",
+  "faqpage.cannotClickA": "확인 버튼을 클릭할 수 없다면 대화 상자 위에 다른 애플리케이션이 있는 문제일 수 있습니다. Lux Brightness, Night Mode, Twilight, FileManager 같은 일부 앱이 이러한 문제를 일으키는 것으로 알려져 있습니다. 이 문제를 방지하려면 이 문제를 야기할 수 있는 모든 앱을 닫거나 제거하십시오.",
+  "faqpage.appenabledQ": "앱을 활성화한 상태로 유지했는데 잠시 후 꺼진 것을 알았습니다. 어떻게 된 일입니까?",
   "faqpage.appenabledA1": "휴대폰이 배터리 관리를 위해 앱을 비활성화한 것입니다. 예를 들어 대부분의 Huawei 기기는 메모리 및 전원을 적극적으로 관리하는 것으로 알려져 있습니다.",
   "faqpage.appenabledA2": "이 문제는 아래의 단계를 수행하여 해결할 수 있습니다.",
   "faqpage.appenabledList": [
@@ -435,17 +435,17 @@
   ],
   "faqpage.persistentnotificationQ": "1.1.1.1 앱에 대한 영구 알림이 표시되는 이유는 무엇입니까?",
   "faqpage.persistentnotificationA1": "Android 8 이상을 사용하는 경우 1.1.1.1 앱에서 “DNS 쿼리가 비공개이고 더 빨라짐”이라는 영구 알림이 표시됩니다.",
-  "faqpage.persistentnotificationA2": "이 알림은 Android OS(8.0+)에서 백그라우드 작업을 실행하는 모든 앱에 필수적으로 표시됩니다.",
+  "faqpage.persistentnotificationA2": "이 알림은 Android OS(8.0+)에서 백그라운드 작업을 실행하는 모든 앱에 필수적으로 표시됩니다.",
   "faqpage.persistentnotificationA3": "휴대폰의 다른 중요한 알림을 방해하지 않도록 알림의 우선 순위를 “낮음”으로 설정했습니다.",
-  "faqpage.persistentnotificationA4": "이 알림을 숨기는 방법이 한 가지 있습니다. 하지만 이렇게 하면 1.1.1.1 앱에서 알림이 수신되지 않습니다. 알림을 숨기려면 다음과 같이 하십시오.",
+  "faqpage.persistentnotificationA4": "이 알림을 숨기는 방법이 한 가지 있습니다. 하지만 이렇게 하면 1.1.1.1 앱에서 다른 알림이 수신되지 않습니다. 알림을 숨기려면 다음과 같이 하십시오.",
   "faqpage.persistentnotificationList": [
     {
       "tag": "li",
-      "content": "설정으로 이동합니다."
+      "content": "“설정”으로 이동합니다."
     },
     {
       "tag": "li",
-      "content": "앱 및 알림으로 이동합니다."
+      "content": "“앱 및 알림”으로 이동합니다."
     },
     {
       "tag": "li",
