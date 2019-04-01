@@ -1,7 +1,8 @@
 {
   "title": "1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver",
   "description": "✌️✌️ Browse a faster, more private internet.",
-  "hero.introducing": "Introducing",
+  "warp.title": "1.1.1.1 — The free app that makes your Internet faster.",
+  "warp.description": "Install the free app that makes your phone’s Internet more fast, private, and reliable.",
   "hero.description": "You are one step away from browsing a faster, more private Internet",
   "hero.getStarted": "Install",
   "hero.info": "More Info",
@@ -342,6 +343,8 @@
   "faq.canIintegrate": "Can I integrate with 1.1.1.1?",
   "faq.integrationInfo": "If you are a browser, operating system, app, router, or VPN manufacturer who wants to build in a privacy-first, fast, modern DNS service, <strong class=\"subtle\">yes!</strong>",
   "faq.integrationDocs": "By using DNS over HTTPS (DoH) you can transparently offer enhanced security to your customers while improving the speed of your devices. Even better, you can do it at no cost, both in terms of licensing and customer’s <a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">privacy</a>. Learn more about 1.1.1.1 and our DNS over HTTPS (DoH) support in our <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>.",
+  "faq.warpVsDNS": "Is Warp replacing the 1.1.1.1 DNS service?",
+  "faq.warpVsDNSAnswer": "No, Cloudflare deeply believes in the value of free, fast, and private DNS and intends to provide the 1.1.1.1 DNS service for the forseeable future. Warp is an additional feature which augments our mobile apps but will always remain optional.",
 
   "faqpage.header": "Frequently Asked Questions",
   "faqpage.general": "General",

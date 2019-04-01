@@ -11,7 +11,7 @@ section(data-section="hero")
     .dropdown
       each locale in htmlWebpackPlugin.options.locales.filter(locale => locale.code !== htmlWebpackPlugin.options.locale.code)
         a.language(
-          href="/" + locale.path
+          href="/" + locale.path + "dns/"
           class={selected: htmlWebpackPlugin.options.locale.code === locale.code})
           | #{locale.label}
 
@@ -24,8 +24,6 @@ section(data-section="hero")
 
     .slideshow.mobile-only.static-slide
       .background-slide(data-slide="4")
-
-  h3!=htmlWebpackPlugin.options.t('hero.introducing')
 
   h1.hero-copy(alt="1.1.1.1 DNS resolver")
     include ../../media/logo.svg

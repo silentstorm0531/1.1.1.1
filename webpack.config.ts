@@ -39,6 +39,7 @@ const $: CustomConfiguration = {
   mode: environment,
   entry: {
     site: ["./source/pages/index.ts"],
+    dns: ["./source/pages/dns.ts"],
     help: ["./source/pages/help.ts"],
     purgeCache: ["./source/pages/purge-cache.ts"],
     faq: ["./source/pages/faq.ts"]
@@ -210,7 +211,7 @@ const pugLoaders = locales.map(locale => {
   return {
     test: /\.pug$/,
     exclude,
-    include: new RegExp(`${locale.code}.*\/index\.pug$`),
+    include: new RegExp(`${locale.code}.*/(dns/)?index\.pug$`),
     use: [
       {
         loader: "html-loader",
@@ -243,7 +244,7 @@ const pugLoaders = locales.map(locale => {
 $.plugins.push(
   ...locales.map(locale => {
     return new HtmlWebpackPlugin({
-      favicon: "source/media/favicon.png",
+      favicon: "source/media/favicon.ico",
       template: joinP(`source/pages/${locale.code}/index.pug`),
       filename: `${locale.path}index.html`,
       chunks: ["site"]
@@ -254,7 +255,7 @@ $.plugins.push(
 $.plugins.push(
   ...locales.map(locale => {
     return new HtmlWebpackPlugin({
-      favicon: "source/media/favicon.png",
+      favicon: "source/media/favicon.ico",
       template: joinP(`source/pages/${locale.code}/faq/index.pug`),
       filename: `${locale.path}faq/index.html`,
       chunks: ["faq"]
@@ -265,7 +266,18 @@ $.plugins.push(
 $.plugins.push(
   ...locales.map(locale => {
     return new HtmlWebpackPlugin({
-      favicon: "source/media/favicon.png",
+      favicon: "source/media/favicon.ico",
+      template: joinP(`source/pages/${locale.code}/dns/index.pug`),
+      filename: `${locale.path}dns/index.html`,
+      chunks: ["dns"]
+    });
+  })
+);
+
+$.plugins.push(
+  ...locales.map(locale => {
+    return new HtmlWebpackPlugin({
+      favicon: "source/media/favicon.ico",
       template: joinP(`source/pages/${locale.code}/help/index.pug`),
       filename: `${locale.path}help/index.html`,
       chunks: ["help"]
@@ -276,7 +288,7 @@ $.plugins.push(
 $.plugins.push(
   ...locales.map(locale => {
     return new HtmlWebpackPlugin({
-      favicon: "source/media/favicon.png",
+      favicon: "source/media/favicon.ico",
       template: joinP(`source/pages/${locale.code}/purge-cache/index.pug`),
       filename: `${locale.path}purge-cache/index.html`,
       chunks: ["purgeCache"]
@@ -321,6 +333,19 @@ $.module = {
     {
       test: /\.svg$/,
       loader: "svg-inline-loader",
+      exclude
+    },
+    {
+      test: /\.css$/,
+      use: [
+        styleLoader,
+        {
+          loader: "css-loader",
+          options: {
+            sourceMap: true
+          }
+        }
+      ],
       exclude
     },
     {

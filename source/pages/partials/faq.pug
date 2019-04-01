@@ -1,7 +1,6 @@
 section(data-section="faq")
   .content
     h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faq.whosBehindThis')
-
     p!=htmlWebpackPlugin.options.t('faq.partnership')
     p!=htmlWebpackPlugin.options.t('faq.network')
     p!=htmlWebpackPlugin.options.t('faq.networkContinued')
@@ -12,3 +11,6 @@ section(data-section="faq")
     h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faq.canIintegrate')
     p!=htmlWebpackPlugin.options.t('faq.integrationInfo')
     p!=htmlWebpackPlugin.options.t('faq.integrationDocs')
+
+    h1(style="margin-top: 2em")!=htmlWebpackPlugin.options.t('faq.warpVsDNS')
+    p!=htmlWebpackPlugin.options.t('faq.warpVsDNSAnswer')

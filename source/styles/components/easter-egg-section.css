@@ -1,0 +1,40 @@
+.EasterEggSection {
+  display: block;
+  background: rgb(var(--black-purple-rgb));
+}
+
+.EasterEggSection--column {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1500vh 2em 45vh;
+  width: 100%;
+}
+
+.EasterEggSection--content-desktop {
+  width: 60vw;
+  max-width: 60em;
+}
+
+.EasterEggSection--content-mobile {
+  width: 40vw;
+}
+
+.EasterEggSection--content-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .EasterEggSection--content-desktop {
+    display: none;
+  }
+
+  .EasterEggSection--content-mobile {
+    display: block;
+  }
+
+  .EasterEggSection--column {
+    margin-top: -25em;
+  }
+}

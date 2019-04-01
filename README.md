@@ -1,6 +1,6 @@
 # 1.1.1.1 Site
 
-### _Cloudflare DNS Resolver Website_
+### _Cloudflare DNS Resolver and Warp Website_
 
 ## Contributing
 
