@@ -47,16 +47,21 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
     meta(name="author" content="1.1.1.1")
     meta(name="generator" content="1.1.1.1")
 
-    meta(name="twitter:card" content="summary")
     meta(http-equiv="X-UA-Compatible" content="IE=edge, chrome=1")
 
     meta(name="description" content=htmlWebpackPlugin.options.t('warp.description'))
     meta(name="og:description" content=htmlWebpackPlugin.options.t('warp.description'))
-    meta(name="twitter:description" content=htmlWebpackPlugin.options.t('warp.description'))
 
     meta(property="og:url" content="https://1.1.1.1")
     meta(property="og:image" content="https://1.1.1.1/media/open-graph.png")
     meta(property="og:video" content="https://1.1.1.1/media/open-graph.mp4")
+
+    meta(name="twitter:site" content="@Cloudflare")
+    meta(name="twitter:creator" content="@Cloudflare")
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content=htmlWebpackPlugin.options.t('warp.title'))
+    meta(name="twitter:description" content=htmlWebpackPlugin.options.t('warp.description'))
+    meta(name="twitter:image" content="https://1.1.1.1/media/open-graph.png")
 
     meta(name="apple-itunes-app" content="app-id=1423538627")
     link(rel="manifest" href="/media/manifest.json")
