@@ -18,7 +18,6 @@
   "explanation.privacyConclusion": "坦率地说，我们并不想知道您在 Internet 上的活动，因为这不是我们关心的事情，并且我们已经采取了一些技术措施来确保我们无法那么做。",
 
   "explanation.performanceHeader": "快过 Internet 上的其他选择。",
-  "explanation.performanceSubheader": "事实上，我们的解决方案快了 28%。",
   "explanation.fastestDNS": "我们已将 1.1.1.1 建成了 Internet 上最快的 DNS 目录，这绝不是空口无凭。独立 DNS 监测工具 <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> 将 1.1.1.1 评为全球速度最快的 DNS 服务。",
   "explanation.speedContinued": "由于互联网上几乎一切活动都以 DNS 请求开始，因此在所有设备上选择使用速度最快的 DNS 目录将提高您在网上几乎所有活动的速度。",
 

@@ -18,7 +18,6 @@
   "explanation.privacyConclusion": "Terus terang, kami tidak ingin tahu apa yang Anda lakukan di Internet—itu bukan urusan kami—dan kami telah mengambil langkah-langkah teknis untuk memastikan kami tidak bisa melakukannya.",
 
   "explanation.performanceHeader": "Lebih cepat dari apa pun juga.",
-  "explanation.performanceSubheader": "Kenyataannya, 28% lebih cepat.",
   "explanation.fastestDNS": "Kami telah membuat 1.1.1.1 menjadi direktori DNS Internet tercepat. Jangan telan bulat-bulat perkataan kami. Monitor DNS independen <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> memberi peringkat 1.1.1.1 sebagai layanan DNS tercepat di dunia.",
   "explanation.speedContinued": "Karena hampir semua yang Anda lakukan di Internet dimulai dengan permintaan DNS, memilih direktori DNS tercepat di semua perangkat Anda akan mempercepat hampir semua yang Anda lakukan secara online.",
 
@@ -82,7 +81,10 @@
           "tag": "li",
           "content": "Pilih <strong>Internet Protocol Versi 4</strong> (atau Versi 6 jika diinginkan)."
         },
-        { "tag": "li", "content": "Klik <strong>Properties</strong> (Properti)." },
+        {
+          "tag": "li",
+          "content": "Klik <strong>Properties</strong> (Properti)."
+        },
         {
           "tag": "li",
           "content": "Tuliskan setiap entri server DNS yang ada sebagai referensi mendatang."

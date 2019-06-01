@@ -18,7 +18,6 @@
   "explanation.privacyConclusion": "坦白說，我們並不想知道您在網際網路上做了什麼事，這不關我們的事，而我們已採取技術措施來確保我們這邊無從得知您做的事。",
 
   "explanation.performanceHeader": "比任何其他解決方案都要快。",
-  "explanation.performanceSubheader": "事實上，我們的解決方案快了 28%。",
   "explanation.fastestDNS": "我們已將 1.1.1.1 打造成網際網路上速度最快的 DNS 目錄。這絕不是空口無憑。獨立的 DNS 監測機構 <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> 將 1.1.1.1 評為全球最快的 DNS 服務。",
   "explanation.speedContinued": "由於網際網路上的活動幾乎都是從發出 DNS 要求開始，因此讓您所有裝置都選用最快的 DNS 目錄，能讓您幾乎一切的線上活動都變快。",
 

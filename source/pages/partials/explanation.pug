@@ -38,35 +38,36 @@ section(data-section="explanation-stats")
   .content
     header
       h1!=htmlWebpackPlugin.options.t('explanation.performanceHeader')
-      h2!=htmlWebpackPlugin.options.t('explanation.performanceSubheader')
 
   .content
     .primary
       p!=htmlWebpackPlugin.options.t('explanation.fastestDNS')
       p!=htmlWebpackPlugin.options.t('explanation.speedContinued')
+      p(style="font-size:12px")
+        !=htmlWebpackPlugin.options.t('explanation.timeStamp')
 
     .chart(data-ref="statsChart" style="opacity: 0")
-      .bar-chart.first(animated data-total="10.95")
+      .bar-chart.first(animated data-total="14.96")
         .bar-chart-primary
           span.bar-chart-fill
-          span.bar-chart-label 10.95ms
+          span.bar-chart-label 14.96ms
         span.bar-chart--text
           strong 1.1.1.1
 
-      .bar-chart.second(animated data-total="19.85")
+      .bar-chart.second(animated data-total="20.17")
         .bar-chart-primary
           span.bar-chart-fill
-          span.bar-chart-label 19.85ms
+          span.bar-chart-label 20.17ms
         span.bar-chart--text Cisco OpenDNS
 
-      .bar-chart.third(animated data-total="33.85")
+      .bar-chart.third(animated data-total="35.29")
         .bar-chart-primary
           span.bar-chart-fill
-          span.bar-chart-label 33.85ms
+          span.bar-chart-label 35.29ms
         span.bar-chart--text Google Public DNS
 
-      .bar-chart.fourth(animated data-total="68.23")
+      .bar-chart.fourth(animated data-total="59.46")
         .bar-chart-primary
           span.bar-chart-fill
-          span.bar-chart-label 68.23ms
-        span.bar-chart--text Average ISP
+          span.bar-chart-label 59.46ms
+        span.bar-chart--text Verisign

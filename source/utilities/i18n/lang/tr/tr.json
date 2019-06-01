@@ -18,7 +18,6 @@
   "explanation.privacyConclusion": "Açıkçası internette ne yaptığınızı bilmek istemiyoruz; bu bizi ilgilendirmez ve bunu sağlaması için gereken teknik adımları attık.",
 
   "explanation.performanceHeader": "Diğer her şeyden daha hızlı.",
-  "explanation.performanceSubheader": "Aslında %28 daha hızlı.",
   "explanation.fastestDNS": "1.1.1.1’i internetin en hızlı DNS dizini olacak şekilde kurduk. Bunu sadece biz söylemiyoruz. Bağımsız DNS monitörü <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>, 1.1.1.1’i dünyanın en hızlı DNS servisi seçti.",
   "explanation.speedContinued": "İnternette yaptığınız neredeyse her şey bir DNS talebiyle başladığı için tüm cihazlarınızda en hızlı DNS dizinini seçmek internette yaptığınız neredeyse her şeyin hızını artıracaktır.",
 
@@ -82,7 +81,10 @@
           "tag": "li",
           "content": "<strong>İnternet Protokol Sürümü 4</strong> (veya isterseniz Sürüm 6’yı seçebilirsiniz)."
         },
-        { "tag": "li", "content": "<strong>Özellikler</strong> üzerine tıklayın." },
+        {
+          "tag": "li",
+          "content": "<strong>Özellikler</strong> üzerine tıklayın."
+        },
         {
           "tag": "li",
           "content": "Gelecekte başvurmak için her türlü mevcut DNS sunucu girişlerini yazın."

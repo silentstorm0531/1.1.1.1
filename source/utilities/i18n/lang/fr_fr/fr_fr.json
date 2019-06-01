@@ -18,7 +18,6 @@
   "explanation.privacyConclusion": "Honnêtement, nous ne tenons pas à savoir ce que vous faites sur Internet, ce ne sont pas nos affaires. Et nous avons pris les mesures techniques nécessaires pour s’assurer que cela nous est impossible.",
 
   "explanation.performanceHeader": "Le DNS le plus rapide.",
-  "explanation.performanceSubheader": "28 % plus rapide pour être précis..",
   "explanation.fastestDNS": "Nous avons construit 1.1.1.1 pour etre le répertoire DNS le plus rapide d’Internet. Ne nous croyez pas sur parole. Le moniteur DNS indépendan <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> classe 1.1.1.1 comme le service DNS le plus rapide au monde.",
   "explanation.speedContinued": "Étant donné que la majorité de vos activités sur Internet commence par une requête DNS, choisir le DNS le plus rapide sur tous vos appareils accélérera presque tout ce que vous faites en ligne.",
 

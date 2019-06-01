@@ -18,7 +18,6 @@
   "explanation.privacyConclusion": "当社は、お客様のインターネット活動に一切関与するつもりはありません。そこで、技術的な措置を講じてお客様のインターネット活動を見ることができないよう制限しました。",
 
   "explanation.performanceHeader": "他社よりも高速。",
-  "explanation.performanceSubheader": "事実、28％高速です。",
   "explanation.fastestDNS": "1.1.1.1は、私たちによりインターネットで最速のDNSディレクトリになりました。利用されたお客様の声をお聞きください。独立DNSモニター機関である<a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>は、1.1.1.1を世界最速のDNSサービスとランク付けしています。",
   "explanation.speedContinued": "インターネット上のほぼすべてのアクティビティがDNSリクエストから始まりますから、お使いの機器のすべてで最速のDNSディレクトリを選ぶことは、オンラインアクティビティのほぼすべてが高速化されることを意味します。",
 
@@ -82,7 +81,10 @@
           "tag": "li",
           "content": "「<strong>Internet Protocol Version 4（インターネットプロトコルバージョン4</strong>」（または「バージョン6」）を選択します。"
         },
-        { "tag": "li", "content": "「<strong>プロパティ</strong>」を選択します。" },
+        {
+          "tag": "li",
+          "content": "「<strong>プロパティ</strong>」を選択します。"
+        },
         {
           "tag": "li",
           "content": "後で参照できるよう、現在のDNSサーバーの設定を書き留めておきます。"
