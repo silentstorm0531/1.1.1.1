@@ -18,7 +18,6 @@
   "explanation.privacyConclusion": "Francamente, y dado que no queremos conocer su actividad en Internet (no es asunto nuestro), hemos adoptado las medidas técnicas necesarias para asegurarnos de que no podamos hacerlo.",
 
   "explanation.performanceHeader": "El más rápido del mercado.",
-  "explanation.performanceSubheader": "De hecho, un 28 % superior.",
   "explanation.fastestDNS": "Hemos desarrollado 1.1.1.1 para que sea el directorio de DNS más rápido de Internet. No es necesario que confíe en nuestra palabra. El monitor de DNS independiente <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> califica 1.1.1.1 como el servicio de DNS más rápido del mundo.",
   "explanation.speedContinued": "Dado que casi toda su actividad en Internet empieza por una solicitud de DNS, optar por el directorio de DNS más rápido para todos tus dispositivos, le permitirá acelerar prácticamente toda su actividad en línea.",
 
@@ -82,7 +81,10 @@
           "tag": "li",
           "content": "Seleccione <strong>Protocolo de Internet, versión 4</strong> (o versión 6, si así lo desea)."
         },
-        { "tag": "li", "content": "Haga clic en <strong>Propiedades</strong>." },
+        {
+          "tag": "li",
+          "content": "Haga clic en <strong>Propiedades</strong>."
+        },
         {
           "tag": "li",
           "content": "Anote cualquier entrada que haya de servidores DNS existentes como referencia futura."

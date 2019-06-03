@@ -19,9 +19,9 @@
   "explanation.privacyConclusion": "Frankly, we don’t want to know what you do on the Internet—it’s none of our business—and we’ve taken the technical steps to ensure we can’t.",
 
   "explanation.performanceHeader": "Faster than anything else.",
-  "explanation.performanceSubheader": "28% faster, in fact.",
   "explanation.fastestDNS": "We’ve built 1.1.1.1 to be the Internet’s fastest DNS directory. Don’t take our word for it. The independent DNS monitor <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> ranks 1.1.1.1 the fastest DNS service in the world.",
   "explanation.speedContinued": "Since nearly everything you do on the Internet starts with a DNS request, choosing the fastest DNS directory across all your devices will accelerate almost everything you do online.",
+  "explanation.timeStamp": "* May, 2019",
 
   "instructions": {
     "header": "Setup on {{device}}",

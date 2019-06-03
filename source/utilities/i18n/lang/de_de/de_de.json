@@ -18,7 +18,6 @@
   "explanation.privacyConclusion": "Ehrlich gesagt interessiert es uns nicht, was Sie im Internet tun – und es geht uns auch nichts an. Wir haben technische Maßnahmen ergriffen, damit wir nichts nachverfolgen können.",
 
   "explanation.performanceHeader": "Die schneller sind als jede andere Lösung.",
-  "explanation.performanceSubheader": "Um 28 % schneller, um genau zu sein.",
   "explanation.fastestDNS": "Wir haben 1.1.1.1 als das schnellste DNS-Verzeichnis des Internets entwickelt. Aber glauben Sie nicht nur uns: Der unabhängige DNS-Monitor <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> stuft 1.1.1.1 als den weltweit schnellsten DNS-Service ein.",
   "explanation.speedContinued": "Da fast alles, was Sie im Internet tun, mit einer DNS-Anfrage beginnt, beschleunigt Ihre Entscheidung für das schnellste DNS-Verzeichnis nahezu alle Ihre Internetaktivitäten, unabhängig davon, welche Art von Gerät Sie nutzen.",
 
@@ -82,7 +81,10 @@
           "tag": "li",
           "content": "Wählen Sie <strong>Internet Protocol Version 4</strong> (oder bei Bedarf Version 6)."
         },
-        { "tag": "li", "content": "Klicken Sie auf <strong>Eigenschaften</strong>." },
+        {
+          "tag": "li",
+          "content": "Klicken Sie auf <strong>Eigenschaften</strong>."
+        },
         {
           "tag": "li",
           "content": "Notieren Sie alle vorhandenen DNS-Server-Einträge zur späteren Verwendung."
@@ -265,7 +267,10 @@
           "tag": "li",
           "content": "Geben Sie im Feld <strong>DNS 2</strong> <strong class=\"code\">1.0.0.1</strong> ein (aus Redundanzgründen.)"
         },
-        { "tag": "li", "content": "Tippen Sie auf <strong>Speichern</strong>." },
+        {
+          "tag": "li",
+          "content": "Tippen Sie auf <strong>Speichern</strong>."
+        },
         {
           "tag": "li",
           "content": "Das wars auch schon! Ihr Gerät hat jetzt schnellere DNS-Server mit besserem Datenschutz. ✌️✌️"
