@@ -12,28 +12,13 @@
   width: 100%;
 }
 
-.EasterEggSection--content-desktop {
-  width: 60vw;
-  max-width: 60em;
-}
-
-.EasterEggSection--content-mobile {
+.EasterEggSection--content {
   width: 40vw;
+  max-width: 20em;
 }
 
-.EasterEggSection--content-mobile {
-  display: none;
-}
 
 @media (max-width: 768px) {
-  .EasterEggSection--content-desktop {
-    display: none;
-  }
-
-  .EasterEggSection--content-mobile {
-    display: block;
-  }
-
   .EasterEggSection--column {
     margin-top: -25em;
   }
