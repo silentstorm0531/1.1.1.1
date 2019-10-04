@@ -86,7 +86,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 path(d='M714 145c-1.1 0-2.3 0-3.4.1-.8 0-1.5.6-1.8 1.4l-4.8 16.7c-2.1 7.2-1.3 13.8 2.2 18.7 3.2 4.5 8.6 7.1 15.1 7.4l26.2 1.6c.8 0 1.5.4 1.9 1s.5 1.5.3 2.2c-.4 1.2-1.6 2.1-2.9 2.2l-27.3 1.6c-14.8.7-30.7 12.6-36.3 27.2l-2 5.1c-.4 1 .3 2 1.4 2h93.8c1.1 0 2.1-.7 2.4-1.8 1.6-5.8 2.5-11.9 2.5-18.2 0-37-30.2-67.2-67.3-67.2', fill='#faae40')
 
           a.Nav--link(href='dns/')
-            span DNS
+            span!=htmlWebpackPlugin.options.t('dns')
 
       .HeroSection
         .HeroSection--content
@@ -94,16 +94,16 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
             .OneDotLogoAnimated.OneDotLogoAnimated-is-large.OneDotLogoAnimated-is-centered
               .OneDotLogoAnimated--aspect-ratio-container(style="--aspect-ratio: .293454")
                 canvas.OneDotLogoAnimated--canvas
-          h1.HeroSection--title(data-js-balance-text) The free app that makes your Internet&nbsp;safer.
+          h1.HeroSection--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.herotitle')
           .HeroSection--actions
             a.Button.Button-is-primary.Button-with-icon(href='https://itunes.apple.com/us/app/1-1-1-1-faster-internet/id1423538627')
               svg.Button--icon(viewBox='0 0 170 170', fill='currentColor')
                 path(d='M150.4 130.3a88 88 0 0 1-8.7 15.6c-4.6 6.5-8.4 11-11.3 13.6a21.8 21.8 0 0 1-14.4 6.3c-3.7 0-8.1-1-13.3-3.2-5.2-2-10-3.1-14.3-3.1-4.6 0-9.5 1-14.8 3.1A39.7 39.7 0 0 1 61 166c-5 .2-9.9-2-14.8-6.5a97.1 97.1 0 0 1-29.4-68c0-11 2.4-20.3 7.1-28.2a41.3 41.3 0 0 1 34.7-20.5c4 0 9 1.2 15.4 3.6A49.6 49.6 0 0 0 86.2 50c1.3 0 5.9-1.4 13.6-4.3a44.9 44.9 0 0 1 18.4-3.2 39.2 39.2 0 0 1 30.7 16.1 34.1 34.1 0 0 0-18.1 31c0 10.3 3.8 19 11.2 25.8 3.3 3.1 7 5.6 11.2 7.3l-2.8 7.5zM119 7.3c0 8-3 15.6-8.8 22.6C103 38.2 94.5 43 85.2 42.3l-.2-3c0-7.9 3.4-16.2 9.4-23 3-3.4 6.8-6.3 11.4-8.6 4.7-2.2 9-3.5 13.1-3.7.2 1 .2 2.2.2 3.2z')
-              span.Button--text App Store
+              span.Button--text!=htmlWebpackPlugin.options.t('appstore')
             a.Button.Button-is-primary.Button-with-icon.Button-google-play-store(href='https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone')
               svg.Button--icon(viewBox='0 0 236 256', fill='currentColor')
                 path(d='M138.52 123.58L16.78 0c1.99.46 4.08 1.26 6.25 2.46l152.16 84.31-36.67 36.8zm42 42.62l-36.84-37.39 38.2-38.33 44.62 24.73c12.67 7.01 12.67 18.5 0 25.51l-45.99 25.48zM7.32.9l126 127.9L7.46 255.1C2.88 252.82 0 247.5 0 239.87V16.05C0 8.48 2.83 3.21 7.33.9zM138.5 134.02l35.35 35.88-150.81 83.56a24.36 24.36 0 0 1-5.94 2.4l121.4-121.84z')
-              span.Button--text Google Play
+              span.Button--text!=htmlWebpackPlugin.options.t('googleplay')
         .HeroSection--scroll-indicator
           svg(viewBox="0 0 70 40")
             path(fill="#e52b90" d="M61.46 1.46a5 5 0 1 1 7.08 7.08l-6.92 6.9L50 12.95 61.46 1.46z")
@@ -117,13 +117,12 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
           .AppOverviewSection--content
             .SectionCopy(data-depth='3')
               .SectionCopy--content
-                h2.SectionCopy--title(data-js-balance-text)
-                  | You’re one tap away from a safer Internet.
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.overviewtitle')
                 .SectionCopy--description(data-js-balance-text)
-                  p When the Internet was built, computers weren’t mobile. Those days are long gone—the assumptions made 30 years ago are now making your Internet experience slow and insecure.
-                  p 1.1.1.1 with WARP replaces the connection between your phone and the Internet with a modern, optimized, protocol.
+                  p!=htmlWebpackPlugin.options.t('home.overviewdesc1')
+                  p!=htmlWebpackPlugin.options.t('home.overviewdesc2')
                   p
-                    a.CopyLink(href="https://blog.cloudflare.com/1111-warp-better-vpn/" target="_blank") Learn more
+                    a.CopyLink(href="https://blog.cloudflare.com/1111-warp-better-vpn/" target="_blank")!=htmlWebpackPlugin.options.t('learnmore')
           .AppOverviewSection--device-mockup
             .DeviceMockup(data-depth-perspective-scroll-anchor)
               .DeviceMockup--backdrop.DeviceMockup--backdrop-blob1(data-depth='2')
@@ -174,15 +173,10 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
           .PerformanceSection--content
             .SectionCopy.SectionCopy-is-centered(data-depth-perspective-scroll-anchor, data-depth='3')
               .SectionCopy--content
-                h2.SectionCopy--title(data-js-balance-text) Built on a massive network.
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.performancetitle')
                 .SectionCopy--description(data-js-balance-text)
-                  p
-                    | WARP is built on the same network that has made 1.1.1.1 the&#32;
-                    a.CopyLink(href="https://www.dnsperf.com/#!dns-resolvers" target="_blank" rel="noreferrer") fastest DNS resolver
-                    |  on Earth.
-
-                  p
-                    | Your connection to WARP is fast and reliable wherever you live and wherever you go.
+                  p!=htmlWebpackPlugin.options.t('home.performancedesc1')
+                  p!=htmlWebpackPlugin.options.t('home.performancedesc2')
           .PerformanceSection--figure(data-depth='3')
             .PerformanceSection--figure-item.PerformanceSection--figure-item-one-dot(style="--bar-width: 0.25")
               .PerformanceSection--figure-item-bar
@@ -200,8 +194,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
               .PerformanceSection--figure-item-bar
               .PerformanceSection--figure-item-time 59.46ms
               .PerformanceSection--figure-item-label Verisign
-          p(style="font-size:12px; font-style:italic;")
-            | May, 2019
+          p(style="font-size:12px; font-style:italic;")!=htmlWebpackPlugin.options.t('home.performancedate')
 
       .PrivacySection(data-depth-perspective-root)
         .PrivacySection--column
@@ -276,23 +269,22 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
           .PrivacySection--content
             .SectionCopy.SectionCopy-is-right(data-depth='3')
               .SectionCopy--content
-                h2.SectionCopy--title(data-js-balance-text)
-                  | Fast. Free. Private.
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.privacytitle')
                 .SectionCopy--description(data-js-balance-text)
-                  p Your Internet service provider can see every site and app you use—even if they’re encrypted. Some providers even sell this data, or use it to target you with ads.
-                  p 1.1.1.1 with WARP prevents anyone from snooping on you by encrypting more of the traffic leaving your phone.
-                  p We believe privacy is a right. We won't sell your data, ever.
+                  p!=htmlWebpackPlugin.options.t('home.privacydesc1')
+                  p!=htmlWebpackPlugin.options.t('home.privacydesc2')
+                  p!=htmlWebpackPlugin.options.t('home.privacydesc3')
                   p
-                    a.CopyLink(href="https://twitter.com/intent/tweet?text=ISPs%20spy%20on%20your%20Internet%20traffic%20and%20sell%20the%20data.%20I%27m%20in%20line%20to%20get%201.1.1.1%20with%20WARP%2C%20a%20free%20app%20which%20will%20make%20the%20Internet%20on%20my%20phone%20faster%20and%20more%20private.%20You%20should%20get%20the%20app%20to%20reserve%20a%20place%20in%20line%3A%20https%3A//one.one.one.one" target="_blank" rel="noreferrer") Share with Twitter
+                    a.CopyLink(href="https://twitter.com/intent/tweet?text=ISPs%20spy%20on%20your%20Internet%20traffic%20and%20sell%20the%20data.%20I%27m%20in%20line%20to%20get%201.1.1.1%20with%20WARP%2C%20a%20free%20app%20which%20will%20make%20the%20Internet%20on%20my%20phone%20faster%20and%20more%20private.%20You%20should%20get%20the%20app%20to%20reserve%20a%20place%20in%20line%3A%20https%3A//one.one.one.one" target="_blank" rel="noreferrer")!=htmlWebpackPlugin.options.t('sharewithtwitter')
 
       .WarpSection(data-depth-perspective-root)
         .WarpSection--column
           .WarpSection--content
             .SectionCopy(data-depth='3')
               .SectionCopy--content
-                h2.SectionCopy--title(data-js-balance-text) Use the Internet fast-lane
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.warptitle')
                 .SectionCopy--description(data-js-balance-text)
-                  p WARP+ extends WARP by sending all of your Internet traffic over the same optimized Internet routes which make thousands of websites 30% faster on average. WARP+ combines millions of Internet route measurements with Cloudflare’s private Internet backbone to deliver a better Internet directly to your phone.
+                  p!=htmlWebpackPlugin.options.t('home.warpdesc')
           .WarpSection--device-mockup
             .DeviceMockup(data-depth-perspective-scroll-anchor)
               .DeviceMockup--backdrop.DeviceMockup--backdrop-blob3(data-depth='2')
@@ -348,8 +340,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(fill='url(#SVG-Blob3-k)', d='M810.38 2278.56c-29.79 35.21-74.61 46.05-100.12 24.21s42.74-167.33 107.87-127.49c28.71 17.55 22.04 68.07-7.75 103.28z')
               .DeviceMockup--device(data-depth='1')
                 .DeviceMockup--device-display.DeviceMockup--device-display-mockup-3
-                  a.DeviceMockup--device-display-mockup-3-share-button(href="https://twitter.com/intent/tweet?text=ISPs%20spy%20on%20your%20Internet%20traffic%20and%20sell%20the%20data.%20I%27m%20in%20line%20to%20get%201.1.1.1%20with%20WARP%2C%20a%20free%20app%20which%20will%20make%20the%20Internet%20on%20my%20phone%20faster%20and%20more%20private.%20You%20should%20get%20the%20app%20to%20reserve%20a%20place%20in%20line%3A%20https%3A//one.one.one.one" target="_blank" rel="noreferrer")
-                    | Share WARP
+                  a.DeviceMockup--device-display-mockup-3-share-button(href="https://twitter.com/intent/tweet?text=ISPs%20spy%20on%20your%20Internet%20traffic%20and%20sell%20the%20data.%20I%27m%20in%20line%20to%20get%201.1.1.1%20with%20WARP%2C%20a%20free%20app%20which%20will%20make%20the%20Internet%20on%20my%20phone%20faster%20and%20more%20private.%20You%20should%20get%20the%20app%20to%20reserve%20a%20place%20in%20line%3A%20https%3A//one.one.one.one" target="_blank" rel="noreferrer")!=htmlWebpackPlugin.options.t('home.sharewarp')
 
       .FooterSection(data-depth-perspective-root)
         .FooterSection--column
@@ -425,22 +416,20 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
             .FooterSection--content-section-copy-wrapper
               .SectionCopy.SectionCopy-is-centered
                 .SectionCopy--content
-                  h2.SectionCopy--title(data-js-balance-text) Brought to you by Cloudflare.
+                  h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.footertitle')
                   .SectionCopy--description(data-js-balance-text)
-                    p
-                      a.CopyLink(href="https://cloudflare.com" target="_blank") Cloudflare
-                      | &#32;provides security and performance to over 16 million Internet properties—and now the rest of us.
-                    p.FooterSection--content-mobile Get the 1.1.1.1 app to claim your spot on the waitlist.
-                    p.FooterSection--content-desktop Search for “1.1.1.1” on your phone’s app store to claim your spot on the waitlist.
+                    p!=htmlWebpackPlugin.options.t('home.footerdesc1')
+                    p.FooterSection--content-mobile!=htmlWebpackPlugin.options.t('home.footerdesc2mobile')
+                    p.FooterSection--content-desktop!=htmlWebpackPlugin.options.t('home.footerdesc2desktop')
             .FooterSection--actions
               a.Button.Button-is-primary.Button-with-icon(href='https://itunes.apple.com/us/app/1-1-1-1-faster-internet/id1423538627')
                 svg.Button--icon(viewBox='0 0 170 170', fill='currentColor')
                   path(d='M150.4 130.3a88 88 0 0 1-8.7 15.6c-4.6 6.5-8.4 11-11.3 13.6a21.8 21.8 0 0 1-14.4 6.3c-3.7 0-8.1-1-13.3-3.2-5.2-2-10-3.1-14.3-3.1-4.6 0-9.5 1-14.8 3.1A39.7 39.7 0 0 1 61 166c-5 .2-9.9-2-14.8-6.5a97.1 97.1 0 0 1-29.4-68c0-11 2.4-20.3 7.1-28.2a41.3 41.3 0 0 1 34.7-20.5c4 0 9 1.2 15.4 3.6A49.6 49.6 0 0 0 86.2 50c1.3 0 5.9-1.4 13.6-4.3a44.9 44.9 0 0 1 18.4-3.2 39.2 39.2 0 0 1 30.7 16.1 34.1 34.1 0 0 0-18.1 31c0 10.3 3.8 19 11.2 25.8 3.3 3.1 7 5.6 11.2 7.3l-2.8 7.5zM119 7.3c0 8-3 15.6-8.8 22.6C103 38.2 94.5 43 85.2 42.3l-.2-3c0-7.9 3.4-16.2 9.4-23 3-3.4 6.8-6.3 11.4-8.6 4.7-2.2 9-3.5 13.1-3.7.2 1 .2 2.2.2 3.2z')
-                span.Button--text App Store
+                span.Button--text!=htmlWebpackPlugin.options.t('appstore')
               a.Button.Button-is-primary.Button-with-icon.Button-google-play-store(href='https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone')
                 svg.Button--icon(viewBox='0 0 236 256', fill='currentColor')
                   path(d='M138.52 123.58L16.78 0c1.99.46 4.08 1.26 6.25 2.46l152.16 84.31-36.67 36.8zm42 42.62l-36.84-37.39 38.2-38.33 44.62 24.73c12.67 7.01 12.67 18.5 0 25.51l-45.99 25.48zM7.32.9l126 127.9L7.46 255.1C2.88 252.82 0 247.5 0 239.87V16.05C0 8.48 2.83 3.21 7.33.9zM138.5 134.02l35.35 35.88-150.81 83.56a24.36 24.36 0 0 1-5.94 2.4l121.4-121.84z')
-                span.Button--text Google Play
+                span.Button--text!=htmlWebpackPlugin.options.t('googleplay')
           .FooterSection--backdrop-blob4(data-depth='2')
             svg.SVG-Blob4(viewBox='0 0 3120 4353')
               defs
