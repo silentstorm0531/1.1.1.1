@@ -21,7 +21,7 @@ interface ShareData {
 const shareData = {} as ShareData
 
 interface TraceInfo {
-  [index: string]: string
+  [index: string]: string | undefined
   fl: string
   h: string
   ip: string
@@ -32,6 +32,7 @@ interface TraceInfo {
   spdy: string
   http: string
   loc: string
+  warp?: 'off' | 'on'
 }
 
 interface ResolverInfo {
@@ -90,7 +91,7 @@ function readFromShareData() {
   }
 }
 
-const resolverTests: { [key: string]: string } = {
+const resolverTests = {
   isCf: `${uuid}.is-cf.cloudflareresolve.com`,
   isDot: `${uuid}.is-dot.cloudflareresolve.com`,
   isDoh: `${uuid}.is-doh.cloudflareresolve.com`,
@@ -117,10 +118,15 @@ async function init () {
     return
   }
 
+  const resolverTestResults: { [K in keyof typeof resolverTests]: boolean } = Object
+    .keys(resolverTests)
+    .reduce((resolverTestResults, key) => Object.assign(resolverTestResults, { [key]: false }), {} as any)
+
   for (let ref in resolverTests) {
-    const host = resolverTests[ref]
+    const host = resolverTests[ref as keyof typeof resolverTests]
     try {
       const res = await fetch(`https://${host}/resolvertest`)
+      resolverTestResults[ref as keyof typeof resolverTests] = res.ok
       setRef(ref, res.ok)
     } catch (error) {
       setRef(ref, false)
@@ -147,6 +153,7 @@ async function init () {
   }
 
   setRef('datacenterLocation', traceInfo.colo)
+  setRef('isWarp', traceInfo.warp === 'on' && !(resolverTestResults.isDoh || resolverTestResults.isDot))
 
   let resolverInfo = {} as ResolverInfo
 
