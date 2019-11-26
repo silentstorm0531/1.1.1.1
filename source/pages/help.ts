@@ -32,7 +32,7 @@ interface TraceInfo {
   spdy: string
   http: string
   loc: string
-  warp?: 'off' | 'on'
+  warp?: 'off' | 'on' | 'plus'
 }
 
 interface ResolverInfo {
@@ -153,7 +153,11 @@ async function init () {
   }
 
   setRef('datacenterLocation', traceInfo.colo)
-  setRef('isWarp', traceInfo.warp === 'on' && !(resolverTestResults.isDoh || resolverTestResults.isDot))
+  setRef(
+    'isWarp',
+    (traceInfo.warp === 'on' || traceInfo.warp === 'plus') &&
+    !(resolverTestResults.isDoh || resolverTestResults.isDot)
+  )
 
   let resolverInfo = {} as ResolverInfo
 
