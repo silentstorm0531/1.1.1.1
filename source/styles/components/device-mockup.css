@@ -101,6 +101,12 @@
   box-shadow: none;
 }
 
+.DeviceMockup--device-monitor {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .DeviceMockup--device {
     height: 120%;

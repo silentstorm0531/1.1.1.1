@@ -542,5 +542,7 @@
   "family.herotitle": "Free protection for your home Internet connection.",
   "family.overviewtitle": "You’re one tap away from a safer Internet.",
   "family.section.protection.title": "Protecting home Internet connections from malware",
-  "family.section.protection.description": "<p>With home Internet usage on the rise, it’s never been more important to protect your family from dangerous and malicious sites.</p><p>1.1.1.1 for Families is built on top of the same site categorization and filtering technology that powers Cloudflare’s enterprise products. It uses Cloudflare’s Internet intelligence to block malware and adult content on your home Internet network.</p>"
+  "family.section.protection.description": "<p>With home Internet usage on the rise, it’s never been more important to protect your family from dangerous and malicious sites.</p><p>1.1.1.1 for Families is built on top of the same site categorization and filtering technology that powers Cloudflare’s enterprise products. It uses Cloudflare’s Internet intelligence to block malware and adult content on your home Internet network.</p>",
+  "family.section.filtering.title": "Adult content filtering",
+  "family.section.filtering.description": "<p>Keep adult content from being accessed by kids on your network with easy-to-configure content controls.</p><p>Add adult content filtering to 1.1.1.1 at no additional cost.</p>"
 }
