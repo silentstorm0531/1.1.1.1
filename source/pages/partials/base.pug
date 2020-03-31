@@ -94,7 +94,9 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
             .OneDotLogoAnimated.OneDotLogoAnimated-is-large.OneDotLogoAnimated-is-centered
               .OneDotLogoAnimated--aspect-ratio-container(style="--aspect-ratio: .293454")
                 canvas.OneDotLogoAnimated--canvas
-          h1.HeroSection--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.herotitle')
+          .HeroSection--title-wrapper
+            h1.HeroSection--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.herotitle')
+            h2.HeroSection--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.herosubtitle')
           .HeroSection--actions
             a.Button.Button-is-primary.Button-with-icon(href='https://itunes.apple.com/us/app/1-1-1-1-faster-internet/id1423538627')
               svg.Button--icon(viewBox='0 0 170 170', fill='currentColor')
@@ -104,6 +106,12 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
               svg.Button--icon(viewBox='0 0 236 256', fill='currentColor')
                 path(d='M138.52 123.58L16.78 0c1.99.46 4.08 1.26 6.25 2.46l152.16 84.31-36.67 36.8zm42 42.62l-36.84-37.39 38.2-38.33 44.62 24.73c12.67 7.01 12.67 18.5 0 25.51l-45.99 25.48zM7.32.9l126 127.9L7.46 255.1C2.88 252.82 0 247.5 0 239.87V16.05C0 8.48 2.83 3.21 7.33.9zM138.5 134.02l35.35 35.88-150.81 83.56a24.36 24.36 0 0 1-5.94 2.4l121.4-121.84z')
               span.Button--text!=htmlWebpackPlugin.options.t('googleplay')
+          .HeroSection--actions
+              a.Button.Button-is-primary(href='#')
+                span.Button--text!=htmlWebpackPlugin.options.t('windows')
+              a.Button.Button-is-primary(href='#')
+                span.Button--text!=htmlWebpackPlugin.options.t('macos')
+
         .HeroSection--scroll-indicator
           svg(viewBox="0 0 70 40")
             path(fill="#e52b90" d="M61.46 1.46a5 5 0 1 1 7.08 7.08l-6.92 6.9L50 12.95 61.46 1.46z")
@@ -168,33 +176,20 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
               .DeviceMockup--device(data-depth='1')
                 .DeviceMockup--device-display.DeviceMockup--device-display-mockup-1
 
-      .PerformanceSection(data-depth-perspective-root)
-        .PerformanceSection--column
-          .PerformanceSection--content
-            .SectionCopy.SectionCopy-is-centered(data-depth-perspective-scroll-anchor, data-depth='3')
+      .PrivacySection(data-depth-perspective-root)
+        .PrivacySection--column
+          .PrivacySection--device-mockup
+            .DeviceMockup(data-depth-perspective-scroll-anchor)
+              .DeviceMockup--device(data-depth='1')
+                .DeviceMockup--device-display.DeviceMockup--device-display-mockup-2
+          .PrivacySection--content
+            .SectionCopy.SectionCopy-is-right(data-depth='3')
               .SectionCopy--content
-                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.performancetitle')
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.desktop.title')
                 .SectionCopy--description(data-js-balance-text)
-                  p!=htmlWebpackPlugin.options.t('home.performancedesc1')
-                  p!=htmlWebpackPlugin.options.t('home.performancedesc2')
-          .PerformanceSection--figure(data-depth='3')
-            .PerformanceSection--figure-item.PerformanceSection--figure-item-one-dot(style="--bar-width: 0.25")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 14.96ms
-              .PerformanceSection--figure-item-label 1.1.1.1
-            .PerformanceSection--figure-item(style="--bar-width: 0.34")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 20.17ms
-              .PerformanceSection--figure-item-label OpenDNS
-            .PerformanceSection--figure-item(style="--bar-width: 0.59")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 35.29ms
-              .PerformanceSection--figure-item-label Google
-            .PerformanceSection--figure-item(style="--bar-width: 1.00")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 59.46ms
-              .PerformanceSection--figure-item-label Verisign
-          p(style="font-size:12px; font-style:italic;")!=htmlWebpackPlugin.options.t('home.performancedate')
+                  div!=htmlWebpackPlugin.options.t('home.desktop.description')
+                  p
+                    a.CopyLink(href="#" target="_blank")!=htmlWebpackPlugin.options.t('learnmore')
 
       .PrivacySection(data-depth-perspective-root)
         .PrivacySection--column
@@ -342,6 +337,34 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 .DeviceMockup--device-display.DeviceMockup--device-display-mockup-3
                   a.DeviceMockup--device-display-mockup-3-share-button(href="https://twitter.com/intent/tweet?text=ISPs%20spy%20on%20your%20Internet%20traffic%20and%20sell%20the%20data.%20I%27m%20in%20line%20to%20get%201.1.1.1%20with%20WARP%2C%20a%20free%20app%20which%20will%20make%20the%20Internet%20on%20my%20phone%20faster%20and%20more%20private.%20You%20should%20get%20the%20app%20to%20reserve%20a%20place%20in%20line%3A%20https%3A//one.one.one.one" target="_blank" rel="noreferrer")!=htmlWebpackPlugin.options.t('home.sharewarp')
 
+      .PerformanceSection(data-depth-perspective-root)
+        .PerformanceSection--column
+          .PerformanceSection--content
+            .SectionCopy.SectionCopy-is-centered(data-depth-perspective-scroll-anchor, data-depth='3')
+              .SectionCopy--content
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.performancetitle')
+                .SectionCopy--description(data-js-balance-text)
+                  p!=htmlWebpackPlugin.options.t('home.performancedesc1')
+                  p!=htmlWebpackPlugin.options.t('home.performancedesc2')
+          .PerformanceSection--figure(data-depth='3')
+            .PerformanceSection--figure-item.PerformanceSection--figure-item-one-dot(style="--bar-width: 0.25")
+              .PerformanceSection--figure-item-bar
+              .PerformanceSection--figure-item-time 14.96ms
+              .PerformanceSection--figure-item-label 1.1.1.1
+            .PerformanceSection--figure-item(style="--bar-width: 0.34")
+              .PerformanceSection--figure-item-bar
+              .PerformanceSection--figure-item-time 20.17ms
+              .PerformanceSection--figure-item-label OpenDNS
+            .PerformanceSection--figure-item(style="--bar-width: 0.59")
+              .PerformanceSection--figure-item-bar
+              .PerformanceSection--figure-item-time 35.29ms
+              .PerformanceSection--figure-item-label Google
+            .PerformanceSection--figure-item(style="--bar-width: 1.00")
+              .PerformanceSection--figure-item-bar
+              .PerformanceSection--figure-item-time 59.46ms
+              .PerformanceSection--figure-item-label Verisign
+          p(style="font-size:12px; font-style:italic;")!=htmlWebpackPlugin.options.t('home.performancedate')
+
       .FooterSection(data-depth-perspective-root)
         .FooterSection--column
           .FooterSection--content(data-depth-perspective-scroll-anchor, data-depth='3')
@@ -430,6 +453,11 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 svg.Button--icon(viewBox='0 0 236 256', fill='currentColor')
                   path(d='M138.52 123.58L16.78 0c1.99.46 4.08 1.26 6.25 2.46l152.16 84.31-36.67 36.8zm42 42.62l-36.84-37.39 38.2-38.33 44.62 24.73c12.67 7.01 12.67 18.5 0 25.51l-45.99 25.48zM7.32.9l126 127.9L7.46 255.1C2.88 252.82 0 247.5 0 239.87V16.05C0 8.48 2.83 3.21 7.33.9zM138.5 134.02l35.35 35.88-150.81 83.56a24.36 24.36 0 0 1-5.94 2.4l121.4-121.84z')
                 span.Button--text!=htmlWebpackPlugin.options.t('googleplay')
+            .FooterSection--actions
+              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store(href='#')
+                span.Button--text!=htmlWebpackPlugin.options.t('windows')
+              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store(href='#')
+                span.Button--text!=htmlWebpackPlugin.options.t('macos')
           .FooterSection--backdrop-blob4(data-depth='2')
             svg.SVG-Blob4(viewBox='0 0 3120 4353')
               defs
