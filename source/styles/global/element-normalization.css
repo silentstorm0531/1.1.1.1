@@ -1,7 +1,7 @@
 img, svg {
   display: block;
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 input, textarea, button, select {

@@ -132,7 +132,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   p
                     a.CopyLink(href="https://blog.cloudflare.com/1111-warp-better-vpn/" target="_blank")!=htmlWebpackPlugin.options.t('learnmore')
           .AppOverviewSection--device-mockup
-            .DeviceMockup(data-depth-perspective-scroll-anchor)
+            .DeviceMockup.desktop(data-depth-perspective-scroll-anchor)
               .DeviceMockup--backdrop.DeviceMockup--backdrop-blob1(data-depth='2')
                 svg.SVG-Blob1(viewBox='0 0 1280 1505')
                   defs
@@ -174,14 +174,17 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(fill='url(#SVG-Blob1-f)', d='M361.52 838.66C377 727.05 496.69 708.4 544.34 731 646.25 779.27 851.63 918.73 757 979.89c-69.36 44.82-427.2 88.21-395.48-141.23z')
                   path(fill='url(#SVG-Blob1-g)', d='M442 855.47c8.09-58.56 70.92-68.35 95.92-56.5 53.47 25.34 169.56 73.24 116.32 146.46-27.6 37.92-228.92 30.42-212.24-89.96z')
               .DeviceMockup--device(data-depth='1')
-                .DeviceMockup--device-display.DeviceMockup--device-display-mockup-1
+                .DeviceMockup--device-display
+                  img(src='/media/warp-desktop.png')
 
       .PrivacySection(data-depth-perspective-root)
         .PrivacySection--column
           .PrivacySection--device-mockup
-            .DeviceMockup(data-depth-perspective-scroll-anchor)
+            .DeviceMockup.desktop(data-depth-perspective-scroll-anchor)
               .DeviceMockup--device(data-depth='1')
-                .DeviceMockup--device-display.DeviceMockup--device-display-mockup-2
+                .DeviceMockup--device-display
+                  img(src='/media/warp-desktop-2.png')
+
           .PrivacySection--content
             .SectionCopy.SectionCopy-is-right(data-depth='3')
               .SectionCopy--content
@@ -195,7 +198,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
       .PrivacySection(data-depth-perspective-root)
         .PrivacySection--column
           .PrivacySection--device-mockup
-            .DeviceMockup(data-depth-perspective-scroll-anchor)
+            .DeviceMockup.desktop(data-depth-perspective-scroll-anchor)
               .DeviceMockup--backdrop.DeviceMockup--backdrop-blob2(data-depth='2')
                 svg.SVG-Blob2(viewBox='0 0 1592 2422')
                   defs
@@ -261,7 +264,8 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(fill='url(#SVG-Blob2-j)', d='M650.16 396.68c58.44-18 30.48-80.72 27.27-106-6.95-54.6 65.44-87.56 46.21-128.13-42.17-89-122.81-37.61-170-6.09-73.46 49-68.84 92.08-70.72 108-6.92 58.69 54.38 166.96 167.24 132.22z')
                   circle(cx='576.52', cy='508.53', r='32', fill='url(#SVG-Blob2-k)')
               .DeviceMockup--device(data-depth='1')
-                .DeviceMockup--device-display.DeviceMockup--device-display-mockup-2
+                .DeviceMockup--device-display
+                  img(src='/media/warp-desktop.png')
           .PrivacySection--content
             .SectionCopy.SectionCopy-is-right(data-depth='3')
               .SectionCopy--content
@@ -282,7 +286,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 .SectionCopy--description(data-js-balance-text)
                   p!=htmlWebpackPlugin.options.t('home.warpdesc')
           .WarpSection--device-mockup
-            .DeviceMockup(data-depth-perspective-scroll-anchor)
+            .DeviceMockup.desktop(data-depth-perspective-scroll-anchor)
               .DeviceMockup--backdrop.DeviceMockup--backdrop-blob3(data-depth='2')
                 svg.SVG-Blob3(viewBox='0 0 1185 2396')
                   defs
@@ -335,9 +339,8 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(fill='url(#SVG-Blob3-b)', d='M924.6 469.73c-4.8 45.87-35.74 80.07-69.12 76.39S796.58 383.78 872.85 380c33.61-1.64 56.54 43.87 51.75 89.73z')
                   path(fill='url(#SVG-Blob3-k)', d='M810.38 2278.56c-29.79 35.21-74.61 46.05-100.12 24.21s42.74-167.33 107.87-127.49c28.71 17.55 22.04 68.07-7.75 103.28z')
               .DeviceMockup--device(data-depth='1')
-                .DeviceMockup--device-display.DeviceMockup--device-display-mockup-3
-                  a.DeviceMockup--device-display-mockup-3-share-button(href="https://twitter.com/intent/tweet?text=ISPs%20spy%20on%20your%20Internet%20traffic%20and%20sell%20the%20data.%20I%27m%20in%20line%20to%20get%201.1.1.1%20with%20WARP%2C%20a%20free%20app%20which%20will%20make%20the%20Internet%20on%20my%20phone%20faster%20and%20more%20private.%20You%20should%20get%20the%20app%20to%20reserve%20a%20place%20in%20line%3A%20https%3A//one.one.one.one" target="_blank" rel="noreferrer")!=htmlWebpackPlugin.options.t('home.sharewarp')
-
+                .DeviceMockup--device-display
+                  img(src='/media/warp-desktop.png')
       .PerformanceSection(data-depth-perspective-root)
         .PerformanceSection--column
           .PerformanceSection--content

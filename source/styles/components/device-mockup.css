@@ -6,6 +6,10 @@
   height: 28em;
 }
 
+.DeviceMockup.desktop {
+  width: 30em;
+}
+
 @media (max-width: 1080px) {
   .DeviceMockup {
     font-size: .9em;
@@ -22,6 +26,10 @@
   left: -70%;
   height: 421%;
   width: 616%
+}
+
+.DeviceMockup.desktop .DeviceMockup--backdrop-blob1 {
+  left: -20%;
 }
 
 .DeviceMockup--backdrop-blob2 {
@@ -88,6 +96,11 @@
   box-shadow: var(--box-shadow);
 }
 
+.DeviceMockup.desktop .DeviceMockup--device {
+  background: transparent;
+  box-shadow: none;
+}
+
 @media (max-width: 768px) {
   .DeviceMockup--device {
     height: 120%;
@@ -114,6 +127,12 @@
   box-shadow: var(--box-shadow);
   border-radius: .25em;
   background: rgba(var(--black-purple-rgb), .2);
+}
+
+.DeviceMockup.desktop .DeviceMockup--device-display {
+  background: none;
+  box-shadow: none;
+  border: none;
 }
 
 @media (max-width: 1080px) {
