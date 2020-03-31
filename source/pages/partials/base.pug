@@ -107,9 +107,9 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 path(d='M138.52 123.58L16.78 0c1.99.46 4.08 1.26 6.25 2.46l152.16 84.31-36.67 36.8zm42 42.62l-36.84-37.39 38.2-38.33 44.62 24.73c12.67 7.01 12.67 18.5 0 25.51l-45.99 25.48zM7.32.9l126 127.9L7.46 255.1C2.88 252.82 0 247.5 0 239.87V16.05C0 8.48 2.83 3.21 7.33.9zM138.5 134.02l35.35 35.88-150.81 83.56a24.36 24.36 0 0 1-5.94 2.4l121.4-121.84z')
               span.Button--text!=htmlWebpackPlugin.options.t('googleplay')
           .HeroSection--actions
-              a.Button.Button-is-primary(href='#')
+              a.Button.Button-is-primary(href='#subscription-form')
                 span.Button--text!=htmlWebpackPlugin.options.t('windows')
-              a.Button.Button-is-primary(href='#')
+              a.Button.Button-is-primary(href='#subscription-form')
                 span.Button--text!=htmlWebpackPlugin.options.t('macos')
 
         .HeroSection--scroll-indicator
@@ -366,7 +366,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
           p(style="font-size:12px; font-style:italic;")!=htmlWebpackPlugin.options.t('home.performancedate')
 
       .FooterSection(data-depth-perspective-root)
-        .FooterSection--column
+        .FooterSection--column(style="padding-bottom:2em;")
           .FooterSection--content(data-depth-perspective-scroll-anchor, data-depth='3')
             .FooterSection--icon
               svg#SVG-IOS-app-icon(viewBox="0 0 465.95 466.55")
@@ -454,10 +454,34 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(d='M138.52 123.58L16.78 0c1.99.46 4.08 1.26 6.25 2.46l152.16 84.31-36.67 36.8zm42 42.62l-36.84-37.39 38.2-38.33 44.62 24.73c12.67 7.01 12.67 18.5 0 25.51l-45.99 25.48zM7.32.9l126 127.9L7.46 255.1C2.88 252.82 0 247.5 0 239.87V16.05C0 8.48 2.83 3.21 7.33.9zM138.5 134.02l35.35 35.88-150.81 83.56a24.36 24.36 0 0 1-5.94 2.4l121.4-121.84z')
                 span.Button--text!=htmlWebpackPlugin.options.t('googleplay')
             .FooterSection--actions
-              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store(href='#')
+              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store(href='#subscription-form')
                 span.Button--text!=htmlWebpackPlugin.options.t('windows')
-              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store(href='#')
+              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store(href='#subscription-form')
                 span.Button--text!=htmlWebpackPlugin.options.t('macos')
+
+      .FooterSection#subscription-form(data-depth-perspective-root)
+        .FooterSection--column
+          .FooterSection--content(data-depth-perspective-scroll-anchor, data-depth='3')
+            .FooterSection--content-section-copy-wrapper
+              .SectionCopy.SectionCopy-is-centered
+                .SectionCopy--content
+                  h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.subscribe.title')
+                  .SectionCopy--description(data-js-balance-text)
+                    p!=htmlWebpackPlugin.options.t('home.subscribe.description')
+                    // embed mailchimp subscribe form
+                    link(href='//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css' rel='stylesheet' type='text/css')
+                    #mc_embed_signup
+                      // TODO: change action to the correct campaign
+                      form#mc-embedded-subscribe-form.validate(action='https://openforbusiness.us19.list-manage.com/subscribe/post?u=7a5132dd9f67a1f5f4e4e902a&id=b82ad8eb92' method='post' name='mc-embedded-subscribe-form' target='_blank' novalidate='')
+                        #mc_embed_signup_scroll(style='display:flex;align-items:center')
+                          input#mce-EMAIL.email(type='email' value='' name='EMAIL' placeholder='email address' required='' style='margin-right:0.5em;')
+                          // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                          div(style='position: absolute; left: -5000px;' aria-hidden='true')
+                            // TODO: if the random name changes per campaign, update it to correct one
+                            input(type='text' name='b_7a5132dd9f67a1f5f4e4e902a_b82ad8eb92' tabindex='-1' value='')
+                          .clear
+                            input#mc-embedded-subscribe.button(type='submit' value='Subscribe' name='subscribe' style='background-color: #889eeb;')
+
           .FooterSection--backdrop-blob4(data-depth='2')
             svg.SVG-Blob4(viewBox='0 0 3120 4353')
               defs
