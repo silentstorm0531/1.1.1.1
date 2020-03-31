@@ -164,7 +164,15 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
               .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
                 img(src='/media/protect-home.png')
 
-      include ./performance-section.pug
+      .PerformanceSection(data-depth-perspective-root)
+        .PerformanceSection--column
+          .PerformanceSection--content
+            .SectionCopy.SectionCopy-is-centered(data-depth-perspective-scroll-anchor, data-depth='3')
+              .SectionCopy--content
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.performancetitle')
+                .SectionCopy--description(data-js-balance-text)
+                  div!=htmlWebpackPlugin.options.t('family.section.performance.description')
+          include ./performance-figure.pug
 
       .PrivacySection(data-depth-perspective-root)
         .PrivacySection--column

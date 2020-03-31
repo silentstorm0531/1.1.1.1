@@ -7,7 +7,8 @@
 }
 
 .DeviceMockup.desktop {
-  width: 30em;
+  height: 24em;
+  width: 22em;
 }
 
 @media (max-width: 1080px) {
@@ -26,10 +27,6 @@
   left: -70%;
   height: 421%;
   width: 616%
-}
-
-.DeviceMockup.desktop .DeviceMockup--backdrop-blob1 {
-  left: -20%;
 }
 
 .DeviceMockup--backdrop-blob2 {

@@ -85,6 +85,10 @@
   opacity: 1;
 }
 
+.PerformanceSection--familiy-disclaimer {
+  margin-top: 2em;
+}
+
 @media (max-width: 768px) {
   .PerformanceSection {
     margin-top: -4em;
