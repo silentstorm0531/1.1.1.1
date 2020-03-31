@@ -157,36 +157,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(fill='url(#SVG-Blob1-f)', d='M361.52 838.66C377 727.05 496.69 708.4 544.34 731 646.25 779.27 851.63 918.73 757 979.89c-69.36 44.82-427.2 88.21-395.48-141.23z')
                   path(fill='url(#SVG-Blob1-g)', d='M442 855.47c8.09-58.56 70.92-68.35 95.92-56.5 53.47 25.34 169.56 73.24 116.32 146.46-27.6 37.92-228.92 30.42-212.24-89.96z')
               .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
-                div
-                  img(src="/media/family/protect home@2x.png")
-
-      .PerformanceSection(data-depth-perspective-root)
-        .PerformanceSection--column
-          .PerformanceSection--content
-            .SectionCopy.SectionCopy-is-centered(data-depth-perspective-scroll-anchor, data-depth='3')
-              .SectionCopy--content
-                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.performancetitle')
-                .SectionCopy--description(data-js-balance-text)
-                  p!=htmlWebpackPlugin.options.t('home.performancedesc1')
-                  p!=htmlWebpackPlugin.options.t('home.performancedesc2')
-          .PerformanceSection--figure(data-depth='3')
-            .PerformanceSection--figure-item.PerformanceSection--figure-item-one-dot(style="--bar-width: 0.25")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 14.96ms
-              .PerformanceSection--figure-item-label 1.1.1.1
-            .PerformanceSection--figure-item(style="--bar-width: 0.34")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 20.17ms
-              .PerformanceSection--figure-item-label OpenDNS
-            .PerformanceSection--figure-item(style="--bar-width: 0.59")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 35.29ms
-              .PerformanceSection--figure-item-label Google
-            .PerformanceSection--figure-item(style="--bar-width: 1.00")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 59.46ms
-              .PerformanceSection--figure-item-label Verisign
-          p(style="font-size:12px; font-style:italic;")!=htmlWebpackPlugin.options.t('home.performancedate')
+                img(src='/media/protect-home.png')
 
       .PrivacySection(data-depth-perspective-root)
         .PrivacySection--column
@@ -257,26 +228,22 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(fill='url(#SVG-Blob2-j)', d='M650.16 396.68c58.44-18 30.48-80.72 27.27-106-6.95-54.6 65.44-87.56 46.21-128.13-42.17-89-122.81-37.61-170-6.09-73.46 49-68.84 92.08-70.72 108-6.92 58.69 54.38 166.96 167.24 132.22z')
                   circle(cx='576.52', cy='508.53', r='32', fill='url(#SVG-Blob2-k)')
               .DeviceMockup--device(data-depth='1')
-                .DeviceMockup--device-display.DeviceMockup--device-display-mockup-2
+                img(src="/media/content-filter.png")
           .PrivacySection--content
             .SectionCopy.SectionCopy-is-right(data-depth='3')
               .SectionCopy--content
-                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.privacytitle')
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('family.section.adultcontent.title')
                 .SectionCopy--description(data-js-balance-text)
-                  p!=htmlWebpackPlugin.options.t('home.privacydesc1')
-                  p!=htmlWebpackPlugin.options.t('home.privacydesc2')
-                  p!=htmlWebpackPlugin.options.t('home.privacydesc3')
-                  p
-                    a.CopyLink(href="https://twitter.com/intent/tweet?text=ISPs%20spy%20on%20your%20Internet%20traffic%20and%20sell%20the%20data.%20I%27m%20in%20line%20to%20get%201.1.1.1%20with%20WARP%2C%20a%20free%20app%20which%20will%20make%20the%20Internet%20on%20my%20phone%20faster%20and%20more%20private.%20You%20should%20get%20the%20app%20to%20reserve%20a%20place%20in%20line%3A%20https%3A//one.one.one.one" target="_blank" rel="noreferrer")!=htmlWebpackPlugin.options.t('sharewithtwitter')
+                  div!=htmlWebpackPlugin.options.t('family.section.adultcontent.description')
 
       .WarpSection(data-depth-perspective-root)
         .WarpSection--column
           .WarpSection--content
             .SectionCopy(data-depth='3')
               .SectionCopy--content
-                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.warptitle')
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('family.section.malware.title')
                 .SectionCopy--description(data-js-balance-text)
-                  p!=htmlWebpackPlugin.options.t('home.warpdesc')
+                  div!=htmlWebpackPlugin.options.t('family.section.malware.description')
           .WarpSection--device-mockup
             .DeviceMockup(data-depth-perspective-scroll-anchor)
               .DeviceMockup--backdrop.DeviceMockup--backdrop-blob3(data-depth='2')
@@ -331,8 +298,47 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(fill='url(#SVG-Blob3-b)', d='M924.6 469.73c-4.8 45.87-35.74 80.07-69.12 76.39S796.58 383.78 872.85 380c33.61-1.64 56.54 43.87 51.75 89.73z')
                   path(fill='url(#SVG-Blob3-k)', d='M810.38 2278.56c-29.79 35.21-74.61 46.05-100.12 24.21s42.74-167.33 107.87-127.49c28.71 17.55 22.04 68.07-7.75 103.28z')
               .DeviceMockup--device(data-depth='1')
-                .DeviceMockup--device-display.DeviceMockup--device-display-mockup-3
-                  a.DeviceMockup--device-display-mockup-3-share-button(href="https://twitter.com/intent/tweet?text=ISPs%20spy%20on%20your%20Internet%20traffic%20and%20sell%20the%20data.%20I%27m%20in%20line%20to%20get%201.1.1.1%20with%20WARP%2C%20a%20free%20app%20which%20will%20make%20the%20Internet%20on%20my%20phone%20faster%20and%20more%20private.%20You%20should%20get%20the%20app%20to%20reserve%20a%20place%20in%20line%3A%20https%3A//one.one.one.one" target="_blank" rel="noreferrer")!=htmlWebpackPlugin.options.t('home.sharewarp')
+                 img(src='/media/protect-family.png')
+
+      .PerformanceSection(data-depth-perspective-root)
+        .PerformanceSection--column
+          .PerformanceSection--content
+            .SectionCopy.SectionCopy-is-centered(data-depth-perspective-scroll-anchor, data-depth='3')
+              .SectionCopy--content
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.performancetitle')
+                .SectionCopy--description(data-js-balance-text)
+                  p!=htmlWebpackPlugin.options.t('home.performancedesc1')
+                  p!=htmlWebpackPlugin.options.t('home.performancedesc2')
+          .PerformanceSection--figure(data-depth='3')
+            .PerformanceSection--figure-item.PerformanceSection--figure-item-one-dot(style="--bar-width: 0.25")
+              .PerformanceSection--figure-item-bar
+              .PerformanceSection--figure-item-time 14.96ms
+              .PerformanceSection--figure-item-label 1.1.1.1
+            .PerformanceSection--figure-item(style="--bar-width: 0.34")
+              .PerformanceSection--figure-item-bar
+              .PerformanceSection--figure-item-time 20.17ms
+              .PerformanceSection--figure-item-label OpenDNS
+            .PerformanceSection--figure-item(style="--bar-width: 0.59")
+              .PerformanceSection--figure-item-bar
+              .PerformanceSection--figure-item-time 35.29ms
+              .PerformanceSection--figure-item-label Google
+            .PerformanceSection--figure-item(style="--bar-width: 1.00")
+              .PerformanceSection--figure-item-bar
+              .PerformanceSection--figure-item-time 59.46ms
+              .PerformanceSection--figure-item-label Verisign
+          p(style="font-size:12px; font-style:italic;")!=htmlWebpackPlugin.options.t('home.performancedate')
+
+      .FooterSection(data-depth-perspective-root)
+        .FooterSection--column
+          .FooterSection--content(data-depth-perspective-scroll-anchor, data-depth='3')
+            .FooterSection--content-section-copy-wrapper
+              .SectionCopy.SectionCopy-is-centered
+                .SectionCopy--content
+                  h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('family.section.setup.title')
+                  .SectionCopy--description(data-js-balance-text)
+                    p!=htmlWebpackPlugin.options.t('family.section.setup.description')
+                    p!=htmlWebpackPlugin.options.t('family.section.setup.malware')
+                    p!=htmlWebpackPlugin.options.t('family.section.setup.all')
 
       .FooterSection(data-depth-perspective-root)
         .FooterSection--column
@@ -413,15 +419,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                     p!=htmlWebpackPlugin.options.t('home.footerdesc1')
                     p.FooterSection--content-mobile!=htmlWebpackPlugin.options.t('home.footerdesc2mobile')
                     p.FooterSection--content-desktop!=htmlWebpackPlugin.options.t('home.footerdesc2desktop')
-            .FooterSection--actions
-              a.Button.Button-is-primary.Button-with-icon(href='https://itunes.apple.com/us/app/1-1-1-1-faster-internet/id1423538627')
-                svg.Button--icon(viewBox='0 0 170 170', fill='currentColor')
-                  path(d='M150.4 130.3a88 88 0 0 1-8.7 15.6c-4.6 6.5-8.4 11-11.3 13.6a21.8 21.8 0 0 1-14.4 6.3c-3.7 0-8.1-1-13.3-3.2-5.2-2-10-3.1-14.3-3.1-4.6 0-9.5 1-14.8 3.1A39.7 39.7 0 0 1 61 166c-5 .2-9.9-2-14.8-6.5a97.1 97.1 0 0 1-29.4-68c0-11 2.4-20.3 7.1-28.2a41.3 41.3 0 0 1 34.7-20.5c4 0 9 1.2 15.4 3.6A49.6 49.6 0 0 0 86.2 50c1.3 0 5.9-1.4 13.6-4.3a44.9 44.9 0 0 1 18.4-3.2 39.2 39.2 0 0 1 30.7 16.1 34.1 34.1 0 0 0-18.1 31c0 10.3 3.8 19 11.2 25.8 3.3 3.1 7 5.6 11.2 7.3l-2.8 7.5zM119 7.3c0 8-3 15.6-8.8 22.6C103 38.2 94.5 43 85.2 42.3l-.2-3c0-7.9 3.4-16.2 9.4-23 3-3.4 6.8-6.3 11.4-8.6 4.7-2.2 9-3.5 13.1-3.7.2 1 .2 2.2.2 3.2z')
-                span.Button--text!=htmlWebpackPlugin.options.t('appstore')
-              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store(href='https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone')
-                svg.Button--icon(viewBox='0 0 236 256', fill='currentColor')
-                  path(d='M138.52 123.58L16.78 0c1.99.46 4.08 1.26 6.25 2.46l152.16 84.31-36.67 36.8zm42 42.62l-36.84-37.39 38.2-38.33 44.62 24.73c12.67 7.01 12.67 18.5 0 25.51l-45.99 25.48zM7.32.9l126 127.9L7.46 255.1C2.88 252.82 0 247.5 0 239.87V16.05C0 8.48 2.83 3.21 7.33.9zM138.5 134.02l35.35 35.88-150.81 83.56a24.36 24.36 0 0 1-5.94 2.4l121.4-121.84z')
-                span.Button--text!=htmlWebpackPlugin.options.t('googleplay')
+
           .FooterSection--backdrop-blob4(data-depth='2')
             svg.SVG-Blob4(viewBox='0 0 3120 4353')
               defs

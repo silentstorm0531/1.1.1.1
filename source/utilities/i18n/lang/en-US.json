@@ -543,6 +543,15 @@
   "family.overviewtitle": "You’re one tap away from a safer Internet.",
   "family.section.protection.title": "Protecting home Internet connections from malware",
   "family.section.protection.description": "<p>With home Internet usage on the rise, it’s never been more important to protect your family from dangerous and malicious sites.</p><p>1.1.1.1 for Families is built on top of the same site categorization and filtering technology that powers Cloudflare’s enterprise products. It uses Cloudflare’s Internet intelligence to block malware and adult content on your home Internet network.</p>",
-  "family.section.filtering.title": "Adult content filtering",
-  "family.section.filtering.description": "<p>Keep adult content from being accessed by kids on your network with easy-to-configure content controls.</p><p>Add adult content filtering to 1.1.1.1 at no additional cost.</p>"
+  "family.section.adultcontent.title": "Adult content filtering",
+  "family.section.adultcontent.description": "<p>Keep adult content from being accessed by kids on your network with easy-to-configure content controls.</p><p>Add adult content filtering to 1.1.1.1 at no additional cost.</p>",
+  "family.section.malware.title": "Automatic malware protection",
+  "family.section.malware.description": "<p>Attackers often hide harmful code in normal-seeming sites and emails that seem normal. These attacks can put your family’s private information in the wrong hands.</p><p>e1.1.1.1 for Families adds a layer of malware protection to your home Wwi-Ffi, automatically blocking access to known malicious sites.</p>",
+  "family.section.privacy.title": "Safe. Private. Free.",
+  "family.section.privacy.description": "<p>Every device that connects to the Internet needs a DNS resolver, but they’re often slow and do not respect your privacy.</p><p>1.1.1.1 for Families is a privacy-first DNS resolver that’s free for anyone to use. Cloudflare never sells or shares your browsing data.</p>",
+  "family.section.privacy.link": "Learn More",
+  "family.section.setup.title": "Get Started Now",
+  "family.section.setup.description": "1.1.1.1 for Families has two options: one that blocks only malware and another that blocks both malware and adult content. You can install it by changing the IP address settings on your home Internet router.",
+  "family.section.setup.malware": "Malware Blocking Only<ul><li>1.1.1.2</li><li>1.0.0.2</li></ul>",
+  "family.section.setup.all": "Malware Blocking Only<ul><li>1.1.1.3</li><li>1.0.0.3</li></ul>"
 }
