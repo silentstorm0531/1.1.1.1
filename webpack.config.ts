@@ -42,7 +42,8 @@ const $: CustomConfiguration = {
     dns: ["./source/pages/dns.ts"],
     help: ["./source/pages/help.ts"],
     purgeCache: ["./source/pages/purge-cache.ts"],
-    faq: ["./source/pages/faq.ts"]
+    faq: ["./source/pages/faq.ts"],
+    family: ["./source/pages/family.ts"]
   },
   plugins: []
 };
@@ -270,6 +271,17 @@ $.plugins.push(
       template: joinP(`source/pages/${locale.code}/dns/index.pug`),
       filename: `${locale.path}dns/index.html`,
       chunks: ["dns"]
+    });
+  })
+);
+
+$.plugins.push(
+  ...locales.map(locale => {
+    return new HtmlWebpackPlugin({
+      favicon: "source/media/favicon.ico",
+      template: joinP(`source/pages/${locale.code}/family/index.pug`),
+      filename: `${locale.path}family/index.html`,
+      chunks: ["family"]
     });
   })
 );

@@ -23,7 +23,7 @@
   background: var(--nav-link-background-color-hover);
 }
 
-.Nav--link:active {
+.Nav--link:active, .Nav--link-active {
   background: var(--nav-link-background-color-active);
 }
 
