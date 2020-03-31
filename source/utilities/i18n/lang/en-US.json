@@ -546,7 +546,7 @@
   "family.section.adultcontent.title": "Adult content filtering",
   "family.section.adultcontent.description": "<p>Keep adult content from being accessed by kids on your network with easy-to-configure content controls.</p><p>Add adult content filtering to 1.1.1.1 at no additional cost.</p>",
   "family.section.malware.title": "Automatic malware protection",
-  "family.section.malware.description": "<p>Attackers often hide harmful code in normal-seeming sites and emails that seem normal. These attacks can put your family’s private information in the wrong hands.</p><p>e1.1.1.1 for Families adds a layer of malware protection to your home Wwi-Ffi, automatically blocking access to known malicious sites.</p>",
+  "family.section.malware.description": "<p>Attackers often hide harmful code in normal-seeming sites and emails. These attacks can put your family’s private information in the wrong hands.</p><p>e1.1.1.1 for Families adds a layer of malware protection to your home Wi-Fi, automatically blocking access to known malicious sites.</p>",
   "family.section.privacy.title": "Safe. Private. Free.",
   "family.section.privacy.description": "<p>Every device that connects to the Internet needs a DNS resolver, but they’re often slow and do not respect your privacy.</p><p>1.1.1.1 for Families is a privacy-first DNS resolver that’s free for anyone to use. Cloudflare never sells or shares your browsing data.</p>",
   "family.section.privacy.link": "Learn More",
