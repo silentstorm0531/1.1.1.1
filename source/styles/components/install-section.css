@@ -1,13 +1,14 @@
-.FooterSection--column {
+.InstallSection--column {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2em 2em 36em;
   width: 100%;
 }
 
-.FooterSection--content {
+.InstallSection--content {
   position: relative;
   z-index: 2;
   width: 40em;
@@ -15,7 +16,7 @@
   margin-bottom: 2em;
 }
 
-.FooterSection--icon {
+.InstallSection--icon {
   margin-top: -8em;
   height: 8em;
   width: 8em;
@@ -24,22 +25,21 @@
   margin-bottom: 4rem;
 }
 
-.FooterSection--content-section-copy-wrapper {
+.InstallSection--content-section-copy-wrapper {
   margin-bottom: 1em;
 }
 
-.FooterSection--actions {
+.InstallSection--actions {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1em;
 }
 
-.FooterSection--actions > a:not(:last-child) {
+.InstallSection--actions > a:not(:last-child) {
   margin-right: 1em;
 }
 
-.FooterSection--backdrop-blob4 {
+.InstallSection--backdrop-blob4 {
   position: absolute;
   z-index: 1;
   pointer-events: none;
@@ -51,40 +51,64 @@
   margin-right: auto;
 }
 
-.FooterSection .share-buttons {
-  max-width: 10em;
-  margin: 2em auto;
+.InstallSection--panels {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -2em;
+}
+
+.InstallSection--panel {
+  flex: 1;
+  padding: 2em;
+  border-radius: 2em;
+  margin: 2em;
+  border: solid 1px;
+  background: var(--nav-link-background-color-hover);
+}
+
+.InstallSection--panel-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.InstallSection--panel-description {
+  line-height: 2em;
 }
 
 @media (max-width: 768px) {
-  .FooterSection {
+  .InstallSection {
     margin-top: -6em;
   }
 
-  .FooterSection--icon {
+  .InstallSection--icon {
     margin-top: 0;
   }
 
-  .FooterSection--column {
+  .InstallSection--column {
     overflow: hidden;
     padding-bottom: 90em;
   }
 
-  .FooterSection--backdrop-blob4 {
+  .InstallSection--backdrop-blob4 {
     top: 10em;
     width: 75em;
     left: -504em;
     right: -500em;
   }
+
+  .InstallSection--panels {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 375px) {
-  .FooterSection--column {
+  .InstallSection--column {
     overflow: hidden;
     padding-bottom: 60em;
   }
 
-  .FooterSection--backdrop-blob4 {
+  .InstallSection--backdrop-blob4 {
     top: 22em;
     width: 50em;
     left: -501em;
@@ -92,16 +116,16 @@
   }
 }
 
-.FooterSection--content-mobile {
+.InstallSection--content-mobile {
   display: none;
 }
 
 @media (max-width: 768px) {
-  .FooterSection--content-desktop {
+  .InstallSection--content-desktop {
     display: none;
   }
 
-  .FooterSection--content-mobile {
+  .InstallSection--content-mobile {
     display: block;
   }
 }

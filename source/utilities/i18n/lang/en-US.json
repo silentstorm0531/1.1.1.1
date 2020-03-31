@@ -1,6 +1,7 @@
 {
   "title": "1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver",
   "description": "✌️✌️ Browse a faster, more private internet.",
+  "warp.nav.name": "Home",
   "warp.title": "1.1.1.1 — The free app that makes your Internet faster.",
   "warp.description": "Install the free app that makes your phone’s Internet more fast, private, and reliable.",
   "hero.description": "You are one step away from browsing a faster, more private Internet",
@@ -21,7 +22,7 @@
   "explanation.performanceHeader": "Faster than anything else.",
   "explanation.fastestDNS": "We’ve built 1.1.1.1 to be the Internet’s fastest DNS directory. Don’t take our word for it. The independent DNS monitor <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> ranks 1.1.1.1 the fastest DNS service in the world.",
   "explanation.speedContinued": "Since nearly everything you do on the Internet starts with a DNS request, choosing the fastest DNS directory across all your devices will accelerate almost everything you do online.",
-  "explanation.timeStamp": "* May, 2019",
+  "explanation.timeStamp": "* March, 2020",
 
   "instructions": {
     "header": "Setup on {{device}}",
@@ -520,7 +521,7 @@
   "home.performancetitle": "Built on a massive network.",
   "home.performancedesc1": "WARP is built on the same network that has made 1.1.1.1 the <a class='CopyLink' href='https://www.dnsperf.com/#!dns-resolvers' target='_blank' rel='noreferrer'>fastest DNS resolver</a> on Earth.",
   "home.performancedesc2": "Your connection to WARP is fast and reliable wherever you live and wherever you go.",
-  "home.performancedate": "May, 2019",
+  "home.performancedate": "March, 2020",
   "home.privacytitle": "Fast. Free. Private.",
   "home.privacydesc1": "Your Internet service provider can see every site and app you use—even if they’re encrypted. Some providers even sell this data, or use it to target you with ads.",
   "home.privacydesc2": "1.1.1.1 with WARP prevents anyone from snooping on you by encrypting more of the traffic leaving your device.",
@@ -539,10 +540,9 @@
   "dns": "DNS",
   "family.name": "Families",
   "family.for": "for Families",
-  "family.herotitle": "Free protection for your home Internet connection.",
-  "family.overviewtitle": "You’re one tap away from a safer Internet.",
+  "family.herotitle": "Free protection for your home Internet.",
   "family.section.protection.title": "Protecting home Internet connections from malware",
-  "family.section.protection.description": "<p>With home Internet usage on the rise, it’s never been more important to protect your family from dangerous and malicious sites.</p><p>1.1.1.1 for Families is built on top of the same site categorization and filtering technology that powers Cloudflare’s enterprise products. It uses Cloudflare’s Internet intelligence to block malware and adult content on your home Internet network.</p>",
+  "family.section.protection.description": "<p>With home Internet usage on the rise, it’s never been more important to protect your family from dangerous and malicious sites.</p><p>1.1.1.1 for Families is built on top of the same site categorization and filtering technology that powers Cloudflare’s enterprise products. It uses Cloudflare’s Internet intelligence to filter content on your home Internet network.</p>",
   "family.section.adultcontent.title": "Adult content filtering",
   "family.section.adultcontent.description": "<p>Keep adult content from being accessed by kids on your network with easy-to-configure content controls.</p><p>Add adult content filtering to 1.1.1.1 at no additional cost.</p>",
   "family.section.malware.title": "Automatic malware protection",
@@ -552,6 +552,13 @@
   "family.section.privacy.link": "Learn More",
   "family.section.setup.title": "Get Started Now",
   "family.section.setup.description": "1.1.1.1 for Families has two options: one that blocks only malware and another that blocks both malware and adult content. You can install it by changing the IP address settings on your home Internet router.",
-  "family.section.setup.malware": "Malware Blocking Only<ul><li>1.1.1.2</li><li>1.0.0.2</li></ul>",
-  "family.section.setup.all": "Malware Blocking Only<ul><li>1.1.1.3</li><li>1.0.0.3</li></ul>"
+  "family.section.setup.malware.title": "Malware Blocking Only",
+  "family.section.setup.malware.description": "<p>Change your router DNS to:</p><ul><li>Primary DNS: 1.1.1.2</li><li>Secondary DNS: 1.0.0.2</li></ul>",
+  "family.section.setup.all.title": "Malware and Adult Content Blocking Together",
+  "family.section.setup.all.description": "<p>Change your router DNS to:</p><ul><li>Primary DNS: 1.1.1.3</li><li>Secondary DNS: 1.0.0.3</li></ul>",
+  "family.cloudflare.tagline": "Bringing speed, reliability, and performance to every Internet user",
+  "family.share.tweet.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://1.1.1.1/family",
+  "family.share.facebook.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://1.1.1.1/family",
+  "family.share.email.subject": "1.1.1.1 for Families",
+  "family.share.email.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://1.1.1.1/family"
 }

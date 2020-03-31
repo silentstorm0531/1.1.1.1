@@ -85,9 +85,11 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 path(d='M674.8 223.9c2.1-7.2 1.3-13.8-2.2-18.7-3.2-4.5-8.6-7.1-15.1-7.4l-123.1-1.6c-.8 0-1.5-.4-1.9-1s-.5-1.4-.3-2.2c.4-1.2 1.6-2.1 2.9-2.2l124.2-1.6c14.7-.7 30.7-12.6 36.3-27.2l7.1-18.5c.3-.8.4-1.6.2-2.4-8-36.2-40.3-63.2-78.9-63.2-35.6 0-65.8 23-76.6 54.9-7-5.2-15.9-8-25.5-7.1-17.1 1.7-30.8 15.4-32.5 32.5-.4 4.4-.1 8.7.9 12.7-27.9.8-50.2 23.6-50.2 51.7 0 2.5.2 5 .5 7.5.2 1.2 1.2 2.1 2.4 2.1h227.2c1.3 0 2.5-.9 2.9-2.2l1.7-6.1z', fill='#f38020')
                 path(d='M714 145c-1.1 0-2.3 0-3.4.1-.8 0-1.5.6-1.8 1.4l-4.8 16.7c-2.1 7.2-1.3 13.8 2.2 18.7 3.2 4.5 8.6 7.1 15.1 7.4l26.2 1.6c.8 0 1.5.4 1.9 1s.5 1.5.3 2.2c-.4 1.2-1.6 2.1-2.9 2.2l-27.3 1.6c-14.8.7-30.7 12.6-36.3 27.2l-2 5.1c-.4 1 .3 2 1.4 2h93.8c1.1 0 2.1-.7 2.4-1.8 1.6-5.8 2.5-11.9 2.5-18.2 0-37-30.2-67.2-67.3-67.2', fill='#faae40')
 
-          a.Nav--link(href='dns/')
+          a.Nav--link(href='/')
+            span!=htmlWebpackPlugin.options.t('warp.nav.name')
+          a.Nav--link(href='/dns/')
             span!=htmlWebpackPlugin.options.t('dns')
-          a.Nav--link.Nav--link-active(href='family/')
+          a.Nav--link.Nav--link-active(href='/family/')
             span!=htmlWebpackPlugin.options.t('family.name')
 
       .HeroSection
@@ -106,6 +108,9 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
             path(fill="#1cb29e" d="M26.78 33.85L7.57 14.64l11.34-2.8 7.08 7.08z")
             path(fill="#ee2e4c" d="M10.4 17.47L1.46 8.54a5 5 0 0 1 7.08-7.08l13.64 13.65-11.78 2.36z")
 
+      .HeroSectionFollowup
+        img(src='/media/for-families.png')
+
       .AppOverviewSection(data-depth-perspective-root)
         .AppOverviewSection--column
           .AppOverviewSection--content
@@ -115,7 +120,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 .SectionCopy--description(data-js-balance-text)
                   div!=htmlWebpackPlugin.options.t('family.section.protection.description')
           .AppOverviewSection--device-mockup
-            .DeviceMockup(data-depth-perspective-scroll-anchor)
+            .DeviceMockup.DeviceMockup--monitor(data-depth-perspective-scroll-anchor)
               .DeviceMockup--backdrop.DeviceMockup--backdrop-blob1(data-depth='2')
                 svg.SVG-Blob1(viewBox='0 0 1280 1505')
                   defs
@@ -159,10 +164,12 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
               .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
                 img(src='/media/protect-home.png')
 
+      include ./performance-section.pug
+
       .PrivacySection(data-depth-perspective-root)
         .PrivacySection--column
           .PrivacySection--device-mockup
-            .DeviceMockup(data-depth-perspective-scroll-anchor)
+            .DeviceMockup.DeviceMockup--monitor(data-depth-perspective-scroll-anchor)
               .DeviceMockup--backdrop.DeviceMockup--backdrop-blob2(data-depth='2')
                 svg.SVG-Blob2(viewBox='0 0 1592 2422')
                   defs
@@ -227,7 +234,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(fill='url(#SVG-Blob2-i)', d='M73.16 1938.32c-18.83 31.4-7.7 68.41 15.88 85.46 30.26 21.87 53.9 3.36 60.23-47.08 3.19-25.44-37.41-102.92-76.11-38.38z')
                   path(fill='url(#SVG-Blob2-j)', d='M650.16 396.68c58.44-18 30.48-80.72 27.27-106-6.95-54.6 65.44-87.56 46.21-128.13-42.17-89-122.81-37.61-170-6.09-73.46 49-68.84 92.08-70.72 108-6.92 58.69 54.38 166.96 167.24 132.22z')
                   circle(cx='576.52', cy='508.53', r='32', fill='url(#SVG-Blob2-k)')
-              .DeviceMockup--device(data-depth='1')
+              .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
                 img(src="/media/content-filter.png")
           .PrivacySection--content
             .SectionCopy.SectionCopy-is-right(data-depth='3')
@@ -245,7 +252,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 .SectionCopy--description(data-js-balance-text)
                   div!=htmlWebpackPlugin.options.t('family.section.malware.description')
           .WarpSection--device-mockup
-            .DeviceMockup(data-depth-perspective-scroll-anchor)
+            .DeviceMockup.DeviceMockup--monitor(data-depth-perspective-scroll-anchor)
               .DeviceMockup--backdrop.DeviceMockup--backdrop-blob3(data-depth='2')
                 svg.SVG-Blob3(viewBox='0 0 1185 2396')
                   defs
@@ -297,52 +304,107 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(fill='url(#SVG-Blob3-j)', d='M980.16 94.9c33.76 76.75-1 167.82-77.7 203.4s-285.72-177.85-122.25-278c72.03-44.08 166.19-2.16 199.95 74.6z')
                   path(fill='url(#SVG-Blob3-b)', d='M924.6 469.73c-4.8 45.87-35.74 80.07-69.12 76.39S796.58 383.78 872.85 380c33.61-1.64 56.54 43.87 51.75 89.73z')
                   path(fill='url(#SVG-Blob3-k)', d='M810.38 2278.56c-29.79 35.21-74.61 46.05-100.12 24.21s42.74-167.33 107.87-127.49c28.71 17.55 22.04 68.07-7.75 103.28z')
-              .DeviceMockup--device(data-depth='1')
+              .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
                  img(src='/media/protect-family.png')
 
-      .PerformanceSection(data-depth-perspective-root)
-        .PerformanceSection--column
-          .PerformanceSection--content
-            .SectionCopy.SectionCopy-is-centered(data-depth-perspective-scroll-anchor, data-depth='3')
+      .PrivacySection(data-depth-perspective-root)
+        .PrivacySection--column
+          .PrivacySection--device-mockup
+            .DeviceMockup.DeviceMockup--monitor(data-depth-perspective-scroll-anchor)
+              .DeviceMockup--backdrop.DeviceMockup--backdrop-blob2(data-depth='2')
+                svg.SVG-Blob2(viewBox='0 0 1592 2422')
+                  defs
+                    lineargradient#SVG-Blob2-b(x1='-1974.19', x2='-594.15', y1='21495.65', y2='21495.65', gradientTransform='matrix(.84 .03 .03 -.95 1365.83 21773.75)', gradientUnits='userSpaceOnUse')
+                      stop(offset='0', stop-color='rgb(150, 130, 210)', stop-opacity='0')
+                      stop(offset='1', stop-color='rgb(150, 130, 210)', stop-opacity='.1')
+                    lineargradient#SVG-Blob2-c(x1='-2522.59', x2='-1586.36', y1='21044.32', y2='21044.32', gradientTransform='matrix(1.01 .04 .04 -1 2352.44 22444.75)', gradientUnits='userSpaceOnUse')
+                      stop(offset='0', stop-color='#0089a4')
+                      stop(offset='.06', stop-color='#008faf')
+                      stop(offset='.41', stop-color='#00adee')
+                      stop(offset='.49', stop-color='#23b5dc')
+                      stop(offset='.59', stop-color='#46bdc9')
+                      stop(offset='.69', stop-color='#61c3bb')
+                      stop(offset='.79', stop-color='#74c7b0')
+                      stop(offset='.89', stop-color='#80caaa')
+                      stop(offset='1', stop-color='#84cba8')
+                    lineargradient#SVG-Blob2-d(x1='-2397.9', x2='-1662.73', y1='21015.86', y2='21015.86', gradientTransform='matrix(1 .04 .04 -1 2334.68 22444.12)', gradientUnits='userSpaceOnUse')
+                      stop(offset='0', stop-color='#2251a9')
+                      stop(offset='.17', stop-color='#1d5db2')
+                      stop(offset='.48', stop-color='#117ecb')
+                      stop(offset='.85', stop-color='#00adee')
+                    lineargradient#SVG-Blob2-e(x1='-1860.67', x2='-1276.29', y1='20741.07', y2='20741.07', gradientTransform='matrix(.83 .03 .04 -1.04 1527.84 23023.93)', gradientUnits='userSpaceOnUse')
+                      stop(offset='0', stop-color='#114c97')
+                      stop(offset='.25', stop-color='#0a76bd')
+                      stop(offset='.53', stop-color='#039ee0')
+                      stop(offset='.68', stop-color='#00adee')
+                      stop(offset='1', stop-color='#5ac593')
+                    lineargradient#SVG-Blob2-f(x1='-2208.26', x2='-1922.01', y1='20998.37', y2='20998.37', gradientTransform='matrix(1 .04 .04 -1 2334.68 22444.12)', gradientUnits='userSpaceOnUse')
+                      stop(offset='0', stop-color='#2e3191')
+                      stop(offset='.08', stop-color='#2a3b98')
+                      stop(offset='.71', stop-color='#0f86d1')
+                      stop(offset='1', stop-color='#04a3e7')
+                    lineargradient#SVG-Blob2-g(x1='0', x2='5', y1='0', y2='5000', gradientUnits='userSpaceOnUse')
+                      stop(offset='0', stop-color='#45bbb7')
+                      stop(offset='1', stop-color='#1da2e2')
+                    lineargradient#SVG-Blob2-i(x1='15104.79', x2='15305.41', y1='17113.92', y2='17113.92', gradientTransform='matrix(-.35 -.4 -.55 .48 14834.63 -213.25)', gradientUnits='userSpaceOnUse')
+                      stop(offset='0', stop-color='#1b1464')
+                      stop(offset='.07', stop-color='#1d1869')
+                      stop(offset='.4', stop-color='#27267f')
+                      stop(offset='.71', stop-color='#2c2e8d')
+                      stop(offset='1', stop-color='#2e3191')
+                    lineargradient#SVG-Blob2-j(x1='-3686.72', x2='-3203.11', y1='22154.89', y2='22154.89', gradientTransform='matrix(.19 .52 .47 -.17 -9211.04 5917.76)', gradientUnits='userSpaceOnUse')
+                      stop(offset='0', stop-color='#00adee')
+                      stop(offset='.14', stop-color='#23b5dc')
+                      stop(offset='.31', stop-color='#46bdc9')
+                      stop(offset='.48', stop-color='#61c3bb')
+                      stop(offset='.65', stop-color='#74c7b0')
+                      stop(offset='.82', stop-color='#80caaa')
+                      stop(offset='1', stop-color='#84cba8')
+                    lineargradient#SVG-Blob2-k(x1='544.52', x2='608.52', y1='508.53', y2='508.53', gradientUnits='userSpaceOnUse')
+                      stop(offset='0', stop-color='#31b8d4')
+                      stop(offset='.13', stop-color='#3fbbcc')
+                      stop(offset='.5', stop-color='#65c4b9')
+                      stop(offset='.81', stop-color='#7cc9ac')
+                      stop(offset='1', stop-color='#84cba8')
+                  path(fill='url(#SVG-Blob2-b)', d='M1470.18 1749.64c188-88.6 183.55-469.4-203.47-753.92-325.91-239.59-613-813.16-793.12-53.92-86.73 365.52 88.51 1008.94 316.85 1093 211.44 77.88 274.87-94.34 679.74-285.16z')
+                  path(fill='url(#SVG-Blob2-c)', d='M1447.37 1574.18c126.65-168.11 39-370.64-184.84-470.4-128-57-990.73-964.71-572.1 592.07 56.57 210.32 429.24 313.3 756.94-121.67z')
+                  path(fill='url(#SVG-Blob2-d)', d='M1422 1387.77c14.93-179-167.09-171.76-232.24-190.76-140.86-41.08-148.54-274.51-267.42-266.71-260.72 17.08-245.53 372.18-215.95 535.44 46 254 156.18 288.71 193.3 311.33 136.79 83.4 493.46-43.69 522.31-389.3z')
+                  path(fill='url(#SVG-Blob2-e)', d='M1243.93 1353.94c-5.52-137.17-116-124.63-166.25-164.16C732 917.9 706.36 1512.65 824.07 1633c101.93 104.25 433.27 54.65 419.86-279.06z')
+                  path(fill='url(#SVG-Blob2-f)', d='M1164.51 1338.37c7.62-115.19-110.49-141.4-149.44-117.82-374.21 226.61 119.65 568.23 149.44 117.82z')
+                  path(fill='url(#SVG-Blob2-g)', d='M1133.05 1362.25c-7.23-73.42-77.54-89-106-75.6-60.91 28.68-104.44 130.63-82.6 159.62 23.72 31.52 203.47 66.9 188.6-84.02z')
+                  path(fill='url(#SVG-Blob2-i)', d='M73.16 1938.32c-18.83 31.4-7.7 68.41 15.88 85.46 30.26 21.87 53.9 3.36 60.23-47.08 3.19-25.44-37.41-102.92-76.11-38.38z')
+                  path(fill='url(#SVG-Blob2-j)', d='M650.16 396.68c58.44-18 30.48-80.72 27.27-106-6.95-54.6 65.44-87.56 46.21-128.13-42.17-89-122.81-37.61-170-6.09-73.46 49-68.84 92.08-70.72 108-6.92 58.69 54.38 166.96 167.24 132.22z')
+                  circle(cx='576.52', cy='508.53', r='32', fill='url(#SVG-Blob2-k)')
+              .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
+                img(src="/media/content-filter.png")
+          .PrivacySection--content
+            .SectionCopy.SectionCopy-is-right(data-depth='3')
               .SectionCopy--content
-                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.performancetitle')
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('family.section.adultcontent.title')
                 .SectionCopy--description(data-js-balance-text)
-                  p!=htmlWebpackPlugin.options.t('home.performancedesc1')
-                  p!=htmlWebpackPlugin.options.t('home.performancedesc2')
-          .PerformanceSection--figure(data-depth='3')
-            .PerformanceSection--figure-item.PerformanceSection--figure-item-one-dot(style="--bar-width: 0.25")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 14.96ms
-              .PerformanceSection--figure-item-label 1.1.1.1
-            .PerformanceSection--figure-item(style="--bar-width: 0.34")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 20.17ms
-              .PerformanceSection--figure-item-label OpenDNS
-            .PerformanceSection--figure-item(style="--bar-width: 0.59")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 35.29ms
-              .PerformanceSection--figure-item-label Google
-            .PerformanceSection--figure-item(style="--bar-width: 1.00")
-              .PerformanceSection--figure-item-bar
-              .PerformanceSection--figure-item-time 59.46ms
-              .PerformanceSection--figure-item-label Verisign
-          p(style="font-size:12px; font-style:italic;")!=htmlWebpackPlugin.options.t('home.performancedate')
+                  div!=htmlWebpackPlugin.options.t('family.section.adultcontent.description')
 
-      .FooterSection(data-depth-perspective-root)
-        .FooterSection--column
-          .FooterSection--content(data-depth-perspective-scroll-anchor, data-depth='3')
-            .FooterSection--content-section-copy-wrapper
+      .InstallSection(data-depth-perspective-root)
+        .InstallSection--column
+          .InstallSection--content(data-depth-perspective-scroll-anchor, data-depth='3')
+            .InstallSection--content-section-copy-wrapper
               .SectionCopy.SectionCopy-is-centered
                 .SectionCopy--content
-                  h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('family.section.setup.title')
+                  h2.SectionCopy--title(data-js-balance-text, id="install")!=htmlWebpackPlugin.options.t('family.section.setup.title')
                   .SectionCopy--description(data-js-balance-text)
                     p!=htmlWebpackPlugin.options.t('family.section.setup.description')
-                    p!=htmlWebpackPlugin.options.t('family.section.setup.malware')
-                    p!=htmlWebpackPlugin.options.t('family.section.setup.all')
+          .InstallSection--panels(data-depth-perspective-scroll-anchor, data-depth='3')
+            .InstallSection--panel
+              h3.InstallSection--panel-title!=htmlWebpackPlugin.options.t('family.section.setup.malware.title')
+              div.InstallSection--panel-description!=htmlWebpackPlugin.options.t('family.section.setup.malware.description')
+            .InstallSection--panel
+              h3.InstallSection--panel-title!=htmlWebpackPlugin.options.t('family.section.setup.all.title')
+              div.InstallSection--panel-description!=htmlWebpackPlugin.options.t('family.section.setup.all.description')
 
-      .FooterSection(data-depth-perspective-root)
+      .FooterSection.FamilyFooterSection(data-depth-perspective-root)
         .FooterSection--column
           .FooterSection--content(data-depth-perspective-scroll-anchor, data-depth='3')
+
             .FooterSection--icon
               svg#SVG-IOS-app-icon(viewBox="0 0 465.95 466.55")
                 defs
@@ -416,9 +478,42 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 .SectionCopy--content
                   h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.footertitle')
                   .SectionCopy--description(data-js-balance-text)
-                    p!=htmlWebpackPlugin.options.t('home.footerdesc1')
-                    p.FooterSection--content-mobile!=htmlWebpackPlugin.options.t('home.footerdesc2mobile')
-                    p.FooterSection--content-desktop!=htmlWebpackPlugin.options.t('home.footerdesc2desktop')
+                    p!=htmlWebpackPlugin.options.t('family.cloudflare.tagline')
+
+                  .share-buttons
+                    a.button.share-button(
+                      target="_blank"
+                      href=htmlWebpackPlugin.options.formatURL({
+                        host: 'https://twitter.com/intent/tweet',
+                        query: {
+                          text: htmlWebpackPlugin.options.t('family.share.tweet.body'),
+                          hashtags: '1dot1dot1dot1',
+                          url: 'https://1.1.1.1/family'
+                        }
+                      })
+                    )
+                      include ../../media/twitter.svg
+
+                    a.button.share-button(
+                      target="_blank"
+                      href=htmlWebpackPlugin.options.formatURL({
+                        host: 'https://www.facebook.com/sharer/sharer.php',
+                        query: {
+                          u: 'https://1.1.1.1/family'
+                        }
+                      }))
+                      include ../../media/facebook.svg
+
+                    a.button.share-button(
+                      target="_blank"
+                      href=htmlWebpackPlugin.options.formatURL({
+                        host: 'mailto:',
+                        query: {
+                          subject: htmlWebpackPlugin.options.t('family.share.email.subject'),
+                          body: htmlWebpackPlugin.options.t('family.share.email.body')
+                        }
+                      }))
+                      include ../../media/email.svg
 
           .FooterSection--backdrop-blob4(data-depth='2')
             svg.SVG-Blob4(viewBox='0 0 3120 4353')
@@ -474,17 +569,4 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
               path(fill='url(#SVG-Blob4-j)', d='M1910.1 3397.7c-99.8 53.7-129 171-93.3 255 45.6 107.8 137.8 96.5 234.6-28.6 48.9-63.1 64-337-141.3-226.4z', opacity='.8')
               path(fill='url(#SVG-Blob4-k)', d='M1730.8 3802.7a66.6 66.6 0 0 0-32 83.7c15.2 35.2 81.3 18.8 114.2-22.4 16.6-20.8-12.8-97.9-82.2-61.3z', opacity='.6')
 
-      a.EasterEggSection(href="https://www.cloudflare.com/careers/departments/" target="_blank")
-        .EasterEggSection--column
-          .EasterEggSection--content
-            svg.SVG-EEM(viewBox="0 0 443 172")
-              defs
-                linearGradient#SVG-EEM-a(x1="15.9%" x2="90.6%" y1="12.9%" y2="76.1%")
-                  stop(offset="0%" stop-color="#ff9a00")
-                  stop(offset="100%" stop-color="#e92257")
-                radialGradient#SVG-EEM-b(cx="53.14%" cy="63.55%" r="65.8%" fx="53.14%" fy="63.55%" gradientTransform="matrix(.59021 .27562 -.16923 .96127 .33 -.12)")
-                  stop(offset="4%" stop-color="#fff")
-                  stop(offset="69%" stop-color="#fff")
-                  stop(offset="100%" stop-color="#f5f7f8")
-              path(fill="url(#SVG-EEM-a)" d="M437.1 126.66a70.5 70.5 0 0 0-95.27-89.98c-8 3.7-60.5-3-111-11.4-26-4.2-52-8.4-73-10.7-23.8-2.6 45.9 17.3 44.1 22.1-.7 2-196.2-38.4-201.8-36.6-4.1 1.4 93 29.7 159 48.3 13.3 3.7 24.7 9 34.2 14.8 7 4.2-225.5-55.6-21 10.8 16.3 5.3 48.5 17.7 52.6 19 32.8 9.6 80.5 35.5 88 46.7a70.5 70.5 0 0 0 124.18-13.02z")
-              path(fill="url(#SVG-EEM-b)" d="M325.7 131.87c-2.3-2.6-4.7-5.5-7.2-8.8-12.8-16.7-54.9-26.6-61.2-29.2-3-1.3-5.8-3-8.5-4.8-1.8-1.4-4.6-5.4-1.2-6.4 11-2.7 18.7 10.3 24.9-.2 1.3-3.6 9.6 2.5 12.9.9 6-3-14.8-7.4-12.2-13.3 2.2-5 46.2 13.2 45.3 8.3-.2-.6-.1-1.3.1-1.9.3-.5.7-1 1.2-1.2 1.2-.8 3-1.6 4.3-2.6l1.1-1.8c0-.7-.2-1.5-1-2.4-2.6-3.2-20.4-9.1-23-11.6-1.6-1.4-2-4.1.5-4.2 12.5-.2 30.7 3 42.3-.4l2.7-1a56 56 0 1 1-21 80.6z")
+      

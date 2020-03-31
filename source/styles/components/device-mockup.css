@@ -57,6 +57,10 @@
 }
 
 @media (max-width: 768px) {
+  .DeviceMockup--monitor {
+    width: 100%;
+  }
+  
   .DeviceMockup--backdrop-blob1 {
     top: -101%;
     left: -42%;
@@ -104,7 +108,7 @@
 .DeviceMockup--device-monitor {
   padding-top: 1em;
   padding-bottom: 1em;
-  height: auto;
+  height: auto!important;
 }
 
 @media (max-width: 768px) {

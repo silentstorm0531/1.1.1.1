@@ -10,6 +10,15 @@
   padding-right: 2em;
 }
 
+.HeroSectionFollowup {
+  padding-top: 2em;
+}
+
+.HeroSectionFollowup > img {
+  margin: 0 auto;
+  max-width: 75%;
+}
+
 .HeroSection--content {
   display: block;
   text-align: center;
@@ -72,6 +81,10 @@
     height: auto;
     padding-top: 10vh;
     padding-bottom: 10vh;
+  }
+
+  .HeroSectionFollowup > img {
+    max-width: 100%;
   }
 
   .HeroSection--content {

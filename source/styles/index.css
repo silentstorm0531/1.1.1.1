@@ -17,6 +17,7 @@
 @import "./components/header.css";
 @import "./components/nav.css";
 @import "./components/section-copy.css";
+@import "./components/share-buttons.css";
 @import "./components/device-mockup.css";
 
 @import "./components/one-dot-logo-animated.css";
@@ -29,3 +30,4 @@
 @import "./components/warp-section.css";
 @import "./components/footer-section.css";
 @import "./components/easter-egg-section.css";
+@import "./components/install-section.css";
