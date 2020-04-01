@@ -561,9 +561,9 @@
   "family.section.setup.all.title": "Malware and Adult Content Blocking Together",
   "family.section.setup.all.description": "<p>Change your router DNS to:</p><ul><li>1.1.1.3</li><li>1.0.0.3</li></ul><p class='install-instructions'>Ready to set it up? You’ll find an easy guide for every device in the <a href='https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/' class='CopyLink' target='_blank'>setup instructions</a> page.</p>",
   "family.cloudflare.tagline": "Bringing speed, reliability, and performance to every Internet user",
-  "family.share.tweet.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://1.1.1.1/family",
-  "family.share.facebook.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://1.1.1.1/family",
+  "family.share.tweet.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://one.one.one.one/family",
+  "family.share.facebook.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://one.one.one.one/family",
   "family.share.email.subject": "1.1.1.1 for Families",
-  "family.share.email.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://1.1.1.1/family",
+  "family.share.email.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://one.one.one.one/family",
   "home.privacyimportant": "Your <a href='https://www.cloudflare.com/privacypolicy/' class='CopyLink'>privacy</a> is important to us."
 }
