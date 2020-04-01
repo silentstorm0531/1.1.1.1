@@ -71,6 +71,27 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
     link(rel="canonical" href="https://1.1.1.1/family")
 
   body
+    style.
+      [data-section="footer"] {
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 1.5em!important;
+        opacity: 0.8!important;
+      }
+
+      [data-section="footer"] a {
+        display: inline-block;
+        margin: 0 1em;
+        color: white!important;
+        text-decoration: none;
+      }
+
+      [data-section="footer"] a:hover {
+        text-decoration: underline;
+      }
     noscript
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-PKQFGQB' height='0' width='0' style='display:none;visibility:hidden')
 
@@ -334,6 +355,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
               div.InstallSection--panel-description!=htmlWebpackPlugin.options.t('family.section.setup.all.description')
 
       .FooterSection.FamilyFooterSection(data-depth-perspective-root)
+        include ./footer.pug
         .FooterSection--column
           .FooterSection--content(data-depth-perspective-scroll-anchor, data-depth='3')
 
@@ -501,5 +523,3 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
               path(fill='url(#SVG-Blob4-i)', d='M1144.5 1954c91-318.3-435.5-813-576.8-560.8-141.4 252.2 485.9 879.2 576.8 560.9zM2467.4 874.6c-410.2 247-448.6 1230-61.5 1096.5 387.1-133.6 471.6-1343.5 61.5-1096.5z')
               path(fill='url(#SVG-Blob4-j)', d='M1910.1 3397.7c-99.8 53.7-129 171-93.3 255 45.6 107.8 137.8 96.5 234.6-28.6 48.9-63.1 64-337-141.3-226.4z', opacity='.8')
               path(fill='url(#SVG-Blob4-k)', d='M1730.8 3802.7a66.6 66.6 0 0 0-32 83.7c15.2 35.2 81.3 18.8 114.2-22.4 16.6-20.8-12.8-97.9-82.2-61.3z', opacity='.6')
-
-    include ./footer.pug
