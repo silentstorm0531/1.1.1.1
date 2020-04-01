@@ -10,7 +10,7 @@
   padding: var(--button-vertical-padding) var(--button-horizontal-padding);
   border-radius: var(--form-field-border-radius);
   text-decoration: none;
-  transition: box-shadow .3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .Button:focus {
@@ -31,13 +31,13 @@
 }
 
 [theme="dark"] .Button-is-primary {
-  background: rgba(var(--purple-rgb), .35);
+  background: rgba(var(--purple-rgb), 0.35);
   color: #fff;
 }
 
 .Button[disabled] {
   cursor: not-allowed;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .Button.Button-with-icon {
@@ -49,15 +49,19 @@
 .Button.Button-with-icon .Button--icon {
   height: 1.5em;
   width: 1.5em;
-  margin-bottom: .1em;
-  margin-right: .3125em;
+  margin-bottom: 0.1em;
+  margin-right: 0.3125em;
 }
 
 .Button.Button-with-icon.Button-google-play-store .Button--text {
-  font-size: .825em;
-  margin-bottom: .0625em;
+  font-size: 0.825em;
+  margin-bottom: 0.0625em;
 }
 
 html[is-ios] .Button-google-play-store {
   display: none;
+}
+
+.Button--tc {
+  text-align: center;
 }

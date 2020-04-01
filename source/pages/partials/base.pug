@@ -53,7 +53,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
     meta(name="og:description" content=htmlWebpackPlugin.options.t('warp.description'))
 
     meta(property="og:url" content="https://1.1.1.1")
-    meta(property="og:image" content="https://1.1.1.1/media/open-graph.png")
+    meta(property="og:image" content="https://1.1.1.1/media/social-share.png")
     meta(property="og:video" content="https://1.1.1.1/media/open-graph.mp4")
 
     meta(name="twitter:site" content="@Cloudflare")
@@ -61,7 +61,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
     meta(name="twitter:card" content="summary_large_image")
     meta(name="twitter:title" content=htmlWebpackPlugin.options.t('warp.title'))
     meta(name="twitter:description" content=htmlWebpackPlugin.options.t('warp.description'))
-    meta(name="twitter:image" content="https://1.1.1.1/media/open-graph.png")
+    meta(name="twitter:image" content="https://1.1.1.1/media/social-share.png")
 
     meta(name="apple-itunes-app" content="app-id=1423538627")
     link(rel="manifest" href="/media/manifest.json")
@@ -117,9 +117,9 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
               span.Button--text!=htmlWebpackPlugin.options.t('googleplay')
           .HeroSection--actions
               a.Button.Button-is-primary(href='#subscription-form')
-                span.Button--text!=htmlWebpackPlugin.options.t('windows')
+                span.Button--text!=htmlWebpackPlugin.options.t('windows.comingsoon')
               a.Button.Button-is-primary(href='#subscription-form')
-                span.Button--text!=htmlWebpackPlugin.options.t('macos')
+                span.Button--text!=htmlWebpackPlugin.options.t('macos.comingsoon')
 
         .HeroSection--scroll-indicator
           svg(viewBox="0 0 70 40")
@@ -185,24 +185,6 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
               .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
                 .DeviceMockup--device-display
                   img(src='/media/warp-desktop.png')
-
-      .PrivacySection(data-depth-perspective-root)
-        .PrivacySection--column
-          .PrivacySection--device-mockup
-            .DeviceMockup.desktop(data-depth-perspective-scroll-anchor)
-              .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
-                .DeviceMockup--device-display
-                  img(src='/media/warp-desktop-2.png')
-
-          .PrivacySection--content
-            .SectionCopy.SectionCopy-is-right(data-depth='3')
-              .SectionCopy--content
-                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.desktop.title')
-                .SectionCopy--description(data-js-balance-text)
-                  div!=htmlWebpackPlugin.options.t('home.desktop.description')
-                  p
-                    // TODO: add link to blog post
-                    a.CopyLink(href="#" target="_blank")!=htmlWebpackPlugin.options.t('learnmore')
 
       .PrivacySection(data-depth-perspective-root)
         .PrivacySection--column
@@ -274,7 +256,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   circle(cx='576.52', cy='508.53', r='32', fill='url(#SVG-Blob2-k)')
               .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
                 .DeviceMockup--device-display
-                  img(src='/media/warp-desktop.png')
+                  img(src='/media/warp-desktop-3.png')
           .PrivacySection--content
             .SectionCopy.SectionCopy-is-right(data-depth='3')
               .SectionCopy--content
@@ -294,6 +276,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.warptitle')
                 .SectionCopy--description(data-js-balance-text)
                   p!=htmlWebpackPlugin.options.t('home.warpdesc')
+                  p!=htmlWebpackPlugin.options.t('home.warpdesc2')
           .WarpSection--device-mockup
             .DeviceMockup.desktop(data-depth-perspective-scroll-anchor)
               .DeviceMockup--backdrop.DeviceMockup--backdrop-blob3(data-depth='2')
@@ -349,7 +332,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(fill='url(#SVG-Blob3-k)', d='M810.38 2278.56c-29.79 35.21-74.61 46.05-100.12 24.21s42.74-167.33 107.87-127.49c28.71 17.55 22.04 68.07-7.75 103.28z')
               .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
                 .DeviceMockup--device-display
-                  img(src='/media/warp-desktop.png')
+                  img(src='/media/warp-plus.png')
 
       .PerformanceSection(data-depth-perspective-root)
         .PerformanceSection--column
@@ -361,6 +344,24 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   p!=htmlWebpackPlugin.options.t('home.performancedesc1')
                   p!=htmlWebpackPlugin.options.t('home.performancedesc2')
           include ./performance-figure.pug
+
+      .PrivacySection(data-depth-perspective-root)
+        .PrivacySection--column.PrivacySection--column-less-pad
+          .PrivacySection--device-mockup
+            .DeviceMockup.desktop(data-depth-perspective-scroll-anchor)
+              .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
+                .DeviceMockup--device-display
+                  img(src='/media/warp-desktop-2.png')
+
+          .PrivacySection--content
+            .SectionCopy.SectionCopy-is-right(data-depth='3')
+              .SectionCopy--content
+                h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.desktop.title')
+                .SectionCopy--description(data-js-balance-text)
+                  div!=htmlWebpackPlugin.options.t('home.desktop.description')
+                  p
+                    // TODO: add link to blog post
+                    a.CopyLink(href="#" target="_blank")!=htmlWebpackPlugin.options.t('learnmore')
 
       .FooterSection(data-depth-perspective-root)
         .FooterSection--column(style="padding-bottom:2em;")
@@ -449,9 +450,9 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(d='M138.52 123.58L16.78 0c1.99.46 4.08 1.26 6.25 2.46l152.16 84.31-36.67 36.8zm42 42.62l-36.84-37.39 38.2-38.33 44.62 24.73c12.67 7.01 12.67 18.5 0 25.51l-45.99 25.48zM7.32.9l126 127.9L7.46 255.1C2.88 252.82 0 247.5 0 239.87V16.05C0 8.48 2.83 3.21 7.33.9zM138.5 134.02l35.35 35.88-150.81 83.56a24.36 24.36 0 0 1-5.94 2.4l121.4-121.84z')
                 span.Button--text!=htmlWebpackPlugin.options.t('googleplay')
             .FooterSection--actions
-              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store(href='#subscription-form')
+              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store.Button--tc(href='#subscription-form')
                 span.Button--text!=htmlWebpackPlugin.options.t('windows.comingsoon')
-              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store(href='#subscription-form')
+              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store.Button--tc(href='#subscription-form')
                 span.Button--text!=htmlWebpackPlugin.options.t('macos.comingsoon')
 
       .FooterSection#subscription-form(data-depth-perspective-root)
@@ -467,7 +468,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                     form.GetNotifiedSection--form(action='https://1.us19.list-manage.com/subscribe/post?u=25fe66cba2987d7a3627d4bf2&amp;id=965e2388d5' method='post' name='mc-embedded-subscribe-form' target='_blank' novalidate='')
                       input.Input(type='email' value='' name='EMAIL' placeholder='email address' required='' style='margin-right:0.5em;')
                       button.Button.Button-is-primary(type="submit")!=htmlWebpackPlugin.options.t('subscribe')
-                          
+                  p.privacy-subtext!=htmlWebpackPlugin.options.t('home.privacyimportant')
 
           .FooterSection--backdrop-blob4(data-depth='2')
             svg.SVG-Blob4(viewBox='0 0 3120 4353')

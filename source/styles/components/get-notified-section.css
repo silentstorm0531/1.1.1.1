@@ -9,6 +9,7 @@
 .GetNotifiedSection--form {
   display: flex;
   margin-top: 2em;
+  justify-content: center;
 }
 
 @media (max-width: 375px) {
@@ -47,4 +48,9 @@
 .GetNotifiedSection--form-cta {
   font-size: 1.333em;
   text-align: center;
+}
+
+.privacy-subtext {
+  margin-top: 2rem;
+  font-size: 14px;
 }
