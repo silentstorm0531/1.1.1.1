@@ -520,7 +520,7 @@
   "home.overviewdesc2": "1.1.1.1 with WARP replaces the connection between your device and the Internet with a modern, optimized, protocol.",
   "learnmore": "Learn more",
   "home.desktop.title": "Soon to be available for macOS and Windows (in beta)",
-  "home.desktop.description": "<p>Millions of people secure their phone Internet connections with the Warp app today.</p><p>We’re extending the same protection to macOS and Windows.</p>",
+  "home.desktop.description": "<p>Millions of people secure their phone Internet connections with the WARP app today.</p><p>We’re extending the same protection to macOS and Windows.</p>",
   "home.performancetitle": "Built on a massive network.",
   "home.performancedesc1": "WARP is built on the same network that has made 1.1.1.1 the <a class='CopyLink' href='https://www.dnsperf.com/#!dns-resolvers' target='_blank' rel='noreferrer'>fastest DNS resolver</a> on Earth.",
   "home.performancedesc2": "Your connection to WARP is fast and reliable wherever you live and wherever you go.",
