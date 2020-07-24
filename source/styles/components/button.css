@@ -58,6 +58,12 @@
   margin-bottom: 0.0625em;
 }
 
+.Button-windows-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.0625em;
+}
+
 html[is-ios] .Button-google-play-store {
   display: none;
 }

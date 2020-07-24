@@ -43,7 +43,8 @@ const $: CustomConfiguration = {
     help: ["./source/pages/help.ts"],
     purgeCache: ["./source/pages/purge-cache.ts"],
     faq: ["./source/pages/faq.ts"],
-    family: ["./source/pages/family.ts"]
+    family: ["./source/pages/family.ts"],
+    beta: ["./source/pages/beta.ts"]
   },
   plugins: []
 };
@@ -282,6 +283,17 @@ $.plugins.push(
       template: joinP(`source/pages/${locale.code}/family/index.pug`),
       filename: `${locale.path}family/index.html`,
       chunks: ["family"]
+    });
+  })
+);
+
+$.plugins.push(
+  ...locales.map(locale => {
+    return new HtmlWebpackPlugin({
+      favicon: "source/media/favicon.ico",
+      template: joinP(`source/pages/${locale.code}/beta/index.pug`),
+      filename: `${locale.path}beta/index.html`,
+      chunks: ["beta"]
     });
   })
 );

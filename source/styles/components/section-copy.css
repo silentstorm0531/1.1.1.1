@@ -21,6 +21,59 @@
   font-weight: bold;
   margin-bottom: .5em;
 }
+.SectionCopy--req {
+  margin-right: 2em;
+  display: flex;
+}
+
+.SectionCopy--left {
+  margin-left: 4em;
+  display: flex;
+}
+.SectionCopy--os-title {
+  font-size: 1.25em;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: .5em;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+.SectionCopy--row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+
+}
+.SectionCopy--border {
+  border: 2.5px solid #222868;
+  width: 800px;
+}
+.SectionCopy--downloadfor {
+  font-size: 12px;
+  line-height: 150%;
+}
+.SectionCopy-download-instructions {
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: -0.15px;
+  text-decoration-line: underline;
+  margin-top: 1em;
+}
+.SectionCopy--button-group {
+  display: block;
+  margin-left: 3em;
+}
+.SectionCopy--reqs {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: -0.15px;
+  margin-left: 2em;
+  margin-right: 1em;
+
+
+}
 
 .SectionCopy--description p:not(:last-child) {
   margin-bottom: .5em;
@@ -46,10 +99,21 @@
     width: 23em;
     text-align: left;
   }
-
-  .SectionCopy.SectionCopy-is-centered .SectionCopy--title,
+  .SectionCopy.SectionCopy-is-centered .SectionCopy--title
   .SectionCopy.SectionCopy-is-centered .SectionCopy--description {
     margin-left: 0;
     margin-right: auto;
   }
+
+  .SectionCopy--os-title {
+    display: flex;
+    margin-top: 2em;
+    width: 3em;
+  }
+
+  .SectionCopy--button-group{
+    margin-right: 3em;
+    margin-bottom: 1em;
+  }
+
 }

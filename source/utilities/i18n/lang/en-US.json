@@ -565,5 +565,25 @@
   "family.share.facebook.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://one.one.one.one/family",
   "family.share.email.subject": "1.1.1.1 for Families",
   "family.share.email.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://one.one.one.one/family",
-  "home.privacyimportant": "Your <a href='https://www.cloudflare.com/privacypolicy/' class='CopyLink'>privacy</a> is important to us."
+  "home.privacyimportant": "Your <a href='https://www.cloudflare.com/privacypolicy/' class='CopyLink'>privacy</a> is important to us.",
+  "beta.name": "Beta",
+  "beta.title": "Download the 1.1.1.1 Beta for macOS and Windows",
+  "beta.section.title": "Thank you for helping us make a safer and faster internet for the desktop",
+  "beta.section.description": "Select the appropriate link to download the desktop app for your system. This is a Beta release, so remember to provide feedback and learn about known issues using the link below.",
+  "beta.section.feedback.text": "Provide feedback",
+  "beta.section.feedback.link": "/",
+  "beta.section.learn.more": "Learn more about known issues",
+  "beta.tag": "Beta desktop release",
+  "beta.mac": "macOS",
+  "beta.button.text": "Download For",
+  "beta.windows": "Windows",
+  "beta.category1": "macOS Catalina",
+  "beta.category2": "Windows 10",
+  "beta.category3": " ",
+  "beta.min.req": "Minimum system <br> requirements",
+  "beta.version.category1": "10.15 or higher <br> 64 bit only",
+  "beta.version.category2": "1909 or higher <br> 64 bit only",
+  "beta.mac.instructions": "macOs installation Instructions",
+  "beta.windows.instructions": "Windows Installation instructions"
+
 }

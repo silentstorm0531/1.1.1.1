@@ -29,3 +29,12 @@
 .share-button path {
   fill: white;
 }
+
+.Vector-line {
+  position: absolute;
+  width: 592px;
+  height: 0px;
+  left: 673px;
+  top: 600px;
+  border: 2.5px solid #222868;
+}

@@ -5,6 +5,13 @@
   padding: 2em 2em 20em;
   width: 100%;
 }
+.AppOverviewSection-beta-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 2em 2em 2em;
+  width: 100%;
+}
 
 .AppOverviewSection--content {
   position: relative;
@@ -24,6 +31,11 @@
     padding-bottom: 17em;
     overflow: hidden;
   }
+  .AppOverviewSection-beta-column {
+      flex-direction: column;
+      padding-bottom: 17em;
+      overflow: hidden;
+    }
 
   .AppOverviewSection--device-mockup {
     margin-left: 0;
