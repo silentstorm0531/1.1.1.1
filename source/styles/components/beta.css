@@ -62,14 +62,13 @@
     }
     .BetaSect--button-group {
       display: block;
-      margin-left: 3em;
+      margin-left: 4em;
     }
     .BetaSect--reqs {
       font-weight: normal;
       font-size: 14px;
       line-height: 140%;
       letter-spacing: -0.15px;
-      margin-left: 5em;
     }
     
     .BetaSection--content {
