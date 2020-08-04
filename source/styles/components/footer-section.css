@@ -79,7 +79,7 @@ section[data-section="footer"] .content a {
 
 @media (max-width: 768px) {
   .FooterSection {
-    margin-top: -6em;
+    margin-top: -40em;
   }
 
   .FooterSection--icon {

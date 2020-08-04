@@ -91,14 +91,16 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 path(d='M752.9 169.7L710 145.1l-7.4-3.2-175.5 1.2v89.1h225.8z', fill='#fff')
                 path(d='M674.8 223.9c2.1-7.2 1.3-13.8-2.2-18.7-3.2-4.5-8.6-7.1-15.1-7.4l-123.1-1.6c-.8 0-1.5-.4-1.9-1s-.5-1.4-.3-2.2c.4-1.2 1.6-2.1 2.9-2.2l124.2-1.6c14.7-.7 30.7-12.6 36.3-27.2l7.1-18.5c.3-.8.4-1.6.2-2.4-8-36.2-40.3-63.2-78.9-63.2-35.6 0-65.8 23-76.6 54.9-7-5.2-15.9-8-25.5-7.1-17.1 1.7-30.8 15.4-32.5 32.5-.4 4.4-.1 8.7.9 12.7-27.9.8-50.2 23.6-50.2 51.7 0 2.5.2 5 .5 7.5.2 1.2 1.2 2.1 2.4 2.1h227.2c1.3 0 2.5-.9 2.9-2.2l1.7-6.1z', fill='#f38020')
                 path(d='M714 145c-1.1 0-2.3 0-3.4.1-.8 0-1.5.6-1.8 1.4l-4.8 16.7c-2.1 7.2-1.3 13.8 2.2 18.7 3.2 4.5 8.6 7.1 15.1 7.4l26.2 1.6c.8 0 1.5.4 1.9 1s.5 1.5.3 2.2c-.4 1.2-1.6 2.1-2.9 2.2l-27.3 1.6c-14.8.7-30.7 12.6-36.3 27.2l-2 5.1c-.4 1 .3 2 1.4 2h93.8c1.1 0 2.1-.7 2.4-1.8 1.6-5.8 2.5-11.9 2.5-18.2 0-37-30.2-67.2-67.3-67.2', fill='#faae40')
-
+          
+          a.Nav--link(href='/')
+            span!=htmlWebpackPlugin.options.t('warp.nav.name')
           a.Nav--link(href='/dns/')
             span!=htmlWebpackPlugin.options.t('dns')
           a.Nav--link(href='/family/')
             span!=htmlWebpackPlugin.options.t('family.name')
 
-      .HeroSection
-        .HeroSection--content
+      .HeroSection(style="min-height: 20em")
+        .HeroSection--content(style="padding-bottom: 0em")
           .HeroSection--logo
             .OneDotLogoAnimated.OneDotLogoAnimated-is-large.OneDotLogoAnimated-is-centered
               .OneDotLogoAnimated--aspect-ratio-container(style="--aspect-ratio: .293454")
@@ -141,7 +143,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                       .BetaSection--column
                         .BetaSect--os-title(data-js-balance-text)!=htmlWebpackPlugin.options.t('beta.category1')
                       .BetaSection--column
-                        .BetaSect--os-title(data-js-balance-text, style="margin-left: 4em; margin-right:-4em")!=htmlWebpackPlugin.options.t('beta.category2')
+                        .BetaSect--os-title(data-js-balance-text, style="margin-left: 4em; margin-right:-3em")!=htmlWebpackPlugin.options.t('beta.category2')
                   .BetaSect--row
                     .BetaSect--border
                   .BetaSect--row
@@ -151,7 +153,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                       .BetaSection--column  
                         .BetaSect--reqs!=htmlWebpackPlugin.options.t('beta.version.category1')
                       .BetaSection--column
-                        .BetaSect--reqs(style="margin-left: 7em; margin-right: -4em")!=htmlWebpackPlugin.options.t('beta.version.category2')
+                        .BetaSect--reqs(style="margin-left: 6em; margin-right: -3em")!=htmlWebpackPlugin.options.t('beta.version.category2')
                   .BetaSect--row
                     .BetaSect--border    
               .FooterSection--actions
@@ -231,18 +233,3 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
               path(fill='url(#SVG-Blob4-i)', d='M1144.5 1954c91-318.3-435.5-813-576.8-560.8-141.4 252.2 485.9 879.2 576.8 560.9zM2467.4 874.6c-410.2 247-448.6 1230-61.5 1096.5 387.1-133.6 471.6-1343.5 61.5-1096.5z')
               path(fill='url(#SVG-Blob4-j)', d='M1910.1 3397.7c-99.8 53.7-129 171-93.3 255 45.6 107.8 137.8 96.5 234.6-28.6 48.9-63.1 64-337-141.3-226.4z', opacity='.8')
               path(fill='url(#SVG-Blob4-k)', d='M1730.8 3802.7a66.6 66.6 0 0 0-32 83.7c15.2 35.2 81.3 18.8 114.2-22.4 16.6-20.8-12.8-97.9-82.2-61.3z', opacity='.6')
-
-      a.EasterEggSection(href="https://www.cloudflare.com/careers/departments/" target="_blank")
-        .EasterEggSection--column
-          .EasterEggSection--content
-            svg.SVG-EEM(viewBox="0 0 443 172")
-              defs
-                linearGradient#SVG-EEM-a(x1="15.9%" x2="90.6%" y1="12.9%" y2="76.1%")
-                  stop(offset="0%" stop-color="#ff9a00")
-                  stop(offset="100%" stop-color="#e92257")
-                radialGradient#SVG-EEM-b(cx="53.14%" cy="63.55%" r="65.8%" fx="53.14%" fy="63.55%" gradientTransform="matrix(.59021 .27562 -.16923 .96127 .33 -.12)")
-                  stop(offset="4%" stop-color="#fff")
-                  stop(offset="69%" stop-color="#fff")
-                  stop(offset="100%" stop-color="#f5f7f8")
-              path(fill="url(#SVG-EEM-a)" d="M437.1 126.66a70.5 70.5 0 0 0-95.27-89.98c-8 3.7-60.5-3-111-11.4-26-4.2-52-8.4-73-10.7-23.8-2.6 45.9 17.3 44.1 22.1-.7 2-196.2-38.4-201.8-36.6-4.1 1.4 93 29.7 159 48.3 13.3 3.7 24.7 9 34.2 14.8 7 4.2-225.5-55.6-21 10.8 16.3 5.3 48.5 17.7 52.6 19 32.8 9.6 80.5 35.5 88 46.7a70.5 70.5 0 0 0 124.18-13.02z")
-              path(fill="url(#SVG-EEM-b)" d="M325.7 131.87c-2.3-2.6-4.7-5.5-7.2-8.8-12.8-16.7-54.9-26.6-61.2-29.2-3-1.3-5.8-3-8.5-4.8-1.8-1.4-4.6-5.4-1.2-6.4 11-2.7 18.7 10.3 24.9-.2 1.3-3.6 9.6 2.5 12.9.9 6-3-14.8-7.4-12.2-13.3 2.2-5 46.2 13.2 45.3 8.3-.2-.6-.1-1.3.1-1.9.3-.5.7-1 1.2-1.2 1.2-.8 3-1.6 4.3-2.6l1.1-1.8c0-.7-.2-1.5-1-2.4-2.6-3.2-20.4-9.1-23-11.6-1.6-1.4-2-4.1.5-4.2 12.5-.2 30.7 3 42.3-.4l2.7-1a56 56 0 1 1-21 80.6z")
