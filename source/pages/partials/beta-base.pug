@@ -98,8 +98,10 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
             span!=htmlWebpackPlugin.options.t('dns')
           a.Nav--link(href='/family/')
             span!=htmlWebpackPlugin.options.t('family.name')
+          a.Nav--link.Nav--link-active(href='/beta/')
+            span!=htmlWebpackPlugin.options.t('beta.name')
 
-      .HeroSection(style="min-height: 20em")
+      .HeroSection(style="height: auto; min-height: auto; padding-top: 8em; padding-bottom: 2em;")
         .HeroSection--content(style="padding-bottom: 0em")
           .HeroSection--logo
             .OneDotLogoAnimated.OneDotLogoAnimated-is-large.OneDotLogoAnimated-is-centered
