@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "start": "ts-node ./scripts/serve.ts",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack && cp public/* build/"
   },
   "resolutions": {
     "webpack-dev-middleware": "3.6.0"
