@@ -583,7 +583,7 @@
   "beta.min.req": "Minimum system <br> requirements",
   "beta.version.category1": "10.15 or higher <br> 64 bit only",
   "beta.version.category2": "1909 or higher <br> 64 bit only",
-  "beta.mac.instructions": "macOs installation Instructions",
+  "beta.mac.instructions": "macOS installation Instructions",
   "beta.windows.instructions": "Windows Installation instructions"
 
 }
