@@ -59,6 +59,7 @@
       letter-spacing: -0.15px;
       text-decoration-line: underline;
       margin-top: 1em;
+      color: #222868;
     }
     .BetaSect--button-group {
       display: block;
@@ -147,6 +148,7 @@
         letter-spacing: -0.15px;
         text-decoration-line: underline;
         margin: 2em 0;
+        color: #222868;
       }
     
       .BetaSection-span {
