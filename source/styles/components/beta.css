@@ -27,11 +27,7 @@
       display: flex;
       width: 100%;
     }
-
-    .BetaSect-footer {
-      margin-top: -40em;
-    }
-    
+ 
     .BetaSect--left {
       margin-left: 4em;
       display: flex;
@@ -115,7 +111,7 @@
       .BetaSection--content {
         display: none;
       }
-    
+
       .BetaSection-mobile {
         margin: 2em 0;
         display: flex;
@@ -201,6 +197,10 @@
     
       .BetaSect--reqs {
         display: flex;
+      }
+
+      .BetaSect-footer {
+        margin-top: -40em;
       }
     
     }
