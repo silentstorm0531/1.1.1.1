@@ -27,6 +27,10 @@
       display: flex;
       width: 100%;
     }
+
+    .BetaSect-footer {
+      margin-top: -40em;
+    }
     
     .BetaSect--left {
       margin-left: 4em;

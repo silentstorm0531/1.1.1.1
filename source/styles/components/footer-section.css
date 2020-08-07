@@ -79,7 +79,7 @@ section[data-section="footer"] .content a {
 
 @media (max-width: 768px) {
   .FooterSection {
-    margin-top: -40em;
+    margin-top: -6em;
   }
 
   .FooterSection--icon {
@@ -105,6 +105,10 @@ section[data-section="footer"] .content a {
     left: -504em;
     right: -500em;
   }
+  .FooterSection--actions > a:not(:last-child) {
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
 }
 
 @media (max-width: 375px) {
@@ -112,6 +116,11 @@ section[data-section="footer"] .content a {
     overflow: hidden;
     padding-bottom: 60em;
   }
+
+  .FooterSection--actions > a:not(:last-child) {
+    margin-right: 0em;
+    margin-bottom: 1em;
+  } 
 
   .FooterSection--backdrop-blob4 {
     top: 33em;
