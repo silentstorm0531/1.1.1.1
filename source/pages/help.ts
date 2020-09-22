@@ -92,9 +92,9 @@ function readFromShareData() {
 }
 
 const resolverTests = {
-  isCf: `${uuid}.is-cf.cloudflareresolve.com`,
-  isDot: `${uuid}.is-dot.cloudflareresolve.com`,
-  isDoh: `${uuid}.is-doh.cloudflareresolve.com`,
+  isCf: `${uuid}.is-cf.help.every1dns.net`,
+  isDot: `${uuid}.is-dot.help.every1dns.net`,
+  isDoh: `${uuid}.is-doh.help.every1dns.net`,
   'resolverIp-1.1.1.1': '1.1.1.1',
   'resolverIp-1.0.0.1': '1.0.0.1',
   'resolverIp-2606:4700:4700::1111': 'ipv6b.cloudflare-dns.com',
@@ -162,7 +162,7 @@ async function init () {
   let resolverInfo = {} as ResolverInfo
 
   try {
-    const resolverResponse = await fetch(`https://${uuid}.map.cloudflareresolve.com`)
+    const resolverResponse = await fetch(`https://${uuid}.map.help.every1dns.net`)
     resolverInfo = await resolverResponse.json()
   } catch (error) {
     console.log('Resolver error:', error)
