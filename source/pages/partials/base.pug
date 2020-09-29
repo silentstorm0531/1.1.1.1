@@ -266,7 +266,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   p!=htmlWebpackPlugin.options.t('home.privacydesc2')
                   p!=htmlWebpackPlugin.options.t('home.privacydesc3')
                   p
-                    a.CopyLink(href="https://twitter.com/intent/tweet?text=ISPs%20spy%20on%20your%20Internet%20traffic%20and%20sell%20the%20data.%20I%27m%20in%20line%20to%20get%201.1.1.1%20with%20WARP%2C%20a%20free%20app%20which%20will%20make%20the%20Internet%20on%20my%20phone%20faster%20and%20more%20private.%20You%20should%20get%20the%20app%20to%20reserve%20a%20place%20in%20line%3A%20https%3A//one.one.one.one" target="_blank" rel="noreferrer")!=htmlWebpackPlugin.options.t('sharewithtwitter')
+                    a.CopyLink(href="https://twitter.com/intent/tweet?text=ISPs%20spy%20on%20your%20Internet%20traffic%20and%20sell%20the%20data.%20I%27m%20using%201.1.1.1%20with%20WARP%2C%20a%20free%20app%20which%20makes%20the%20Internet%20on%20my%20phone%20faster%20and%20more%20private.%20You%20should%20get%20the%20app%20too%3A%20https%3A//one.one.one.one" target="_blank" rel="noreferrer")!=htmlWebpackPlugin.options.t('sharewithtwitter')
 
       .WarpSection(data-depth-perspective-root)
         .WarpSection--column
@@ -360,7 +360,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 .SectionCopy--description(data-js-balance-text)
                   div!=htmlWebpackPlugin.options.t('home.desktop.description')
                   p
-                    a.CopyLink(href="https://blog.cloudflare.com/announcing-the-beta-for-warp-for-macos-and-windows" target="_blank")!=htmlWebpackPlugin.options.t('learnmore')
+                    a.CopyLink(href="https://one.one.one.one/beta/" target="_blank")!=htmlWebpackPlugin.options.t('downloadnow')
 
       .FooterSection(data-depth-perspective-root)
         .FooterSection--column(style="padding-bottom:2em;")
@@ -456,19 +456,6 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
 
       .FooterSection#subscription-form(data-depth-perspective-root)
         .FooterSection--column
-          .FooterSection--content(data-depth-perspective-scroll-anchor, data-depth='3')
-            .FooterSection--content-section-copy-wrapper
-              .SectionCopy.SectionCopy-is-centered
-                .SectionCopy--content
-                .GetNotifiedSection--form-holder
-                  h2.GetNotifiedSection--form-header(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.subscribe.title')
-                  .SectionCopy--description
-                    p!=htmlWebpackPlugin.options.t('home.subscribe.description')
-                    form.GetNotifiedSection--form(action='https://cloudflare.us13.list-manage.com/subscribe/post?u=f1669393e91a33564714f9437&amp;id=a0a041ee78' method='post' name='mc-embedded-subscribe-form' target='_blank' novalidate='')
-                      input.Input(type='email' value='' name='EMAIL' placeholder='email address' required='' style='margin-right:0.5em;')
-                      button.Button.Button-is-primary(type="submit")!=htmlWebpackPlugin.options.t('subscribe')
-                  p.privacy-subtext!=htmlWebpackPlugin.options.t('home.privacyimportant')
-
           .FooterSection--backdrop-blob4(data-depth='2')
             svg.SVG-Blob4(viewBox='0 0 3120 4353')
               defs
