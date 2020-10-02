@@ -116,9 +116,9 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 path(d='M138.52 123.58L16.78 0c1.99.46 4.08 1.26 6.25 2.46l152.16 84.31-36.67 36.8zm42 42.62l-36.84-37.39 38.2-38.33 44.62 24.73c12.67 7.01 12.67 18.5 0 25.51l-45.99 25.48zM7.32.9l126 127.9L7.46 255.1C2.88 252.82 0 247.5 0 239.87V16.05C0 8.48 2.83 3.21 7.33.9zM138.5 134.02l35.35 35.88-150.81 83.56a24.36 24.36 0 0 1-5.94 2.4l121.4-121.84z')
               span.Button--text!=htmlWebpackPlugin.options.t('googleplay')
           .HeroSection--actions
-              a.Button.Button-is-primary(href='#subscription-form')
+              a.Button.Button-is-primary(href='/beta/')
                 span.Button--text!=htmlWebpackPlugin.options.t('windows.comingsoon')
-              a.Button.Button-is-primary(href='#subscription-form')
+              a.Button.Button-is-primary(href='/beta/')
                 span.Button--text!=htmlWebpackPlugin.options.t('macos.comingsoon')
 
         .HeroSection--scroll-indicator
@@ -360,7 +360,7 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 .SectionCopy--description(data-js-balance-text)
                   div!=htmlWebpackPlugin.options.t('home.desktop.description')
                   p
-                    a.CopyLink(href="https://one.one.one.one/beta/" target="_blank")!=htmlWebpackPlugin.options.t('downloadnow')
+                    a.CopyLink(href="/beta/" target="_blank")!=htmlWebpackPlugin.options.t('downloadnow')
 
       .FooterSection(data-depth-perspective-root)
         .FooterSection--column(style="padding-bottom:2em;")
@@ -449,9 +449,9 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                   path(d='M138.52 123.58L16.78 0c1.99.46 4.08 1.26 6.25 2.46l152.16 84.31-36.67 36.8zm42 42.62l-36.84-37.39 38.2-38.33 44.62 24.73c12.67 7.01 12.67 18.5 0 25.51l-45.99 25.48zM7.32.9l126 127.9L7.46 255.1C2.88 252.82 0 247.5 0 239.87V16.05C0 8.48 2.83 3.21 7.33.9zM138.5 134.02l35.35 35.88-150.81 83.56a24.36 24.36 0 0 1-5.94 2.4l121.4-121.84z')
                 span.Button--text!=htmlWebpackPlugin.options.t('googleplay')
             .FooterSection--actions
-              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store.Button--tc(href='#subscription-form')
+              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store.Button--tc(href='/beta/')
                 span.Button--text!=htmlWebpackPlugin.options.t('windows.comingsoon')
-              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store.Button--tc(href='#subscription-form')
+              a.Button.Button-is-primary.Button-with-icon.Button-google-play-store.Button--tc(href='/beta/')
                 span.Button--text!=htmlWebpackPlugin.options.t('macos.comingsoon')
 
       .FooterSection#subscription-form(data-depth-perspective-root)
