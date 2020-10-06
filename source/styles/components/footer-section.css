@@ -39,6 +39,10 @@
   margin-right: 1em;
 }
 
+.FooterSection--download-actions > a:not(:last-child) {
+  margin-right: 3em;
+}
+
 .FooterSection--backdrop-blob4 {
   position: absolute;
   z-index: 1;

@@ -35,3 +35,13 @@
 .CopyLink:not(.focus-visible):focus, .CopyLink:not(:focus) {
   --focus-shadow-size: 0;
 }
+
+.CopyLink--small {
+  color: rgb(34, 30, 104);
+  font-size: 0.625em;
+}
+
+.CopyLink-with-margin--small {
+  margin-right: 8.75em;
+}
+

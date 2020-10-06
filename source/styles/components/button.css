@@ -47,15 +47,19 @@
 }
 
 .Button.Button-with-icon .Button--icon {
-  height: 1.5em;
-  width: 1.5em;
+  height: 2em;
+  width: 2.5em;
   margin-bottom: 0.1em;
   margin-right: 0.3125em;
 }
 
 .Button.Button-with-icon.Button-google-play-store .Button--text {
-  font-size: 0.825em;
+  font-size: 1em;
   margin-bottom: 0.0625em;
+}
+
+.Button-google-play-store--text {
+  font-size:0.825em;
 }
 
 .Button-windows-text {
@@ -70,4 +74,30 @@ html[is-ios] .Button-google-play-store {
 
 .Button--tc {
   text-align: center;
+}
+
+.Button-with-subtext {
+  padding-top: 8px;
+  width: 9em;
+}
+
+.Button--windows-icon {
+  margin-bottom: -0.5em;
+  height: 2em;
+  width: 2.5em;
+  margin-right: 0.3125em;
+}
+
+.Button--smaller-icon {
+  margin-bottom: -0.5em;
+  height: 1.5em;
+  width: 2em;
+}
+
+.Button--larger {
+  width: 10em;
+}
+
+.Button--smaller {
+  width: 9em;
 }
