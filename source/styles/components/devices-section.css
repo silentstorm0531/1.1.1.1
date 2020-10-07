@@ -1,0 +1,47 @@
+.DevicesSection {
+  margin-top: -3em;
+}
+
+.DevicesSection--column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 2em 26em;
+  width: 100%;
+}
+
+.DevicesSection--device-mockup {
+  position: relative;
+  z-index: 1;
+  margin-right: var(--section-gutter-size);
+}
+
+.DevicesSection--content {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .DevicesSection {
+    margin-top: 0;
+  }
+
+  .DevicesSection--column {
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 30em;
+  }
+
+  .DevicesSection--content {
+    order: 1;
+  }
+
+  .DevicesSection--device-mockup {
+    order: 2;
+  }
+
+  .DevicesSection--device-mockup {
+    margin-right: 0;
+  }
+}

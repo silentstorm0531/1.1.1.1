@@ -72,10 +72,6 @@
   margin-bottom: 0;
 }
 
-.HeroSection--download-actions > a:not(:last-child) {
-  margin-right: 3.25em;
-}
-
 .HeroSection--scroll-indicator {
   position: absolute;
   left: 0;

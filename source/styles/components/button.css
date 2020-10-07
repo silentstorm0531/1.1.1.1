@@ -44,6 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 10em;
 }
 
 .Button.Button-with-icon .Button--icon {
@@ -76,11 +77,6 @@ html[is-ios] .Button-google-play-store {
   text-align: center;
 }
 
-.Button-with-subtext {
-  padding-top: 8px;
-  width: 9em;
-}
-
 .Button--windows-icon {
   margin-bottom: -0.5em;
   height: 2em;
@@ -92,12 +88,4 @@ html[is-ios] .Button-google-play-store {
   margin-bottom: -0.5em;
   height: 1.5em;
   width: 2em;
-}
-
-.Button--larger {
-  width: 10em;
-}
-
-.Button--smaller {
-  width: 9em;
 }
