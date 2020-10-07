@@ -366,26 +366,23 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
                 h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('home.desktop.title')
                 .SectionCopy--description(data-js-balance-text)
                   div!=htmlWebpackPlugin.options.t('home.desktop.description')
-                  p
-                    a.CopyLink(href="/beta/" target="_blank")!=htmlWebpackPlugin.options.t('downloadnow')
-                    
+                                
       .DevicesSection(data-depth-perspective-root)
         .DevicesSection--column
-          .DevicesSection--device-mockup
-            .DeviceMockup.desktop(data-depth-perspective-scroll-anchor)
-              .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
-                .DeviceMockup--device-display
-                  img(src='/media/lighthouse.png')
           .DevicesSection--content
-            .SectionCopy.SectionCopy-is-right(data-depth='3')
+            .SectionCopy(data-depth='3')
               .SectionCopy--content
                 h2.SectionCopy--title(data-js-balance-text)!=htmlWebpackPlugin.options.t('teams.devices.title')
                 .SectionCopy--description(data-js-balance-text)
                   p!=htmlWebpackPlugin.options.t('teams.devices.description')
-                  p
-                      a.CopyLink(href="#" target="_blank" rel="noreferrer")!=htmlWebpackPlugin.options.t('learnmore')
+                  a.CopyLink(href="#" target="_blank")!=htmlWebpackPlugin.options.t('learnmore')
+          .DevicesSection--device-mockup
+            .DeviceMockup.desktop(data-depth-perspective-scroll-anchor)
+              .DeviceMockup--device.DeviceMockup--device-monitor(data-depth='1')
+                .DeviceMockup--device-display
+                  img(src='/media/lighthouse.svg')
 
-                    
+                  
       .FooterSection(data-depth-perspective-root)
         .FooterSection--column(style="padding-bottom:2em;")
           .FooterSection--content(data-depth-perspective-scroll-anchor, data-depth='3')
