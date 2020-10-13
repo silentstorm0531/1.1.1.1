@@ -45,3 +45,11 @@
   margin-right: 5.25em;
 }
 
+@media (max-width: 768px) {
+  .CopyLink-with-margin--small {
+    display: block;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}
+

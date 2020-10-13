@@ -34,7 +34,7 @@
   .PrivacySection--column {
     flex-direction: column;
     overflow: hidden;
-    padding-bottom: 30em;
+    padding-bottom: 10em;
   }
 
   .PrivacySection--content {

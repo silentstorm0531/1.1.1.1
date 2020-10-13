@@ -167,8 +167,8 @@ setTimeout(() => {
 
       basicScroll.create({
         elem: scrollEl,
-        from: 'top-bottom',
-        to: 'bottom-top',
+        from: scrollEl ? 'top-bottom': '0px',
+        to: scrollEl ? 'bottom-top': '100px',
         inside: update,
         outside: update
       }).start()
@@ -207,8 +207,8 @@ setTimeout(() => {
 
     basicScrollInstance = basicScroll.create({
       elem,
-      from: 'top-bottom',
-      to: 'bottom-bottom',
+      from: '0px',
+      to: '100px',
       inside: update,
       outside: update
     })
